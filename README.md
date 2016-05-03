@@ -17,3 +17,6 @@ Never lose your progress with the built-in server-side save system.
 
 ## Contributing
 If you want to contribute, check out the the following document: [contribute.md](doc/contribute.md)
+
+## Documentation
+* Gameplay Documentation can be found here: [Gameplay Guide](doc/00-gameplay-guide.md)
