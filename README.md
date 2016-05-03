@@ -21,4 +21,4 @@ If you want to contribute, check out the the following document: [contribute.md]
 ## Documentation
 * Gameplay Documentation can be found here: [Gameplay Guide](doc/guide/00-gameplay-guide.md)
 * Upstream Repository can be found here: [Upstream URL](https://github.com/GreuhZbug/greuh_liberation.Altis)
-* Upstream Thread can eb found here: [Upstream Thread](https://forums.bistudio.com/topic/183734-mpcti-coop-liberation-beta/)
+* Upstream Thread can be found here: [Upstream Thread](https://forums.bistudio.com/topic/183734-mpcti-coop-liberation-beta/)
