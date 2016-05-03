@@ -17,5 +17,7 @@ This could be seen as some sort of changelog to give an easy overview on what ch
 * Replace Weather Script with ACE Weather
 * Add proper default parameters
 * Replace Atlas LHD with CUP LHD
+* replace usage of player with ACE_player
+* Add Action at the base to clean up corpses around the base. Maybe a second one for Admins to remove all corpses from the mission
 
 ### Done
