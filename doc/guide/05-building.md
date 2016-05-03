@@ -1,7 +1,7 @@
 <table>
   <tr>
-    <td>[Previous](04-secondary-objectives.md)</td>
-    <td>[Next](06-mechanics.md)</td>
+    <td><a href="04-secondary-objectives.md">Previous</a></td>
+    <td><a href="06-mechanics.md">Next</a></td>
   </tr>
 </table>
 

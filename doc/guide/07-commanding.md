@@ -1,6 +1,6 @@
 <table>
   <tr>
-    <td>[Previous](06-mechanics.md)</td>
+    <td><a href="06-mechanics.md">Previous</a></td>
     <td>Next</td>
   </tr>
 </table>

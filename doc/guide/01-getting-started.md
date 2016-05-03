@@ -1,7 +1,7 @@
 <table>
   <tr>
-    <td>[Previous](00-gameplay-guide.md)</td>
-    <td>[Next](02-objectives.md)</td>
+    <td><a href="00-gameplay-guide.md">Previous</a></td>
+    <td><a href="02-objectives.md">Next</a></td>
   </tr>
 </table>
 
