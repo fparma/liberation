@@ -15,7 +15,7 @@ This could be seen as some sort of changelog to give an easy overview on what ch
 * Add ACE Modules
 * CUP Compatibility
 * Replace Weather Script with ACE Weather
-* 
-* 
-* 
-* 
+* Add proper default parameters
+* Replace Atlas LHD with CUP LHD
+
+### Done
