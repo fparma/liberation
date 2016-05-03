@@ -19,5 +19,8 @@ This could be seen as some sort of changelog to give an easy overview on what ch
 * Replace Atlas LHD with CUP LHD
 * replace usage of player with ACE_player
 * Add Action at the base to clean up corpses around the base. Maybe a second one for Admins to remove all corpses from the mission
+* Put Preprocessor defines for GUI's in one file, so makepbo doesen't abort when it detects multiple declarations of the same define.
+* Apply setUnitTrait to all players.
+* Disable Intro and Cinematics by default
 
 ### Done
