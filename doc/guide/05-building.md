@@ -1,3 +1,10 @@
+<table>
+  <tr>
+    <td>[Previous](04-secondary-objectives.md)</td>
+    <td>[Next](06-mechanics.md)</td>
+  </tr>
+</table>
+
 # Building
 To help you succeed in your endeavors, you have a construction capability that allow you to deploy units, vehicles, defenses, fortifications and so on. Depending on your resources of course.
 

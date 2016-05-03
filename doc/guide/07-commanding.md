@@ -1,3 +1,10 @@
+<table>
+  <tr>
+    <td>[Previous](06-mechanics.md)</td>
+    <td>Next</td>
+  </tr>
+</table>
+
 # Commanding
 When a player uses the commander slot (the last slot of the player list), they get access to a Zeus interface by pressing the corresponding key (U by default) (for some Y button). Here they can give orders to friendly AI. (can't place/move objects)
 

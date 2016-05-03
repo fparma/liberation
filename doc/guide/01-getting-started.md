@@ -1,3 +1,10 @@
+<table>
+  <tr>
+    <td>[Previous](00-gameplay-guide.md)</td>
+    <td>[Next](02-objectives.md)</td>
+  </tr>
+</table>
+
 # Getting Started
 
 ## Your First FOB

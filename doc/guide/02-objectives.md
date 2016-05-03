@@ -1,3 +1,10 @@
+<table>
+  <tr>
+    <td>[Previous](01-getting-started.md)</td>
+    <td>[Next](03-resources.md)</td>
+  </tr>
+</table>
+
 # Objectives
 The main objective of the campaign is to kick CSAT out of Altis.
 

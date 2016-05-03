@@ -1,3 +1,10 @@
+<table>
+  <tr>
+    <td>[Previous](02-objectives.md)</td>
+    <td>[Next](04-secondary-objectives.md)</td>
+  </tr>
+</table>
+
 # Resources
 ![a](http://vignette2.wikia.nocookie.net/greuh-liberation/images/1/15/Ressources.jpg/revision/latest/scale-to-width-down/300?cb=20150920175542)
 

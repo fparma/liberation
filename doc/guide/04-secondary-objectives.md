@@ -1,3 +1,10 @@
+<table>
+  <tr>
+    <td>[Previous](03-resources.md)</td>
+    <td>[Next](05-building.md)</td>
+  </tr>
+</table>
+
 # Secondary objectives
 (a massive overhaul is planned for this system in the future, for details see Trello)
 

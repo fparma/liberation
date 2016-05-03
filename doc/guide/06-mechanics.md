@@ -1,3 +1,10 @@
+<table>
+  <tr>
+    <td>[Previous](05-building.md)</td>
+    <td>[Next](07-commanding.md)</td>
+  </tr>
+</table>
+
 # Mechanics
 ## Reinforcements
 Well here comes the complete ruleset:
