@@ -1,7 +1,7 @@
 # FPArma Liberation CTI (Mission Fork)
 
 ## What is Liberation CTI?
-Liberation CTI is a "Conquer the Island" style mission, where you start from a small base and move in to capture enemy bases and outposts all over the island, until everything is under the control of BLUFOR
+Liberation CTI is a "Capture the Island" style mission, where you start from a small base and move in to capture enemy bases and outposts all over the island, until everything is under the control of BLUFOR
 
 ## Overview
 Altis has fallen to the Russian forces, and it is up to you to take it back. Embark with your teammates on a persistent campaign that will span several weeks of real time to liberate all the major cities of the island.

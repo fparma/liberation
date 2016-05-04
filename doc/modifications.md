@@ -17,11 +17,12 @@ This could be seen as some sort of changelog to give an easy overview on what ch
 * Replace Weather Script with ACE Weather
 * Add proper default parameters
 * Replace Atlas LHD with CUP LHD
-* replace usage of player with ACE_player
+* Add Advanced Slingloading Script to Mission
 * Add Action at the base to clean up corpses around the base. Maybe a second one for Admins to remove all corpses from the mission
 * Put Preprocessor defines for GUI's in one file, so makepbo doesen't abort when it detects multiple declarations of the same define.
 * Apply setUnitTrait to all players.
 * Disable Intro and Cinematics by default
 * Add better intro image and logo so people don't think this is a ""meme"" mission and joke around because of this.
+* Add more static Objects in the build menu.
 
 ### Done
