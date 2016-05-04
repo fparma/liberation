@@ -835,7 +835,7 @@ class GREUH_respawn {
 		text = "Replace nearest AI";
 		action = "replace_ai = 1";
 
-	}
+	};
 	class GREUH_Useless : GREUH_Respawn {
 		idc = -1;
 		x = -5;

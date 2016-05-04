@@ -8,9 +8,6 @@ enableSaving [ false, false ];
 [] call compileFinal preprocessFileLineNUmbers "classnames_extension.sqf";
 [] call compileFinal preprocessFileLineNUmbers "scripts\shared\classnames.sqf";
 
-if ( GRLIB_revive > 0 ) then {
-	[] execVM "FAR_revive\FAR_revive_init.sqf";
-};
 [] execVM "GREUH\scripts\GREUH_activate.sqf";
 
 [] call compileFinal preprocessfilelinenumbers "scripts\shared\init_shared.sqf";

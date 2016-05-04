@@ -101,9 +101,6 @@ while { true } do {
 				};
 
 				private _markertype = "mil_start";
-				if ( _nextplayer getVariable [ "FAR_isUnconscious", 0 ] == 1 ) then {
-					_markertype = "MinefieldAP";
-				};
 				_marker setMarkerTypeLocal _markertype;
 			} foreach _marked_players;
 
@@ -162,11 +159,6 @@ while { true } do {
 			if ( _marker != "" ) then {
 				_marker setMarkerPosLocal (getPos _nextunit);
 				private _mrkdir = getDir _nextunit;
-				if ( isPlayer _nextunit ) then {
-					if (  _nextunit getVariable [ "FAR_isUnconscious", 0 ] == 1 ) then {
-						_mrkdir = 0;
-					};
-				};
 				_marker setMarkerDirLocal _mrkdir;
 			};
 		} foreach _markerunits;

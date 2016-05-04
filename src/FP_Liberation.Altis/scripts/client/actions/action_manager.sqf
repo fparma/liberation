@@ -53,17 +53,6 @@ while { true } do {
 		};
 	};
 
-	if ( (_fobdistance < _distredeploy || (player distance lhd) < 200) && alive player && vehicle player == player && GRLIB_halo_param > 0 ) then {
-		if ( _idact_halo == -1 ) then {
-			_idact_halo = player addAction ["<t color='#80FF80'>" + localize "STR_HALO_ACTION" + "</t> <img size='2' image='res\ui_redeploy.paa'/>","scripts\client\spawn\do_halo.sqf","",-749,false,true,"","build_confirmed == 0"];
-		};
-	} else {
-		if ( _idact_halo != -1 ) then {
-			player removeAction _idact_halo;
-			_idact_halo = -1;
-		};
-	};
-
 	if ( (_fobdistance < _distredeploy || count _nearspawn != 0 || (player distance lhd) < 200) && alive player && vehicle player == player ) then {
 		if ( _idact_redeploy == -1 ) then {
 			_idact_redeploy = player addAction ["<t color='#80FF80'>" + localize "STR_DEPLOY_ACTION" + "</t> <img size='2' image='res\ui_redeploy.paa'/>","scripts\client\actions\redeploy.sqf","",-750,false,true,"","build_confirmed == 0"];

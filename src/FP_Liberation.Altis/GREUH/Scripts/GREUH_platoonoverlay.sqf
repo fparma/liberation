@@ -101,18 +101,14 @@ waitUntil { !isNil "GRLIB_nametag_units" };
 			};
 
 			_drawicon = soldier_icon;
-			if ( _nextunit getVariable [ "FAR_isUnconscious", 0 ] == 1 ) then {
-				_drawicon = wounded_icon;
+			if ( _nextunit == [] call F_getCommander ) then {
+				_drawicon = commander_icon;
 			} else {
-				if ( _nextunit == [] call F_getCommander ) then {
-					_drawicon = commander_icon;
+				if ( _nextunit == (leader group _nextunit) && (count (units group _nextunit) > 1 ) ) then {
+					_drawicon = group_leader_icon;
 				} else {
-					if ( _nextunit == (leader group _nextunit) && (count (units group _nextunit) > 1 ) ) then {
-						_drawicon = group_leader_icon;
-					} else {
-						if ( ( isFormationLeader _nextunit ) && ( count formationMembers _nextunit > 1 ) ) then {
-							_drawicon = formation_leader_icon;
-						};
+					if ( ( isFormationLeader _nextunit ) && ( count formationMembers _nextunit > 1 ) ) then {
+						_drawicon = formation_leader_icon;
 					};
 				};
 			};
@@ -125,7 +121,7 @@ waitUntil { !isNil "GRLIB_nametag_units" };
 
 			_height = 2 + ((player distance _nextunit) / (0.75 * nametags_distance));
 
-			_iconpos = [  getPosATL _nextunit select 0,  getPosATL _nextunit select 1,  (getPosATL _nextunit select 2) + _height ];
+			_iconpos = [	getPosATL _nextunit select 0,	getPosATL _nextunit select 1,	(getPosATL _nextunit select 2) + _height ];
 
 			drawIcon3D [ _drawicon, _color, _iconpos , 0.75, 0.75,0, format [ "%1", _displayname] , 2, 0.032, "puristaMedium"];
 
