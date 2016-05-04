@@ -374,7 +374,27 @@ blacklisted_from_arsenal_extension = [
     "fp_static_bag_weapon_dshkm_high",
     "fp_static_bag_weapon_m2",
     "fp_static_bag_weapon_m2_high",
-	"HLC_wp_M134Painless"
+    "CUP_B_AGS30_Gun_Bag",
+    "CUP_B_AGS30_Tripod_Bag",
+    "CUP_B_DShkM_Gun_Bag",
+    "CUP_B_DShkM_TripodHigh_Bag",
+    "CUP_B_DShkM_TripodLow_Bag",
+    "CUP_B_Kord_Gun_Bag",
+    "CUP_B_Kord_Tripod_Bag",
+    "CUP_B_M2_Gun_Bag",
+    "CUP_B_M2_Tripod_Bag",
+    "CUP_B_M252_Gun_Bag",
+    "CUP_B_M252_Bipod_Bag",
+    "CUP_B_M2_MiniTripod_Bag",
+    "CUP_B_Metis_Gun_Bag",
+    "CUP_B_Metis_Tripod_Bag",
+    "CUP_B_Podnos_Bipod_Bag",
+    "CUP_B_Podnos_Gun_Bag",
+    "CUP_B_SPG9_Gun_Bag",
+    "CUP_B_SPG9_Tripod_Bag",
+    "CUP_B_Tow_Gun_Bag",
+    "CUP_B_TOW_Tripod_Bag",
+    "HLC_wp_M134Painless"
 ];
 
 // Configuration for ammo boxes transport
