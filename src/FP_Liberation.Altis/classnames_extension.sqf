@@ -39,6 +39,7 @@ infantry_units_extension = [
 
 light_vehicles_overwrite = true;
 light_vehicles_extension = [
+	["B_Quadbike_01_F",0,0,1],
 	["CUP_B_LR_Transport_GB_W",0,0,3],
 	["CUP_B_HMMWV_Unarmed_USMC",0,0,5],
 	["CUP_B_HMMWV_M1114_USMC",0,5,5],
@@ -57,8 +58,8 @@ light_vehicles_extension = [
 	["B_MRAP_01_F",0,0,30],
 	["B_MRAP_01_hmg_F",0,30,30],
 	["B_MRAP_01_gmg_F",0,40,30],
-	["B_Truck_01_transport_F",0,0,20],
-	["B_Truck_01_covered_F",0,0,20]
+	["B_Truck_01_transport_F",0,0,5],
+	["B_Truck_01_covered_F",0,0,5]
 ];
 
 heavy_vehicles_overwrite = true;
@@ -69,12 +70,17 @@ heavy_vehicles_extension = [
 	["CUP_B_M1126_ICV_M2_Woodland_Slat",0,30,30],
 	["CUP_B_M1126_ICV_MK19_Woodland",0,40,25],
 	["CUP_B_M1126_ICV_MK19_Woodland_Slat",0,40,30],
-	["CUP_B_M1128_MGS_Woodland",0,60,30],
-	["CUP_B_M1135_ATGMV_Woodland",0,60,30],
+	["CUP_B_M1128_MGS_Woodland",0,80,30],
+	["CUP_B_M1135_ATGMV_Woodland",0,80,30],
 	["CUP_B_MCV80_GB_W",0,40,40],
 	["CUP_B_MCV80_GB_W_SLAT",0,40,50],
 	["CUP_B_LAV25_USMC",0,35,40],
-	["CUP_B_AAV_USMC",0,40,60]
+	["CUP_B_AAV_USMC",0,40,60],
+	["CUP_B_M2A3Bradley_USA_W",0,100,100],
+	["CUP_B_M6LineBacker_USA_W",0,80,100],
+	["CUP_B_M270_HE_USA",0,170,200],
+	["CUP_B_M1A1_Woodland_USMC",0,130,170],
+	["CUP_B_M1A2_TUSK_MG_USMC",0,150,200]
 ];
 
 air_vehicles_overwrite = true;
@@ -90,7 +96,13 @@ air_vehicles_extension = [
 	["CUP_B_AW159_Hellfire_RN_Grey",0,50,130],
 	["CUP_B_AW159_Unarmed_GB",0,0,40],
 	["CUP_B_Merlin_HC3A_GB_Armed",0,10,80],
-	["CUP_B_MV22_USMC_RAMPGUN",0,5,100]
+	["CUP_B_MV22_USMC_RAMPGUN",0,5,100],
+	["CUP_B_AH64D_USA",0,130,140],
+	["B_Heli_Attack_01_F",0,140,170],
+	["CUP_B_AV8B_GBU12_USMC",0,200,200],
+	["CUP_B_F35B_AA_USMC",0,130,200],
+	["CUP_B_CH53E_USMC",0,0,100],
+	["CUP_B_C130J_USMC",0,130]
 ];
 
 static_vehicles_overwrite = true;

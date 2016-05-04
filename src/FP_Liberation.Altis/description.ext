@@ -10,7 +10,7 @@ allowFunctionsLog = 0;
 
 loadScreen="res\liberation.jpg";
 onLoadMission = $STR_MISSION_TITLE;
-author = "GREUH, Mallow";
+author = "GREUH, Mallow, Kaukassus";
 onLoadName = $STR_MISSION_TITLE;
 
 joinUnassigned = 0;
