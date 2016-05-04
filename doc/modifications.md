@@ -10,7 +10,6 @@ This could be seen as some sort of changelog to give an easy overview on what ch
 ### Planned
 * Add ACE Modules
 * Add HALO Jump System from Comfy Downtime
-* Add Arsenal Blacklist that has certain weapons in it (Minigun + Weapon Bags).
 * Replace Weather Script with ACE Weather
 * Add proper default parameters
 * Replace Atlas LHD with CUP LHD
@@ -21,8 +20,10 @@ This could be seen as some sort of changelog to give an easy overview on what ch
 * Disable Intro and Cinematics by default
 * Add better intro image and logo so people don't think this is a ""meme"" mission and joke around because of this.
 * Add more static Objects in the build menu (A2 Fortifications and Sandbags, etc...).
+* Remove Custom AI Difficulty Setter. AI Settings should come from the server difficulty.
 
 ### Done
 * Remove FAR_Revive
 * Remove HALO Jump System
 * CUP Compatibility
+* Add Arsenal Blacklist that has certain weapons in it (Minigun + Weapon Bags).
