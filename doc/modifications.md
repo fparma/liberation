@@ -8,10 +8,8 @@ This could be seen as some sort of changelog to give an easy overview on what ch
 ## Modifications
 
 ### Planned
-* Add ACE Modules
+
 * Add HALO Jump System from Comfy Downtime
-* Replace Weather Script with ACE Weather
-* Add proper default parameters
 * Replace Atlas LHD with CUP LHD
 * Add Advanced Slingloading Script to Mission
 * Add Action at the base to clean up corpses around the base. Maybe a second one for Admins to remove all corpses from the mission
@@ -27,3 +25,6 @@ This could be seen as some sort of changelog to give an easy overview on what ch
 * Remove HALO Jump System
 * CUP Compatibility
 * Add Arsenal Blacklist that has certain weapons in it (Minigun + Weapon Bags).
+* Add ACE Modules
+* Replace Weather Script with ACE Weather
+* Add proper default parameters
