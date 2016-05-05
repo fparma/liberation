@@ -34,3 +34,12 @@ class CfgDebriefing {
     pictureBackground = "";
   };
 };
+
+class CfgFunctions {
+  class FPC {
+    class Logistics {
+      file = "functions";
+      class SlingLoading { postInit = 1 };
+    };
+  };
+};
