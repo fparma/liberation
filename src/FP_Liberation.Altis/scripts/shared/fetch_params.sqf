@@ -17,7 +17,6 @@ if ( isMultiplayer ) then {
 	GRLIB_use_whitelist = ["Whitelist",0] call bis_fnc_getParamValue;
 	GRLIB_cleanup_vehicles = ["CleanupVehicles",2] call bis_fnc_getParamValue;
 	GRLIB_csat_aggressivity = ["Aggressivity",1] call bis_fnc_getParamValue;
-	GRLIB_weather_param = ["Weather",3] call bis_fnc_getParamValue;
 	GRLIB_shorter_nights = ["ShorterNights",0] call bis_fnc_getParamValue;
 	GRLIB_ammo_bounties = [ "AmmoBounties",0] call bis_fnc_getParamValue;
 	GRLIB_remote_sensors = [ "DisableRemoteSensors",0] call bis_fnc_getParamValue;
@@ -43,7 +42,6 @@ if ( isMultiplayer ) then {
 	GRLIB_use_whitelist = 0;
 	GRLIB_cleanup_vehicles = 2;
 	GRLIB_csat_aggressivity = 1;
-	GRLIB_weather_param = 3;
 	GRLIB_shorter_nights = 0;
 	GRLIB_ammo_bounties = 1;
 	GRLIB_remote_sensors = 0;

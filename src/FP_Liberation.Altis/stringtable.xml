@@ -1877,30 +1877,6 @@
 						<Spanish>Extrema</Spanish>
 						<Russian>Очень сильно</Russian>
 				</Key>
-				<Key ID="STR_WEATHER_PARAM">
-						<Original>Weather</Original>
-						<French>Meteo</French>
-						<Spanish>Clima</Spanish>
-						<Russian>Погода</Russian>
-				</Key>
-				<Key ID="STR_WEATHER_PARAM1">
-						<Original>Always sunny</Original>
-						<French>Soleil permanent</French>
-						<Spanish>Siempre soleado</Spanish>
-						<Russian>Всегда солнечно</Russian>
-				</Key>
-				<Key ID="STR_WEATHER_PARAM2">
-						<Original>Random without rain</Original>
-						<French>Aléatoire sans pluie</French>
-						<Spanish>Aleatorio sin lluvia</Spanish>
-						<Russian>Случайно, без дождя</Russian>
-				</Key>
-				<Key ID="STR_WEATHER_PARAM3">
-						<Original>Random</Original>
-						<French>Aléatoire</French>
-						<Spanish>Aleatorio</Spanish>
-						<Russian>Случайно</Russian>
-				</Key>
 				<Key ID="STR_SHORTER_NIGHTS_PARAM">
 						<Original>Shorter nights</Original>
 						<French>Nuits plus courtes</French>
