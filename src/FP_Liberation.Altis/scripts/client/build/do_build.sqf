@@ -262,8 +262,15 @@ while { true } do {
 				if(buildtype != 6) then {
 					_vehicle addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
 					{ _x addMPEventHandler ["MPKilled", {_this spawn kill_manager}]; } foreach (crew _vehicle);
-
 				};
+
+        // Custom ACE Logistics Handlers for Objects that need it.
+        if (_vehicle isKindOf "Static") then {
+          [_vehicle, true, 1] call ace_cargo_fnc_makeLoadable;
+          [_vehicle, true, [0,2,0], 0] call ace_dragging_fnc_setDraggable;
+          [_vehicle, true, [0,2,1], 0] call ace_dragging_fnc_setCarryable;
+        };
+
 			};
 
 			if ( _idactcancel != -1 ) then {
