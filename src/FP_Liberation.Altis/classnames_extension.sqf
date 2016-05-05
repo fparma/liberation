@@ -119,7 +119,44 @@ static_vehicles_extension = [
 
 buildings_overwrite = false;
 buildings_extension = [
-
+  ["Land_CncBarrierMedium4_F",0,0,0],
+  ["Land_CncWall4_F",0,0,0],
+  ["Land_CncShelter_F",0,0,0],
+  ["Land_HBarrier_5_F",0,0,0],
+  ["Land_HBarrierBig_F",0,0,0],
+  ["Land_HBarrierWall6_F",0,0,0],
+  ["Land_HBarrierWall_corner_F",0,0,0],
+  ["Land_HBarrierTower_F",0,0,0],
+  ["Land_BagBunker_Large_F",0,0,0],
+  ["Land_BagBunker_Small_F",0,0,0],
+  ["Land_BagBunker_Tower_F",0,0,0],
+  ["Land_PortableLight_single_F",0,0,0],
+  ["CamoNet_BLUFOR_open_F",0,0,0],
+  ["CamoNet_BLUFOR_big_F",0,0,0],
+  ["Land_Cargo_House_V1_F",0,0,0],
+  ["Land_Cargo_Patrol_V1_F",0,0,0],
+  ["Flag_NATO_F",0,0,0],
+  ["Land_HelipadSquare_F",0,0,0],
+  ["Land_Razorwire_F",0,0,0],
+  ["Land_BagFence_Round_F",0,0,0],
+  ["Land_ToolTrolley_02_F",0,0,0],
+  ["Land_WeldingTrolley_01_F",0,0,0],
+  ["Land_GasTank_02_F",0,0,0],
+  ["Land_Workbench_01_F",0,0,0],
+  ["Land_WaterTank_F",0,0,0],
+  ["Land_WaterBarrel_F",0,0,0],
+  ["Land_MetalCase_01_large_F",0,0,0],
+  ["CargoNet_01_box_F",0,0,0],
+  ["Land_CampingChair_V1_F",0,0,0],
+  ["Land_CampingChair_V2_F",0,0,0],
+  ["Land_CampingTable_F",0,0,0],
+  ["MapBoard_altis_F",0,0,0],
+  ["Land_Metal_rack_Tall_F",0,0,0],
+  ["PortableHelipadLight_01_blue_F",0,0,0],
+  ["Land_DieselGroundPowerUnit_01_F",0,0,0],
+  ["Land_Pallet_MilBoxes_F",0,0,0],
+  ["Land_PaperBox_open_full_F",0,0,0],
+  ["Land_ClutterCutter_large_F",0,0,0]
 ];
 
 support_vehicles_overwrite = false; // If you're going to overwrite this, make sure you have at least Arsenal_typename, Respawn_truck_typename, FOB_box_typename and FOB_truck_typename in there
