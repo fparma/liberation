@@ -40,7 +40,6 @@ if ( !isNil "greuh_options_profile" ) then {
 
 [] call compile preprocessFileLineNumbers "GREUH\GREUH_config.sqf";
 [] call compile preprocessFileLineNumbers "GREUH\scripts\GREUH_version.sqf";
-[] spawn compile preprocessFileLineNumbers "GREUH\scripts\GREUH_actionmanager.sqf";
 [] spawn compile preprocessFileLineNumbers "GREUH\scripts\GREUH_revive_camera.sqf";
 [] spawn compile preprocessFileLineNumbers "GREUH\scripts\GREUH_medic_listener.sqf";
 if ( GREUH_allow_mapmarkers ) then { [] spawn compile preprocessFileLineNumbers "GREUH\scripts\GREUH_playermarkers.sqf"; };
@@ -49,3 +48,5 @@ if ( GREUH_allow_platoonview ) then { [] spawn compile preprocessFileLineNumbers
 if ( GREUH_allow_customsquads ) then { [] spawn compile preprocessFileLineNumbers "GREUH\scripts\GREUH_squadmanagement.sqf"; };
 if ( GREUH_allow_viewdistance ) then { [] spawn compile preprocessFileLineNumbers "GREUH\scripts\GREUH_view_distance_management.sqf"; };
 [] spawn compile preprocessFileLineNumbers "GREUH\scripts\GREUH_dynamic_view_distance.sqf";
+
+[["<t color='#FF8000'>-- Extended Options --</t>","GREUH\scripts\GREUH_dialog.sqf","",-999,false,true]] call CBA_fnc_addPlayerAction;
