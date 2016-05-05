@@ -117,7 +117,7 @@ static_vehicles_extension = [
   ["CUP_B_M119_USMC", 0, 120, 15]
 ];
 
-buildings_overwrite = false;
+buildings_overwrite = true;
 buildings_extension = [
   ["Land_BagFence_Long_F",0,0,0],
   ["Land_BagFence_Round_F",0,0,0],
