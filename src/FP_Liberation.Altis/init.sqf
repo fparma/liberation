@@ -1,4 +1,4 @@
-enableSaving [ false, false ];
+enableSaving[false, false];
 
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\atlas_manager.sqf";
 [] call compileFinal preprocessFileLineNUmbers "scripts\shared\liberation_functions.sqf";
@@ -13,16 +13,16 @@ enableSaving [ false, false ];
 [] call compileFinal preprocessfilelinenumbers "scripts\shared\init_shared.sqf";
 
 if (isServer) then {
-	[] call compileFinal preprocessFileLineNumbers "scripts\server\init_server.sqf";
+  [] call compileFinal preprocessFileLineNumbers "scripts\server\init_server.sqf";
 };
 
 if (!isDedicated && !hasInterface && isMultiplayer) then {
-	[] spawn compileFinal preprocessFileLineNumbers "scripts\server\offloading\hc_manager.sqf";
+  [] spawn compileFinal preprocessFileLineNumbers "scripts\server\offloading\hc_manager.sqf";
 };
 
 if (!isDedicated && hasInterface) then {
-	waitUntil { alive player };
-	[] call compileFinal preprocessFileLineNumbers "scripts\client\init_client.sqf";
+  waitUntil {alive player};
+  [] call compileFinal preprocessFileLineNumbers "scripts\client\init_client.sqf";
 } else {
-	setViewDistance 1600;
+  setViewDistance 1600;
 };

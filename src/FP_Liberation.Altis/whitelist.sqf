@@ -4,7 +4,7 @@
 // Allowed team tags, as defined in your team's squad.xml
 // This isn't very secure but efficient to whitelist a lot of people at once.
 GRLIB_whitelisted_tags = [
-"GREUH"
+  "GREUH"
 ];
 
 // Allowed individual players based on their SteamID64. This is the most secure way to do.
