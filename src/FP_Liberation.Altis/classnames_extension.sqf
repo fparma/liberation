@@ -119,6 +119,12 @@ static_vehicles_extension = [
 
 buildings_overwrite = false;
 buildings_extension = [
+  ["Land_BagFence_Long_F",0,0,0],
+  ["Land_BagFence_Round_F",0,0,0],
+  ["Land_fort_bagfence_long",0,0,0],
+  ["Land_fort_bagfence_corner",0,0,0],
+  ["Land_fort_bagfence_round",0,0,0],
+  ["Land_Campfire_F",0,0,0],
   ["Land_CncBarrierMedium4_F",0,0,0],
   ["Land_CncWall4_F",0,0,0],
   ["Land_CncShelter_F",0,0,0],
@@ -131,6 +137,7 @@ buildings_extension = [
   ["Land_BagBunker_Small_F",0,0,0],
   ["Land_BagBunker_Tower_F",0,0,0],
   ["Land_PortableLight_single_F",0,0,0],
+  ["Land_PortableLight_double_F",0,0,0],
   ["CamoNet_BLUFOR_open_F",0,0,0],
   ["CamoNet_BLUFOR_big_F",0,0,0],
   ["Land_Cargo_House_V1_F",0,0,0],
