@@ -85,12 +85,12 @@ heavy_vehicles_extension = [
 
 air_vehicles_overwrite = true;
 air_vehicles_extension = [
-  ["CUP_I_UH1H_TK_GUE", 0, 10, 30],
-  ["B_Heli_Light_01_F", 0, 0, 40],
-  ["B_Heli_Light_01_armed_F", 0, 30, 50],
-  ["CUP_B_UH1Y_GUNSHIP_USMC", 0, 20, 50],
-  ["CUP_B_UH60L_Unarmed_FFV_US", 0, 0, 60],
-  ["CUP_B_UH60L_FFV_US", 0, 20, 60],
+  ["B_Heli_Light_01_F", 0, 0, 15],
+  ["B_Heli_Light_01_armed_F", 0, 20, 25],
+  ["CUP_I_UH1H_TK_GUE", 0, 10, 25],
+  ["CUP_B_UH1Y_GUNSHIP_USMC", 0, 20, 25],
+  ["CUP_B_UH60L_Unarmed_FFV_US", 0, 0, 35],
+  ["CUP_B_UH60L_FFV_US", 0, 20, 35],
   ["CUP_B_SA330_Puma_HC2_BAF", 0, 0, 70],
   ["CUP_B_AW159_Cannon_RN_Grey", 0, 50, 50],
   ["CUP_B_AW159_Hellfire_RN_Grey", 0, 50, 130],
