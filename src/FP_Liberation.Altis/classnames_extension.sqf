@@ -42,7 +42,7 @@ light_vehicles_extension = [
   ["B_Quadbike_01_F", 0, 0, 1],
   ["B_G_Offroad_01_F", 0, 0, 3],
   ["B_G_Offroad_01_armed_F", 0, 10, 3],
-  ["CUP_B_LR_Transport_GB_W", 0, 0, 3],,
+  ["CUP_B_LR_Transport_GB_W", 0, 0, 3],
   ["B_Truck_01_transport_F", 0, 0, 5],
   ["B_Truck_01_covered_F", 0, 0, 5],
   ["CUP_B_HMMWV_Unarmed_USMC", 0, 0, 5],
