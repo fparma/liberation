@@ -40,6 +40,8 @@ infantry_units_extension = [
 light_vehicles_overwrite = true;
 light_vehicles_extension = [
   ["B_Quadbike_01_F", 0, 0, 1],
+  ["B_G_Offroad_01_F", 0, 0, 3],
+  ["B_G_Offroad_01_armed_F", 0, 10, 3],
   ["CUP_B_LR_Transport_GB_W", 0, 0, 3],
   ["CUP_B_HMMWV_Unarmed_USMC", 0, 0, 5],
   ["CUP_B_HMMWV_M1114_USMC", 0, 5, 5],
@@ -102,6 +104,7 @@ air_vehicles_extension = [
   ["CUP_B_AV8B_GBU12_USMC", 0, 200, 200],
   ["CUP_B_F35B_AA_USMC", 0, 130, 200],
   ["CUP_B_CH53E_USMC", 0, 0, 100],
+  ["CUP_B_CH47F_GB", 0, 0, 110],
   ["CUP_B_C130J_USMC", 0, 0, 130]
 ];
 
