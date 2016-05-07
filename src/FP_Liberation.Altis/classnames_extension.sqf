@@ -163,26 +163,12 @@ buildings_extension = [
   ["Land_DieselGroundPowerUnit_01_F",0,0,0],
   ["Land_Pallet_MilBoxes_F",0,0,0],
   ["Land_PaperBox_open_full_F",0,0,0],
-  ["Land_ClutterCutter_large_F",0,0,0]
+  ["Land_ClutterCutter_large_F",0,0,0],
+  ["Box_IND_WpsSpecial_F", 0, 0, 0]
 ];
 
-support_vehicles_overwrite = true; // If you're going to overwrite this, make sure you have at least Arsenal_typename, Respawn_truck_typename, FOB_box_typename and FOB_truck_typename in there
+support_vehicles_overwrite = false; // If you're going to overwrite this, make sure you have at least Arsenal_typename, Respawn_truck_typename, FOB_box_typename and FOB_truck_typename in there
 support_vehicles_extension = [
-  ["Box_IND_WpsSpecial_F", 5, 0, 0],
-  [Arsenal_typename,10,0,0],
-  [Respawn_truck_typename,20,0,5],
-  [FOB_box_typename,30,50,0],
-  [FOB_truck_typename,30,50,5],
-  ["B_APC_Tracked_01_CRV_F",0,30,10],
-  ["C_Offroad_01_repair_F",5,0,2],
-  ["B_Truck_01_Repair_F",10,0,5],
-  ["B_Truck_01_fuel_F",10,0,5],
-  ["B_Truck_01_ammo_F",10,0,5],
-  ["B_Slingload_01_Repair_F",5,0,0],
-  ["B_Slingload_01_Fuel_F",5,0,0],
-  ["B_Slingload_01_Ammo_F",5,0,0],
-  ["Box_NATO_AmmoVeh_F",0,154,0],
-  ["Box_East_AmmoVeh_F",0,115,0]
 ];
 
 // All the UAVs must be declared here, otherwise there shall be UAV controlling issues. Namely: you won't be able to control them.
