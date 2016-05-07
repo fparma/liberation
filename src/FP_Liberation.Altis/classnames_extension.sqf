@@ -39,85 +39,85 @@ infantry_units_extension = [
 
 light_vehicles_overwrite = true;
 light_vehicles_extension = [
-  ["B_Quadbike_01_F", 0, 0, 1],
-  ["B_G_Offroad_01_F", 0, 0, 3],
-  ["B_G_Offroad_01_armed_F", 0, 10, 3],
-  ["CUP_B_LR_Transport_GB_W", 0, 0, 3],
-  ["B_Truck_01_transport_F", 0, 0, 5],
-  ["B_Truck_01_covered_F", 0, 0, 5],
-  ["CUP_B_HMMWV_Unarmed_USMC", 0, 0, 5],
-  ["CUP_B_HMMWV_M1114_USMC", 0, 5, 5],
-  ["CUP_B_HMMWV_M2_USMC", 0, 10, 5],
-  ["CUP_B_HMMWV_MK19_USMC", 0, 20, 5],
-  ["CUP_B_HMMWV_SOV_USA", 0, 25, 3],
-  ["CUP_B_HMMWV_TOW_USMC", 0, 40, 5],
-  ["CUP_B_HMMWV_Avenger_USMC", 0, 50, 5],
-  ["B_MRAP_01_F", 0, 0, 20],
-  ["B_MRAP_01_hmg_F", 0, 20, 20],
-  ["B_MRAP_01_gmg_F", 0, 30, 20],
-  ["CUP_B_RG31_M2_OD_USMC", 0, 10, 15],
-  ["CUP_B_RG31_M2_GC_USMC", 0, 10, 25],
-  ["CUP_B_Dingo_GER_Wdl", 0, 20, 15],
-  ["CUP_B_Dingo_GL_GER_Wdl", 0, 30, 15],
-  ["CUP_B_Ridgback_GMG_GB_W", 0, 20, 20],
-  ["CUP_B_Ridgback_HMG_GB_W", 0, 10, 20],
-  ["CUP_B_Mastiff_GMG_GB_W", 0, 20, 30]
+  ["B_Quadbike_01_F",0,0,1],
+  ["B_G_Offroad_01_F",0,0,3],
+  ["B_G_Offroad_01_armed_F",0,10,3],
+  ["CUP_B_LR_Transport_GB_W",0,0,3],
+  ["B_Truck_01_transport_F",0,0,5],
+  ["B_Truck_01_covered_F",0,0,5],
+  ["CUP_B_HMMWV_Unarmed_USMC",0,0,5],
+  ["CUP_B_HMMWV_M1114_USMC",0,5,5],
+  ["CUP_B_HMMWV_M2_USMC",0,10,5],
+  ["CUP_B_HMMWV_MK19_USMC",0,20,5],
+  ["CUP_B_HMMWV_SOV_USA",0,25,3],
+  ["CUP_B_HMMWV_TOW_USMC",0,40,5],
+  ["CUP_B_HMMWV_Avenger_USMC",0,50,5],
+  ["B_MRAP_01_F",0,0,20],
+  ["B_MRAP_01_hmg_F",0,20,20],
+  ["B_MRAP_01_gmg_F",0,30,20],
+  ["CUP_B_RG31_M2_OD_USMC",0,10,15],
+  ["CUP_B_RG31_M2_GC_USMC",0,10,25],
+  ["CUP_B_Dingo_GER_Wdl",0,20,15],
+  ["CUP_B_Dingo_GL_GER_Wdl",0,30,15],
+  ["CUP_B_Ridgback_GMG_GB_W",0,20,20],
+  ["CUP_B_Ridgback_HMG_GB_W",0,10,20],
+  ["CUP_B_Mastiff_GMG_GB_W",0,20,30]
 ];
 
 heavy_vehicles_overwrite = true;
 heavy_vehicles_extension = [
-  ["CUP_B_FV432_Bulldog_GB_W", 0, 5, 30],
-  ["CUP_B_M113_USA", 0, 10, 30],
-  ["CUP_B_M1126_ICV_M2_Woodland", 0, 20, 40],
-  ["CUP_B_M1126_ICV_M2_Woodland_Slat", 0, 20, 40],
-  ["CUP_B_M1126_ICV_MK19_Woodland", 0, 30, 40],
-  ["CUP_B_M1126_ICV_MK19_Woodland_Slat", 0, 30, 40],
-  ["CUP_B_M1128_MGS_Woodland", 0, 125, 40],
-  ["CUP_B_M1135_ATGMV_Woodland", 0, 80, 40],
-  ["CUP_B_MCV80_GB_W", 0, 55, 40],
-  ["CUP_B_MCV80_GB_W_SLAT", 0, 55, 50],
-  ["CUP_B_LAV25_USMC", 0, 45, 40],
-  ["CUP_B_AAV_USMC", 0, 50, 60],
-  ["CUP_B_M2A3Bradley_USA_W", 0, 85, 100],
-  ["CUP_B_M6LineBacker_USA_W", 0, 85, 100],
-  ["CUP_B_M270_HE_USA", 0, 200, 200],
-  ["CUP_B_M1A1_Woodland_USMC", 0, 165, 170],
-  ["CUP_B_M1A2_TUSK_MG_USMC", 0, 170, 200]
+  ["CUP_B_FV432_Bulldog_GB_W",0,5,30],
+  ["CUP_B_M113_USA",0,10,30],
+  ["CUP_B_M1126_ICV_M2_Woodland",0,20,40],
+  ["CUP_B_M1126_ICV_M2_Woodland_Slat",0,20,40],
+  ["CUP_B_M1126_ICV_MK19_Woodland",0,30,40],
+  ["CUP_B_M1126_ICV_MK19_Woodland_Slat",0,30,40],
+  ["CUP_B_M1128_MGS_Woodland",0,125,40],
+  ["CUP_B_M1135_ATGMV_Woodland",0,80,40],
+  ["CUP_B_MCV80_GB_W",0,55,40],
+  ["CUP_B_MCV80_GB_W_SLAT",0,55,50],
+  ["CUP_B_LAV25_USMC",0,45,40],
+  ["CUP_B_AAV_USMC",0,50,60],
+  ["CUP_B_M2A3Bradley_USA_W",0,85,100],
+  ["CUP_B_M6LineBacker_USA_W",0,85,100],
+  ["CUP_B_M270_HE_USA",0,200,200],
+  ["CUP_B_M1A1_Woodland_USMC",0,165,170],
+  ["CUP_B_M1A2_TUSK_MG_USMC",0,170,200]
 ];
 
 air_vehicles_overwrite = true;
 air_vehicles_extension = [
-  ["B_Heli_Light_01_F", 0, 0, 15],
-  ["B_Heli_Light_01_armed_F", 0, 70, 25],
-  ["CUP_I_UH1H_TK_GUE", 0, 10, 25],
-  ["CUP_B_UH1Y_GUNSHIP_USMC", 0, 70, 35],
-  ["CUP_B_UH60L_Unarmed_FFV_US", 0, 0, 35],
-  ["CUP_B_UH60L_FFV_US", 0, 30, 35],
-  ["CUP_B_SA330_Puma_HC2_BAF", 0, 0, 70],
-  ["CUP_B_AW159_Cannon_RN_Grey", 0, 60, 50],
-  ["CUP_B_AW159_Hellfire_RN_Grey", 0, 160, 130],
-  ["CUP_B_AW159_Unarmed_GB", 0, 0, 40],
-  ["CUP_B_Merlin_HC3A_GB_Armed", 0, 5, 80],
-  ["CUP_B_MV22_USMC_RAMPGUN", 0, 5, 100],
-  ["CUP_B_AH64D_USA", 0, 240, 140],
-  ["B_Heli_Attack_01_F", 0, 120, 170],
-  ["CUP_B_AV8B_GBU12_USMC", 0, 200, 200],
-  ["CUP_B_F35B_AA_USMC", 0, 130, 200],
-  ["CUP_B_CH53E_USMC", 0, 0, 100],
-  ["O_Heli_Transport_04_black_F", 0, 0, 110],
-  ["CUP_B_C130J_USMC", 0, 0, 130]
+  ["B_Heli_Light_01_F",0,0,15],
+  ["B_Heli_Light_01_armed_F",0,70,25],
+  ["CUP_I_UH1H_TK_GUE",0,10,25],
+  ["CUP_B_UH1Y_GUNSHIP_USMC",0,70,35],
+  ["CUP_B_UH60L_Unarmed_FFV_US",0,0,35],
+  ["CUP_B_UH60L_FFV_US",0,30,35],
+  ["CUP_B_SA330_Puma_HC2_BAF",0,0,70],
+  ["CUP_B_AW159_Cannon_RN_Grey",0,60,50],
+  ["CUP_B_AW159_Hellfire_RN_Grey",0,160,130],
+  ["CUP_B_AW159_Unarmed_GB",0,0,40],
+  ["CUP_B_Merlin_HC3A_GB_Armed",0,5,80],
+  ["CUP_B_MV22_USMC_RAMPGUN",0,5,100],
+  ["CUP_B_AH64D_USA",0,240,140],
+  ["B_Heli_Attack_01_F",0,120,170],
+  ["CUP_B_AV8B_GBU12_USMC",0,200,200],
+  ["CUP_B_F35B_AA_USMC",0,130,200],
+  ["CUP_B_CH53E_USMC",0,0,100],
+  ["O_Heli_Transport_04_black_F",0,0,110],
+  ["CUP_B_C130J_USMC",0,0,130]
 ];
 
 static_vehicles_overwrite = true;
 static_vehicles_extension = [
-  ["fp_static_m2_minitripod_b", 0, 10, 5],
-  ["fp_static_m2_b", 0, 10, 5],
-  ["fp_static_mk19_b", 0, 20, 5],
-  ["fp_static_m252_b", 0, 50, 5],
-  ["fp_static_tow_b", 0, 40, 5],
-  ["B_static_AT_F", 0, 40, 5],
-  ["B_static_AA_F", 0, 40, 5],
-  ["CUP_B_M119_USMC", 0, 120, 15]
+  ["fp_static_m2_minitripod_b",0,10,5],
+  ["fp_static_m2_b",0,10,5],
+  ["fp_static_mk19_b",0,20,5],
+  ["fp_static_m252_b",0,50,5],
+  ["fp_static_tow_b",0,40,5],
+  ["B_static_AT_F",0,40,5],
+  ["B_static_AA_F",0,40,5],
+  ["CUP_B_M119_USMC",0,120,15]
 ];
 
 buildings_overwrite = true;
@@ -167,7 +167,7 @@ buildings_extension = [
   ["Land_Pallet_MilBoxes_F",0,0,0],
   ["Land_PaperBox_open_full_F",0,0,0],
   ["Land_ClutterCutter_large_F",0,0,0],
-  ["Box_IND_WpsSpecial_F", 0, 0, 0]
+  ["Box_IND_WpsSpecial_F",0,0,0]
 ];
 
 support_vehicles_overwrite = false; // If you're going to overwrite this, make sure you have at least Arsenal_typename, Respawn_truck_typename, FOB_box_typename and FOB_truck_typename in there

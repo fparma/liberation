@@ -29,3 +29,7 @@ If the gun is an M2 HMG or an MK19 GMG that is CROWS operated, Add + 10 to the r
 
 
 ## Fuel Calculation Table
+### Unit Capacity
+For every slot inside the vehicle, add 1 Fuel to the cost.
+
+### Armor / Hitpoints
