@@ -1,28 +1,22 @@
 
 _vehicle_array_list = [
-  ["B_Quadbike_01_F", 0, 0, 1],
-  ["B_G_Offroad_01_F", 0, 0, 3],
-  ["B_G_Offroad_01_armed_F", 0, 10, 3],
-  ["CUP_B_LR_Transport_GB_W", 0, 0, 3],
-  ["B_Truck_01_transport_F", 0, 0, 5],
-  ["B_Truck_01_covered_F", 0, 0, 5],
-  ["CUP_B_HMMWV_Unarmed_USMC", 0, 0, 5],
-  ["CUP_B_HMMWV_M1114_USMC", 0, 5, 5],
-  ["CUP_B_HMMWV_M2_USMC", 0, 10, 5],
-  ["CUP_B_HMMWV_MK19_USMC", 0, 20, 5],
-  ["CUP_B_HMMWV_SOV_USA", 0, 25, 3],
-  ["CUP_B_HMMWV_TOW_USMC", 0, 40, 5],
-  ["CUP_B_HMMWV_Avenger_USMC", 0, 50, 5],
-  ["B_MRAP_01_F", 0, 0, 20],
-  ["B_MRAP_01_hmg_F", 0, 20, 20],
-  ["B_MRAP_01_gmg_F", 0, 30, 20],
-  ["CUP_B_RG31_M2_OD_USMC", 0, 10, 15],
-  ["CUP_B_RG31_M2_GC_USMC", 0, 10, 25],
-  ["CUP_B_Dingo_GER_Wdl", 0, 20, 15],
-  ["CUP_B_Dingo_GL_GER_Wdl", 0, 30, 15],
-  ["CUP_B_Ridgback_GMG_GB_W", 0, 20, 20],
-  ["CUP_B_Ridgback_HMG_GB_W", 0, 10, 20],
-  ["CUP_B_Mastiff_GMG_GB_W", 0, 20, 30]
+["CUP_B_FV432_Bulldog_GB_W",0,5,46],
+["CUP_B_M113_USA",0,10,24],
+["CUP_B_M1126_ICV_M2_Woodland",0,20,36],
+["CUP_B_M1126_ICV_M2_Woodland_Slat",0,20,41],
+["CUP_B_M1126_ICV_MK19_Woodland",0,30,36],
+["CUP_B_M1126_ICV_MK19_Woodland_Slat",0,30,41],
+["CUP_B_M1128_MGS_Woodland",0,125,28],
+["CUP_B_M1135_ATGMV_Woodland",0,80,28],
+["CUP_B_MCV80_GB_W",0,55,40],
+["CUP_B_MCV80_GB_W_SLAT",0,55,50],
+["CUP_B_LAV25_USMC",0,45,24],
+["CUP_B_AAV_USMC",0,50,43],
+["CUP_B_M2A3Bradley_USA_W",0,85,59],
+["CUP_B_M6LineBacker_USA_W",0,85,53],
+["CUP_B_M270_HE_USA",0,200,19],
+["CUP_B_M1A1_Woodland_USMC",0,165,88],
+["CUP_B_M1A2_TUSK_MG_USMC",0,170,103]
 ];
 
 _resultArray = [];
@@ -42,10 +36,14 @@ _resultArray = [];
   _slots = _slots_1 + _slots_2 + _slots_3 + _slots_4;
 
   _calculated = (ceil (_armor_number / 10)) + _slots;
-  _resultString = format["Armor: %1, Slots: %2, Calculated Armor: %3", _armor_number, _slots, _calculated];
+
+  if (_obj isKindOf "Wheeled_APC" || _obj isKindOf "Tank" || _obj isKindOf "Air") then {
+    _calculated = (floor ((getMass _obj) / 800) + _calculated);
+  };
+
   _resultArray pushBack [_vehicle, _manpower, _ammo, _calculated];
 
   deleteVehicle _obj;
-} forEach light_vehicles_extension;
+} forEach _vehicle_array_list;
 
 copyToClipboard str _resultArray;
