@@ -402,6 +402,7 @@ elite_vehicles_extension = [
 
 // Blacklisted arsenal items such as deployable weapons  that should be bought instead
 // Useless if you're using a predefined arsenal in arsenal.sqf
+// This only works for backpacks
 blacklisted_from_arsenal_extension = [
   "fp_static_bag_weapon_tow",
   "fp_static_bag_weapon_m252",
@@ -436,8 +437,7 @@ blacklisted_from_arsenal_extension = [
   "CUP_B_SPG9_Gun_Bag",
   "CUP_B_SPG9_Tripod_Bag",
   "CUP_B_Tow_Gun_Bag",
-  "CUP_B_TOW_Tripod_Bag",
-  "HLC_wp_M134Painless"
+  "CUP_B_TOW_Tripod_Bag"
 ];
 
 // Configuration for ammo boxes transport
