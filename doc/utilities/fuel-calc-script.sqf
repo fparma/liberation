@@ -1,22 +1,24 @@
 
 _vehicle_array_list = [
-["CUP_B_FV432_Bulldog_GB_W",0,5,46],
-["CUP_B_M113_USA",0,10,24],
-["CUP_B_M1126_ICV_M2_Woodland",0,20,36],
-["CUP_B_M1126_ICV_M2_Woodland_Slat",0,20,41],
-["CUP_B_M1126_ICV_MK19_Woodland",0,30,36],
-["CUP_B_M1126_ICV_MK19_Woodland_Slat",0,30,41],
-["CUP_B_M1128_MGS_Woodland",0,125,28],
-["CUP_B_M1135_ATGMV_Woodland",0,80,28],
-["CUP_B_MCV80_GB_W",0,55,40],
-["CUP_B_MCV80_GB_W_SLAT",0,55,50],
-["CUP_B_LAV25_USMC",0,45,24],
-["CUP_B_AAV_USMC",0,50,43],
-["CUP_B_M2A3Bradley_USA_W",0,85,59],
-["CUP_B_M6LineBacker_USA_W",0,85,53],
-["CUP_B_M270_HE_USA",0,200,19],
-["CUP_B_M1A1_Woodland_USMC",0,165,88],
-["CUP_B_M1A2_TUSK_MG_USMC",0,170,103]
+["B_Heli_Light_01_F",0,0,15],
+["B_Heli_Light_01_armed_F",0,70,25],
+["CUP_I_UH1H_TK_GUE",0,10,25],
+["CUP_B_UH1Y_GUNSHIP_USMC",0,70,35],
+["CUP_B_UH60L_Unarmed_FFV_US",0,0,35],
+["CUP_B_UH60L_FFV_US",0,30,35],
+["CUP_B_SA330_Puma_HC2_BAF",0,0,70],
+["CUP_B_AW159_Cannon_RN_Grey",0,60,50],
+["CUP_B_AW159_Hellfire_RN_Grey",0,160,130],
+["CUP_B_AW159_Unarmed_GB",0,0,40],
+["CUP_B_Merlin_HC3A_GB_Armed",0,5,80],
+["CUP_B_MV22_USMC_RAMPGUN",0,5,100],
+["CUP_B_AH64D_USA",0,240,140],
+["B_Heli_Attack_01_F",0,120,170],
+["CUP_B_AV8B_GBU12_USMC",0,200,200],
+["CUP_B_F35B_AA_USMC",0,130,200],
+["CUP_B_CH53E_USMC",0,0,100],
+["O_Heli_Transport_04_black_F",0,0,110],
+["CUP_B_C130J_USMC",0,0,130]
 ];
 
 _resultArray = [];
@@ -37,8 +39,11 @@ _resultArray = [];
 
   _calculated = (ceil (_armor_number / 10)) + _slots;
 
-  if (_obj isKindOf "Wheeled_APC" || _obj isKindOf "Tank" || _obj isKindOf "Air") then {
+  if (_obj isKindOf "Wheeled_APC" || _obj isKindOf "Tank") then {
     _calculated = (floor ((getMass _obj) / 800) + _calculated);
+  };
+  if (_obj isKindOf "Air") then {
+    _calculated = (floor ((getMass _obj) / 200) + _calculated);
   };
 
   _resultArray pushBack [_vehicle, _manpower, _ammo, _calculated];
