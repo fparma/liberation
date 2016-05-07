@@ -104,7 +104,7 @@ air_vehicles_extension = [
   ["CUP_B_AV8B_GBU12_USMC", 0, 200, 200],
   ["CUP_B_F35B_AA_USMC", 0, 130, 200],
   ["CUP_B_CH53E_USMC", 0, 0, 100],
-  ["CUP_B_CH47F_GB", 0, 0, 110],
+  ["O_Heli_Transport_04_black_F", 0, 0, 110],
   ["CUP_B_C130J_USMC", 0, 0, 130]
 ];
 
