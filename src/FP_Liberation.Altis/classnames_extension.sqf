@@ -54,7 +54,7 @@ light_vehicles_extension = [
   ["CUP_B_HMMWV_Avenger_USMC", 0, 50, 5],
   ["B_MRAP_01_F", 0, 0, 20],
   ["B_MRAP_01_hmg_F", 0, 20, 20],
-  ["B_MRAP_01_gmg_F", 0, 30, 20]
+  ["B_MRAP_01_gmg_F", 0, 30, 20],
   ["CUP_B_RG31_M2_OD_USMC", 0, 10, 15],
   ["CUP_B_RG31_M2_GC_USMC", 0, 10, 25],
   ["CUP_B_Dingo_GER_Wdl", 0, 20, 15],
