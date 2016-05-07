@@ -79,16 +79,16 @@ heavy_vehicles_extension = [
   ["CUP_B_M2A3Bradley_USA_W", 0, 100, 100],
   ["CUP_B_M6LineBacker_USA_W", 0, 80, 100],
   ["CUP_B_M270_HE_USA", 0, 170, 200],
-  ["CUP_B_M1A1_Woodland_USMC", 0, 130, 170],
-  ["CUP_B_M1A2_TUSK_MG_USMC", 0, 150, 200]
+  ["CUP_B_M1A1_Woodland_USMC", 0, 150, 170],
+  ["CUP_B_M1A2_TUSK_MG_USMC", 0, 180, 200]
 ];
 
 air_vehicles_overwrite = true;
 air_vehicles_extension = [
   ["B_Heli_Light_01_F", 0, 0, 15],
-  ["B_Heli_Light_01_armed_F", 0, 20, 25],
+  ["B_Heli_Light_01_armed_F", 0, 50, 25],
   ["CUP_I_UH1H_TK_GUE", 0, 10, 25],
-  ["CUP_B_UH1Y_GUNSHIP_USMC", 0, 20, 25],
+  ["CUP_B_UH1Y_GUNSHIP_USMC", 0, 50, 35],
   ["CUP_B_UH60L_Unarmed_FFV_US", 0, 0, 35],
   ["CUP_B_UH60L_FFV_US", 0, 20, 35],
   ["CUP_B_SA330_Puma_HC2_BAF", 0, 0, 70],
@@ -97,12 +97,12 @@ air_vehicles_extension = [
   ["CUP_B_AW159_Unarmed_GB", 0, 0, 40],
   ["CUP_B_Merlin_HC3A_GB_Armed", 0, 10, 80],
   ["CUP_B_MV22_USMC_RAMPGUN", 0, 5, 100],
-  ["CUP_B_AH64D_USA", 0, 130, 140],
-  ["B_Heli_Attack_01_F", 0, 140, 170],
+  ["CUP_B_AH64D_USA", 0, 150, 140],
+  ["B_Heli_Attack_01_F", 0, 150, 170],
   ["CUP_B_AV8B_GBU12_USMC", 0, 200, 200],
   ["CUP_B_F35B_AA_USMC", 0, 130, 200],
   ["CUP_B_CH53E_USMC", 0, 0, 100],
-  ["CUP_B_C130J_USMC", 0, 130]
+  ["CUP_B_C130J_USMC", 0, 0, 130]
 ];
 
 static_vehicles_overwrite = true;
@@ -166,13 +166,23 @@ buildings_extension = [
   ["Land_ClutterCutter_large_F",0,0,0]
 ];
 
-support_vehicles_overwrite = false; // If you're going to overwrite this, make sure you have at least Arsenal_typename, Respawn_truck_typename, FOB_box_typename and FOB_truck_typename in there
+support_vehicles_overwrite = true; // If you're going to overwrite this, make sure you have at least Arsenal_typename, Respawn_truck_typename, FOB_box_typename and FOB_truck_typename in there
 support_vehicles_extension = [
-  ["JNS_Skycrane_Pod_Bench_BLU_Black", 5, 0, 0],
-  ["JNS_Skycrane_Pod_Ammo_BLU_Black", 5, 0, 0],
-  ["JNS_Skycrane_Pod_Medical_BLU_Black", 5, 0, 0],
-  ["JNS_Skycrane_Pod_Repair_BLU_Black", 5, 0, 0],
-  ["JNS_Skycrane_Pod_Transport_BLU_Black", 5, 0, 0]
+  ["Box_IND_WpsSpecial_F", 5, 0, 0],
+  [Arsenal_typename,10,0,0],
+  [Respawn_truck_typename,20,0,5],
+  [FOB_box_typename,30,50,0],
+  [FOB_truck_typename,30,50,5],
+  ["B_APC_Tracked_01_CRV_F",0,30,10],
+  ["C_Offroad_01_repair_F",5,0,2],
+  ["B_Truck_01_Repair_F",10,0,5],
+  ["B_Truck_01_fuel_F",10,0,5],
+  ["B_Truck_01_ammo_F",10,0,5],
+  ["B_Slingload_01_Repair_F",5,0,0],
+  ["B_Slingload_01_Fuel_F",5,0,0],
+  ["B_Slingload_01_Ammo_F",5,0,0],
+  ["Box_NATO_AmmoVeh_F",0,154,0],
+  ["Box_East_AmmoVeh_F",0,115,0]
 ];
 
 // All the UAVs must be declared here, otherwise there shall be UAV controlling issues. Namely: you won't be able to control them.
