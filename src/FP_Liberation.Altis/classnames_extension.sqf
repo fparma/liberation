@@ -57,11 +57,15 @@ light_vehicles_extension = [
   ["B_MRAP_01_gmg_F",0,30,19],
   ["CUP_B_RG31_M2_OD_USMC",0,10,48],
   ["CUP_B_RG31_M2_GC_USMC",0,10,48],
-  ["CUP_B_Dingo_GER_Wdl",0,20,21],
-  ["CUP_B_Dingo_GL_GER_Wdl",0,30,21],
   ["CUP_B_Ridgback_GMG_GB_W",0,20,27],
   ["CUP_B_Ridgback_HMG_GB_W",0,10,27],
-  ["CUP_B_Mastiff_GMG_GB_W",0,20,31]
+  ["CUP_B_Mastiff_GMG_GB_W",0,20,31],
+  ["CUP_B_BAF_Coyote_GMG_W",0,40,30],
+  ["CUP_B_BAF_Coyote_L2A1_W",0,30,30],
+  ["CUP_B_Jackal2_GMG_GB_W",0,40,25],
+  ["CUP_B_Jackal2_L2A1_GB_W",0,30,25],
+  ["CUP_B_LR_Special_GMG_GB_W",0,30,20],
+  ["CUP_B_LR_Special_M2_GB_W",0,20,20]
 ];
 
 heavy_vehicles_overwrite = true;
@@ -105,7 +109,10 @@ air_vehicles_extension = [
   ["CUP_B_F35B_AA_USMC",0,130,200],
   ["CUP_B_CH53E_USMC",0,0,100],
   ["O_Heli_Transport_04_black_F",0,0,110],
-  ["CUP_B_C130J_USMC",0,0,130]
+  ["CUP_B_C130J_USMC",0,0,130],
+  ["CUP_B_C130J_Cargo_GB",0,0,130],
+  ["B_Heli_Transport_03_unarmed_F",0,0,90],
+  ["B_Plane_CAS_01_F",0,260,220]
 ];
 
 static_vehicles_overwrite = true;
