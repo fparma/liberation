@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7732.6421,44.241459,14872.469};
-		dir[]={0.68898708,-0.51328385,0.51170361};
-		up[]={0.41206896,0.85821801,0.30603942};
-		aside[]={0.59623766,-7.8929588e-008,-0.80280864};
+		pos[]={7710.5513,44.241459,14909.758};
+		dir[]={-0.71072137,-0.38818413,-0.58668512};
+		up[]={-0.29936787,0.92157739,-0.24712205};
+		aside[]={-0.63660502,2.6170164e-007,0.77119362};
 	};
 };
 binarizationWanted=0;
@@ -278,7 +278,7 @@ class AddonsMetaData
 randomSeed=7060701;
 class ScenarioData
 {
-	author="Applejakerie";
+	author="Kaukassus";
 	onLoadMission="Tanoa Edit By KilrBe3,Jus61 (0.923)                                               Tanoa Edit By Applejakerie (0.924)";
 	class Header
 	{
@@ -548,7 +548,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="@STR_MISSION_TITLE";
+		briefingName="Comfy Liberation";
 		overviewText="@STR_MISSION_DESCRIPTION";
 		resistanceWest=0;
 		resistanceEast=1;

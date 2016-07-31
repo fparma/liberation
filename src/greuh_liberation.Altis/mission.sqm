@@ -209,7 +209,7 @@ class AddonsMetaData
 randomSeed=2008318;
 class ScenarioData
 {
-	author="Comfy Baguette";
+	author="Kaukassus";
 };
 class CustomAttributes
 {
@@ -242,7 +242,7 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="@STR_MISSION_TITLE";
+		briefingName="Comfy Liberation";
 		overviewText="@STR_MISSION_DESCRIPTION";
 		resistanceEast=1;
 		timeOfChanges=28800;
@@ -3772,6 +3772,7 @@ class Mission
 			};
 			id=360;
 			type="Land_HelipadCircle_F";
+			atlOffset=-7.6293945e-006;
 		};
 		class Item361
 		{
@@ -3807,7 +3808,7 @@ class Mission
 			};
 			id=362;
 			type="CamoNet_BLUFOR_big_F";
-			atlOffset=0.0060882568;
+			atlOffset=0.0060958862;
 		};
 		class Item363
 		{
@@ -3843,7 +3844,7 @@ class Mission
 			};
 			id=364;
 			type="Land_PortableLight_double_F";
-			atlOffset=0.015457153;
+			atlOffset=0.015449524;
 		};
 		class Item365
 		{
@@ -3915,7 +3916,7 @@ class Mission
 			};
 			id=368;
 			type="Land_HBarrierBig_F";
-			atlOffset=0.00039672852;
+			atlOffset=0.00040435791;
 		};
 		class Item369
 		{
@@ -3969,7 +3970,7 @@ class Mission
 			};
 			id=371;
 			type="Land_Cargo_HQ_V1_F";
-			atlOffset=0.0073547363;
+			atlOffset=0.0073623657;
 		};
 		class Item372
 		{
@@ -4023,7 +4024,7 @@ class Mission
 			};
 			id=374;
 			type="Land_HBarrierBig_F";
-			atlOffset=0.0044174194;
+			atlOffset=0.0044250488;
 		};
 		class Item375
 		{
@@ -4059,7 +4060,7 @@ class Mission
 			};
 			id=376;
 			type="Land_HBarrierBig_F";
-			atlOffset=0.0062866211;
+			atlOffset=0.0062942505;
 		};
 		class Item377
 		{
@@ -4287,6 +4288,7 @@ class Mission
 			};
 			id=389;
 			type="PortableHelipadLight_01_blue_F";
+			atlOffset=-7.6293945e-006;
 		};
 		class Item390
 		{
@@ -4394,7 +4396,7 @@ class Mission
 			};
 			id=395;
 			type="Land_HBarrierBig_F";
-			atlOffset=0.01335907;
+			atlOffset=0.01335144;
 		};
 		class Item396
 		{
@@ -4464,6 +4466,7 @@ class Mission
 			};
 			id=399;
 			type="Land_HelipadCircle_F";
+			atlOffset=-7.6293945e-006;
 		};
 		class Item400
 		{
@@ -4519,6 +4522,7 @@ class Mission
 			};
 			id=402;
 			type="B_Heli_Light_01_F";
+			atlOffset=7.6293945e-006;
 		};
 		class Item403
 		{
@@ -4557,6 +4561,7 @@ class Mission
 			};
 			id=404;
 			type="B_Heli_Light_01_F";
+			atlOffset=7.6293945e-006;
 		};
 		class Item405
 		{
@@ -4631,6 +4636,7 @@ class Mission
 			};
 			id=408;
 			type="C_Heli_Light_01_civil_F";
+			atlOffset=0.013065338;
 		};
 		class Item409
 		{
@@ -5192,12 +5198,14 @@ class Mission
 					};
 					id=445;
 					type="B_Soldier_lite_F";
+					atlOffset=7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=444;
+			atlOffset=7.6293945e-006;
 		};
 		class Item431
 		{
@@ -5223,12 +5231,14 @@ class Mission
 					};
 					id=447;
 					type="B_Helipilot_F";
+					atlOffset=7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=446;
+			atlOffset=7.6293945e-006;
 		};
 		class Item432
 		{
@@ -5285,12 +5295,14 @@ class Mission
 					};
 					id=451;
 					type="B_Soldier_lite_F";
+					atlOffset=-7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=450;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item434
 		{
@@ -5308,7 +5320,7 @@ class Mission
 						angles[]={6.2365522,0.68764925,0.046684284};
 					};
 					side="West";
-					flags=6;
+					flags=2;
 					class Attributes
 					{
 						skill=0.60000002;
@@ -5317,12 +5329,14 @@ class Mission
 					};
 					id=453;
 					type="B_officer_F";
+					atlOffset=0.8466568;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=452;
+			atlOffset=0.8466568;
 		};
 		class Item435
 		{
@@ -5379,12 +5393,14 @@ class Mission
 					};
 					id=457;
 					type="B_Helipilot_F";
+					atlOffset=-7.6293945e-006;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=456;
+			atlOffset=-7.6293945e-006;
 		};
 		class Item437
 		{
