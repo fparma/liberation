@@ -145,7 +145,6 @@ randomSeed=7060701;
 class ScenarioData
 {
 	author="Kaukassus";
-	onLoadMission="Tanoa Edit By KilrBe3,Jus61 (0.923)                                               Tanoa Edit By Applejakerie (0.924)";
 	disabledAI=1;
 	class Header
 	{
@@ -417,9 +416,8 @@ class Mission
 	{
 		briefingName="Comfy Liberation";
 		overviewText="@STR_MISSION_DESCRIPTION";
-		resistanceWest=0;
 		resistanceEast=1;
-		timeOfChanges=1800.0002;
+		timeOfChanges=28800;
 		startWeather=0;
 		startWind=0.1;
 		startWaves=0.1;
@@ -431,171 +429,13 @@ class Mission
 		lightningsForced=1;
 		wavesForced=1;
 		windForced=1;
-		year=2035;
+		year=2038;
 		month=6;
 		day=6;
+		hour=6;
 		minute=0;
-		startFogBase=250;
-		forecastFogBase=250;
-		startFogDecay=0.014;
-		forecastFogDecay=0.014;
-		class CustomAttributes
-		{
-			name="Intel";
-			class Attribute0
-			{
-				property="Enh_rainbowStrength";
-				expression="0 setRainBow _value";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=0.34999999;
-					};
-				};
-			};
-			class Attribute1
-			{
-				property="Enh_disableGrass";
-				expression="if(_value) then {50 remoteExec ['setTerrainGrid',[0,-2] select (isMultiplayer && isDedicated),true]}";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute2
-			{
-				property="Enh_viewDistance";
-				expression="if (!is3DEN && (_value > 0)) then {_value remoteExec ['setViewDistance',[0,-2] select (isMultiplayer && isDedicated),true]}";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=-1;
-					};
-				};
-			};
-			class Attribute3
-			{
-				property="Enh_fogDecay";
-				expression="missionNamespace setVariable ['Enh_fogDecay',_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute4
-			{
-				property="Enh_fogValue";
-				expression="				if (_value > 0) then				{					_value spawn					{						waitUntil {time > 0.2};						0 setFog [_this,missionNamespace getVariable 'Enh_fogDecay',missionNamespace getVariable 'Enh_fogBase'];					};				};			";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=0;
-					};
-				};
-			};
-			class Attribute5
-			{
-				property="Enh_fogBase";
-				expression="missionNamespace setVariable ['Enh_fogBase',_value]";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"STRING"
-							};
-						};
-						value="0";
-					};
-				};
-			};
-			class Attribute6
-			{
-				property="Enh_timeMultiplier";
-				expression="if (!is3DEN) then {setTimeMultiplier _value}";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"SCALAR"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			class Attribute7
-			{
-				property="Enh_enableEnvironment";
-				expression="if (!is3DEN) then {enableEnvironment _value};";
-				class Value
-				{
-					class data
-					{
-						class type
-						{
-							type[]=
-							{
-								"BOOL"
-							};
-						};
-						value=1;
-					};
-				};
-			};
-			nAttributes=8;
-		};
+		startFogDecay=0.013;
+		forecastFogDecay=0.013;
 	};
 	class Entities
 	{
