@@ -27,5 +27,5 @@ if (!isDedicated && hasInterface) then {
 	waitUntil { alive player };
 	[] call compileFinal preprocessFileLineNumbers "scripts\client\init_client.sqf";
 } else {
-	setViewDistance 1600;
+	setViewDistance 2000;
 };

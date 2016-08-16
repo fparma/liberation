@@ -1,4 +1,4 @@
-// If left empty, everything is allowed, otherwise only whitelisted items will be available
+// If left empty, everything is allowed, otherwise only whitelisted items will be available.
 GRLIB_arsenal_weapons = [
 
 ];

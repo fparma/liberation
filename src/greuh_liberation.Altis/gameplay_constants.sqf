@@ -24,12 +24,12 @@ GRLIB_battlegroup_cap = 150							* GRLIB_unitcap;
 GRLIB_patrol_cap = 150								* GRLIB_unitcap;
 GRLIB_battlegroup_size = 6							* (sqrt GRLIB_unitcap) * (sqrt GRLIB_csat_aggressivity);
 GRLIB_civilians_amount = 10 						* GRLIB_civilian_activity;
-GRLIB_fob_range = 125;
+GRLIB_fob_range = 800;
 GRLIB_cleanup_delay = 1200;
 GRLIB_surrender_chance = 80;
-GRLIB_secondary_missions_costs = [ 10, 10, 10 ];
-GRLIB_halo_altitude = 4000;
-GRLIB_civ_killing_penalty = 20;
+GRLIB_secondary_missions_costs = [ 10, 10, 10 ];  // [FOB, Convoy, SAR]
+GRLIB_halo_altitude = 1800;
+GRLIB_civ_killing_penalty = 15;
 
 if ( GRLIB_blufor_cap > 100 ) then { GRLIB_blufor_cap = 100 }; // Don't forget that the human commander manages those, not the server
 
