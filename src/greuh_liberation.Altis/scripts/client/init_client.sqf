@@ -50,10 +50,6 @@ write_credit_line = compileFinal preprocessFileLineNumbers "scripts\client\ui\wr
 
 player addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
 
-{
-	[_x] call BIS_fnc_drawCuratorLocations;
-} foreach allCurators;
-
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\ui\intro.sqf";
 
 [] execVM "onPlayerRespawn.sqf";
