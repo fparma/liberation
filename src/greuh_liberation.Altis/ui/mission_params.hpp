@@ -66,12 +66,6 @@ class Params
 		texts[] = { $STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED };
 		default = 0;
 	};
-	class Revive {
-		title = $STR_PARAMS_REVIVE;
-		values[] = { 3, 2, 1, 0 };
-		texts[] = { $STR_PARAMS_REVIVE3, $STR_PARAMS_REVIVE2, $STR_PARAMS_REVIVE1, $STR_PARAMS_DISABLED };
-		default = 3;
-	};
 	class Civilians{
 		title = $STR_PARAMS_CIVILIANS;
 		values[] = {0,0.5,1,2};
@@ -130,7 +124,7 @@ class Params
 		title = $STR_PARAM_SQUAD_SIZE;
 		values[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
 		texts[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
-		default = 10;
+		default = 16;
 	};
 	class Space2 {
 		title = "";
@@ -154,7 +148,7 @@ class Params
 		title = $STR_CLEANUP_PARAM;
 		values[] = { 0,1,2,4 };
 		texts[] = { $STR_PARAMS_DISABLED, $STR_CLEANUP_PARAM1, $STR_CLEANUP_PARAM2, $STR_CLEANUP_PARAM3 };
-		default = 2;
+		default = 0;
 	};
 	class Introduction {
 		title = $STR_PARAMS_INTRO;
@@ -166,7 +160,7 @@ class Params
 		title = $STR_PARAMS_DEPLOYMENTCAMERA;
 		values[] = { 1, 0 };
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 1;
+		default = 0;
 	};
 	class FirstFob {
 		title = $STR_PARAMS_FIRSTFOB;
@@ -196,6 +190,6 @@ class Params
 		title = "Disable Remote Sensors (experimental!)";
 		values[] = {0,1,2};
 		texts[] = {"No","Disable for clients without local AIs","Disable for all clients"};
-		default = 0;
+		default = 3;
 	};
 };
