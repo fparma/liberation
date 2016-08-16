@@ -16,20 +16,9 @@ private _scout_vehicle = [ [ _spawnpos, 30, 0 ] call BIS_fnc_relPos, opfor_mrap,
 private _escort_vehicle = [ [ _spawnpos, 10, 0 ] call BIS_fnc_relPos, opfor_vehicles_low_intensity call BIS_fnc_selectRandom, true, false, false ] call F_libSpawnVehicle;
 private _transport_vehicle = [ [ _spawnpos, 10, 180 ] call BIS_fnc_relPos, opfor_ammobox_transport, true, true, false ] call F_libSpawnVehicle;
 
-private _boxes_amount = 2;
-
-if ( _boxes_amount == 0 ) exitWith { diag_log "Opfor ammobox truck classname doesn't allow for ammobox transport, correct your classnames.sqf"; };
-
 GRLIB_secondary_in_progress = 1; publicVariable "GRLIB_secondary_in_progress";
 
-private _boxes_loaded = 0;
-
-while { _boxes_loaded < _boxes_amount } do {
-	_boxes_loaded = _boxes_loaded + 1;
-	sleep 0.5;
-	ammobox_o_typename createVehicle ([ _spawnpos, 15, 135 ] call BIS_fnc_relPos);
-	_next_box addMPEventHandler ['MPKilled', {_this spawn kill_manager}];
-};
+["ace_addCargo", [ammobox_o_typename, _transport_vehicle, 2]] call CBA_fnc_localEvent;
 
 sleep 0.5;
 

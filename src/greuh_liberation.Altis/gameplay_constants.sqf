@@ -27,7 +27,7 @@ GRLIB_civilians_amount = 10 						* GRLIB_civilian_activity;
 GRLIB_fob_range = 800;
 GRLIB_cleanup_delay = 1200;
 GRLIB_surrender_chance = 80;
-GRLIB_secondary_missions_costs = [ 10, 10, 10 ];  // [FOB, Convoy, SAR]
+GRLIB_secondary_missions_costs = [ 0, 0, 0 ];  // [FOB, Convoy, SAR]
 GRLIB_halo_altitude = 1800;
 GRLIB_civ_killing_penalty = 15;
 
