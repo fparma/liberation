@@ -1,5 +1,4 @@
 private _convoy_destinations_markers = [];
-private _load_box_fnc = compileFinal preprocessFileLineNumbers "scripts\client\ammoboxes\do_load_box.sqf";
 
 while { count _convoy_destinations_markers < 3 } do { _convoy_destinations_markers pushback ([2000,999999,false] call F_findOpforSpawnPoint); };
 
@@ -17,10 +16,7 @@ private _scout_vehicle = [ [ _spawnpos, 30, 0 ] call BIS_fnc_relPos, opfor_mrap,
 private _escort_vehicle = [ [ _spawnpos, 10, 0 ] call BIS_fnc_relPos, opfor_vehicles_low_intensity call BIS_fnc_selectRandom, true, false, false ] call F_libSpawnVehicle;
 private _transport_vehicle = [ [ _spawnpos, 10, 180 ] call BIS_fnc_relPos, opfor_ammobox_transport, true, true, false ] call F_libSpawnVehicle;
 
-private _boxes_amount = 0;
-{
-	if ( _x select 0 == opfor_ammobox_transport ) exitWith { _boxes_amount = (count _x) - 2 };
-} foreach box_transport_config;
+private _boxes_amount = 2;
 
 if ( _boxes_amount == 0 ) exitWith { diag_log "Opfor ammobox truck classname doesn't allow for ammobox transport, correct your classnames.sqf"; };
 
@@ -31,9 +27,7 @@ private _boxes_loaded = 0;
 while { _boxes_loaded < _boxes_amount } do {
 	_boxes_loaded = _boxes_loaded + 1;
 	sleep 0.5;
-	private _next_box = ammobox_o_typename createVehicle ([ _spawnpos, 15, 135 ] call BIS_fnc_relPos);
-	sleep 0.5;
-	[ _next_box, 50 ] call _load_box_fnc;
+	ammobox_o_typename createVehicle ([ _spawnpos, 15, 135 ] call BIS_fnc_relPos);
 	_next_box addMPEventHandler ['MPKilled', {_this spawn kill_manager}];
 };
 

@@ -243,9 +243,3 @@ elite_vehicles_extension = [
 //Blacklisted arsenal items such as deployable weapons that should be bought instead.
 //Note: If you're looking to blacklist many classnames then instead, use arsenal.sqf to build a whitelist of allowed classnames.
 blacklisted_from_arsenal_extension = [];
-//Configuration for ammo boxes to load into transport vehicles.
-//[ "Classname", how far behind the vehicle the boxes should be unloaded, [attachTo position for each box] ].
-//Example: [ "O_T_Truck_03_transport_ghex_F", -6.5, [0,	-0.8,	0.4], [0,	-2.4,	0.4], [0,	-4.0,	0.4] ] = TEMPEST_Transport with option to carry 3 ammo boxes.
-box_transport_config_extension = [
-
-];

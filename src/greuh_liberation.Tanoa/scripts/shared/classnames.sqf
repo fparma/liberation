@@ -2,7 +2,7 @@
 //This text file is to declare the default variables, such as huron_typename, BUILD menu options and enemy spawn lists.
 
 if ( isNil "FOB_typename" ) then { FOB_typename = "Land_Cargo_HQ_V4_F"; };									// BLUFORdefault: "Land_Cargo_HQ_V4_F"					//This is the FOB once deployed.
-if ( isNil "FOB_box_typename" ) then { FOB_box_typename = "B_Slingload_01_Cargo_F"; };						// BLUFORdefault: "B_Slingload_01_Cargo_F"				//A cargo container for the FOB Box option.													
+if ( isNil "FOB_box_typename" ) then { FOB_box_typename = "B_Slingload_01_Cargo_F"; };						// BLUFORdefault: "B_Slingload_01_Cargo_F"				//A cargo container for the FOB Box option.
 if ( isNil "FOB_truck_typename" ) then { FOB_truck_typename = "B_T_Truck_01_box_F"; };						// BLUFORdefault: "B_T_Truck_01_box_F"					//A box truck for the FOB Truck option.
 if ( isNil "Arsenal_typename" ) then { Arsenal_typename = "B_supplyCrate_F"; };								// BLUFORdefault: "B_supplyCrate_F"						//Arsenal Supply Box.
 if ( isNil "Respawn_truck_typename" ) then { Respawn_truck_typename = "B_T_Truck_01_medical_F"; };			// BLUFORdefault: "B_T_Truck_01_medical_F"				//Medical Truck & Mobile Respawn.
@@ -16,7 +16,7 @@ if ( isNil "pilot_classname" ) then { pilot_classname = "B_T_Helipilot_F"; };			
 
 //If you have any other units you want in the BUILD list within Vanilla Apex etc, or want to remove some maybe, then go ahead and add/remove some from here.
 //Example: ["classname",manpower,ammunition,fuel], (Don't include the last , if it's the last in the list. You'll see.)
-//NO MOD CONTENT, LAST WARNING ! 
+//NO MOD CONTENT, LAST WARNING !
 infantry_units = [
 	//NATO(Pacific)
 	["B_T_Soldier_TL_F",3,0,0],							//Team_Leader
@@ -62,7 +62,7 @@ if ( infantry_units_overwrite ) then { infantry_units = infantry_units_extension
 light_vehicles = [
 	["C_KART_01_Blu_F",0,0,1],							//Go-Kart
 	["B_Quadbike_01_F",0,0,1],							//Quadbike
-	["C_Hatchback_01_sport_F",0,0,1],					//Hatchback	
+	["C_Hatchback_01_sport_F",0,0,1],					//Hatchback
 	["B_GEN_Offroad_01_gen_F",0,0,1],					//Gendarmerie_Offroad
 	["B_T_LSV_01_unarmed_F",0,0,2],						//Prowler
 	["B_T_LSV_01_armed_F",0,10,2],						//Prowler_Armed
@@ -119,7 +119,7 @@ air_vehicles = [
 	["B_Plane_CAS_01_F",0,250,40],						//A-164_Wipeout
 	["B_T_VTOL_01_infantry_F",0,0,50],					//V-44_X_Blackfish_Infantry
 	["B_T_VTOL_01_vehicle_F",0,0,50],					//V-44_X_Blackfish_Vehicle
-	["B_T_VTOL_01_armed_F",0,750,50]					//V-44_X_Blackfish_Armed   
+	["B_T_VTOL_01_armed_F",0,750,50]					//V-44_X_Blackfish_Armed
 ];
 if ( isNil "air_vehicles_extension" ) then { air_vehicles_extension = [] };
 if ( isNil "air_vehicles_overwrite" ) then { air_vehicles_overwrite = false };
@@ -184,7 +184,7 @@ buildings = [
 	["Land_HBarrier_01_wall_6_green_F",0,0,0],
 	["Land_HBarrier_01_wall_corner_green_F",0,0,0],
 	["Land_HBarrier_01_wall_corridor_green_F",0,0,0],
-	["Land_HBarrier_01_big_tower_green_F",0,0,0],	
+	["Land_HBarrier_01_big_tower_green_F",0,0,0],
 	["Land_CncBarrierMedium4_F",0,0,0],
 	["Land_CncBarrier_F",0,0,0],
 	["Land_CncWall4_F",0,0,0],
@@ -257,12 +257,12 @@ if ( isNil "vehicle_refuel_sources_extension" ) then { vehicle_refuel_sources_ex
 vehicle_refuel_sources = [] + vehicle_refuel_sources_extension +  [ "B_T_APC_Tracked_01_CRV_F","B_T_Truck_01_fuel_F","B_Slingload_01_Fuel_F" ];
 //Cost of those Commander role premade squads.
 squads = [
-	[blufor_squad_inf_light,20,0,0],						
-	[blufor_squad_inf,25,0,0],								
-	[blufor_squad_at,30,10,0],								
-	[blufor_squad_aa,30,10,0],								
-	[blufor_squad_recon,35,0,0],							
-	[blufor_squad_para,15,0,0]	
+	[blufor_squad_inf_light,20,0,0],
+	[blufor_squad_inf,25,0,0],
+	[blufor_squad_at,30,10,0],
+	[blufor_squad_aa,30,10,0],
+	[blufor_squad_recon,35,0,0],
+	[blufor_squad_para,15,0,0]
 ];
 
 //This part tells the server which unit plays the follow roles. Enemy squads are created from these values also. I don't see why you'd want to change this without it being modded content.
@@ -313,7 +313,7 @@ militia_squad = [
 	"I_C_Soldier_Para_4_F",								//Oppressor(Machine Gun)
 	"I_C_Soldier_Para_3_F",								//Militiaman(Medikit)
 	"I_C_Helipilot_F",									//Helicopter_Pilot
-	//CSAT(Pacific)	
+	//CSAT(Pacific)
 	"O_T_Soldier_F",									//Rifleman
 	"O_T_Soldier_LAT_F",								//Rifleman_RPG
 	"O_T_Soldier_GL_F",									//Grenadier
@@ -426,7 +426,7 @@ opfor_troup_transports = [
 	"O_T_Truck_03_covered_ghex_F",						//Tempest_Transport_Covered
 	"O_T_APC_Wheeled_02_rcws_ghex_F",					//MSE-3_Marid
 	"O_T_APC_Tracked_02_cannon_ghex_F",					//BTR-K_Kamysh
-	"O_Heli_Light_02_unarmed_F"							//PO-30_Orca_Unarmed(Black)	
+	"O_Heli_Light_02_unarmed_F"							//PO-30_Orca_Unarmed(Black)
 ];
 if ( isNil "opfor_troup_transports_extension" ) then { opfor_troup_transports_extension = [] };
 if ( isNil "opfor_troup_transports_overwrite" ) then { opfor_troup_transports_overwrite = false };
@@ -550,18 +550,6 @@ GRLIB_blacklisted_from_arsenal = [
 if ( isNil "blacklisted_from_arsenal_extension" ) then { blacklisted_from_arsenal_extension = [] };
 GRLIB_blacklisted_from_arsenal = [] + blacklisted_from_arsenal_extension + GRLIB_blacklisted_from_arsenal;
 
-//All this part does is tell the mission where and how many boxes can load into what vehicles.
-box_transport_config = [
-	[ "B_T_Truck_01_transport_F", -6.5, [0,	-0.4,	0.4], [0,	-2.1,	0.4], [0,	-3.8,	0.4] ],
-	[ "B_T_Truck_01_covered_F", -6.5, [0,	-0.4,	0.4], [0,	-2.1,	0.4], [0,	-3.8,	0.4] ],
-	[ "O_T_Truck_03_transport_ghex_F", -6.5, [0,	-0.8,	0.4], [0,	-2.4,	0.4], [0,	-4.0,	0.4] ],
-	[ "O_T_Truck_03_covered_ghex_F", -6.5, [0,	-0.8,	0.4], [0,	-2.4,	0.4], [0,	-4.0,	0.4] ],
-	[ "I_Heli_Transport_02_F", -6.5, [0,	4.2,	-1.45], [0,	2.5,	-1.45], [0,	0.8, -1.45], [0,	-0.9, -1.45] ],
-	[ "B_Heli_Transport_03_F", -7.5, [0,	2.2,	-1], [0,	0.8,	-1], [0,	-1.0, -1] ]
-];
-if ( isNil "box_transport_config_extension" ) then { box_transport_config_extension = [] };
-box_transport_config = [] + box_transport_config + box_transport_config_extension;
-
 infantry_units = [ infantry_units ] call F_filterMods;
 light_vehicles = [ light_vehicles ] call F_filterMods;
 heavy_vehicles = [ heavy_vehicles ] call F_filterMods;
@@ -597,10 +585,7 @@ air_vehicles_classnames = [] + opfor_choppers;
 markers_reset = [99999,99999,0];
 zeropos = [0,0,0];
 squads_names = [ localize "STR_LIGHT_RIFLE_SQUAD", localize "STR_RIFLE_SQUAD", localize "STR_AT_SQUAD", localize "STR_AA_SQUAD",  localize "STR_RECON_SQUAD", localize "STR_PARA_SQUAD" ];
-boats_names = [ "B_T_Boat_Transport_01_F", "B_T_Boat_Armed_01_minigun_F" ]; 
-ammobox_transports_typenames = [];
-{ ammobox_transports_typenames pushback (_x select 0) } foreach box_transport_config;
-ammobox_transports_typenames = [ ammobox_transports_typenames , { [ _x ] call F_checkClass } ]  call BIS_fnc_conditionalSelect;
+boats_names = [ "B_T_Boat_Transport_01_F", "B_T_Boat_Armed_01_minigun_F" ];
 elite_vehicles = [ elite_vehicles , { [ _x ] call F_checkClass } ]  call BIS_fnc_conditionalSelect;
 original_resistance = [ "I_C_Soldier_Bandit_5_F","I_C_Soldier_Bandit_4_F","I_C_Soldier_Bandit_7_F","I_C_Soldier_Bandit_3_F","I_C_Soldier_Bandit_6_F","I_C_Soldier_Bandit_8_F","I_C_Soldier_Bandit_2_F","I_C_Soldier_Bandit_1_F","I_C_Pilot_F"];
 opfor_infantry = [opfor_sentry,opfor_rifleman,opfor_grenadier,opfor_squad_leader,opfor_team_leader,opfor_marksman,opfor_machinegunner,opfor_heavygunner,opfor_medic,opfor_rpg,opfor_at,opfor_aa,opfor_officer,opfor_sharpshooter,opfor_sniper,opfor_engineer];

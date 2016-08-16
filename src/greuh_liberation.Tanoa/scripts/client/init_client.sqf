@@ -18,13 +18,11 @@ respawn_lhd = compileFinal preprocessFileLineNumbers "scripts\client\spawn\respa
 spawn_camera = compileFinal preprocessFileLineNumbers "scripts\client\spawn\spawn_camera.sqf";
 cinematic_camera = compileFinal preprocessFileLineNumbers "scripts\client\ui\cinematic_camera.sqf";
 write_credit_line = compileFinal preprocessFileLineNumbers "scripts\client\ui\write_credit_line.sqf";
-do_load_box = compileFinal preprocessFileLineNumbers "scripts\client\ammoboxes\do_load_box.sqf";
 
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\actions\action_manager.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\actions\intel_manager.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\actions\recycle_manager.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\actions\unflip_manager.sqf";
-[] spawn compileFinal preprocessFileLineNumbers "scripts\client\ammoboxes\ammobox_action_manager.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\build\build_overlay.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\build\do_build.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\commander\enforce_whitelist.sqf";

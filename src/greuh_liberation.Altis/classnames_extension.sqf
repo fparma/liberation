@@ -287,11 +287,3 @@ elite_vehicles_extension = [
 // Blacklisted arsenal items such as deployable weapons  that should be bought instead
 // Useless if you're using a predefined arsenal in arsenal.sqf
 blacklisted_from_arsenal_extension = [];
-
-// Configuration for ammo boxes transport
-// First entry: classname
-// Second entry: how far behind the vehicle the boxes should be unloaded
-// Following entries: attachTo position for each box, the number of boxes that can be loaded is derived from the number of entries
-box_transport_config_extension = [
-	[ "greuh_eh101_gr", -6.5, [0,	4.2,	-1.45], [0,	2.5,	-1.45], [0,	0.8, -1.45], [0,	-0.9, -1.45] ]
-];
