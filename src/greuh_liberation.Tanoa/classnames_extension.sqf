@@ -1,21 +1,19 @@
-//This file allows you to add mod content to the mission without conflict issues after each update.
-
 //*** SUPPORT STUFF ***
 
-//Setting a value here will overwrite the original value found from the mission. Do this if you're doing a total mod conversion.
-//Each of these should be unique, the same classnames for different purposes may cause various unpredictable issues with player actions. Or not. Just don't try.
-FOB_typename = nil;									// BLUFORdefault: "Land_Cargo_HQ_V4_F"						//This is the FOB once deployed.
-FOB_box_typename = nil;								// BLUFORdefault: "B_Slingload_01_Cargo_F"					//A cargo container for the FOB Box option.
-FOB_truck_typename = nil;							// BLUFORdefault: "B_T_Truck_01_box_F"						//A box truck for the FOB Truck option.
-Arsenal_typename = nil;								// BLUFORdefault: "B_supplyCrate_F"							//Arsenal Supply Box.
-Respawn_truck_typename = nil;						// BLUFORdefault: "B_T_Truck_01_medical_F"					//Medical Truck & Mobile Respawn.
-huron_typename = nil;								// BLUFORdefault: "B_Heli_Transport_03_F"					//The Mobile Respawn (Spartan-01). Should be able to lift containers/pods.
-ammobox_b_typename = nil;							// BLUFORdefault: "Box_NATO_AmmoVeh_F"						//Friendly ammo crate that factories and bases will spawn.
-ammobox_o_typename = nil;							// BLUFORdefault: "Box_East_AmmoVeh_F"						//Enemy ammo crates you find when capturing sectors.
-opfor_ammobox_transport = nil;						// BLUFORdefault: "O_T_Truck_03_transport_ghex_F"			//Enemy ammo box transport - Make sure this thing can transport ammo boxes (see box_transport_config down below) otherwise things will break!
-commander_classname = nil;							// BLUFORdefault: "B_T_Officer_F"							//An Officer, not sure what for. xD
-crewman_classname = nil;							// BLUFORdefault: "B_T_Crew_F"								//Crew for tanks with crew spawns I imagine.
-pilot_classname = nil;								// BLUFORdefault: "B_T_Helipilot_F"							//Helipilot for helicopters with crew spawns, again, maybe.
+// Setting a value here will overwrite the original value found from the mission. Do this if you're doing a total conversion.
+// Each of these should be unique, the same classnames for different purposes may cause various unpredictable issues with player actions. Or not. Just don't try.
+FOB_typename = nil;
+FOB_box_typename = nil;
+FOB_truck_typename = nil;
+Arsenal_typename = nil;
+Respawn_truck_typename = nil;
+huron_typename = nil;
+ammobox_b_typename = nil;
+ammobox_o_typename = nil;
+opfor_ammobox_transport = nil;
+commander_classname = nil;
+crewman_classname = nil;
+pilot_classname = nil;
 
 //*** FRIENDLIES ***
 
@@ -64,38 +62,38 @@ support_vehicles_extension = [
 ["JNS_Skycrane_Pod_Transport_BLU_Black",5,0,0]
 ];
 
-//All mod content UAVs must be declared here, otherwise there shall be UAV controlling issues. Namely: you won't be able to control them.
+// All the UAVs must be declared here, otherwise there shall be UAV controlling issues. Namely: you won't be able to control them.
 uavs = [
 
 ];
 
-//Pre-made squads for the commander build menu. These shouldn't exceed 10 members and are already declared near the bottom of classnames.sqf!
-	//Light infantry squad.
+// Pre-made squads for the commander build menu. These shouldn't exceed 10 members.
+// Light infantry squad
 blufor_squad_inf_light = [
 
 ];
 
-	//Heavy infantry squad.
+// Heavy infantry squad
 blufor_squad_inf = [
 
 ];
 
-	//AA specialists squad.
-blufor_squad_aa = [
-
-];
-
-	//AT specialists squad.
+// AT specialists squad
 blufor_squad_at = [
 
 ];
 
-	//Force recon squad.
+// AA specialists squad
+blufor_squad_aa = [
+
+];
+
+// Force recon squad
 blufor_squad_recon = [
 
 ];
 
-	//Paratroopers squad.
+// Paratroopers squad
 blufor_squad_para = [
 
 ];
@@ -131,7 +129,7 @@ opfor_fuel_container = nil;
 opfor_ammo_container = nil;
 opfor_flag = nil;
 
-//OPFOR Viper Squad to be used at high alert! 
+//OPFOR Viper Squad to be used at high alert!
 //If you want to use a different high_intensity squad like say, Spetznaz, then don't change the 'opfor_vipertl =' part to something stupid like rus_spetznaz, otherwise you'll break things. Just change the nil variable and use "" around the classname still.
 opfor_vipertl = nil;
 opfor_viperop = nil;
@@ -233,7 +231,7 @@ vehicle_refuel_sources_extension = [
 //Elite vehicles that should be unlocked through military base capture, use this for vanilla vehicles as well. This list is the only reference in this version.
 elite_vehicles_extension = [
 	"B_T_MBT_01_cannon_F",					//M2A1_Slammer
-	"B_T_MBT_01_TUSK_F",					//M2A1_Slammer_UP			
+	"B_T_MBT_01_TUSK_F",					//M2A1_Slammer_UP
 	"B_T_MBT_01_arty_F",					//M4_Scorcher
 	"B_T_MBT_01_mlrs_F",					//M5_Sandstorm_MLRS
 	"B_Heli_Attack_01_F",					//AH-99_Blackfoot
@@ -242,11 +240,9 @@ elite_vehicles_extension = [
 	"JS_JC_FA18F" 							//FA-18_SuperHornet_F
 ];
 
-//Blacklisted arsenal items such as deployable weapons that should be bought instead. 
+//Blacklisted arsenal items such as deployable weapons that should be bought instead.
 //Note: If you're looking to blacklist many classnames then instead, use arsenal.sqf to build a whitelist of allowed classnames.
-blacklisted_from_arsenal_extension = [
-
-];
+blacklisted_from_arsenal_extension = [];
 //Configuration for ammo boxes to load into transport vehicles.
 //[ "Classname", how far behind the vehicle the boxes should be unloaded, [attachTo position for each box] ].
 //Example: [ "O_T_Truck_03_transport_ghex_F", -6.5, [0,	-0.8,	0.4], [0,	-2.4,	0.4], [0,	-4.0,	0.4] ] = TEMPEST_Transport with option to carry 3 ammo boxes.

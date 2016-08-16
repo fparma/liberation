@@ -1,30 +1,21 @@
-// This file allows you to add content to the mission without conflict issues after each update of the original classnames.sqf
-// If you want more modifications to be supported by this file, let's discuss it on the forums.
+//*** SUPPORT STUFF ***
 
-
-
-// *** SUPPORT STUFF ***
-
-// Setting a value here will overwrite the original value found from the mission. Do that if you're doing a total conversion.
+// Setting a value here will overwrite the original value found from the mission. Do this if you're doing a total conversion.
 // Each of these should be unique, the same classnames for different purposes may cause various unpredictable issues with player actions. Or not. Just don't try.
-FOB_typename = nil;						// Default "Land_Cargo_HQ_V1_F";
-FOB_box_typename = nil;					// Default "B_Slingload_01_Cargo_F";
-FOB_truck_typename = nil;				// Default "B_Truck_01_box_F";
-Arsenal_typename = nil;					// Default "B_supplyCrate_F";
-Respawn_truck_typename = nil;			// Default "B_Truck_01_medical_F";
-huron_typename = nil;					// Default "B_Heli_Transport_03_unarmed_F";
-ammobox_b_typename = nil;				// Default "Box_NATO_AmmoVeh_F";
-ammobox_o_typename = nil;				// Default "Box_East_AmmoVeh_F";
-opfor_ammobox_transport = nil;			// Default "O_Truck_03_transport_F";    // Make sure this thing can transport ammo boxes (see box_transport_config down below) otherwise things will break
-commander_classname = nil;				// Default "B_officer_F"
-crewman_classname = nil;				// Default "B_crew_F";
-pilot_classname = nil;					// Default "B_Helipilot_F";
+FOB_typename = nil;
+FOB_box_typename = nil;
+FOB_truck_typename = nil;
+Arsenal_typename = nil;
+Respawn_truck_typename = nil;
+huron_typename = nil;
+ammobox_b_typename = nil;
+ammobox_o_typename = nil;
+opfor_ammobox_transport = nil;
+commander_classname = nil;
+crewman_classname = nil;
+pilot_classname = nil;
 
-
-
-
-
-// *** FRIENDLIES ***
+//*** FRIENDLIES ***
 
 // Each array below represents one page of the build menu
 // Format : [ "classname", manpower, ammo, fuel ]
@@ -246,43 +237,36 @@ opfor_air_extension = [
 
 ];
 
-
-
-
-
-
-
-// Other stuff
-
-// civilians
+//*** OTHER ***
 civilians_overwrite = false;
 civilians_extension = [
 
 ];
 
-// civilian vehicles
 civilian_vehicles_overwrite = false;
 civilian_vehicles_extension = [
 
 ];
 
-// Everything the AI troups should be able to resupply from
+//Everything the AI troups should be able to resupply from.
 ai_resupply_sources_extension = [
 
 ];
 
-// Everything that can resupply other vehicles
+//Everything that can resupply other vehicles.
 vehicle_repair_sources_extension = [
 
 ];
+
 vehicle_rearm_sources_extension = [
 
 ];
+
 vehicle_refuel_sources_extension = [
 
 ];
 
-// Elite vehicles that should be unlocked through military base capture.
+//Elite vehicles that should be unlocked through military base capture, use this for vanilla vehicles as well. This list is the only reference in this version.
 elite_vehicles_extension = [
 	"Steve_MBT_Kuma",
 	"Burnes_FV4034_01",
@@ -302,32 +286,7 @@ elite_vehicles_extension = [
 
 // Blacklisted arsenal items such as deployable weapons  that should be bought instead
 // Useless if you're using a predefined arsenal in arsenal.sqf
-blacklisted_from_arsenal_extension = [
-	"RHS_Podnos_Bipod_Bag",
-	"RHS_Podnos_Gun_Bag",
-	"RHS_Metis_Gun_Bag",
-	"RHS_Metis_Tripod_Bag",
-	"RHS_AGS30_Tripod_Bag",
-	"RHS_AGS30_Gun_Bag",
-	"RHS_DShkM_Gun_Bag",
-	"RHS_DShkM_TripodHigh_Bag",
-	"RHS_DShkM_TripodLow_Bag",
-	"RHS_Kord_Tripod_Bag",
-	"RHS_Kord_Gun_Bag",
-	"RHS_M2_Gun_Bag",
-	"RHS_M2_Tripod_Bag",
-	"rhs_M252_Gun_Bag",
-	"rhs_M252_Bipod_Bag",
-	"RHS_M2_MiniTripod_Bag",
-	"RHS_Mk19_Gun_Bag",
-	"RHS_Mk19_Tripod_Bag",
-	"RHS_NSV_Tripod_Bag",
-	"RHS_NSV_Gun_Bag",
-	"RHS_SPG9_Gun_Bag",
-	"RHS_SPG9_Tripod_Bag",
-	"rhs_Tow_Gun_Bag",
-	"rhs_TOW_Tripod_Bag"
-];
+blacklisted_from_arsenal_extension = [];
 
 // Configuration for ammo boxes transport
 // First entry: classname
