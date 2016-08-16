@@ -8,8 +8,8 @@
 						<Original>v0.924</Original>
 				</Key>
 				<Key ID="STR_MISSION_DESCRIPTION">
-						<Original>With the power of Freedom and Democracy you shall liberate Altis from the OPFOR oppression.</Original>
-						<French>Avec le pouvoir de la Liberté et de la Démocratie votre mission est de libérer Altis de l'oppression de l'OPFOR.</French>
+						<Original>With the power of Freedom and Democracy and a little international support you shall Liberate Tanoa from Syndikat and CSAT oppression.</Original>
+						<French>Avec le pouvoir de la Liberté et de la Démocratie votre mission est de libérer Tanoa de l'oppression de Syndikat et CSAT.</French>
 						<German>Befreie Altis von der OPFOR-Unterdrückung mit der Kraft von Freiheit und Demokratie</German>
 						<Spanish>Con el poder de la Libertad y la Democracia, debes liberar Altis de la opresión del OPFOR</Spanish>
 						<Russian>С помощью сил "свободы" и "демократии" вы должны освободить Altis от угнетения OPFOR.</Russian>
@@ -106,11 +106,11 @@
 						<Russian>Топливо</Russian>
 				</Key>
 				<Key ID="STR_BLEEDOUT_MESSAGE">
-						<Original>Bleedout in %1 seconds</Original>
-						<French>Mort dans %1 secondes</French>
-						<German>Ausbluten in %1 Sekunden</German>
-						<Spanish>Desangrado en %1 segundos</Spanish>
-						<Russian>Вы умрёте через %1 секунд</Russian>
+						<Original>Bleedout in %1 seconds.</Original>
+						<French>Mort dans %1 secondes.</French>
+						<German>Ausbluten in %1 Sekunden.</German>
+						<Spanish>Desangrado en %1 segundos.</Spanish>
+						<Russian>Вы умрёте через %1 секунд.</Russian>
 				</Key>
 				<Key ID="STR_BLEEDOUT_STABILIZED">
 						<Original>Stabilized</Original>
@@ -267,14 +267,14 @@
 						<Russian>FOB грузовик </Russian>
 				</Key>
 				<Key ID="STR_RESPAWN_TRUCK">
-						<Original>Mobile respawn</Original>
+						<Original>Mobile Respawn</Original>
 						<French>Respawn mobile</French>
 						<German>Mobiler Respawn</German>
 						<Spanish>Respawn móvil</Spanish>
 						<Russian>Мобильная КШМ</Russian>
 				</Key>
 				<Key ID="STR_ARSENAL_BOX">
-						<Original>Arsenal box</Original>
+						<Original>Arsenal Box</Original>
 						<French>Caisse à arsenal</French>
 						<German>Arsenalkiste</German>
 						<Spanish>Caja de Arsenal</Spanish>
@@ -359,17 +359,17 @@
 						<Russian>Мобилизованных</Russian>
 				</Key>
 				<Key ID="STR_WIPE_TITLE">
-						<Original>Wipe savegame</Original>
-						<French>Effacer la sauvegarde</French>
-						<German>Spielstand loeschen</German>
-						<Spanish>Borrar partida guardada</Spanish>
-						<Russian>Удалить сохранённый прогресс</Russian>
+						<Original>Wipe savegame?:</Original>
+						<French>Effacer la sauvegarde:</French>
+						<German>Spielstand loeschen:</German>
+						<Spanish>Borrar partida guardada:</Spanish>
+						<Russian>Удалить сохранённый прогресс:</Russian>
 				</Key>
 				<Key ID="STR_WIPE_TITLE_2">
-						<Original>Confirm : wipe savegame</Original>
-						<French>Confirmer : effacer la sauvegarde</French>
-						<German>Bestätige: Spielstand loeschen</German>
-						<Spanish>Confirmar : Borrar partida guardada</Spanish>
+						<Original>Confirm : Wipe savegame?:</Original>
+						<French>Confirmer : effacer la sauvegarde:</French>
+						<German>Bestätige : Spielstand loeschen:</German>
+						<Spanish>Confirmar : Borrar partida guardada:</Spanish>
 						<Russian>Подтвердить : Удалить сохранённый прогресс</Russian>
 				</Key>
 				<Key ID="STR_WIPE_NO">
@@ -594,7 +594,7 @@
 						<Original>Hostile FOB near %1.</Original>
 						<French>FOB hostile près de %1.</French>
 						<German>Gegnerische FOB nahe %1.</German>
-						<Spanish>FOB hostil cerca de %1</Spanish>
+						<Spanish>FOB hostil cerca de %1.</Spanish>
 						<Russian>Вражеская FOB рядом %1.</Russian>
 				</Key>
 				<Key ID="STR_NOTIFICATION_PRISONER_TEXT">
@@ -608,7 +608,7 @@
 						<Original>We have found secret documents.</Original>
 						<French>Nous avons trouvé des documents secrets</French>
 						<German>Wir haben geheime Dokumente gefunden.</German>
-						<Spanish>Hemos encontrado documentos secretos</Spanish>
+						<Spanish>Hemos encontrado documentos secretos.</Spanish>
 						<Russian>Мы нашли секретные документы.</Russian>
 				</Key>
 				<Key ID="STR_NOTIFICATION_SECONDARY_TITLE">
@@ -619,11 +619,11 @@
 						<Russian>ДОПОЛНИТЕЛЬНАЯ ЗАДАЧА</Russian>
 				</Key>
 				<Key ID="STR_NOTIFICATION_SECONDARY_TEXT">
-						<Original>Hostile FOB destroyed</Original>
+						<Original>Hostile FOB destroyed.</Original>
 						<French>FOB hostile détruite.</French>
 						<German>Gegnerische FOB zerstoert.</German>
-						<Spanish>FOB hostil destruída</Spanish>
-						<Russian>Вражеская FOB уничтожена</Russian>
+						<Spanish>FOB hostil destruída.</Spanish>
+						<Russian>Вражеская FOB уничтожена.</Russian>
 				</Key>
 				<Key ID="STR_NOTIFICATION_REINFORCEMENTS_TITLE">
 						<Original>HOSTILE REINFORCEMENTS</Original>
@@ -640,18 +640,18 @@
 						<Russian>Вражеские подкрепления подходят в %1.</Russian>
 				</Key>
 				<Key ID="STR_VICTORY_TITLE">
-						<Original>BLUFOR VICTORY</Original>
+						<Original>VICTORY</Original>
 						<French>VICTOIRE BLUFOR</French>
 						<German>BLUFOR SIEGREICH</German>
 						<Spanish>VICTORIA DE BLUFOR</Spanish>
 						<Russian>СИНИЕ ПОБЕДИЛИ</Russian>
 				</Key>
 				<Key ID="STR_VICTORY_TEXT">
-						<Original>You have liberated Altis from the OPFOR oppression.</Original>
-						<French>Vous avez libéré Altis de l'oppression de l'OPFOR.</French>
-						<German>Du hast Altis von der OPFOR Besatzung befreit.</German>
-						<Spanish>Has liberado a Altis de la opresión del OPFOR</Spanish>
-						<Russian>Вы освободили Алтис от оккупации OPFOR.</Russian>
+						<Original>You have Liberated the region from the enemy oppression!</Original>
+						<French>Vous avez libéré Tanoa de l'oppression de l'OPFOR.</French>
+						<German>Du hast Tanoa von der OPFOR Besatzung befreit.</German>
+						<Spanish>Has liberado a Tanoa de la opresión del OPFOR.</Spanish>
+						<Russian>Вы освободили Tanoa от оккупации OPFOR.</Russian>
 				</Key>
 				<Key ID="STR_STATS_DAY">
 						<Original>days</Original>
@@ -689,21 +689,21 @@
 						<Russian>Игрового времени:</Russian>
 				</Key>
 				<Key ID="STR_STATS_1">
-						<Original>OPFOR infantry killed:</Original>
+						<Original>Enemy infantry killed:</Original>
 						<French>Infanterie OPFOR tuée :</French>
 						<German>OPFOR Einheit getoetet:</German>
 						<Spanish>Infantería OPFOR eliminada:</Spanish>
 						<Russian>OPFOR пехоты убито:</Russian>
 				</Key>
 				<Key ID="STR_STATS_2">
-						<Original>OPFOR infantry killed by players:</Original>
+						<Original>Enemy infantry killed by players:</Original>
 						<French>Infanterie OPFOR tuée par les joueurs :</French>
 						<German>OPFOR Infanterie von Spielern getoetet:</German>
 						<Spanish>Infantería OPFOR eliminada por jugadores:</Spanish>
 						<Russian>OPFOR пехоты убито игроками:</Russian>
 				</Key>
 				<Key ID="STR_STATS_3">
-						<Original>BLUFOR infantry killed:</Original>
+						<Original>Friendly infantry killed:</Original>
 						<French>Infanterie BLUFOR tuée :</French>
 						<German>BLUFOR Einheiten getoetet:</German>
 						<Spanish>Infantería BLUFOR eliminada:</Spanish>
@@ -724,35 +724,35 @@
 						<Russian>Гражданских убито игроками:</Russian>
 				</Key>
 				<Key ID="STR_STATS_6">
-						<Original>BLUFOR friendly fire incidents:</Original>
+						<Original>Friendly fire incidents:</Original>
 						<French>Tirs fratricides BLUFOR :</French>
 						<German>BLUFOR Verbuendetenbeschuss Faelle:</German>
 						<Spanish>Incidentes de fuego amigo en BLUFOR:</Spanish>
 						<Russian>BLUFOR дружественный огонь:</Russian>
 				</Key>
 				<Key ID="STR_STATS_7">
-						<Original>OPFOR vehicles destroyed:</Original>
+						<Original>Enemy vehicles destroyed:</Original>
 						<French>Vehicules OPFOR détruits :</French>
 						<German>OPFOR Fahrzeuge zerstoert:</German>
 						<Spanish>Vehículos OPFOR destruídos:</Spanish>
 						<Russian>OPFOR техники уничтожено:</Russian>
 				</Key>
 				<Key ID="STR_STATS_8">
-						<Original>OPFOR vehicles destroyed by players:</Original>
+						<Original>Enemy vehicles destroyed by players:</Original>
 						<French>Vehicules OPFOR détruits par les joueurs :</French>
 						<German>OPFOR Fahrzeuge von Spielern zerstoert:</German>
 						<Spanish>Vehículos OPFOR destruídos por jugadores:</Spanish>
 						<Russian>OPFOR техники уничтожено игроками:</Russian>
 				</Key>
 				<Key ID="STR_STATS_9">
-						<Original>BLUFOR vehicles destroyed:</Original>
+						<Original>Friendly vehicles destroyed:</Original>
 						<French>Vehicules BLUFOR détruits :</French>
 						<German>BLUFOR Fahrzeuge zerstoert:</German>
 						<Spanish>Vehículos BLUFOR destruídos:</Spanish>
 						<Russian>BLUFOR техники уничтожено:</Russian>
 				</Key>
 				<Key ID="STR_STATS_10">
-						<Original>BLUFOR vehicles built:</Original>
+						<Original>Friendly vehicles built:</Original>
 						<French>Vehicules BLUFOR construits :</French>
 						<German>BLUFOR Fahrzeuge gebaut:</German>
 						<Spanish>Vehículos BLUFOR construidos:</Spanish>
@@ -810,14 +810,14 @@
 				</Key>
 				<Key ID="STR_STATS_18">
 						<Original>Prisonners captured:</Original>
-						<French>Prisonniers capturés :</French>
+						<French>Prisonniers capturés:</French>
 						<German>Gefangene gefasst:</German>
 						<Spanish>Prisioneros capturados:</Spanish>
 						<Russian>Пленных захвачено:</Russian>
 				</Key>
 				<Key ID="STR_STATS_19">
 						<Original>Hostile battlegroups called:</Original>
-						<French>Battlegroups hostiles appelés :</French>
+						<French>Battlegroups hostiles appelés:</French>
 						<German>Gegnerische Truppen gerufen:</German>
 						<Spanish>Grupos hostiles de combate llamados:</Spanish>
 						<Russian>Вражеских боевых групп вызвано:</Russian>
@@ -825,42 +825,42 @@
 				</Key>
 				<Key ID="STR_STATS_20">
 						<Original>Hostile reinforcements called:</Original>
-						<French>Renforts hostiles appelés :</French>
+						<French>Renforts hostiles appelés:</French>
 						<German>Gegnerischen Nachschub gerufen:</German>
 						<Spanish>Refuerzos hostiles llamados:</Spanish>
 						<Russian>Враждебных подкреплений вызвано:</Russian>
 				</Key>
 				<Key ID="STR_STATS_21">
 						<Original>Total combat readiness raised:</Original>
-						<French>Augmentation totale du niveau d'alerte :</French>
+						<French>Augmentation totale du niveau d'alerte:</French>
 						<German>Gesamte Kampfbereitschaft erhoeht:</German>
 						<Spanish>Disposición de combate total recaudada:</Spanish>
 						<Russian>Всего войск поднято по тревоге:</Russian>
 				</Key>
 				<Key ID="STR_STATS_22">
 						<Original>IEDs detonated:</Original>
-						<French>Explosions d'IED :</French>
+						<French>Explosions d'IED:</French>
 						<German>IEDs zur Explosion gebracht:</German>
 						<Spanish>IEDs detonados:</Spanish>
 						<Russian>Фугасов взорвано:</Russian>
 				</Key>
 				<Key ID="STR_STATS_23">
 						<Original>Number of Spartan 01 losses:</Original>
-						<French>Pertes de Spartan 01 :</French>
+						<French>Pertes de Spartan 01:</French>
 						<German>Hoehe der Spartan 01 Verluste:</German>
 						<Spanish>Número de pérdidas de Spartan 01:</Spanish>
 						<Russian>Количество потерянных Spartan 01:</Russian>
 				</Key>
 				<Key ID="STR_STATS_24">
 						<Original>Player deaths:</Original>
-						<French>Joueurs morts :</French>
+						<French>Joueurs morts:</French>
 						<German>Spielertode:</German>
 						<Spanish>Muertes del jugador:</Spanish>
 						<Russian>Смертей игрока:</Russian>
 				</Key>
 				<Key ID="STR_STATS_25">
 						<Original>Rabbits killed:</Original>
-						<French>Lapins tués :</French>
+						<French>Lapins tués:</French>
 						<German>Hasen getoetet:</German>
 						<Spanish>Conejos asesinados:</Spanish>
 						<Russian>Кроликов убито:</Russian>
@@ -873,8 +873,8 @@
 						<Russian>Большое спасибо за то что играли в LIBERATION!</Russian>
 				</Key>
 				<Key ID="STR_STATS_27">
-						<Original>BLUFOR soldiers recruited:</Original>
-						<French>Soldats BLUFOR recrutés :</French>
+						<Original>Friendly soldiers recruited:</Original>
+						<French>Soldats BLUFOR recrutés:</French>
 						<German>BLUFOR Soldaten rekrutiert:</German>
 						<Spanish>Soldados BLUFOR reclutados:</Spanish>
 						<Russian>BLUFOR солдат призвано:</Russian>
@@ -908,18 +908,18 @@
 						<Russian>== ТЕХНИЧЕСКИЕ ОПЦИИ ==</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_DAYDURATION">
-						<Original>Day duration (hours)</Original>
-						<French>Durée du jour (heures)</French>
-						<German>Länge eines Tages (Stunden)</German>
-						<Spanish>Duración del día (horas)</Spanish>
-						<Russian>Продолжительность дня (часов)</Russian>
+						<Original>Day duration (hours):</Original>
+						<French>Durée du jour (heures):</French>
+						<German>Länge eines Tages (Stunden):</German>
+						<Spanish>Duración del día (horas):</Spanish>
+						<Russian>Продолжительность дня (часов):</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_DIFFICULTY">
-						<Original>Difficulty</Original>
-						<French>Difficulté</French>
-						<German>Schwierigkeit</German>
-						<Spanish>Dificultad</Spanish>
-						<Russian>Сложность</Russian>
+						<Original>Difficulty:</Original>
+						<French>Difficulté:</French>
+						<German>Schwierigkeit:</German>
+						<Spanish>Dificultad:</Spanish>
+						<Russian>Сложность:</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_DIFFICULTY1">
 						<Original>Tourist</Original>
@@ -978,18 +978,18 @@
 						<Russian>Боже мой, мы все умрём!</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_RESOURCESMULTIPLIER">
-						<Original>Resources multiplier</Original>
-						<French>Multiplicateur de resources</French>
-						<German>Ressourcenmultiplikator</German>
-						<Spanish>Multiplicador de recursos</Spanish>
-						<Russian>Множитель ресурсов</Russian>
+						<Original>Resources multiplier:</Original>
+						<French>Multiplicateur de resources:</French>
+						<German>Ressourcenmultiplikator:</German>
+						<Spanish>Multiplicador de recursos:</Spanish>
+						<Russian>Множитель ресурсов:</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_FATIGUE">
-						<Original>Stamina</Original>
-						<French>Stamina</French>
-						<German>Ausdauer</German>
-						<Spanish>Estamina</Spanish>
-						<Russian>Усталость</Russian>
+						<Original>Stamina:</Original>
+						<French>Stamina:</French>
+						<German>Ausdauer:</German>
+						<Spanish>Estamina:</Spanish>
+						<Russian>Усталость:</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_FATIGUE1">
 						<Original>Reduced - 4 times more stamina</Original>
@@ -1020,10 +1020,10 @@
 						<Russian>Понизить - в 1.5 раза усталость</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_REVIVE">
-						<Original>FAR Revive</Original>
-						<German>FAR Revive (Wiederbelebungen)</German>
-						<Spanish>FAR Revive</Spanish>
-						<Russian>FAR Возрождение</Russian>
+						<Original>FAR Revive:</Original>
+						<German>FAR Revive (Wiederbelebungen):</German>
+						<Spanish>FAR Revive:</Spanish>
+						<Russian>FAR Возрождение:</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_REVIVE1">
 						<Original>Enabled - Only medics can revive</Original>
@@ -1047,18 +1047,18 @@
 						<Russian>Включено - Любой может возродить используя медицинскую аптечку</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_INTRO">
-						<Original>Introduction</Original>
-						<French>Introduction</French>
-						<German>Einführung</German>
-						<Spanish>Introducción</Spanish>
-						<Russian>Введение</Russian>
+						<Original>Introduction:</Original>
+						<French>Introduction:</French>
+						<German>Einführung:</German>
+						<Spanish>Introducción:</Spanish>
+						<Russian>Введение:</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_DEPLOYMENTCAMERA">
-						<Original>Deployment cinematic</Original>
-						<French>Cinématique de déploiement</French>
-						<German>Zwischensequenz bei Einsatz</German>
-						<Spanish>Cinemática de comienzo</Spanish>
-						<Russian>Кино во время размещения</Russian>
+						<Original>Deployment Cinematic:</Original>
+						<French>Cinématique de déploiement:</French>
+						<German>Zwischensequenz bei Einsatz:</German>
+						<Spanish>Cinemática de comienzo:</Spanish>
+						<Russian>Кино во время размещения:</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_ENABLED">
 						<Original>Enabled</Original>
@@ -1075,11 +1075,11 @@
 						<Russian>Выкл</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_FIRSTFOB">
-						<Original>Start the campaign with the first FOB already built</Original>
-						<French>Commencer la campagne avec une première FOB déjà construite</French>
-						<German>Starte die Kampagne mit einer bereits gebauten FOB</German>
-						<Spanish>Comenzar la campaña con la primera FOB ya construída</Spanish>
-						<Russian>Начать кампанию, когда первая FOB размещена</Russian>
+						<Original>Start the campaign with the first FOB already built:</Original>
+						<French>Commencer la campagne avec une première FOB déjà construite:</French>
+						<German>Starte die Kampagne mit einer bereits gebauten FOB:</German>
+						<Spanish>Comenzar la campaña con la primera FOB ya construída:</Spanish>
+						<Russian>Начать кампанию, когда первая FOB размещена:</Russian>
 				</Key>
 				<Key ID="STR_YES">
 						<Original>Yes</Original>
@@ -1096,11 +1096,11 @@
 						<Russian>Нет</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_UNITCAP">
-						<Original>Maximum amount of AI units</Original>
-						<French>Quantité maximum d'unités IA</French>
-						<German>Maximale Anzahl KI-Einheiten</German>
-						<Spanish>Cantidad máxima de unidades de IA</Spanish>
-						<Russian>Максимальное количество единиц AI</Russian>
+						<Original>Maximum amount of AI units:</Original>
+						<French>Quantité maximum d'unités IA:</French>
+						<German>Maximale Anzahl KI-Einheiten:</German>
+						<Spanish>Cantidad máxima de unidades de IA:</Spanish>
+						<Russian>Максимальное количество единиц AI:</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_UNITCAP1">
 						<Original>50% - Recommended for local hosting</Original>
@@ -1145,11 +1145,11 @@
 						<Russian>200% - Выделенный сервер вместе с несколькими headless client рекомендуется</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_CIVILIANS">
-						<Original>Civilian activity</Original>
-						<French>Activité civile</French>
-						<German>Zivile Aktivität</German>
-						<Spanish>Actividad civil</Spanish>
-						<Russian>Гражданская активность</Russian>
+						<Original>Civilian activity:</Original>
+						<French>Activité civile:</French>
+						<German>Zivile Aktivität:</German>
+						<Spanish>Actividad civil:</Spanish>
+						<Russian>Гражданская активность:</Russian>
 				</Key>
 				<Key ID="STR_PARAMS_CIVILIANS1">
 						<Original>None</Original>
@@ -1187,56 +1187,56 @@
 						<Russian>Предупреждение: дружественный огонь</Russian>
 				</Key>
 				<Key ID="STR_PARAM_TEAMKILL_PENALTY">
-						<Original>Teamkill penalty</Original>
-						<French>Pénalité pour tirs alliés</French>
-						<German>Strafe für das Töten von Verbündeten</German>
-						<Spanish>Penalización por fuego amigo</Spanish>
-						<Russian>Штраф за убийство своего</Russian>
+						<Original>Teamkill penalty:</Original>
+						<French>Pénalité pour tirs alliés:</French>
+						<German>Strafe für das Töten von Verbündeten:</German>
+						<Spanish>Penalización por fuego amigo:</Spanish>
+						<Russian>Штраф за убийство своего:</Russian>
 				</Key>
 				<Key ID="STR_PARAM_ADAPT_TO_PLAYERCOUNT">
-						<Original>Hostile presence adapts to player count</Original>
-						<French>La présence hostile s'adapte au nombre de joueurs</French>
-						<German>Feindpräsenz passt sich der Spielerzahl an</German>
-						<Spanish>Adaptar presencia hostil según la cantidad de jugadores</Spanish>
-						<Russian>Вражеские силы адаптируются к количеству игроков</Russian>
+						<Original>Hostile presence adapts to player count:</Original>
+						<French>La présence hostile s'adapte au nombre de joueurs:</French>
+						<German>Feindpräsenz passt sich der Spielerzahl an:</German>
+						<Spanish>Adaptar presencia hostil según la cantidad de jugadores:</Spanish>
+						<Russian>Вражеские силы адаптируются к количеству игроков:</Russian>
 				</Key>
 				<Key ID="STR_PARAM_PASSIVE_INCOME">
-						<Original>Replace ammo boxes spawns with passive income</Original>
-						<French>Remplacer les caisses de munitions par un revenu passif</French>
-						<German>Ersetzt Munitionskisten durch passives Einkommen</German>
-						<Spanish>Reemplazar cajas de munición por ingresos pasivos</Spanish>
-						<Russian>Заменяет ящики с боеприпасами пассивным доходом</Russian>
+						<Original>Replace ammo boxes spawns with passive income:</Original>
+						<French>Remplacer les caisses de munitions par un revenu passif:</French>
+						<German>Ersetzt Munitionskisten durch passives Einkommen:</German>
+						<Spanish>Reemplazar cajas de munición por ingresos pasivos:</Spanish>
+						<Russian>Заменяет ящики с боеприпасами пассивным доходом:</Russian>
 				</Key>
 				<Key ID="STR_BUILD1">
-						<Original>Infantry units</Original>
+						<Original>Infantry Units</Original>
 						<French>Unités d'infanterie</French>
 						<German>Infanterie</German>
 						<Spanish>Unidades de infantería</Spanish>
 						<Russian>Пехотинцы</Russian>
 				</Key>
 				<Key ID="STR_BUILD2">
-						<Original>Light vehicles</Original>
+						<Original>Light Vehicles</Original>
 						<French>Véhicules légers</French>
 						<German>Leichte Fahrzeuge</German>
 						<Spanish>Vehículos ligeros</Spanish>
 						<Russian>Легкая техника</Russian>
 				</Key>
 				<Key ID="STR_BUILD3">
-						<Original>Armored vehicles</Original>
+						<Original>Armored Vehicles</Original>
 						<French>Vehicules blindés</French>
 						<German>Gepanzerte Fahrzeuge</German>
 						<Spanish>Vehículos blindados</Spanish>
 						<Russian>Бронетехника</Russian>
 				</Key>
 				<Key ID="STR_BUILD4">
-						<Original>Air vehicles</Original>
+						<Original>Air Vehicles</Original>
 						<French>Véhicules aériens</French>
 						<German>Luftfahrzeuge</German>
 						<Spanish>Vehículos aéreos</Spanish>
 						<Russian>Авиационная техника</Russian>
 				</Key>
 				<Key ID="STR_BUILD5">
-						<Original>Static defenses</Original>
+						<Original>Static Defenses</Original>
 						<French>Defenses statiques</French>
 						<German>Statische Verteidigung</German>
 						<Spanish>Defensas estáticas</Spanish>
@@ -1265,7 +1265,7 @@
 				</Key>
 				<Key ID="STR_ACTIVE_SECTORS">
 						<Original>Active Sectors:</Original>
-						<French>Secteurs Actifs :</French>
+						<French>Secteurs Actifs:</French>
 						<German>Aktive Sektoren:</German>
 						<Spanish>Sectores activos:</Spanish>
 						<Russian>Активные Зоны:</Russian>
@@ -1439,7 +1439,7 @@
 						<Russian>Выбранный член группы был переснаряжён</Russian>
 				</Key>
 				<Key ID="STR_RESUPPLY_KO">
-						<Original>The selected squad member isn't close enough from a FOB or mobile spawn.</Original>
+						<Original>The selected squad member isn't close enough to an FOB or mobile spawn.</Original>
 						<French>Le membre de l'escouade sélectionné n'est pas assez proche d'une FOB ou d'un spawn mobile.</French>
 						<German>Das ausgewählte Gruppenmitglied ist nicht nahe genug an einer FOB oder an einem mobilen Spawn.</German>
 						<Spanish>El miembro seleccionado de la escuadra no está suficientemente cerca de una FOB o spawn móvil.</Spanish>
@@ -1453,21 +1453,21 @@
 						<Russian>УПРАВЛЕНИЕ РАЗРЕШЕНИЯМИ</Russian>
 				</Key>
 				<Key ID="STR_PERMISSIONS_LIGHT">
-						<Original>Light vehicles</Original>
+						<Original>Light Vehicles</Original>
 						<French>Véhicules légers</French>
 						<German>Leichte Fahrzeuge</German>
 						<Spanish>Vehículos ligeros</Spanish>
 						<Russian>Лёгкая техника</Russian>
 				</Key>
 				<Key ID="STR_PERMISSIONS_ARMORED">
-						<Original>Armored vehicles</Original>
+						<Original>Armored Vehicles</Original>
 						<French>Véhicules blindés</French>
 						<German>Gepanzerte Fahrzeuge</German>
 						<Spanish>Vehículos blindados</Spanish>
 						<Russian>Бронированная техника</Russian>
 				</Key>
 				<Key ID="STR_PERMISSIONS_AIR">
-						<Original>Air vehicles</Original>
+						<Original>Air Vehicles</Original>
 						<French>Véhicules aériens</French>
 						<German>Luftfahrzeuge</German>
 						<Spanish>Vehículos aéreos</Spanish>
@@ -1589,21 +1589,21 @@
 						<Original>You don't have permission from the commander to use light vehicles.</Original>
 						<French>Vous n'avez pas la permission du commandant pour utiliser les véhicules légers.</French>
 						<German>Du hast keine Rechte zur Nutzung leichter Fahrzeuge.</German>
-						<Spanish>No tienes permiso del comandante para usar vehículos ligeros</Spanish>
+						<Spanish>No tienes permiso del comandante para usar vehículos ligeros.</Spanish>
 						<Russian>У тебя нет разрешения от командира использовать легкую технику.</Russian>
 				</Key>
 				<Key ID="STR_PERMISSION_NO_ARMOR">
 						<Original>You don't have permission from the commander to use armored vehicles.</Original>
 						<French>Vous n'avez pas la permission du commandant pour utiliser les véhicules blindés.</French>
-						<German>Du hast keine Rechte zur Nutzung gepanzerter Fahrzeuge</German>
-						<Spanish>No tienes permiso del comandante para usar vehículos blindados</Spanish>
+						<German>Du hast keine Rechte zur Nutzung gepanzerter Fahrzeuge.</German>
+						<Spanish>No tienes permiso del comandante para usar vehículos blindados.</Spanish>
 						<Russian>У тебя нет разрешения от командира использовать бронированную технику.</Russian>
 				</Key>
 				<Key ID="STR_PERMISSION_NO_AIR">
 						<Original>You don't have permission from the commander to use air vehicles.</Original>
 						<French>Vous n'avez pas la permission du commandant pour utiliser les véhicules aériens.</French>
-						<German>Du hast keine Rechte zur Nutzung von Luftfahrzeugen</German>
-						<Spanish>No tienes permiso del comandante para usar vehículos aéreos</Spanish>
+						<German>Du hast keine Rechte zur Nutzung von Luftfahrzeugen.</German>
+						<Spanish>No tienes permiso del comandante para usar vehículos aéreos.</Spanish>
 						<Russian>У тебя нет разрешения от командира использовать авиацию.</Russian>
 				</Key>
 				<Key ID="STR_PERMISSION_WARNING">
@@ -1670,11 +1670,11 @@
 						<Russian>FOB свёрнута</Russian>
 				</Key>
 				<Key ID="STR_HALO_PARAM">
-						<Original>HALO jump</Original>
-						<French>Saut HALO</French>
-						<German>HALO-Sprung</German>
-						<Spanish>Salto HALO</Spanish>
-						<Russian>HALO прыжок</Russian>
+						<Original>HALO Jump:</Original>
+						<French>Saut HALO:</French>
+						<German>HALO-Sprung:</German>
+						<Spanish>Salto HALO:</Spanish>
+						<Russian>HALO прыжок:</Russian>
 				</Key>
 				<Key ID="STR_HALO_PARAM1">
 						<Original>Enabled - No cooldown</Original>
@@ -1747,7 +1747,7 @@
 						<Russian>В процессе выполнения ...</Russian>
 				</Key>
 				<Key ID="STR_WHITELIST_PARAM">
-						<Original>Use the commander whitelist</Original>
+						<Original>Commander Whitelist:</Original>
 						<French>Utiliser la whitelist pour le commandant</French>
 						<German>Nutze die Whitelist für den Kommandanten</German>
 						<Spanish>Utilizar la lista blanca para Comandantes</Spanish>
@@ -1762,12 +1762,12 @@
 				<Key ID="STR_BUILD_ENEMIES_NEARBY">
 						<Original>Cannot build: hostile forces nearby.</Original>
 						<French>Impossible de construire: forces hostiles à proximité.</French>
-						<German>Kann nicht gebaut werden: Feindkräfte in der Nähe</German>
-						<Spanish>No se puede construir: fuerzas hostiles cercanas</Spanish>
+						<German>Kann nicht gebaut werden: Feindkräfte in der Nähe.</German>
+						<Spanish>No se puede construir: fuerzas hostiles cercanas.</Spanish>
 						<Russian>Постройка невозможна: враги рядом.</Russian>
 				</Key>
 				<Key ID="STR_CLEANUP_PARAM">
-						<Original>Cleanup abandonned vehicles outside FOBs</Original>
+						<Original>Cleanup abandoned vehicles outside of FOB:</Original>
 						<French>Nettoyer les véhicules abandonnés loin d'une FOB</French>
 						<German>Räumt verlassene Fahrzeuge auserhalb von FOBs weg</German>
 						<Spanish>Limpieza de vehículos abandonados fuera de FOBs</Spanish>
@@ -1838,24 +1838,24 @@
 				</Key>
 				<Key ID="STR_LOADOUT">
 						<Original>Loadout:</Original>
-						<French>Equipement :</French>
+						<French>Equipement:</French>
 						<German>Ausrüstung:</German>
 						<Spanish>Equipamiento:</Spanish>
 						<Russian>Снаряжение:</Russian>
 				</Key>
 				<Key ID="STR_SPAWN_POINT">
 						<Original>Deployment location:</Original>
-						<French>Lieu de déploiement :</French>
+						<French>Lieu de déploiement:</French>
 						<German>Einsatzposition:</German>
 						<Spanish>Lugar para el despliegue:</Spanish>
 						<Russian>Позиция размешения:</Russian>
 				</Key>
 				<Key ID="STR_AGGRESSIVITY_PARAM">
-						<Original>OPFOR aggressivity</Original>
-						<French>Aggressivité de l'OPFOR</French>
-						<German>OPFOR Aggressivität</German>
-						<Spanish>Agresividad del OPFOR</Spanish>
-						<Russian>Уровень обеспокоенности OPFOR</Russian>
+						<Original>Enemy aggressivity:</Original>
+						<French>Aggressivité de l'OPFOR:</French>
+						<German>OPFOR Aggressivität:</German>
+						<Spanish>Agresividad del OPFOR:</Spanish>
+						<Russian>Уровень обеспокоенности OPFOR:</Russian>
 				</Key>
 				<Key ID="STR_AGGRESSIVITY_PARAM0">
 						<Original>Anemic</Original>
@@ -1893,11 +1893,11 @@
 						<Russian>Очень сильно</Russian>
 				</Key>
 				<Key ID="STR_WEATHER_PARAM">
-						<Original>Weather</Original>
-						<French>Meteo</French>
-						<German>Wetter</German>
-						<Spanish>Clima</Spanish>
-						<Russian>Погода</Russian>
+						<Original>Weather conditions:</Original>
+						<French>Meteo:</French>
+						<German>Wetter:</German>
+						<Spanish>Clima:</Spanish>
+						<Russian>Погода:</Russian>
 				</Key>
 				<Key ID="STR_WEATHER_PARAM1">
 						<Original>Always sunny</Original>
@@ -1907,7 +1907,7 @@
 						<Russian>Всегда солнечно</Russian>
 				</Key>
 				<Key ID="STR_WEATHER_PARAM2">
-						<Original>Random without rain</Original>
+						<Original>Random, without rain</Original>
 						<French>Aléatoire sans pluie</French>
 						<German>Zufällig ohne Regen</German>
 						<Spanish>Aleatorio sin lluvia</Spanish>
@@ -1921,11 +1921,11 @@
 						<Russian>Случайно</Russian>
 				</Key>
 				<Key ID="STR_SHORTER_NIGHTS_PARAM">
-						<Original>Shorter nights</Original>
-						<French>Nuits plus courtes</French>
-						<German>Kürzere Nächte</German>
-						<Spanish>Noches más cortas</Spanish>
-						<Russian>Короткие ночи</Russian>
+						<Original>Shorter nights:</Original>
+						<French>Nuits plus courtes:</French>
+						<German>Kürzere Nächte:</German>
+						<Spanish>Noches más cortas:</Spanish>
+						<Russian>Короткие ночи:</Russian>
 				</Key>
 				<Key ID="STR_REPAIRING">
 						<Original>Repairing</Original>
@@ -1956,25 +1956,25 @@
 						<Russian>-- ПОЛУЧИТЬ РАЗВЕДДАННЫЕ</Russian>
 				</Key>
 				<Key ID="STR_SECONDARY_OBJECTIVES">
-						<Original>-- SECONDARY OBJECTIVES</Original>
-						<French>-- OBJECTIFS SECONDAIRES</French>
-						<German>-- SEKUNDÄRE ZIELE</German>
-						<Spanish>-- OBJETIVOS SECUNDARIOS</Spanish>
-						<Russian>-- ДОПОЛНИТЕЛЬНЫЕ ЗАДАЧИ</Russian>
+						<Original>--SECONDARY OBJECTIVES</Original>
+						<French>--OBJECTIFS SECONDAIRES</French>
+						<German>--SEKUNDÄRE ZIELE</German>
+						<Spanish>--OBJETIVOS SECUNDARIOS</Spanish>
+						<Russian>--ДОПОЛНИТЕЛЬНЫЕ ЗАДАЧИ</Russian>
 				</Key>
 				<Key ID="STR_AMMO_BOUNTIES">
-						<Original>Ammunition bounties</Original>
-						<French>Primes de munitions</French>
-						<German>Munition als Kopfgelder</German>
-						<Spanish>Recompensas de munición</Spanish>
+						<Original>Ammunition bounties:</Original>
+						<French>Primes de munitions:</French>
+						<German>Munition als Kopfgelder:</German>
+						<Spanish>Recompensas de munición:</Spanish>
 						<Russian>Вознаграждение за уничтожение техники ВООРУЖЕНИЕ</Russian>
 				</Key>
 				<Key ID="STR_BOUNTY_MESSAGE">
-						<Original>Bounty of %1 for a %2 destroyed by %3</Original>
-						<French>Prime de %1 pour un %2 détruit par %3</French>
-						<German>Kopfgeld von %1 für die Zerstörung von %2 durch %3</German>
-						<Spanish>Premio de %1 por un %2 destruido por %3</Spanish>
-						<Russian>+%1 едениц ВООРУЖЕНИЯ за %2 уничтоженный игроком %3</Russian>
+						<Original>Bounty of %1 for a %2 destroyed by %3.</Original>
+						<French>Prime de %1 pour un %2 détruit par %3.</French>
+						<German>Kopfgeld von %1 für die Zerstörung von %2 durch %3.</German>
+						<Spanish>Premio de %1 por un %2 destruido por %3.</Spanish>
+						<Russian>+%1 едениц ВООРУЖЕНИЯ за %2 уничтоженный игроком %3.</Russian>
 				</Key>
 				<Key ID="STR_SECONDARY_OBJECTIVES_TITLE">
 						<Original>SECONDARY OBJECTIVES</Original>
@@ -1998,14 +1998,14 @@
 						<Russian>Разведданные: %1</Russian>
 				</Key>
 				<Key ID="STR_SECONDARY_NOT_ENOUGH_INTEL">
-						<Original>Insufficient intel points</Original>
+						<Original>Insufficient Intel Points.</Original>
 						<French>Points d'intel insuffisants</French>
 						<German>Zu wenig Geheimdienstinformationen</German>
 						<Spanish>Puntos de inteligencia insuficientes</Spanish>
 						<Russian>Недостаточно информации</Russian>
 				</Key>
 				<Key ID="STR_SECONDARY_IN_PROGRESS">
-						<Original>Secondary mission already in progress</Original>
+						<Original>Secondary Objective already in progress!</Original>
 						<French>Mission secondaire déjà en cours</French>
 						<German>Sekundäre Mission läuft bereits</German>
 						<Spanish>Misión secundaria ya en curso</Spanish>
@@ -2018,7 +2018,7 @@
 						<Russian>Замечена вражеская группа рядом с %1</Russian>
 				</Key>
 				<Key ID="STR_SECONDARY_CSAT_CONVOY">
-						<Original>OPFOR Convoy</Original>
+						<Original>Enemy Convoy</Original>
 						<French>Convoi OPFOR</French>
 						<German>OPFOR Konvoi</German>
 						<Russian>Конвой OPFOR</Russian>
@@ -2030,13 +2030,13 @@
 						<Russian>Путевая точка</Russian>
 				</Key>
 				<Key ID="STR_NOTIFICATION_CONVOY_DESTROYED_TEXT">
-						<Original>OPFOR Convoy neutralized.</Original>
+						<Original>Enemy Convoy neutralized.</Original>
 						<French>Convoi OPFOR neutralisé.</French>
 						<German>OPFOR Konvoi neutralisiert.</German>
 						<Russian>Конвой OPFOR нейтрализован.</Russian>
 				</Key>
 				<Key ID="STR_NOTIFICATION_CONVOY_SPOTTED_TEXT">
-						<Original>OPFOR Convoy near %1.</Original>
+						<Original>Enemy Convoy near %1.</Original>
 						<French>Convoi OPFOR près de %1.</French>
 						<German>OPFOR Konvoi nahe %1.</German>
 						<Russian>Конвой OPFOR рядом с %1.</Russian>
@@ -2072,11 +2072,11 @@
 				<Key ID="STR_TUTO_TEXT1">
 						<Original>
 						&lt;br/&gt;
-						Hello gentlemen, and welcome to Altis.
-						The OPFOR forces have surprised us with a brutal and overwhelming offensive. They now control the entire island, but thanks to your efforts, it won't last long.&lt;br/&gt; &lt;br/&gt;
-						Our objective is simple: liberate Altis.&lt;br/&gt; &lt;br/&gt;
-						The road to victory will be long and dangerous. You will have to conquer multiple sectors and acquire the necessary resources to improve the quantity and quality of the BLUFOR forces engaged in this campaign.&lt;br/&gt; &lt;br/&gt;
-						Moreover, OPFOR forces will most certainly react to our advance. You will have to engage into secondary operations to weaken a foe that fights with higher numbers and better equipment than you do.&lt;br/&gt; &lt;br/&gt;
+						Ladies, welcome to Liberation!&lt;br/&gt; &lt;br/&gt; 
+						The enemy forces have surprised us with a brutal and overwhelming offensive. They now control the entire island but thanks to your efforts, it won't last long.&lt;br/&gt; &lt;br/&gt;
+						Our objective is simple: liberate the region.&lt;br/&gt; &lt;br/&gt;
+						The road to victory will be long and dangerous. You will have to conquer multiple sectors and acquire the necessary resources to improve the quantity and quality of friendly forces engaged in this campaign.&lt;br/&gt; &lt;br/&gt;
+						Moreover, enemy forces will most certainly react to our advance. You will have to complete Secondary Objectives to weaken a foe that fights with higher numbers and better equipment than you do.&lt;br/&gt; &lt;br/&gt;
 						In your efforts you will need the support of the local population, so always make sure to double-check what you're shooting at.&lt;br/&gt; &lt;br/&gt;
 						Questions?&lt;br/&gt; &lt;br/&gt;
 						</Original>
@@ -2122,19 +2122,19 @@
 						</Russian>
 				</Key>
 				<Key ID="STR_TUTO_TITLE2">
-						<Original>2. Starting the campaign</Original>
-						<French>2. Débuter la campagne</French>
+						<Original>2. Starting the Campaign</Original>
+						<French>2. Débuter la Campagne</French>
 						<German>2. Starten der Kampagne</German>
-						<Spanish>2. Comenzando la campaña</Spanish>
+						<Spanish>2. Comenzando la Campaña</Spanish>
 						<Russian>2. С чего начать</Russian>
 				</Key>
 				<Key ID="STR_TUTO_TEXT2">
 						<Original>&lt;br/&gt;&lt;br/&gt;
 						&lt;t size='10'&gt;&lt;img image='res\tuto\fob.jpg'/&gt;&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
-						You begin the campaign in a safe zone that OPFOR won't dare to attack. Your first choice is to choose where you want to deploy. At the beginning you can only deploy at the starting base, but as you progress, more options will become available such as forward operation bases (FOBs) and mobile respawns.&lt;br/&gt; &lt;br/&gt;
-						At your starting location you can choose your equipment from a complete Arsenal. You will also find your first FOB packaged inside a container, the Spartan-01 Huron and a few other transport choppers.&lt;br/&gt; &lt;br/&gt;
-						You will have to ferry that container with either the Huron or Ghosthawk (unless you have chosen to start with the first FOB already built). You can deploy this first FOB wherever you want, so it's up to you to choose the right place to start your campaign.&lt;br/&gt; &lt;br/&gt;
+						You begin the campaign in a safe zone that the enemy won't dare to attack. Your first choice is to choose where you want to deploy. At the beginning you can only deploy at Chimera but as you progress, more options will become available such as forward operation bases (FOBs) and mobile respawns.&lt;br/&gt; &lt;br/&gt;
+						At your starting location you can choose your equipment from the Virtual Arsenal. You will also find your first FOB packaged inside a container, a slingloading-capable helicopter and a few other transport choices.&lt;br/&gt; &lt;br/&gt;
+						You will have to ferry that container with the helicopter (unless you have chosen to start with the first FOB already built) and you can deploy this first FOB wherever you want, so it's up to you to choose the right place to start your campaign.&lt;br/&gt; &lt;br/&gt;
 						</Original>
 						<French>&lt;br/&gt;&lt;br/&gt;
 						&lt;t size='10'&gt;&lt;img image='res\tuto\fob.jpg'/&gt;&lt;/t&gt;
@@ -2174,9 +2174,9 @@
 				</Key>
 				<Key ID="STR_TUTO_TEXT3">
 						<Original>&lt;br/&gt;
-						The main objective of the campaign is to kick OPFOR out of Altis. To achieve this, you will have to liberate the 7 major towns on the island: Kavala, Athira, Pyrgos, Agios Dionysios, Zaros, Paros and Molos. This is the only victory condition for the campaign.&lt;br/&gt; &lt;br/&gt;
-						But those cities are tough nuts to crack with only limited resources and a well established OPFOR. &lt;br/&gt; &lt;br/&gt;
-						To succeed, you will have to capture large number of different sectors, each with their own use.&lt;br/&gt; &lt;br/&gt;
+						The main objective of the campaign is to kick the enemy out. To achieve this, you will have to liberate all the Major Cities on the map. This is the only victory condition for the campaign.&lt;br/&gt; &lt;br/&gt;
+						But those cities are tough nuts to crack with only limited resources and a well established enemy force. &lt;br/&gt; &lt;br/&gt;
+						To succeed, you will have to capture large numbers of different sectors, each with their own use.&lt;br/&gt; &lt;br/&gt;
 						</Original>
 						<French>&lt;br/&gt;
 						L’objectif premier de la campagne est de bouter l'OPFOR hors d'Altis. Pour cela, vous devez libérer les 7 villes principales : Kavala, Athira, Pyrgos, Agios Dionysios, Zaros, Paros et Molos. C’est l’unique condition de victoire de cette campagne.&lt;br/&gt; &lt;br/&gt;
@@ -2208,11 +2208,11 @@
 				<Key ID="STR_TUTO_TEXT4">
 						<Original>&lt;br/&gt;
 						Sectors are split into 5 different types:&lt;br/&gt; &lt;br/&gt;
-						- Points of interest: generally small to medium towns, each point of interest you control will raise your troop recruitment capacity.&lt;br/&gt; &lt;br/&gt;
-						- Military bases: full of OPFOR personnel, the bases will also yield large quantities of ammunition that will be useful to upgrade your firepower. However these installations are heavily defended and will require large and well coordinated assaults.&lt;br/&gt; &lt;br/&gt;
-						- Factories: factories will give you the fuel you need to deploy more vehicles.&lt;br/&gt; &lt;br/&gt;
-						- Radio towers: when under OPFOR control, radio towers will be used to call in reinforcements when a nearby sector is attacked. The reaction time will depend on the distance between the tower and the sector. When under - NATO control, the towers will give useful information on hostile troop movements in the vicinity by using their radio communications.&lt;br/&gt; &lt;br/&gt;
-						- Major cities: there is  seven of them: Kevala, Athira, Pyrgos, Agios Dionysios, Zaros, Paros and Molos. When all of the cities are under NATO control, you win.&lt;br/&gt; &lt;br/&gt;
+						- Points of Interest: Generally small to medium towns, each point of interest you control will raise your troop recruitment capacity.&lt;br/&gt; &lt;br/&gt;
+						- Military Bases: Full of enemy personnel, the bases will also yield large quantities of Ammunition that will be useful to upgrade your firepower. However these installations are heavily defended and will require large and well coordinated assaults.&lt;br/&gt; &lt;br/&gt;
+						- Factories: Factories will give you the fuel you need to deploy more vehicles.&lt;br/&gt; &lt;br/&gt;
+						- Radio Towers: When under enemy control, radio towers will be used to call in reinforcements when a nearby sector is attacked. The reaction time will depend on the distance between the tower and the sector. When under friendly control, the towers will give useful information on hostile troop movements in the vicinity by using their radio communications.&lt;br/&gt; &lt;br/&gt;
+						- Major Cities: When all of the cities are under friendly control, you win!&lt;br/&gt; &lt;br/&gt;
 						</Original>
 						<French>&lt;br/&gt;
 						Les secteurs se répartissent en 5 types différents :&lt;br/&gt; &lt;br/&gt;
@@ -2259,9 +2259,9 @@
 						&lt;t size='10'&gt;&lt;img image='res\tuto\ress.jpg'/&gt;&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
 						In this campaign you have to manage three types of resources:&lt;br/&gt; &lt;br/&gt;
-						- &lt;t color='#00ff00'&gt;MANPOWER:&lt;/t&gt; manpower is linked to the number of points of interest you control. A bigger manpower allows you to raise the quality and quantity of your ground troops. &lt;br/&gt; &lt;br/&gt;
-						- &lt;t color='#ff0000'&gt;AMMO:&lt;/t&gt; ammunition is used to deploy armed vehicles, tanks and elite soldiers. It can be stocked forever and used only when necessary. Ammunition is contained in boxes that can be retrieved from military bases. Those crates have to be moved back to a FOB by truck or sling load, then recycled to increase your ammunition stockpile.&lt;br/&gt; &lt;br/&gt;
-						- &lt;t color='#ffff00'&gt;FUEL:&lt;/t&gt; fuel is used by every vehicle, some being more thirsty than others. The fuel levels depends on how many factories are controlled by NATO forces.&lt;br/&gt; &lt;br/&gt;
+						- &lt;t color='#00ff00'&gt;MANPOWER:&lt;/t&gt; Manpower is linked to the number of points of interest you control. A larger amount of Manpower allows you to raise the quality and quantity of your ground troops. &lt;br/&gt; &lt;br/&gt;
+						- &lt;t color='#ff0000'&gt;AMMO:&lt;/t&gt; Ammunition is used to deploy armed vehicles, tanks and elite soldiers. It can be stocked forever and used only when necessary. Ammunition is contained in boxes that can be retrieved from military bases, or Secondary Objectives. Those crates have to be moved back to an FOB by truck or slingload, then recycled to increase your ammunition stockpile.&lt;br/&gt; &lt;br/&gt;
+						- &lt;t color='#ffff00'&gt;FUEL:&lt;/t&gt; Fuel is used by every vehicle, some being more thirsty than others. The fuel levels depends on how many factories are controlled by friendly forces.&lt;br/&gt; &lt;br/&gt;
 						</Original>
 						<French>&lt;br/&gt;&lt;br/&gt;
 						&lt;t size='10'&gt;&lt;img image='res\tuto\ress.jpg'/&gt;&lt;/t&gt;
@@ -2287,14 +2287,6 @@
 						- &lt;t color='#ff0000'&gt;MUNICIÓN:&lt;/t&gt; La munición sirve para desplegar vehículos blindados, tanques y tropas de élite. Puede ser almacenada y usarse cuando sea necesario. La munición se encuentra en cajas que pueden ser sacadas de bases militares. Estas cajas deberán llevarse a una FOB mediante camiones o las eslingas del helicóptero. Una vez allí, hay que reciclarla para conseguir la munición. &lt;br/&gt; &lt;br/&gt;
 						- &lt;t color='#ffff00'&gt;COMBUSTIBLE:&lt;/t&gt; El combustible es consumido por todos los vehículos, en diferente cantidad. El nivel de combustible disponible depende de la cantidad de fábricas que se encuentren bajo el control de la OTAN. &lt;br/&gt; &lt;br/&gt;
 						</Spanish>
-						<Original>&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='10'&gt;&lt;img image='res\tuto\ress.jpg'/&gt;&lt;/t&gt;
-						&lt;br/&gt;&lt;br/&gt;
-						In this campaign you have to manage three types of resources:&lt;br/&gt; &lt;br/&gt;
-						- &lt;t color='#00ff00'&gt;MANPOWER:&lt;/t&gt; manpower is linked to the number of points of interest you control. A bigger manpower allows you to raise the quality and quantity of your ground troops. &lt;br/&gt; &lt;br/&gt;
-						- &lt;t color='#ff0000'&gt;AMMO:&lt;/t&gt; ammunition is used to deploy armed vehicles, tanks and elite soldiers. It can be stocked forever and used only when necessary. Ammunition is contained in boxes that can be retrieved from military bases. Those crates have to be moved back to a FOB by truck or sling load, then recycled to increase your ammunition stockpile.&lt;br/&gt; &lt;br/&gt;
-						- &lt;t color='#ffff00'&gt;FUEL:&lt;/t&gt; fuel is used by every vehicle, some being more thirsty than others. The fuel levels depends on how many factories are controlled by NATO forces.&lt;br/&gt; &lt;br/&gt;
-						</Original>
 						<Russian>&lt;br/&gt;
 						&lt;t size='10'&gt;&lt;img image='res\tuto\ress.jpg'/&gt;&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
@@ -2304,7 +2296,7 @@
 						- &lt;t color='#ffff00'&gt;ТОПЛИВО:&lt;/t&gt; используется при создании всех транспортных средств, причём некоторые из них требуют больше ресурса, чем другие. Уровень ресурса зависит от того, сколько заводов контролируются силами НАТО.&lt;br/&gt; &lt;br/&gt;</Russian>
 				</Key>
 				<Key ID="STR_TUTO_TITLE6">
-						<Original>6. Alert level</Original>
+						<Original>6. Alert Level</Original>
 						<French>6. Niveau d'alerte</French>
 						<German>6. Alarmstatus</German>
 						<Spanish>6. Nivel de alerta</Spanish>
@@ -2312,8 +2304,8 @@
 				</Key>
 				<Key ID="STR_TUTO_TEXT6">
 						<Original>&lt;br/&gt;
-						The OPFOR won't let you liberate all of its brand new territory without reacting. When you begin the campaign, hostile forces will only be composed of the garrisons inside military bases. However as you become more threatening by liberating more and more sectors, the OPFOR will start calling in more reinforcements, men and equipment to counter you.&lt;br/&gt; &lt;br/&gt;
-						To limit the OPFOR's operational capabilities, you will have to fulfill secondary objectives that will consist of destroying their logistics bases. This is not required to win the campaign, but if you ignore the alert level for too long, you're in for quite a lot of trouble.&lt;br/&gt; &lt;br/&gt;
+						The enemy won't let you liberate all of their brand new territories without reacting badly. When you begin the campaign, hostile forces will only be composed of the garrisons inside military bases. However as you become more threatening by liberating more and more sectors, the enemy will start calling in more reinforcements, armour and equipment to counter you.&lt;br/&gt; &lt;br/&gt;
+						To limit the enemies operational capabilities, you will have to tread carefully and complete Secondary Objectives where available. This is not required to win the campaign but if you ignore the Alert Level for too long, you're in for quite a lot of trouble.&lt;br/&gt; &lt;br/&gt;
 						</Original>
 						<French>&lt;br/&gt;
 						L'OPFOR ne vous laissera pas reprendre son tout nouveau territoire sans réagir. En début de campagne les forces hostiles se limiteront aux garnisons des différentes bases militaires, mais plus vous deviendrez menaçants en libérant de nouveaux secteurs, et plus l' OPFOR fera venir de renforts en hommes et en matériel pour vous contrer. &lt;br/&gt; &lt;br/&gt;
@@ -2340,8 +2332,8 @@
 				</Key>
 				<Key ID="STR_TUTO_TEXT7">
 						<Original>&lt;br/&gt;
-						To help you succeed in your endeavors, you have a construction capability that allow you to deploy units, vehicles, defenses, fortifications and so on. Depending on your resources of course.&lt;br/&gt; &lt;br/&gt;
-						The construction system will be available when you are within 100 meters of a FOB headquarters. A contextual option will appear then.&lt;br/&gt; &lt;br/&gt;
+						To help you succeed in your endeavours, you have the "BUILD" capability that allows you to deploy units, vehicles, defences, fortifications and so on. Depending on your resources of course.&lt;br/&gt; &lt;br/&gt;
+						The construction system will be available when you are within 100 meters of a FOB headquarters. A contextual "BUILD" option will appear then in your scroll menus.&lt;br/&gt; &lt;br/&gt;
 						</Original>
 						<French>&lt;br/&gt;
 						Pour mener à bien vos objectifs vous disposez d'une capacité de construction qui vous permet de déployer des unités, des véhicules, des défenses pour vos FOB, des fortifications et autres. En fonction de vos ressources, bien sur. &lt;br/&gt; &lt;br/&gt;
@@ -2368,8 +2360,8 @@
 				</Key>
 				<Key ID="STR_TUTO_TEXT8">
 						<Original>&lt;br/&gt;
-						To build a brand new FOB, go to the construction menu, in the logistics tab, and build a FOB container or a FOB truck (the same thing, only with wheels).&lt;br/&gt; &lt;br/&gt;
-						Then you can move the FOB container where you want to deploy your shiny new FOB. However be aware that you can't build a FOB inside a control sector, or within 2km of any other FOB.&lt;br/&gt; &lt;br/&gt;
+						To build a brand new FOB go to the construction menu, under the logistics tab, build an FOB container or FOB truck.&lt;br/&gt; &lt;br/&gt;
+						Then you can move the FOB container/drive the FOB truck where you want to deploy your shiny new FOB. However be aware that you can't build an FOB within an existing sector, or within 2km of any other FOB.&lt;br/&gt; &lt;br/&gt;
 						</Original>
 						<French>&lt;br/&gt;
 						Pour déployer une nouvelle FOB, rendez vous dans le menu de construction, onglet logistique, et choisissez de construire un container de FOB ou un camion FOB (la même chose, avec des roues).&lt;br/&gt; &lt;br/&gt;
@@ -2388,7 +2380,7 @@
 						Затем вы можете переместить этот контейнер или грузовик туда, где вы хотите развернуть новую FOB. Однако следует знать, что вы не можете построить FOB внутри зон, и дальше чем в 2 км от любой другой FOB.&lt;br/&gt; &lt;br/&gt;</Russian>
 				</Key>
 				<Key ID="STR_TUTO_TITLE9">
-						<Original>9. Secondary objectives</Original>
+						<Original>9. Secondary Objectives</Original>
 						<French>9. Missions secondaires</French>
 						<German>9. Sekundäre Ziele</German>
 						<Spanish>9. Objetivos secundarios</Spanish>
@@ -2396,9 +2388,9 @@
 				</Key>
 				<Key ID="STR_TUTO_TEXT9">
 						<Original>&lt;br/&gt;
-						When you capture sectors, sometimes the few hostiles forces left will surrender. You can then capture prisoners that have to be taken to a nearby FOB to be interrogated.&lt;br/&gt; &lt;br/&gt;
-						That interrogatory, executed in the utmost respect of the Geneva conventions, will allow you to obtain more or less precise information about the position of an OPFOR logistics base.&lt;br/&gt; &lt;br/&gt;
-						After going there you will need to find the exact position of your target, then use any means at your disposal to destroy every vehicle or container that could be useful to refill OPFOR forces. Succeeding at this task will reduce the alert level consequently, and with it the efficiency of all hostile forces.&lt;br/&gt; &lt;br/&gt;
+						When you capture sectors, sometimes the few hostiles forces left will surrender. You can then capture these prisoners and take them to a nearby FOB to be interrogated automatically.&lt;br/&gt; &lt;br/&gt;
+						That interrogatory, executed in the utmost respect of the Geneva conventions, will allow you to obtain more Intel points which you can then spend on a Secondary Objective.&lt;br/&gt; &lt;br/&gt;
+						Completing these Secondary Objectives will reward you with different advantages such as more Ammunition, more Intel or even decreasing the enemy Alert Level.&lt;br/&gt; &lt;br/&gt;
 						</Original>
 						<French>&lt;br/&gt;
 						Lors de la capture d'un secteur, les dernières forces hostile sur place se rendront. Vous pourrez alors capturer des prisonniers qui devront être emmenés à une FOB pour y être interrogés.&lt;br/&gt; &lt;br/&gt;
@@ -2429,10 +2421,9 @@
 				</Key>
 				<Key ID="STR_TUTO_TEXT10">
 						<Original>&lt;br/&gt;
-						When a player uses the commander slot (the last slot of the list), they get access to a Zeus interface by pressing the corresponding key (U by default).&lt;br/&gt; &lt;br/&gt;
-						This interface allows to command NATO forces in 3d view or map view.&lt;br/&gt; &lt;br/&gt;
-						Moreover the commander gets additional build options that will allow them to obtain crewed vehicles or entire pre-made squads.&lt;br/&gt; &lt;br/&gt;
-						This role is not mandatory, but strongly recommended for smaller groups of players.&lt;br/&gt; &lt;br/&gt;
+						When a player uses the Commander slot (the last slot of the list), they get access to a Zeus interface by pressing the corresponding key (U by default). This interface allows you to command NATO forces in 3D view or map view.&lt;br/&gt; &lt;br/&gt;
+						Moreover the Commander gets additional build options that will allow them to obtain crewed vehicles or entire pre-made squads, as well as an infinite support system, this is simply for cinematic uses and can be utilised as a bonus feature.&lt;br/&gt; &lt;br/&gt;
+						This role is not mandatory but strongly recommended for smaller groups of players.&lt;br/&gt; &lt;br/&gt;
 						</Original>
 						<French>&lt;br/&gt;
 						Lorsqu'un joueur prend le rôle de commandant (en dernière position de la liste des rôles), il a accès à une interface Zeus en appuyant sur la touche correspondante (par défaut U).&lt;br/&gt; &lt;br/&gt;
@@ -2470,14 +2461,14 @@
 						&lt;t size='1.3' color='#ffa000'&gt;FOB HUNTING&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
 						&lt;t size='1'&gt;
-						OPFOR forces use an array of small logistic bases situated behind the front lines. Destroying those assets would greatly disrupt the OPFOR supply lines and impair their capacity to react to our actions.&lt;/t&gt;
+						Hostile forces use an array of small logistic bases situated behind the front lines. Destroying those assets would greatly disrupt the enemy supply lines and impair their capacity to react to our actions.&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
 						&lt;t size='1'&gt;
-						Your mission is to destroy all supply assets (trucks, containers) at the objective by any means at your disposal. Unfortunately our intelligence is not able to provide you with a precise position for the base, you will have to locate the objective in the red zone on your map.&lt;/t&gt;
+						Your mission is to destroy all supply assets (trucks and containers) at the objective by any means at your disposal. Unfortunately our intelligence is not able to provide you with a precise position for the base, you will have to locate the objective in the red zone on your map.&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='1.15' color='#00a0ff'&gt;Cost: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+						&lt;t size='1.15' color='#00a0ff'&gt;Cost: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
 						&lt;br/&gt;
-						&lt;t size='1.15' color='#ffa000'&gt;Reward: OPFOR alert level reduced by 40%&lt;/t&gt;
+						&lt;t size='1.15' color='#ffa000'&gt;Reward: Enemy alert level reduced by 40%&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
 						&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
 						</Original>
@@ -2490,7 +2481,7 @@
 						&lt;t size='1'&gt;
 						Votre mission est de détruire tous les équipements logistiques (camions, containers) présents sur l'objectif. Malheureusement nos renseignements ne permettent pas de vous donner la position précise de la base, vous devrez la chercher dans la zone rouge visible sur votre carte.&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='1.15' color='#00a0ff'&gt;Coût: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+						&lt;t size='1.15' color='#00a0ff'&gt;Coût: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
 						&lt;br/&gt;
 						&lt;t size='1.15' color='#ffa000'&gt;Récompense: niveau d'alerte de l'OPFOR réduit de 40%&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
@@ -2548,16 +2539,16 @@
 						&lt;t size='1.3' color='#ffa000'&gt;CONVOY HIJACK&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
 						&lt;t size='1'&gt;
-						OPFOR forces use road convoys to resupply their defensive positions. Intercepting one of these convoys would effectively disrupt their supply lines, and we could use the occasion to retrieve an hefty amount of ammunition.&lt;/t&gt;
+						Enemy forces use road convoys to resupply their defensive positions. Intercepting one of these convoys would effectively disrupt their supply lines and we could use the occasion to retrieve a hefty amount of ammunition.&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
 						&lt;t size='1'&gt;
-						Your mission is to stop the OPFOR convoy by any means necessary. You can destroy it, or hijack it to retrieve all the ammunition you can grab. The target will be spotted on your map.&lt;/t&gt;
+						Your mission is to stop the enemy convoy by any means necessary. You can destroy it, or hijack it to retrieve all the ammunition you can grab. The target will be spotted on your map.&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
 						&lt;t size='1.15' color='#00a0ff'&gt;Cost: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
 						&lt;br/&gt;
-						&lt;t size='1.15' color='#ffa000'&gt;Reward: OPFOR alert level reduced by 15%&lt;/t&gt;
+						&lt;t size='1.15' color='#ffa000'&gt;Reward: Enemy Alert level reduced by 15%&lt;/t&gt;
 						&lt;br/&gt;
-						&lt;t size='1.15' color='#ffa000'&gt;Side reward: All the ammunition you can retrieve.&lt;/t&gt;
+						&lt;t size='1.15' color='#ffa000'&gt;Bonus: All the ammunition you can retrieve.&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
 						&lt;t size='10'&gt;&lt;img image='res\secondary\convoy_obj.jpg'/&gt;&lt;/t&gt;
 						</Original>
@@ -2615,22 +2606,22 @@
 
 				<!-- Added in v0.922 -->
 				<Key ID="STR_PARAM_BLUFOR_DEFENDERS">
-						<Original>BLUFOR defenders in owned sectors</Original>
-						<French>Défenseurs BLUFOR dans les secteurs capturés</French>
-						<German>BLUFOR Verteidiger in besetzten Sektoren</German>
-						<Russian>BLUFOR защитники в захваченных зонах</Russian>
+						<Original>Friendly defenders in owned sectors:</Original>
+						<French>Défenseurs BLUFOR dans les secteurs capturés:</French>
+						<German>BLUFOR Verteidiger in besetzten Sektoren:</German>
+						<Russian>BLUFOR защитники в захваченных зонах:</Russian>
 				</Key>
 				<Key ID="STR_PARAM_AUTODANGER">
-						<Original>Auto-danger behaviour on BLUFOR forces</Original>
-						<French>Comportement 'danger' automatique sur les forces BLUFOR</French>
-						<German>Auto-Gefahr Verhalten bei BLUFOR Kräften</German>
-						<Russian>Авто-опасность для сил BLUFOR</Russian>
+						<Original>Auto-danger behaviour on friendly forces:</Original>
+						<French>Comportement 'danger' automatique sur les forces BLUFOR:</French>
+						<German>Auto-Gefahr Verhalten bei BLUFOR Kräften:</German>
+						<Russian>Авто-опасность для сил BLUFOR:</Russian>
 				</Key>
 				<Key ID="STR_PARAM_FOBS_COUNT">
-						<Original>Maximum number of FOBs allowed</Original>
-						<French>Nombre maximal de FOBs autorisé</French>
-						<German>Maximale Anzahl an erlaubten FOBs</German>
-						<Russian>Максимальное количество FOB</Russian>
+						<Original>Maximum number of FOBs allowed:</Original>
+						<French>Nombre maximal de FOBs autorisé:</French>
+						<German>Maximale Anzahl an erlaubten FOBs:</German>
+						<Russian>Максимальное количество FOB:</Russian>
 				</Key>
 				<Key ID="STR_HINT_FOBS_EXCEEDED">
 						<Original>You are not allowed to deploy more than %1 FOBs at the same time.</Original>
@@ -2657,11 +2648,11 @@
 						We have lost contact with a recon helicopter on mission behind the enemy lines. We believe the chopper was shot down by hostile forces.&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
 						&lt;t size='1'&gt;
-						The helicopter may have crashlanded anywhere in a large zone around its last known position. Your mission is to retrieve the chopper crew and their precious intel. Hostile forces may have found them first, so you must be quick, careful, and ready to engage.&lt;/t&gt;
+						The helicopter may have crashlanded anywhere in a large zone around its last known position. Your mission is to retrieve the chopper crew and their precious intel. Hostile forces may have found them first, so you must be quick, careful, as well as ready to engage.&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='1.15' color='#00a0ff'&gt;Cost: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+						&lt;t size='1.15' color='#00a0ff'&gt;Cost: 5&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
 						&lt;br/&gt;
-						&lt;t size='1.15' color='#ffa000'&gt;Reward: 20 intel points (10 for each crew alive).&lt;/t&gt;
+						&lt;t size='1.15' color='#ffa000'&gt;Reward: 20 Intel points (10 for each crew alive).&lt;/t&gt;
 						&lt;br/&gt;&lt;br/&gt;
 						&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
 						</Original>
@@ -2699,18 +2690,18 @@
 
 				<!-- Added in v0.924 -->
 				<Key ID="STR_CIV_PENALTIES">
-						<Original>Penalty for killing civilians</Original>
-						<French>Pénalité pour les pertes civiles</French>
-						<German>Strafe für zivile Verluste</German>
+						<Original>Penalty for killing civilians:</Original>
+						<French>Pénalité pour les pertes civiles:</French>
+						<German>Strafe für zivile Verluste:</German>
 				</Key>
 				<Key ID="STR_CIV_PENALTY_MESSAGE">
-						<Original>Penalty of %1 for killing of civilian named %2 by %3</Original>
-						<French>Penalty de %1 pour avoir tué le civil %2 par %3</French>
-						<German>Strafe von %1 für die Ermordung des Zivilisten %2 durch %3</German>
+						<Original>Penalty of %1 for killing of civilian named %2 by %3.</Original>
+						<French>Penalty de %1 pour avoir tué le civil %2 par %3.</French>
+						<German>Strafe von %1 für die Ermordung des Zivilisten %2 durch %3.</German>
 				</Key>
 				<Key ID="STR_PARAM_SQUAD_SIZE">
-						<Original>AI recruitment limit per squad</Original>
-						<French>Limite de recrutement d'IA par escouade</French>
+						<Original>AI recruitment limit per squad:</Original>
+						<French>Limite de recrutement d'IA par escouade:</French>
 				</Key>
 				<Key ID="STR_NOTIFICATION_SAR_STARTED">
 						<Original>Crashed helicopter near %1.</Original>
