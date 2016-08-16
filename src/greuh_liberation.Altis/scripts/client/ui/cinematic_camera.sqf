@@ -59,7 +59,7 @@ while { cinematic_camera_started } do {
 		_camtarget = _cinematic_pointer;
 		if ( first_camera_round ) then {
 			if ( GRLIB_isAtlasPresent ) then {
-				_camtarget = lhdofficer;
+				_camtarget = chimeraofficer;
 			} else {
 				_camtarget = chimeraofficer;
 			};

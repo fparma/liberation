@@ -19,7 +19,6 @@ while { true } do {
 
 	_veh = vehicle player;
 
-
 	if ( _veh != player ) then {
 		if ( effectiveCommander _veh == player ) then {
 			if ( (speed _veh < _repair_speed) && (((getPosATL _veh) select 2) < _repair_altitude) ) then {

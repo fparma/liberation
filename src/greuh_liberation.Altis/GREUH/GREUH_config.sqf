@@ -1,14 +1,14 @@
-// Permettre aux joueurs de modifier leur distance de vue
+// Allow players to change their view distance.
 GREUH_allow_viewdistance = true;
  
-// Permettre aux joueurs de modifier la qualité de l environnement
+// Allow players to change the quality of the environment.
 GREUH_allow_worldquality = true; 
 
-// Permettre aux joueurs de modifier leurs escouades
+// Allow players to change their squads.
 GREUH_allow_customsquads = true;
 
-// Permettre aux joueurs de se voir sur la carte
+// Allow players to be seen on the map.
 GREUH_allow_mapmarkers = true;
 
-// Permettre aux joueurs de voir le platoon sur la carte et le hud
+// Allow players to see the platoon their map and hud.
 GREUH_allow_platoonview = true;

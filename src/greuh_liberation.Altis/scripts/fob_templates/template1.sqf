@@ -1,4 +1,3 @@
-
 _objects_to_build = [
 ["Land_HBarrierBig_F",[-15,-8,0],90],
 ["Land_HBarrierBig_F",[-15,-16.5,0],90],

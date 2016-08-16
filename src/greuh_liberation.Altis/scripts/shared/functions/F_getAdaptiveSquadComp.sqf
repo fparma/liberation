@@ -8,8 +8,15 @@ _squadcomp = opfor_squad_8_standard;
 _specialists = false;
 
 if ( !isNil 'combat_readiness' ) then {
-	if ( combat_readiness < 35 ) then {
+	if ( combat_readiness > 35 && combat_readiness < 75 ) then {
 		_squadcomp = opfor_squad_low_intensity;
+		_specialists = true;
+	};
+};
+
+if ( !isNil 'combat_readiness' ) then {
+	if ( combat_readiness > 75 ) then {
+		_squadcomp = opfor_squad_high_intensity;
 		_specialists = true;
 	};
 };

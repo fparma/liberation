@@ -1,4 +1,4 @@
-// Control types
+// Control Types
 #define CT_STATIC           0
 #define CT_BUTTON           1
 #define CT_EDIT             2
@@ -15,7 +15,7 @@
 #define CT_STRUCTURED_TEXT  13
 #define CT_CONTEXT_MENU     14
 #define CT_CONTROLS_GROUP   15
-#define CT_SHORTCUT_BUTTON  16 // Arma 2 - textured button
+#define CT_SHORTCUT_BUTTON  16 // Arma 2 - Textured button
 
 #define CT_XKEYDESC         40
 #define CT_XBUTTON          41
@@ -34,7 +34,7 @@
 #define CT_List_N_Box       102 // Arma 2 - N columns list box
 
 
-// Static styles
+// Static Styles
 #define ST_POS            0x0F
 #define ST_HPOS           0x03
 #define ST_VPOS           0x0C
@@ -63,19 +63,19 @@
 #define ST_LINE           176
 
 #define ST_SHADOW         0x100
-#define ST_NO_RECT        0x200 // this style works for CT_STATIC in conjunction with ST_MULTI
+#define ST_NO_RECT        0x200		// This style works for CT_STATIC in conjunction with ST_MULTI
 #define ST_KEEP_ASPECT_RATIO  0x800
 
 #define ST_TITLE          ST_TITLE_BAR + ST_CENTER
 
-// Slider styles
+// Slider Styles
 #define SL_DIR            0x400
 #define SL_VERT           0
 #define SL_HORZ           0x400
 
 #define SL_TEXTURES       0x10
 
-// Listbox styles
+// Listbox Styles
 #define LB_TEXTURES       0x10
 #define LB_MULTI          0x20
 
