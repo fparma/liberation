@@ -59,9 +59,9 @@ while { cinematic_camera_started } do {
 		_camtarget = _cinematic_pointer;
 		if ( first_camera_round ) then {
 			if ( GRLIB_isAtlasPresent ) then {
-				_camtarget = chimeraofficer;
+				_camtarget = base_boxspawn;
 			} else {
-				_camtarget = chimeraofficer;
+				_camtarget = base_boxspawn;
 			};
 		} else {
 			if ( count ( [ _nearentities , { alive _x && isPlayer _x } ] call BIS_fnc_conditionalSelect ) != 0 ) then {
