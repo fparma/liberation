@@ -35,9 +35,7 @@ while { true } do {
 
 	GRLIB_force_redeploy = false;
 
-	if ( !GRLIB_fatigue ) then {
-		player enableStamina false;
-	};
+	player enableStamina false;
 	player setCustomAimCoef 0.35;
 	player setUnitRecoilCoefficient 0.6;
 

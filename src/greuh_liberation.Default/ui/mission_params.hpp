@@ -60,12 +60,6 @@ class Params
 		texts[] = { "" };
 		default = "";
 	};
-	class Fatigue {
-		title = $STR_PARAMS_FATIGUE;
-		values[] = { 0, 1 };
-		texts[] = { $STR_PARAMS_DISABLED, $STR_PARAMS_ENABLED };
-		default = 0;
-	};
 	class Civilians{
 		title = $STR_PARAMS_CIVILIANS;
 		values[] = {0,0.5,1,2};

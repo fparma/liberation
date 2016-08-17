@@ -2,7 +2,6 @@ if ( isMultiplayer ) then {
 	GRLIB_difficulty_modifier = ["Difficulty",1] call bis_fnc_getParamValue;
 	GRLIB_time_factor = ["DayDuration",12] call bis_fnc_getParamValue;
 	GRLIB_resources_multiplier = ["ResourcesMultiplier",1] call bis_fnc_getParamValue;
-	GRLIB_fatigue = ["Fatigue",1] call bis_fnc_getParamValue;
 	GRLIB_introduction = ["Introduction",1] call bis_fnc_getParamValue;
 	GRLIB_deployment_cinematic = ["DeploymentCinematic",1] call bis_fnc_getParamValue;
 	GRLIB_unitcap = ["Unitcap",1] call bis_fnc_getParamValue;
@@ -30,7 +29,6 @@ if ( isMultiplayer ) then {
 	GRLIB_difficulty_modifier = 1;
 	GRLIB_time_factor = 12;
 	GRLIB_resources_multiplier = 1;
-	GRLIB_fatigue = 1;
 	GRLIB_introduction = 0;
 	GRLIB_deployment_cinematic = 0;
 	GRLIB_adaptive_opfor = 1;
@@ -52,12 +50,10 @@ if ( isMultiplayer ) then {
 	GRLIB_civ_penalties = 1;
 	GRLIB_remote_sensors = 0;
 	GRLIB_blufor_defenders = 1;
-	GRLIB_autodanger = 0;
 	GRLIB_maximum_fobs = 26;
 	GRLIB_max_squad_size = 10;
 };
 
-if ( GRLIB_fatigue < 0.1 ) then { GRLIB_fatigue = false } else { GRLIB_fatigue = true };
 if ( GRLIB_introduction == 1 ) then { GRLIB_introduction = true } else { GRLIB_introduction = false };
 if ( GRLIB_deployment_cinematic == 1 ) then { GRLIB_deployment_cinematic = true } else { GRLIB_deployment_cinematic = false };
 if ( GRLIB_build_first_fob == 1 ) then { GRLIB_build_first_fob = true } else { GRLIB_build_first_fob = false };
