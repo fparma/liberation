@@ -1,6 +1,4 @@
-_save_interval = 20;
-
 while { GRLIB_endgame == 0 } do {
-	sleep _save_interval;
+	sleep 20;
 	trigger_server_save = true;
 };
