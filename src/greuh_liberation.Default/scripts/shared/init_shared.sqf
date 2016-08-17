@@ -21,6 +21,5 @@ remote_call_civ_penalty = compileFinal preprocessFileLineNumbers "scripts\client
 remote_call_intel = compileFinal preprocessFileLineNumbers "scripts\client\remotecall\remote_call_intel.sqf";
 remote_call_incoming = compileFinal preprocessFileLineNumbers "scripts\client\remotecall\remote_call_incoming.sqf";
 
-[] spawn compileFinal preprocessFileLineNumbers "scripts\shared\scan_skill.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\shared\diagnostics.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\shared\manage_weather.sqf";
