@@ -21,7 +21,6 @@ if ( isMultiplayer ) then {
 	GRLIB_shorter_nights = ["ShorterNights",0] call bis_fnc_getParamValue;
 	GRLIB_ammo_bounties = [ "AmmoBounties",0] call bis_fnc_getParamValue;
 	GRLIB_civ_penalties = [ "CivPenalties",0] call bis_fnc_getParamValue;
-	GRLIB_remote_sensors = [ "DisableRemoteSensors",0] call bis_fnc_getParamValue;
 	GRLIB_blufor_defenders = [ "BluforDefenders",1] call bis_fnc_getParamValue;
 	GRLIB_maximum_fobs = [ "MaximumFobs",26] call bis_fnc_getParamValue;
 	GRLIB_max_squad_size = ["MaxSquadSize",10] call bis_fnc_getParamValue;
@@ -48,7 +47,6 @@ if ( isMultiplayer ) then {
 	GRLIB_shorter_nights = 0;
 	GRLIB_ammo_bounties = 1;
 	GRLIB_civ_penalties = 1;
-	GRLIB_remote_sensors = 0;
 	GRLIB_blufor_defenders = 1;
 	GRLIB_maximum_fobs = 26;
 	GRLIB_max_squad_size = 10;

@@ -26,3 +26,5 @@ if (!isDedicated && hasInterface) then {
 } else {
 	setViewDistance 2000;
 };
+
+disableRemoteSensors true;
