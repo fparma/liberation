@@ -49,7 +49,6 @@ if ( GRLIB_endgame == 0 ) then {
 		publicVariable "GRLIB_all_fobs";
 		reset_battlegroups_ai = true;
 		[_thispos] call destroy_fob;
-		trigger_server_save = true;
 		[] call recalculate_caps;
 		stats_fobs_lost = stats_fobs_lost + 1;
 	} else {

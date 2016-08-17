@@ -42,10 +42,6 @@ if (isServer) then {
 	[] call recalculate_caps;
 	[] spawn check_victory_conditions;
 
-	sleep 1;
-
-	trigger_server_save = true;
-
 	sleep 45;
 
 	if ( GRLIB_endgame == 0 ) then {

@@ -14,8 +14,6 @@ if ( _create_fob_building ) then {
 	sleep 1;
 };
 
-trigger_server_save = true;
-
 sleep 3;
 [ [ _new_fob, 0 ] , "remote_call_fob" ] call BIS_fnc_MP;
 

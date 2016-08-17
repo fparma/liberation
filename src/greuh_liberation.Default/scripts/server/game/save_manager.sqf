@@ -66,7 +66,6 @@ _building_classnames = [FOB_typename];
 
 _classnames_to_save = _classnames_to_save + _classnames_to_save_blu + all_hostile_classnames;
 
-trigger_server_save = false;
 greuh_liberation_savegame = profileNamespace getVariable GRLIB_save_key;
 
 if ( !isNil "greuh_liberation_savegame" ) then {
@@ -243,10 +242,7 @@ publicVariable "GRLIB_permissions";
 save_is_loaded = true; publicVariable "save_is_loaded";
 
 while { true } do {
-	waitUntil {
-		sleep 0.3;
-		trigger_server_save || GRLIB_endgame == 1;
-	};
+	sleep 20;
 
 	if ( GRLIB_endgame == 1 ) then {
 		profileNamespace setVariable [ GRLIB_save_key, nil ];
@@ -254,7 +250,6 @@ while { true } do {
 		while { true } do { sleep 300; };
 	} else {
 
-		trigger_server_save = false;
 		buildings_to_save = [];
 		ai_groups = [];
 

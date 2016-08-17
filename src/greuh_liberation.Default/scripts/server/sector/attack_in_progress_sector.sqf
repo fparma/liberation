@@ -52,7 +52,6 @@ if ( GRLIB_endgame == 0 ) then {
 		publicVariable "blufor_sectors";
 		[ [ _sector, 2 ] , "remote_call_sector" ] call BIS_fnc_MP;
 		reset_battlegroups_ai = true;
-		trigger_server_save = true;
 		[] call recalculate_caps;
 		stats_sectors_lost = stats_sectors_lost + 1;
 	} else {
