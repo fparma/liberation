@@ -37,9 +37,7 @@ heavy_vehicles_extension = [
 
 air_vehicles_overwrite = false;
 air_vehicles_extension = [
-	["FIR_F16C",0,200,40],
-	["JS_JC_FA18E",0,350,50],
-	["JS_JC_FA18F",0,350,50]
+
 ];
 
 static_vehicles_overwrite = false;
@@ -55,11 +53,7 @@ buildings_extension = [
 //If you're going to overwrite this, make sure you have at least Arsenal_typename, Respawn_truck_typename, FOB_box_typename and FOB_truck_typename in there.
 support_vehicles_overwrite = false;
 support_vehicles_extension = [
-["JNS_Skycrane_Pod_Bench_BLU_Black",5,0,0],
-["JNS_Skycrane_Pod_Ammo_BLU_Black",5,0,0],
-["JNS_Skycrane_Pod_Medical_BLU_Black",5,0,0],
-["JNS_Skycrane_Pod_Repair_BLU_Black",5,0,0],
-["JNS_Skycrane_Pod_Transport_BLU_Black",5,0,0]
+
 ];
 
 // All the UAVs must be declared here, otherwise there shall be UAV controlling issues. Namely: you won't be able to control them.
@@ -230,14 +224,7 @@ vehicle_refuel_sources_extension = [
 
 //Elite vehicles that should be unlocked through military base capture, use this for vanilla vehicles as well. This list is the only reference in this version.
 elite_vehicles_extension = [
-	"B_T_MBT_01_cannon_F",					//M2A1_Slammer
-	"B_T_MBT_01_TUSK_F",					//M2A1_Slammer_UP
-	"B_T_MBT_01_arty_F",					//M4_Scorcher
-	"B_T_MBT_01_mlrs_F",					//M5_Sandstorm_MLRS
-	"B_Heli_Attack_01_F",					//AH-99_Blackfoot
-	"B_Plane_CAS_01_F",						//A-164_Wipeout
-	"JS_JC_FA18E",							//FA-18_SuperHornet_E
-	"JS_JC_FA18F" 							//FA-18_SuperHornet_F
+
 ];
 
 //Blacklisted arsenal items such as deployable weapons that should be bought instead.
