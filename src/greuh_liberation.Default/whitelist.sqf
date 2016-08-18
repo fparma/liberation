@@ -12,6 +12,4 @@ GRLIB_whitelisted_steamids = [];
 
 // Allowed individual player names. Note that this method is not very secure contrary to SteamIDs.
 // For example: "Zbug".
-GRLIB_whitelisted_names = [
-
-];
+GRLIB_whitelisted_names = [];

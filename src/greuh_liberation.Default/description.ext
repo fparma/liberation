@@ -12,8 +12,7 @@ onLoadName = $STR_MISSION_TITLE;
 
 joinUnassigned = 0;
 
-class Header
-{
+class Header {
 	gameType = CTI;
 	minPlayers = 1;
 	maxPlayers = 41;
@@ -24,10 +23,8 @@ class Header
 #include "ui\liberation_notifications.hpp"
 #include "ui\mission_params.hpp"
 
-class CfgDebriefing
-{
-	class End1
-	{
+class CfgDebriefing {
+	class End1 {
 		title =	$STR_SORRY;
 		subtitle = "";
 		description = $STR_COMMANDER_NOT_AUTHORIZED;
