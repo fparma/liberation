@@ -18,7 +18,6 @@ class Header {
 	maxPlayers = 41;
 };
 
-#include "GREUH\UI\GREUH_interface.hpp"
 #include "ui\liberation_interface.hpp"
 #include "ui\liberation_notifications.hpp"
 #include "ui\mission_params.hpp"
