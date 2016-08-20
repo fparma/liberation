@@ -36,12 +36,6 @@ class Params
 		texts[] = { "0.5", "1", "1.5", "2", "2.5", "3","3.5","4","5","6","8","10","12","15","24","36","48","64","96","128","192","240" };
 		default = 12;
 	};
-	class ShorterNights {
-		title = $STR_SHORTER_NIGHTS_PARAM;
-		values[] = {1,0};
-		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 1;
-	};
 	class ResourcesMultiplier {
 		title = $STR_PARAMS_RESOURCESMULTIPLIER;
 		values[] = { 0.25, 0.5, 0.75, 1, 1.25, 1.5, 2, 3, 5, 10, 20, 50 };

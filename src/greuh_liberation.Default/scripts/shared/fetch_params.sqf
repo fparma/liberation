@@ -17,7 +17,6 @@ if ( isMultiplayer ) then {
 	GRLIB_use_whitelist = ["Whitelist",0] call bis_fnc_getParamValue;
 	GRLIB_cleanup_vehicles = ["CleanupVehicles",2] call bis_fnc_getParamValue;
 	GRLIB_csat_aggressivity = ["Aggressivity",1] call bis_fnc_getParamValue;
-	GRLIB_shorter_nights = ["ShorterNights",0] call bis_fnc_getParamValue;
 	GRLIB_ammo_bounties = [ "AmmoBounties",0] call bis_fnc_getParamValue;
 	GRLIB_civ_penalties = [ "CivPenalties",0] call bis_fnc_getParamValue;
 	GRLIB_blufor_defenders = [ "BluforDefenders",1] call bis_fnc_getParamValue;
@@ -42,7 +41,6 @@ if ( isMultiplayer ) then {
 	GRLIB_use_whitelist = 0;
 	GRLIB_cleanup_vehicles = 2;
 	GRLIB_csat_aggressivity = 1;
-	GRLIB_shorter_nights = 0;
 	GRLIB_ammo_bounties = 1;
 	GRLIB_civ_penalties = 1;
 	GRLIB_blufor_defenders = 1;
@@ -58,7 +56,6 @@ if ( GRLIB_adaptive_opfor == 1 ) then { GRLIB_adaptive_opfor = true } else { GRL
 if ( GRLIB_passive_income == 1 ) then { GRLIB_passive_income = true } else { GRLIB_passive_income = false };
 if ( GRLIB_permissions_param == 1 ) then { GRLIB_permissions_param = true } else { GRLIB_permissions_param = false };
 if ( GRLIB_use_whitelist == 1 ) then { GRLIB_use_whitelist = true } else { GRLIB_use_whitelist = false };
-if ( GRLIB_shorter_nights == 1 ) then { GRLIB_shorter_nights = true } else { GRLIB_shorter_nights = false };
 if ( GRLIB_ammo_bounties == 1 ) then { GRLIB_ammo_bounties = true } else { GRLIB_ammo_bounties = false };
 if ( GRLIB_civ_penalties == 1 ) then { GRLIB_civ_penalties = true } else { GRLIB_civ_penalties = false };
 if ( GRLIB_blufor_defenders == 1 ) then { GRLIB_blufor_defenders = true } else { GRLIB_blufor_defenders = false };

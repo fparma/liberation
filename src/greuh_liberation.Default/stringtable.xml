@@ -1892,13 +1892,6 @@
 						<Spanish>Extrema</Spanish>
 						<Russian>Очень сильно</Russian>
 				</Key>
-				<Key ID="STR_SHORTER_NIGHTS_PARAM">
-						<Original>Shorter nights:</Original>
-						<French>Nuits plus courtes:</French>
-						<German>Kürzere Nächte:</German>
-						<Spanish>Noches más cortas:</Spanish>
-						<Russian>Короткие ночи:</Russian>
-				</Key>
 				<Key ID="STR_REPAIRING">
 						<Original>Repairing</Original>
 						<French>Réparation</French>
