@@ -22,4 +22,3 @@ remote_call_intel = compileFinal preprocessFileLineNumbers "scripts\client\remot
 remote_call_incoming = compileFinal preprocessFileLineNumbers "scripts\client\remotecall\remote_call_incoming.sqf";
 
 [] spawn compileFinal preprocessFileLineNumbers "scripts\shared\diagnostics.sqf";
-[] spawn compileFinal preprocessFileLineNumbers "scripts\shared\manage_weather.sqf";

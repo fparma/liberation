@@ -1892,34 +1892,6 @@
 						<Spanish>Extrema</Spanish>
 						<Russian>Очень сильно</Russian>
 				</Key>
-				<Key ID="STR_WEATHER_PARAM">
-						<Original>Weather conditions:</Original>
-						<French>Meteo:</French>
-						<German>Wetter:</German>
-						<Spanish>Clima:</Spanish>
-						<Russian>Погода:</Russian>
-				</Key>
-				<Key ID="STR_WEATHER_PARAM1">
-						<Original>Always sunny</Original>
-						<French>Soleil permanent</French>
-						<German>Immer sonnig</German>
-						<Spanish>Siempre soleado</Spanish>
-						<Russian>Всегда солнечно</Russian>
-				</Key>
-				<Key ID="STR_WEATHER_PARAM2">
-						<Original>Random, without rain</Original>
-						<French>Aléatoire sans pluie</French>
-						<German>Zufällig ohne Regen</German>
-						<Spanish>Aleatorio sin lluvia</Spanish>
-						<Russian>Случайно, без дождя</Russian>
-				</Key>
-				<Key ID="STR_WEATHER_PARAM3">
-						<Original>Random</Original>
-						<French>Aléatoire</French>
-						<German>Zufällig</German>
-						<Spanish>Aleatorio</Spanish>
-						<Russian>Случайно</Russian>
-				</Key>
 				<Key ID="STR_SHORTER_NIGHTS_PARAM">
 						<Original>Shorter nights:</Original>
 						<French>Nuits plus courtes:</French>
@@ -2072,7 +2044,7 @@
 				<Key ID="STR_TUTO_TEXT1">
 						<Original>
 						&lt;br/&gt;
-						Ladies, welcome to Liberation!&lt;br/&gt; &lt;br/&gt; 
+						Ladies, welcome to Liberation!&lt;br/&gt; &lt;br/&gt;
 						The enemy forces have surprised us with a brutal and overwhelming offensive. They now control the entire island but thanks to your efforts, it won't last long.&lt;br/&gt; &lt;br/&gt;
 						Our objective is simple: liberate the region.&lt;br/&gt; &lt;br/&gt;
 						The road to victory will be long and dangerous. You will have to conquer multiple sectors and acquire the necessary resources to improve the quantity and quality of friendly forces engaged in this campaign.&lt;br/&gt; &lt;br/&gt;
