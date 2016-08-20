@@ -175,13 +175,6 @@
 						<Spanish>Esta posición es válida</Spanish>
 						<Russian>Это место подходит.</Russian>
 				</Key>
-				<Key ID="STR_ARSENAL_ACTION">
-						<Original>-- ARSENAL --</Original>
-						<French>-- ARSENAL --</French>
-						<German>-- ARSENAL --</German>
-						<Spanish>-- ARSENAL --</Spanish>
-						<Russian>-- АРСЕНАЛ --</Russian>
-				</Key>
 				<Key ID="STR_ACTION_LOAD_BOX">
 						<Original>-- LOAD AMMO BOX</Original>
 						<French>-- CHARGER MUNITIONS</French>
@@ -272,13 +265,6 @@
 						<German>Mobiler Respawn</German>
 						<Spanish>Respawn móvil</Spanish>
 						<Russian>Мобильная КШМ</Russian>
-				</Key>
-				<Key ID="STR_ARSENAL_BOX">
-						<Original>Arsenal Box</Original>
-						<French>Caisse à arsenal</French>
-						<German>Arsenalkiste</German>
-						<Spanish>Caja de Arsenal</Spanish>
-						<Russian>Ящик с арсеналом</Russian>
 				</Key>
 				<Key ID="STR_DEPLOY_TITLE">
 						<Original>DEPLOYMENT</Original>
@@ -1612,13 +1598,6 @@
 						<German>Keine Rechte wurden vergeben. Der Kommandant muss die Rechte verwalten um Spielern Aktionen und die Nutzung von Fahrzeugen zu erlaubne. Alternativ kann das Rechtesystem in den Missionsoptionen deaktiviert werden.</German>
 						<Spanish>No hay permisos definidos. El comandante debe asignar los permisos para permitir a los jugadores el uso de los vehículos y acciones. Alternativamente, puede desactivarse el sistema de permisos desde las opciones de misión</Spanish>
 						<Russian>Разрешения не были даны. Командир должен настроить разрешения, чтобы позволить игроку действия и использование техники. Кроме того, система разрешений может быть отключена в настройках миссии.</Russian>
-				</Key>
-				<Key ID="STR_ARSENAL_TITLE">
-						<Original>ARSENAL</Original>
-						<French>ARSENAL</French>
-						<German>ARSENAL</German>
-						<Spanish>ARSENAL</Spanish>
-						<Russian>АРСЕНАЛ</Russian>
 				</Key>
 				<Key ID="STR_EDIT_LOADOUT">
 						<Original>Edit loadout</Original>

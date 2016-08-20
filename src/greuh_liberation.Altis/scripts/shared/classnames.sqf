@@ -372,55 +372,6 @@ if ( isNil "civilian_vehicles_extension" ) then { civilian_vehicles_extension = 
 if ( isNil "civilian_vehicles_overwrite" ) then { civilian_vehicles_overwrite = false };
 if ( civilian_vehicles_overwrite ) then { civilian_vehicles = civilian_vehicles_extension; } else { civilian_vehicles = civilian_vehicles + civilian_vehicles_extension; };
 
-GRLIB_blacklisted_from_arsenal = [
-	"B_Respawn_Sleeping_bag_blue_F",
-	"B_Respawn_Sleeping_bag_brown_F",
-	"B_Respawn_TentDome_F",
-	"B_Respawn_Sleeping_bag_F",
-	"B_Respawn_TentA_F",
-	"I_GMG_01_A_weapon_F",
-	"O_GMG_01_A_weapon_F",
-	"B_GMG_01_A_weapon_F",
-	"I_HMG_01_A_weapon_F",
-	"B_HMG_01_A_weapon_F",
-	"O_HMG_01_A_weapon_F",
-	"O_HMG_01_weapon_F",
-	"B_HMG_01_weapon_F",
-	"I_HMG_01_weapon_F",
-	"I_HMG_01_high_weapon_F",
-	"O_HMG_01_high_weapon_F",
-	"B_HMG_01_high_weapon_F",
-	"O_GMG_01_weapon_F",
-	"I_GMG_01_weapon_F",
-	"B_GMG_01_weapon_F",
-	"B_GMG_01_high_weapon_F",
-	"I_GMG_01_high_weapon_F",
-	"O_GMG_01_high_weapon_F",
-	"I_Mortar_01_support_F",
-	"B_Mortar_01_support_F",
-	"O_Mortar_01_support_F",
-	"B_Mortar_01_weapon_F",
-	"O_Mortar_01_weapon_F",
-	"I_Mortar_01_weapon_F",
-	"B_HMG_01_support_F",
-	"O_HMG_01_support_F",
-	"I_HMG_01_support_F",
-	"B_HMG_01_support_high_F",
-	"O_HMG_01_support_high_F",
-	"I_HMG_01_support_high_F",
-	"B_AA_01_weapon_F",
-	"O_AA_01_weapon_F",
-	"I_AA_01_weapon_F",
-	"B_AT_01_weapon_F",
-	"O_AT_01_weapon_F",
-	"I_AT_01_weapon_F",
-	"I_UAV_01_backpack_F",
-	"B_UAV_01_backpack_F",
-	"O_UAV_01_backpack_F"
-];
-if ( isNil "blacklisted_from_arsenal_extension" ) then { blacklisted_from_arsenal_extension = [] };
-GRLIB_blacklisted_from_arsenal = [] + blacklisted_from_arsenal_extension + GRLIB_blacklisted_from_arsenal;
-
 infantry_units = [ infantry_units ] call F_filterMods;
 light_vehicles = [ light_vehicles ] call F_filterMods;
 heavy_vehicles = [ heavy_vehicles ] call F_filterMods;

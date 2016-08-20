@@ -1,5 +1,4 @@
 [] call compileFinal preprocessFileLineNumbers "scripts\client\misc\init_markers.sqf";
-[] call compileFinal preprocessFileLineNumbers "arsenal.sqf";
 
 if ( typeOf player == "VirtualSpectator_F" ) exitWith {
 	[] spawn compileFinal preprocessFileLineNumbers "scripts\client\markers\empty_vehicles_marker.sqf";
@@ -34,7 +33,6 @@ write_credit_line = compileFinal preprocessFileLineNumbers "scripts\client\ui\wr
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\markers\sector_manager.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\markers\spot_timer.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\misc\broadcast_squad_colors.sqf";
-[] spawn compileFinal preprocessFileLineNumbers "scripts\client\misc\init_arsenal.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\misc\offload_diag.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\misc\permissions_warning.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\misc\resupply_manager.sqf";

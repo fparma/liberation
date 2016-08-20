@@ -10,7 +10,6 @@
 #include "liberation_deathscreen.hpp"
 #include "liberation_squad.hpp"
 #include "liberation_permissions.hpp"
-#include "liberation_arsenal.hpp"
 #include "liberation_repackage_fob.hpp"
 #include "liberation_halo.hpp"
 #include "liberation_secondary.hpp"

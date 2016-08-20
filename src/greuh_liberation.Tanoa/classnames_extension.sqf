@@ -226,7 +226,3 @@ vehicle_refuel_sources_extension = [
 elite_vehicles_extension = [
 
 ];
-
-//Blacklisted arsenal items such as deployable weapons that should be bought instead.
-//Note: If you're looking to blacklist many classnames then instead, use arsenal.sqf to build a whitelist of allowed classnames.
-blacklisted_from_arsenal_extension = [];
