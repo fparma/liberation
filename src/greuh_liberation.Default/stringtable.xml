@@ -1725,19 +1725,6 @@
 						<Spanish>Despliegue en curso...</Spanish>
 						<Russian>В процессе выполнения ...</Russian>
 				</Key>
-				<Key ID="STR_WHITELIST_PARAM">
-						<Original>Commander Whitelist:</Original>
-						<French>Utiliser la whitelist pour le commandant</French>
-						<German>Nutze die Whitelist für den Kommandanten</German>
-						<Spanish>Utilizar la lista blanca para Comandantes</Spanish>
-						<Russian>Использование "белого" списка командиров</Russian>
-				</Key>
-				<Key ID="STR_WHITELIST_ENABLED">
-						<Original>Enabled - Only use if you have modified your whitelist.sqf!</Original>
-						<French>Activé - A n'utiliser que si vous avez modifié votre whitelist.sqf !</French>
-						<Spanish>Activado - ¡Sólo utilizar si has modificado tu whitelist.sqf</Spanish>
-						<Russian>Вкл - Использовать только если вы редактировали файл whitelist.sqf!</Russian>
-				</Key>
 				<Key ID="STR_BUILD_ENEMIES_NEARBY">
 						<Original>Cannot build: hostile forces nearby.</Original>
 						<French>Impossible de construire: forces hostiles à proximité.</French>
