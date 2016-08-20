@@ -7,7 +7,6 @@ if ( isMultiplayer ) then {
 	GRLIB_unitcap = ["Unitcap",1] call bis_fnc_getParamValue;
 	GRLIB_adaptive_opfor = ["AdaptToPlayercount",1] call bis_fnc_getParamValue;
 	GRLIB_civilian_activity = ["civilians",1] call bis_fnc_getParamValue;
-	GRLIB_teamkill_penalty = ["TeamkillPenalty",0] call bis_fnc_getParamValue;
 	GRLIB_build_first_fob = ["FirstFob",0] call bis_fnc_getParamValue;
 	GRLIB_param_wipe_savegame_1 = ["WipeSave1",0] call bis_fnc_getParamValue;
 	GRLIB_param_wipe_savegame_2 = ["WipeSave2",0] call bis_fnc_getParamValue;
@@ -31,7 +30,6 @@ if ( isMultiplayer ) then {
 	GRLIB_adaptive_opfor = 1;
 	GRLIB_unitcap = 1;
 	GRLIB_civilian_activity = 1;
-	GRLIB_teamkill_penalty = 0;
 	GRLIB_build_first_fob = 0;
 	GRLIB_param_wipe_savegame_1 = 0;
 	GRLIB_param_wipe_savegame_2 = 0;
@@ -51,7 +49,6 @@ if ( isMultiplayer ) then {
 if ( GRLIB_introduction == 1 ) then { GRLIB_introduction = true } else { GRLIB_introduction = false };
 if ( GRLIB_deployment_cinematic == 1 ) then { GRLIB_deployment_cinematic = true } else { GRLIB_deployment_cinematic = false };
 if ( GRLIB_build_first_fob == 1 ) then { GRLIB_build_first_fob = true } else { GRLIB_build_first_fob = false };
-if ( GRLIB_teamkill_penalty == 1 ) then { GRLIB_teamkill_penalty = true } else { GRLIB_teamkill_penalty = false };
 if ( GRLIB_adaptive_opfor == 1 ) then { GRLIB_adaptive_opfor = true } else { GRLIB_adaptive_opfor = false };
 if ( GRLIB_passive_income == 1 ) then { GRLIB_passive_income = true } else { GRLIB_passive_income = false };
 if ( GRLIB_permissions_param == 1 ) then { GRLIB_permissions_param = true } else { GRLIB_permissions_param = false };

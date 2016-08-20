@@ -54,12 +54,6 @@ class Params
 		texts[] = {$STR_PARAMS_CIVILIANS1,$STR_PARAMS_CIVILIANS2,$STR_PARAMS_CIVILIANS3,$STR_PARAMS_CIVILIANS4};
 		default = 1;
 	};
-	class TeamkillPenalty{
-		title = $STR_PARAM_TEAMKILL_PENALTY;
-		values[] = {1,0};
-		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 0;
-	};
 	class PassiveIncome{
 		title = $STR_PARAM_PASSIVE_INCOME;
 		values[] = {1,0};
