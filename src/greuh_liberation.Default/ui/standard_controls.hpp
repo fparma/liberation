@@ -467,16 +467,15 @@ class StdListNBox : StdListBox {
 };
 
 class BgPicture {
-
 	idc = -1;
 	type = CT_STATIC;
-	style = ST_PICTURE;
+	style = ST_SINGLE;
 	colorText[] = {0.5, 0.4, 0.25, 0.6};
 	colorBackground[] = {0, 0, 0, 1};
 	font = FontM;
 	sizeEx = 0.023;
 	moving = false;
-	text = "res\camo03.jpg";
+	text = "";
 };
 
 class StdCombo {
