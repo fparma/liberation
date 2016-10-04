@@ -8,7 +8,7 @@ class EditorData
 	toggles=517;
 	class ItemIDProvider
 	{
-		nextID=1837;
+		nextID=1838;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4807.9229,63.388683,3459.3506};
-		dir[]={0.9674598,-0.22455482,0.11662456};
-		up[]={0.22294295,0.97446096,0.026875274};
-		aside[]={0.11968075,-1.2241071e-007,-0.99281466};
+		pos[]={3477.8494,292.56021,2761.197};
+		dir[]={-0.14529759,-0.48280805,0.86362523};
+		up[]={-0.08010523,0.875718,0.4761343};
+		aside[]={0.98617095,-4.9258233e-007,0.16591361};
 	};
 };
 binarizationWanted=0;
@@ -432,14 +432,14 @@ class Mission
 		year=2038;
 		month=6;
 		day=6;
-		hour=6;
+		hour=12;
 		minute=0;
 		startFogDecay=0.013;
 		forecastFogDecay=0.013;
 	};
 	class Entities
 	{
-		items=249;
+		items=250;
 		class Item0
 		{
 			dataType="Marker";
@@ -614,12 +614,11 @@ class Mission
 		class Item17
 		{
 			dataType="Marker";
-			position[]={360.92044,0.77429962,1207.66};
+			position[]={1410,0.71800679,743};
 			name="huronmarker";
 			text="Spartan 01";
 			type="b_air";
 			id=166;
-			atlOffset=66.443489;
 		};
 		class Item18
 		{
@@ -2201,13 +2200,13 @@ class Mission
 		class Item150
 		{
 			dataType="Marker";
-			position[]={1399.9697,0.9232707,751.09961};
+			position[]={1399.97,-4.621471e-010,751.09998};
 			name="base_chimera";
 			text="BASE CHIMERA";
 			type="mil_start";
 			colorName="ColorWEST";
 			id=1092;
-			atlOffset=-1.7881393e-007;
+			atlOffset=-0.92327726;
 		};
 		class Item151
 		{
@@ -4080,6 +4079,46 @@ class Mission
 					};
 				};
 				nAttributes=3;
+			};
+		};
+		class Item249
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={1400,66,748};
+			};
+			side="Empty";
+			class Attributes
+			{
+				skill=0.60000002;
+				name="base_chimera";
+			};
+			id=1837;
+			type="Land_ClutterCutter_small_F";
+			atlOffset=65.213997;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
 			};
 		};
 	};

@@ -4,20 +4,6 @@ class liberation_menu {
 	controls[] = { "Splash", "Start", "Help" };
 	objects[] = {};
 
-	class Splash {
-		idc = -1;
-		type =  CT_STATIC ;
-		style = ST_PICTURE;
-		colorText[] = COLOR_WHITE;
-		colorBackground[] = COLOR_NOALPHA;
-		font = FontM;
-		sizeEx = 0.1 * safezoneH;
-		x = 0.08 * safezoneW + safezoneX;
-		w = 0.25 * safezoneW;
-		y = 0.15 * safezoneH + safezoneY;
-		h = 0.43 * safezoneH;
-		text = "res\splash_libe2.paa";
-	};
 	class Start {
 		idc = 321;
 		type = CT_SHORTCUT_BUTTON;

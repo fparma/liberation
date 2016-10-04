@@ -40,8 +40,8 @@ while { true } do {
 
 	showCinemaBorder false;
 	camUseNVG false;
-	respawn_camera = "camera" camCreate (getposASLW lhd);
-	respawn_object = "Sign_Arrow_Blue_F" createVehicleLocal (getposASLW lhd);
+	respawn_camera = "camera" camCreate (getposASLW base_chimera);
+	respawn_object = "Sign_Arrow_Blue_F" createVehicleLocal (getposASLW base_chimera);
 	respawn_object hideObject true;
 	respawn_camera camSetTarget respawn_object;
 	respawn_camera cameraEffect ["internal","back"];
@@ -71,7 +71,7 @@ while { true } do {
 	lbSetCurSel [ 203, 0 ];
 
 	while { dialog && alive player && deploy == 0} do {
-		choiceslist = [ [ _basenamestr, getpos lhd ] ];
+		choiceslist = [ [ _basenamestr, getpos base_chimera ] ];
 
 		for [{_idx=0},{_idx < count GRLIB_all_fobs},{_idx=_idx+1}] do {
 			choiceslist = choiceslist + [[format [ "FOB %1 - %2", (military_alphabet select _idx),mapGridPosition (GRLIB_all_fobs select _idx) ],GRLIB_all_fobs select _idx]];
@@ -106,13 +106,6 @@ while { true } do {
 			_startdist = 120;
 			_enddist = 120;
 			_alti = 35;
-			if ( dialog ) then {
-				if (((choiceslist select (lbCurSel 201)) select 0) == "BLUFOR LHD") then {
-					_startdist = 200;
-					_enddist = 300;
-					_alti = 30;
-				};
-			};
 
 			"spawn_marker" setMarkerPosLocal (getpos respawn_object);
 			ctrlMapAnimClear ((findDisplay 5201) displayCtrl 251);

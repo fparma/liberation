@@ -51,20 +51,6 @@ class RscTitles
       {
          VersionLabelShadow, Splash, VersionLabel
       };
-	  	class Splash {
-		idc = -1;
-		type =  CT_STATIC ;
-		style = ST_PICTURE;
-		colorText[] = COLOR_WHITE;
-		colorBackground[] = COLOR_NOALPHA;
-		font = FontM;
-		sizeEx = 0.1 * safezoneH;
-		x = 0.325 * safezoneW + safezoneX;
-		w = 0.35 * safezoneW;
-		y = 0.2 * safezoneH + safezoneY;
-		h = 0.6 * safezoneH;
-		text = "res\splash_libe2.paa";
-	  };
 	  class VersionLabel {
 		idc = -1;
 		type =  CT_STATIC ;
