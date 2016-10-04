@@ -1,5 +1,3 @@
-GRLIB_save_key = "GREUH_LIBERATION_SAVEGAME";
-
 GRLIB_side_friendly = WEST;
 GRLIB_side_enemy = EAST;
 GRLIB_side_resistance = RESISTANCE;
