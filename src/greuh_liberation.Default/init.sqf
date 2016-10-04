@@ -5,7 +5,6 @@ enableSaving [ false, false ];
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\init_sectors.sqf";
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\fetch_params.sqf";
 [] call compileFinal preprocessFileLineNumbers "gameplay_constants.sqf";
-[] call compileFinal preprocessFileLineNumbers "classnames_extension.sqf";
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\classnames.sqf";
 
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\init_shared.sqf";
