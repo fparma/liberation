@@ -58,11 +58,7 @@ while { cinematic_camera_started } do {
 		_nearentities = _position nearEntities [ "Man", 100 ];
 		_camtarget = _cinematic_pointer;
 		if ( first_camera_round ) then {
-			if ( GRLIB_isAtlasPresent ) then {
-				_camtarget = base_boxspawn;
-			} else {
-				_camtarget = base_boxspawn;
-			};
+			_camtarget = base_boxspawn;
 		} else {
 			if ( count ( [ _nearentities , { alive _x && isPlayer _x } ] call BIS_fnc_conditionalSelect ) != 0 ) then {
 				_camtarget = ( [ _nearentities , { alive _x && isPlayer _x } ] call BIS_fnc_conditionalSelect ) call bis_fnc_selectRandom;
@@ -256,11 +252,7 @@ while { cinematic_camera_started } do {
 				if ( isPlayer _camtarget ) then { _unitname = name _camtarget };
 				_nearest_sector = "";
 				if ( _position distance lhd < 300 ) then {
-					if ( GRLIB_isAtlasPresent ) then {
-						_nearest_sector = "BLUFOR LHD";
-					} else {
-						_nearest_sector = "BASE CHIMERA";
-					};
+					_nearest_sector = "BASE CHIMERA";
 				} else {
 					_nearest_sector = [300, _position ] call F_getNearestSector;
 					if ( _nearest_sector != "" ) then {

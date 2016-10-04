@@ -17,12 +17,7 @@ waitUntil { introDone };
 waitUntil { !isNil "cinematic_camera_stop" };
 waitUntil { cinematic_camera_stop };
 
-_basenamestr = "";
-if ( GRLIB_isAtlasPresent ) then {
-	_basenamestr = "BLUFOR LHD";
-} else {
-	_basenamestr = "BASE CHIMERA";
-};
+_basenamestr = "BASE CHIMERA";
 
 while { true } do {
 	waitUntil {
@@ -153,16 +148,12 @@ while { true } do {
 		_idxchoice = lbCurSel 201;
 		_spawn_str = (choiceslist select _idxchoice) select 0;
 
-		if (((choiceslist select _idxchoice) select 0) == _basenamestr) then {
-			call respawn_lhd;
+		if (count (choiceslist select _idxchoice) == 3) then {
+			_truck = (choiceslist select _idxchoice) select 2;
+			player setpos ([_truck, 5 + (random 3), random 360] call BIS_fnc_relPos)
 		} else {
-			if (count (choiceslist select _idxchoice) == 3) then {
-				_truck = (choiceslist select _idxchoice) select 2;
-				player setpos ([_truck, 5 + (random 3), random 360] call BIS_fnc_relPos)
-			} else {
-				_destpos = ((choiceslist select _idxchoice) select 1);
-				player setpos [((_destpos select 0) + 5) - (random 10),((_destpos select 1) + 5) - (random 10),0];
-			};
+			_destpos = ((choiceslist select _idxchoice) select 1);
+			player setpos [((_destpos select 0) + 5) - (random 10),((_destpos select 1) + 5) - (random 10),0];
 		};
 
 		if ( (lbCurSel 203) > 0 ) then {
