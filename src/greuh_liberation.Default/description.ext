@@ -1,3 +1,9 @@
+class Header {
+  gameType = CTI;
+  minPlayers = 1;
+  maxPlayers = 64;
+};
+
 #include "ui\liberation_interface.hpp"
 #include "ui\liberation_notifications.hpp"
 #include "ui\mission_params.hpp"
