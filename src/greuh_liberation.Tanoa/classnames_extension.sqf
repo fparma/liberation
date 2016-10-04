@@ -92,24 +92,31 @@ blufor_squad_para = [
 
 ];
 
-//*** BADDIES ***
-//All OPFOR infantry. Defining a value here will replace the default value from the original mission.
-opfor_officer = nil;
-opfor_team_leader = nil;
-opfor_squad_leader = nil;
+
+
+
+
+
+
+// *** BADDIES ***
+
+// All OPFOR infantry. Defining a value here will replace the default value from the original mission.
+opfor_sentry = nil;
 opfor_rifleman = nil;
 opfor_grenadier = nil;
-opfor_rpg = nil;
+opfor_squad_leader = nil;
+opfor_team_leader = nil;
 opfor_marksman = nil;
 opfor_machinegunner = nil;
 opfor_heavygunner = nil;
-opfor_aa = nil;
-opfor_at = nil;
 opfor_medic = nil;
-opfor_engineer = nil;
-opfor_sentry = nil;
+opfor_rpg = nil;
+opfor_at = nil;
+opfor_aa = nil;
+opfor_officer = nil;
 opfor_sharpshooter = nil;
 opfor_sniper = nil;
+opfor_engineer = nil;
 opfor_paratrooper = nil;
 
 //OPFOR Vehicles to be used in Secondary Objectives.
@@ -123,15 +130,7 @@ opfor_fuel_container = nil;
 opfor_ammo_container = nil;
 opfor_flag = nil;
 
-//OPFOR Viper Squad to be used at high alert!
-//If you want to use a different high_intensity squad like say, Spetznaz, then don't change the 'opfor_vipertl =' part to something stupid like rus_spetznaz, otherwise you'll break things. Just change the nil variable and use "" around the classname still.
-opfor_vipertl = nil;
-opfor_viperop = nil;
-opfor_viperri = nil;
-opfor_viperma = nil;
-opfor_viperde = nil;
-opfor_viperpa = nil;
-
+// Militia infantry. Soldier classnames the game will pick from randomly
 //Militia infantry. Soldier classnames the game will pick from randomly.
 militia_squad_overwrite = false;
 militia_squad_extension = [
@@ -178,19 +177,13 @@ opfor_troup_transports_extension = [
 //Battlegroup members that will need to spawn in flight. Should be only helicopters but, who knows.
 opfor_choppers_overwrite = false;
 opfor_choppers_extension = [
-	"O_Heli_Light_02_unarmed_F",					//Orca_Unarmed(Black)
-	"O_Heli_Light_02_v2_F",							//PO-30_Orca_Armed(Black)	//Copying the vanilla classnames to here for helicopters and airplanes has fixed some of my personal problems with the mission.
-	"O_Heli_Light_02_v2_F",							//PO-30_Orca_Armed(Black)	//I could be wrong but it can't hurt to be here anyway, can it?
-	"O_Heli_Attack_02_black_F",						//Mi-48_Kajman(Black)		//Just in case: this issue included battlegroup helicopters still spawning on ground, planes too.
-	"O_T_VTOL_02_infantry_F",						//Y-32_Xi'an_Infantry		//Planes as sector defenders need to be clarified also, or they will definitely spawn on the ground and struggle to lift off.
-	"O_Plane_CAS_02_F"								//To-199_Neophron_CAS
+
 ];
 
 //Opfor military aircrafts.
 opfor_air_overwrite = false;
 opfor_air_extension = [
-	"O_T_VTOL_02_infantry_F",						//Y-32_Xi'an_Infantry
-	"O_Plane_CAS_02_F"								//To-199_Neophron_CAS
+
 ];
 
 //*** OTHER ***
