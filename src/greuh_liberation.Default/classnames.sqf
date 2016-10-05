@@ -144,8 +144,11 @@ blufor_squad_aa = [ "B_Soldier_SL_F","B_soldier_AA_F","B_soldier_AA_F","B_soldie
 blufor_squad_recon = [ "B_recon_TL_F","B_recon_F","B_recon_exp_F","B_recon_medic_F","B_recon_LAT_F","B_recon_LAT_F","B_recon_M_F","B_Recon_Sharpshooter_F","B_recon_F" ];
 blufor_squad_para = [ "B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F" ];
 blufor_squad_inf_light = [ "B_Soldier_SL_F","B_Soldier_TL_F","B_Soldier_GL_F","B_soldier_AR_F","B_Soldier_GL_F","B_medic_F","B_Soldier_LAT_F","B_Soldier_F","B_Soldier_F"];
+
 uavs = [ "B_UAV_01_F","B_UAV_02_F","B_UAV_02_CAS_F","B_UGV_01_F","B_UGV_01_rcws_F" ];
+boats_names = [ "B_Boat_Transport_01_F", "B_Boat_Armed_01_minigun_F" ];
 elite_vehicles = ["B_UGV_01_rcws_F","B_MBT_01_TUSK_F","B_MBT_01_arty_F","B_MBT_01_mlrs_F","B_Heli_Attack_01_F","B_Plane_CAS_01_F","B_UAV_02_F","B_UAV_02_CAS_F"];
+
 ai_resupply_sources = [ Respawn_truck_typename, huron_typename, Arsenal_typename, "B_Slingload_01_Ammo_F", "B_APC_Tracked_01_CRV_F", "B_Truck_01_ammo_F", "JNS_Skycrane_Pod_Ammo_BLU_Black" ];
 vehicle_repair_sources = [ "B_APC_Tracked_01_CRV_F", "C_Offroad_01_repair_F", "B_Truck_01_Repair_F", "B_Slingload_01_Repair_F", "JNS_Skycrane_Pod_Repair_BLU_Black" ];
 vehicle_rearm_sources = [ "B_APC_Tracked_01_CRV_F", "B_Truck_01_ammo_F", "B_Slingload_01_Ammo_F", "JNS_Skycrane_Pod_Ammo_BLU_Black" ];
@@ -186,6 +189,82 @@ opfor_ammo_truck = "O_Truck_03_ammo_F";
 opfor_fuel_container = "Land_Pod_Heli_Transport_04_fuel_F";
 opfor_ammo_container = "Land_Pod_Heli_Transport_04_ammo_F";
 opfor_flag = "Flag_CSAT_F";
+opfor_infantry = [
+	opfor_sentry,
+	opfor_rifleman,
+	opfor_grenadier,
+	opfor_squad_leader,
+	opfor_team_leader,
+	opfor_marksman,
+	opfor_machinegunner,
+	opfor_heavygunner,
+	opfor_medic,
+	opfor_rpg,
+	opfor_at,
+	opfor_aa,
+	opfor_officer,
+	opfor_sharpshooter,
+	opfor_sniper,
+	opfor_engineer
+];
+
+//========================================
+// BEGIN OF OPFOR SQUAD LAYOUTS
+//========================================
+
+opfor_squad_low_intensity = [
+	opfor_team_leader,
+	opfor_machinegunner,
+	opfor_medic,
+	opfor_rpg,
+	opfor_sentry,
+	opfor_sentry,
+	opfor_sentry,
+	opfor_sentry
+];
+
+opfor_squad_8_standard = [
+	opfor_squad_leader,
+	opfor_team_leader,
+	opfor_machinegunner,
+	opfor_heavygunner,
+	opfor_medic,
+	opfor_marksman,
+	opfor_grenadier,
+	opfor_rpg
+];
+
+opfor_squad_8_infkillers = [
+	opfor_squad_leader,
+	opfor_machinegunner,
+	opfor_machinegunner,
+	opfor_heavygunner,
+	opfor_medic,
+	opfor_marksman,
+	opfor_sharpshooter,
+	opfor_sniper
+];
+
+opfor_squad_8_tankkillers = [
+	opfor_squad_leader,
+	opfor_medic,
+	opfor_machinegunner,
+	opfor_rpg,
+	opfor_rpg,
+	opfor_at,
+	opfor_at,
+	opfor_at
+];
+opfor_squad_8_airkillers = [
+	opfor_squad_leader,
+	opfor_medic,
+	opfor_machinegunner,
+	opfor_rpg,
+	opfor_rpg,
+	opfor_aa,
+	opfor_aa,
+	opfor_aa
+];
 
 original_resistance = [
 	"O_G_Soldier_SL_F",
@@ -319,11 +398,6 @@ civilian_vehicles = [
 build_lists = [[],infantry_units,light_vehicles,heavy_vehicles,air_vehicles,static_vehicles,buildings,support_vehicles,squads];
 military_alphabet = ["Alpha","Bravo","Charlie","Delta","Echo","Foxtrot","Golf","Hotel","India","Juliet","Kilo","Lima","Mike","November","Oscar","Papa","Quebec","Romeo","Sierra","Tango","Uniform","Victor","Whiskey","X-Ray","Yankee","Zulu"];
 land_vehicles_classnames = (opfor_vehicles + militia_vehicles);
-opfor_squad_low_intensity = [opfor_team_leader,opfor_machinegunner,opfor_medic,opfor_rpg,opfor_sentry,opfor_sentry,opfor_sentry,opfor_sentry];
-opfor_squad_8_standard = [opfor_squad_leader,opfor_team_leader,opfor_machinegunner,opfor_heavygunner,opfor_medic,opfor_marksman,opfor_grenadier,opfor_rpg];
-opfor_squad_8_infkillers = [opfor_squad_leader,opfor_machinegunner,opfor_machinegunner,opfor_heavygunner,opfor_medic,opfor_marksman,opfor_sharpshooter,opfor_sniper];
-opfor_squad_8_tankkillers = [opfor_squad_leader,opfor_medic,opfor_machinegunner,opfor_rpg,opfor_rpg,opfor_at,opfor_at,opfor_at];
-opfor_squad_8_airkillers = [opfor_squad_leader,opfor_medic,opfor_machinegunner,opfor_rpg,opfor_rpg,opfor_aa,opfor_aa,opfor_aa];
 all_resistance_troops = [] + militia_squad;
 all_hostile_classnames = (land_vehicles_classnames + opfor_air + opfor_choppers + opfor_troup_transports + opfor_vehicles_low_intensity);
 { land_vehicles_classnames pushback (_x select 0); } foreach (heavy_vehicles + light_vehicles);
@@ -332,8 +406,7 @@ air_vehicles_classnames = [] + opfor_choppers;
 markers_reset = [99999,99999,0];
 zeropos = [0,0,0];
 squads_names = [ localize "STR_LIGHT_RIFLE_SQUAD", localize "STR_RIFLE_SQUAD", localize "STR_AT_SQUAD", localize "STR_AA_SQUAD",  localize "STR_RECON_SQUAD", localize "STR_PARA_SQUAD" ];
-boats_names = [ "B_Boat_Transport_01_F", "B_Boat_Armed_01_minigun_F" ];
-opfor_infantry = [opfor_sentry,opfor_rifleman,opfor_grenadier,opfor_squad_leader,opfor_team_leader,opfor_marksman,opfor_machinegunner,opfor_heavygunner,opfor_medic,opfor_rpg,opfor_at,opfor_aa,opfor_officer,opfor_sharpshooter,opfor_sniper,opfor_engineer];
+
 GRLIB_intel_table = "Land_CampingTable_small_F";
 GRLIB_intel_chair = "Land_CampingChair_V2_F";
 GRLIB_intel_file = "Land_File1_F";
