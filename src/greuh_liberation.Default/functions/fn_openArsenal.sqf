@@ -1,4 +1,4 @@
-_isFull = true;
+_isFull = false;
 
 if (_isFull) then {
   ["Open",true] spawn BIS_fnc_arsenal;
