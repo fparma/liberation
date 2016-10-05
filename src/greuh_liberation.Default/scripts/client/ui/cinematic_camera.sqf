@@ -233,21 +233,15 @@ while { cinematic_camera_started } do {
 		_cinematic_camera camSetPos _endpos;
 		_cinematic_camera camSetFov _endfov;
 
-		if ( isNil "howtoplay" ) then { howtoplay = 0; };
-
 		if ( first_camera_round ) then {
 			_cinematic_camera camcommit 18;
 		} else {
-			if ( howtoplay == 0 ) then {
-				_cinematic_camera camcommit 10;
-			} else {
-				_cinematic_camera camcommit 20;
-			};
+			_cinematic_camera camcommit 10;
 		};
 		first_camera_round = false;
 
 		if ( !isNil "showcaminfo" ) then {
-			if ( showcaminfo && howtoplay == 0 ) then {
+			if ( showcaminfo ) then {
 				_unitname = "";
 				if ( isPlayer _camtarget ) then { _unitname = name _camtarget };
 				_nearest_sector = "";

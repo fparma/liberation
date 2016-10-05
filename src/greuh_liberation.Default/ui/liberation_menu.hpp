@@ -1,7 +1,7 @@
 class liberation_menu {
 	idd = 5651;
 	movingEnable = false;
-	controls[] = { "Splash", "Start", "Help" };
+	controls[] = { "Splash", "Start" };
 	objects[] = {};
 
 	class Start {
@@ -55,20 +55,4 @@ class liberation_menu {
 			bottom = 0;
 		};
 	};
-	class Help : Start {
-		idc = 322;
-		y = (0.62 * safezoneH + safezoneY);
-		animTextureNormal = "res\btn_htp_spl_idl3.paa";
-		animTextureDisabled = "res\btn_htp_spl_idl3.paa";
-		animTextureOver = "res\btn_htp_spl_hov3.paa";
-		animTextureFocused = "res\btn_htp_spl_idl3.paa";
-		animTexturePressed = "res\btn_htp_spl_hov3.paa";
-		animTextureDefault = "res\btn_htp_spl_idl3.paa";
-		tooltipColorShade[] = COLOR_BROWN;
-		tooltipColorText[] = COLOR_WHITE;
-		tooltipColorBox[] = COLOR_GREEN;
-		action = "howtoplay=1;";
-	};
-
-
 };

@@ -18,13 +18,9 @@ if ( GRLIB_introduction ) then {
 
 showcaminfo = true;
 dostartgame = 0;
-howtoplay = 0;
 _dialog = createDialog "liberation_menu";
 waitUntil { dialog };
-waitUntil { dostartgame == 1 || howtoplay == 1 || !dialog };
+waitUntil { dostartgame == 1 || !dialog };
 
 closeDialog 0;
-if ( howtoplay == 0 ) then {
-	cinematic_camera_started = false;
-};
 introDone = true;
