@@ -1,10 +1,9 @@
 
-private [ "_idact_build", "_idact_buildfob", "_idact_redeploy", "_idact_tutorial", "_distfob",  "_distbuildfob", "_distspawn", "_distredeploy", "_idact_commander" ];
+private [ "_idact_build", "_idact_buildfob", "_idact_redeploy", "_distfob",  "_distbuildfob", "_distspawn", "_distredeploy", "_idact_commander" ];
 
 _idact_build = -1;
 _idact_buildfob = -1;
 _idact_redeploy = -1;
-_idact_tutorial = -1;
 _idact_squad = -1;
 _idact_commander = -1;
 _idact_repackage = -1;
@@ -36,17 +35,6 @@ while { true } do {
 		GRLIB_removefobboxes = false;
 		if ( count _nearfobbox > 0 ) then {
 			deletevehicle (_nearfobbox select 0);
-		};
-	};
-
-	if ( (player distance lhd) < 200 && alive player && vehicle player == player ) then {
-		if ( _idact_tutorial == -1 ) then {
-			_idact_tutorial = player addAction ["<t color='#80FF80'>" + localize "STR_TUTO_ACTION" + "</t>","howtoplay = 1","",-740,false,true,"",""];
-		};
-	} else {
-		if ( _idact_tutorial != -1 ) then {
-			player removeAction _idact_tutorial;
-			_idact_tutorial = -1;
 		};
 	};
 
