@@ -40,7 +40,6 @@ if ( dojump > 0 ) then {
 	halojumping = true;
 	sleep 0.1;
 	cutRsc ["fasttravel", "PLAIN", 1];
-	playSound "parasound";
 	sleep 2;
 	_backpack = backpack player;
 	if ( _backpack != "" && _backpack != "B_Parachute" ) then {
