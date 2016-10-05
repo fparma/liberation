@@ -361,33 +361,6 @@
 				<Key ID="STR_PARAMS_RESOURCESMULTIPLIER">
 						<Original>Resources multiplier:</Original>
 				</Key>
-				<Key ID="STR_PARAMS_FATIGUE">
-						<Original>Stamina:</Original>
-				</Key>
-				<Key ID="STR_PARAMS_FATIGUE1">
-						<Original>Reduced - 4 times more stamina</Original>
-				</Key>
-				<Key ID="STR_PARAMS_FATIGUE2">
-						<Original>Reduced - 3 times more stamina</Original>
-				</Key>
-				<Key ID="STR_PARAMS_FATIGUE3">
-						<Original>Reduced - 2 times more stamina</Original>
-				</Key>
-				<Key ID="STR_PARAMS_FATIGUE4">
-						<Original>Reduced - 1.5 times more stamina</Original>
-				</Key>
-				<Key ID="STR_PARAMS_REVIVE">
-						<Original>FAR Revive:</Original>
-				</Key>
-				<Key ID="STR_PARAMS_REVIVE1">
-						<Original>Enabled - Only medics can revive</Original>
-				</Key>
-				<Key ID="STR_PARAMS_REVIVE2">
-						<Original>Enabled - Everyone can revive using a FAK</Original>
-				</Key>
-				<Key ID="STR_PARAMS_REVIVE3">
-						<Original>Enabled - Everyone can revive using a MedKit</Original>
-				</Key>
 				<Key ID="STR_PARAMS_INTRO">
 						<Original>Introduction:</Original>
 				</Key>
