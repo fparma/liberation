@@ -1,7 +1,7 @@
 class liberation_menu {
 	idd = 5651;
 	movingEnable = false;
-	controls[] = { "Splash", "Start" };
+	controls[] = { "Start" };
 	objects[] = {};
 
 	class Start {
