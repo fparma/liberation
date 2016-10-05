@@ -229,14 +229,8 @@ if ( count GRLIB_vehicle_to_military_base_links == 0 ) then {
 		_assigned_vehicles pushback _nextvehicle;
 		GRLIB_vehicle_to_military_base_links pushback [_nextvehicle, _nextbase];
 	};
-} else {
-	_classnames_to_check = GRLIB_vehicle_to_military_base_links;
-	{
-		if ( ! ( [ _x select 0 ] call F_checkClass ) ) then {
-			GRLIB_vehicle_to_military_base_links = GRLIB_vehicle_to_military_base_links - [_x];
-		};
-	} foreach _classnames_to_check;
 };
+
 publicVariable "GRLIB_vehicle_to_military_base_links";
 publicVariable "GRLIB_permissions";
 save_is_loaded = true; publicVariable "save_is_loaded";
