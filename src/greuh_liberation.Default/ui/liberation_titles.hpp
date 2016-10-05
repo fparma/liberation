@@ -64,7 +64,7 @@ class RscTitles
 		w = 0.3 * safezoneW;
 		y = 0.65 * safezoneH + safezoneY;
 		h = 0.1 * safezoneH;
-		text = $STR_MISSION_VERSION;
+		text = "WIP VERSION";
 	  };
 	  class VersionLabelShadow : VersionLabel {
 		shadow = 2;

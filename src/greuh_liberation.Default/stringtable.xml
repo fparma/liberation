@@ -1,67 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Liberation">
 		<Package name="Liberation">
-				<Key ID="STR_MISSION_TITLE">
-						<Original>Liberation 0.924</Original>
-				</Key>
-				<Key ID="STR_MISSION_VERSION">
-						<Original>v0.924</Original>
-				</Key>
 				<Key ID="STR_MISSION_DESCRIPTION">
 						<Original>With the power of Freedom and Democracy and a little international support you shall Liberate Tanoa from Syndikat and CSAT oppression.</Original>
 						<French>Avec le pouvoir de la Liberté et de la Démocratie votre mission est de libérer Tanoa de l'oppression de Syndikat et CSAT.</French>
 						<German>Befreie Altis von der OPFOR-Unterdrückung mit der Kraft von Freiheit und Demokratie</German>
 						<Spanish>Con el poder de la Libertad y la Democracia, debes liberar Altis de la opresión del OPFOR</Spanish>
 						<Russian>С помощью сил "свободы" и "демократии" вы должны освободить Altis от угнетения OPFOR.</Russian>
-				</Key>
-				<Key ID="STR_Deploy_OnPoint">
-						<Original>Deploy</Original>
-						<French>Déploiement</French>
-						<German>Bereitstellen</German>
-						<Spanish>Despliegue</Spanish>
-						<Russian>Развёртывание</Russian>
-				</Key>
-				<Key ID="STR_Deploy_InProgress">
-						<Original>Deployment in progress ...</Original>
-						<French>Déploiement en cours ...</French>
-						<German>Bereitstellung in Arbeit</German>
-						<Spanish>Despliegue en curso ...</Spanish>
-						<Russian>Развёртывание в процессе ...</Russian>
-				</Key>
-				<Key ID="STR_CLOSE">
-						<Original>Close</Original>
-						<French>Fermer</French>
-						<German>Schliessen</German>
-						<Spanish>Cerca</Spanish>
-						<Russian>Закрыть</Russian>
-				</Key>
-				<Key ID="STR_FAR_Need_Medic1">
-						<Original>I need a medic!</Original>
-						<French>J'ai besoin d'un medic!</French>
-						<German>Ich brauche einen Sanitäter!</German>
-						<Spanish>¡Necesito un médico!</Spanish>
-						<Russian>Мне нужен медик!</Russian>
-				</Key>
-				<Key ID="STR_FAR_Need_Medic2">
-						<Original>I'm hit! Medic!</Original>
-						<French>Je suis touché! Medic!</French>
-						<German>Wurde getroffen! Sanitäter!</German>
-						<Spanish>Herido! Médico!</Spanish>
-						<Russian>Меня подстрелили! Медик!</Russian>
-				</Key>
-				<Key ID="STR_FAR_Need_Medic3">
-						<Original>I'm down! Medic!</Original>
-						<French>Je suis à terre! Medic!</French>
-						<German>Ich bin gefallen! Sanitäter!</German>
-						<Spanish>Estoy abatido! Médico!</Spanish>
-						<Russian>Я ранен! Медик!</Russian>
-				</Key>
-				<Key ID="STR_REVIVE_LABEL">
-						<Original>YOU ARE WOUNDED</Original>
-						<French>VOUS ETES BLESSE</French>
-						<German>DU BIST VERWUNDET</German>
-						<Spanish>ESTAS HERIDO</Spanish>
-						<Russian>ВЫ БЕЗ СОЗНАНИЯ</Russian>
 				</Key>
 				<Key ID="STR_BUILD_ACTION">
 						<Original>-- BUILD --</Original>
@@ -104,20 +49,6 @@
 						<German>Treibstoff</German>
 						<Spanish>Combustible</Spanish>
 						<Russian>Топливо</Russian>
-				</Key>
-				<Key ID="STR_BLEEDOUT_MESSAGE">
-						<Original>Bleedout in %1 seconds.</Original>
-						<French>Mort dans %1 secondes.</French>
-						<German>Ausbluten in %1 Sekunden.</German>
-						<Spanish>Desangrado en %1 segundos.</Spanish>
-						<Russian>Вы умрёте через %1 секунд.</Russian>
-				</Key>
-				<Key ID="STR_BLEEDOUT_STABILIZED">
-						<Original>Stabilized</Original>
-						<French>Stabilisé</French>
-						<German>Stabilisiert</German>
-						<Spanish>Estabilizado</Spanish>
-						<Russian>Стабильно</Russian>
 				</Key>
 				<Key ID="STR_ROTATION">
 						<Original>-- Rotation</Original>
@@ -167,48 +98,6 @@
 						<German>Kann hier nicht platziert werden: %1 Objekt(e) innerhalb von %2 Meter der Position</German>
 						<Spanish>Imposible de colocar aqui: hay 1% objeto(s) a %2 metros de la posición del objeto</Spanish>
 						<Russian>Нельзя разместить здесь:  в %2 метрах есть 1% объект(а).</Russian>
-				</Key>
-				<Key ID="STR_PLACEMENT_POSSIBLE">
-						<Original>This position is valid.</Original>
-						<French>Cette position est valide.</French>
-						<German>Diese Position ist gültig.</German>
-						<Spanish>Esta posición es válida</Spanish>
-						<Russian>Это место подходит.</Russian>
-				</Key>
-				<Key ID="STR_ACTION_LOAD_BOX">
-						<Original>-- LOAD AMMO BOX</Original>
-						<French>-- CHARGER MUNITIONS</French>
-						<German>-- MUNITIONSKISTE AUFLADEN</German>
-						<Spanish>-- CARGAR CAJA DE MUNICIÓN</Spanish>
-						<Russian>-- ЗАГРУЗИТЬ ЯЩИК С БОЕПРИПАСАМИ</Russian>
-				</Key>
-				<Key ID="STR_ACTION_UNLOAD_BOX">
-						<Original>-- UNLOAD AMMO BOXES</Original>
-						<French>-- DECHARGER MUNITIONS</French>
-						<German>-- MUNITIONSKISTE ABLADEN</German>
-						<Spanish>-- DESCARGAR CAJA DE MUNICIÓN</Spanish>
-						<Russian>-- ВЫГРУЗИТЬ ЯЩИК С БОЕПРИПАСАМИ</Russian>
-				</Key>
-				<Key ID="STR_BOX_LOADED">
-						<Original>Ammo box successfully loaded on the transport vehicle.</Original>
-						<French>La caisse de munitions a été chargée sur le véhicule de transport.</French>
-						<German>Munitionskiste erfolgreich auf das Transportfahrzeug aufgeladen.</German>
-						<Spanish>Caja de munición cargada correctamente en el vehículo de transporte</Spanish>
-						<Russian>Ящик с боеприпасами загружен в транспортное средство</Russian>
-				</Key>
-				<Key ID="STR_BOX_UNLOADED">
-						<Original>Ammo box successfully unloaded from the transport vehicle.</Original>
-						<French>La caisse de munitions a été déchargée du véhicule de transport.</French>
-						<German>Munitionskiste erfolgreich vom Transportfahrzeug abgeladen.</German>
-						<Spanish>Caja de munición descargada correctamente del vehículo de transporte</Spanish>
-						<Russian>Ящик с боеприпасами выгружен из транспортного средства</Russian>
-				</Key>
-				<Key ID="STR_BOX_CANTLOAD">
-						<Original>There is no nearby vehicle capable of carrying the ammo box.</Original>
-						<French>Aucun véhicule à proximité capable de charger la caisse de munitions.</French>
-						<German>Kein Fahrzeug in der Nähe, das die Munitionskiste tragen kann.</German>
-						<Spanish>No hay ningún vehículo cercano capaz de cagar la caja de munición</Spanish>
-						<Russian>Рядом нет техники способной перевозить ящики с боеприпасами.</Russian>
 				</Key>
 				<Key ID="STR_FOB_ACTION">
 						<Original>-- DEPLOY FOB --</Original>
@@ -385,20 +274,6 @@
 						<German>-- Rastermodus</German>
 						<Spanish>-- Modo rejilla</Spanish>
 						<Russian>-- Режим сетки</Russian>
-				</Key>
-				<Key ID="STR_SECONDARY_CAPTURE">
-						<Original>-- CAPTURE</Original>
-						<French>-- CAPTURER</French>
-						<German>-- GEFANGENNEHMEN</German>
-						<Spanish>-- CAPTURAR</Spanish>
-						<Russian>-- ЗАХВАТИТЬ</Russian>
-				</Key>
-				<Key ID="STR_SQUAD_MEMBER">
-						<Original>Squad member</Original>
-						<French>Membre d'escouade</French>
-						<German>Truppenmitglieder</German>
-						<Spanish>Miembro de escuadra</Spanish>
-						<Russian>Член отряда</Russian>
 				</Key>
 				<Key ID="STR_SPAWN_NEAR">
 						<Original>Near</Original>
