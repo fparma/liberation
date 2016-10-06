@@ -5,10 +5,10 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1061;
+	toggles=1025;
 	class ItemIDProvider
 	{
-		nextID=237;
+		nextID=264;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={7626.9683,32.876179,1244.1073};
-		dir[]={-0.82562143,-0.56296605,0.037848826};
-		up[]={-0.56237656,0.82647777,0.025781177};
-		aside[]={0.045795728,2.7007354e-007,0.99895602};
+		pos[]={9247.0557,769.72601,8682.96};
+		dir[]={-0.22197807,-0.5181784,-0.82608914};
+		up[]={-0.13451257,0.85516483,-0.50058299};
+		aside[]={-0.96584415,1.0534022e-006,0.25953212};
 	};
 };
 binarizationWanted=0;
@@ -58,13 +58,20 @@ addons[]=
 	"A3_Structures_F_Mil_Cargo",
 	"CUP_Ind_Workshop01",
 	"CUP_Misc3_Config",
-	"A3_Structures_F_Civ_Lamps"
+	"A3_Structures_F_Civ_Lamps",
+	"CUP_CAStructuresHouse_HouseV2",
+	"CUP_CAStructuresLand_Nav_Boathouse",
+	"CUP_CAStructuresBarn_W",
+	"CUP_CAStructures_Mil",
+	"CUP_WarfareBuildings",
+	"CUP_StandaloneTerrains_Core_Faction",
+	"CUP_CAStructuresHouse_Church_05R"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=24;
+		items=31;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -212,6 +219,41 @@ class AddonsMetaData
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
+		};
+		class Item24
+		{
+			className="CUP_CAStructuresHouse_HouseV2";
+			name="CUP_CAStructuresHouse_HouseV2";
+		};
+		class Item25
+		{
+			className="CUP_CAStructuresLand_Nav_Boathouse";
+			name="CUP_CAStructuresLand_Nav_Boathouse";
+		};
+		class Item26
+		{
+			className="CUP_CAStructuresBarn_W";
+			name="CUP_CAStructuresBarn_W";
+		};
+		class Item27
+		{
+			className="CUP_CAStructures_Mil";
+			name="CUP_CAStructures_Mil";
+		};
+		class Item28
+		{
+			className="CUP_WarfareBuildings";
+			name="CUP_WarfareBuildings";
+		};
+		class Item29
+		{
+			className="CUP_StandaloneTerrains_Core_Faction";
+			name="CUP_StandaloneTerrains_Core_Faction";
+		};
+		class Item30
+		{
+			className="CUP_CAStructuresHouse_Church_05R";
+			name="CUP_CAStructuresHouse_Church_05R";
 		};
 	};
 };
@@ -517,7 +559,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=118;
+		items=130;
 		class Item0
 		{
 			dataType="Marker";
@@ -643,6 +685,7 @@ class Mission
 			};
 			id=17;
 			type="ModuleCurator_F";
+			atlOffset=7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2032,6 +2075,7 @@ class Mission
 					};
 					id=152;
 					type="CUP_B_USMC_Officer";
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -2061,6 +2105,7 @@ class Mission
 			{
 			};
 			id=41;
+			atlOffset=-4.7683716e-007;
 		};
 		class Item35
 		{
@@ -3038,6 +3083,7 @@ class Mission
 			};
 			id=142;
 			type="Barrack2";
+			atlOffset=7.6293945e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -3173,6 +3219,7 @@ class Mission
 					};
 					id=154;
 					type="CUP_B_USMC_Medic";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3202,6 +3249,7 @@ class Mission
 			{
 			};
 			id=153;
+			atlOffset=4.7683716e-007;
 		};
 		class Item111
 		{
@@ -3225,6 +3273,7 @@ class Mission
 					};
 					id=160;
 					type="CUP_B_USMC_Soldier_SL";
+					atlOffset=4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -3264,7 +3313,6 @@ class Mission
 					};
 					id=164;
 					type="CUP_B_USMC_Soldier_TL";
-					atlOffset=4.7683716e-007;
 				};
 				class Item2
 				{
@@ -3298,7 +3346,7 @@ class Mission
 					};
 					id=170;
 					type="CUP_B_USMC_Soldier_LAT";
-					atlOffset=4.7683716e-007;
+					atlOffset=9.5367432e-007;
 				};
 				class Item4
 				{
@@ -3381,7 +3429,7 @@ class Mission
 					};
 					id=180;
 					type="CUP_B_USMC_Soldier";
-					atlOffset=9.5367432e-007;
+					atlOffset=4.7683716e-007;
 				};
 				class Item9
 				{
@@ -3398,12 +3446,14 @@ class Mission
 					};
 					id=162;
 					type="CUP_B_USMC_Medic";
+					atlOffset=-4.7683716e-007;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=159;
+			atlOffset=4.7683716e-007;
 		};
 		class Item112
 		{
@@ -3466,6 +3516,7 @@ class Mission
 					};
 					id=183;
 					type="CUP_B_USMC_Soldier_TL";
+					atlOffset=-4.7683716e-007;
 				};
 				class Item2
 				{
@@ -3498,6 +3549,7 @@ class Mission
 					};
 					id=185;
 					type="CUP_B_USMC_Soldier_LAT";
+					atlOffset=4.7683716e-007;
 				};
 				class Item4
 				{
@@ -3514,7 +3566,6 @@ class Mission
 					};
 					id=186;
 					type="CUP_B_USMC_Soldier";
-					atlOffset=4.7683716e-007;
 				};
 				class Item5
 				{
@@ -3565,6 +3616,7 @@ class Mission
 					};
 					id=189;
 					type="CUP_B_USMC_Soldier_LAT";
+					atlOffset=4.7683716e-007;
 				};
 				class Item8
 				{
@@ -3598,6 +3650,7 @@ class Mission
 					};
 					id=191;
 					type="CUP_B_USMC_Medic";
+					atlOffset=-4.7683716e-007;
 				};
 			};
 			class Attributes
@@ -3779,14 +3832,14 @@ class Mission
 					};
 					id=201;
 					type="CUP_B_USMC_Soldier";
-					atlOffset=0.048271656;
+					atlOffset=0.048271179;
 				};
 				class Item9
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={7593,8.004117,1244.05};
+						position[]={7593,8.0041161,1244.05};
 					};
 					side="West";
 					flags=5;
@@ -3993,6 +4046,7 @@ class Mission
 					};
 					id=234;
 					type="CUP_B_USMC_Pilot";
+					atlOffset=-4.7683716e-007;
 				};
 				class Item1
 				{
@@ -4015,6 +4069,199 @@ class Mission
 			{
 			};
 			id=233;
+			atlOffset=-4.7683716e-007;
+		};
+		class Item118
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7735,31.381634,4441};
+				angles[]={0.011372928,1.738422,6.2792487};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=240;
+			type="Land_HouseV2_02_Interier";
+		};
+		class Item119
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7672,31.168583,4402};
+				angles[]={6.255518,0.19347042,0.0031074041};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=241;
+			type="Land_HouseV2_04_interier_dam";
+		};
+		class Item120
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7891.896,-3.3766658,4320.7334};
+				angles[]={0,4.7503381,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=243;
+			type="Land_Nav_Boathouse";
+			atlOffset=1.713007;
+		};
+		class Item121
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7664.354,28.022448,4371.3955};
+				angles[]={0,1.659611,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=244;
+			type="Land_Barn_W_02";
+		};
+		class Item122
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7695.0811,26.278034,4375.0923};
+				angles[]={0,4.8215361,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=250;
+			type="Land_Mil_Barracks_i";
+		};
+		class Item123
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7706.8052,26.278034,4373.9678};
+				angles[]={0,4.8215361,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=251;
+			type="Land_Mil_Barracks_i";
+		};
+		class Item124
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7845.2568,21.288729,4401.874};
+				angles[]={0,4.6995668,0};
+			};
+			side="Empty";
+			class Attributes
+			{
+			};
+			id=252;
+			type="Land_Mil_Guardhouse";
+			atlOffset=0.25626373;
+		};
+		class Item125
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7836.9912,20.461506,4403.1104};
+				angles[]={6.1926599,0,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=253;
+			type="USMC_WarfareBVehicleServicePoint";
+		};
+		class Item126
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8041.4707,519.2038,9464.9795};
+				angles[]={6.2223229,3.9614463,6.2609215};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=257;
+			type="Land_Church_05R";
+		};
+		class Item127
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={7985.4102,515.8299,9420.3164};
+				angles[]={0,2.7485924,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=259;
+			type="Land_HouseV2_05";
+		};
+		class Item128
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8008.6035,513.79852,9454.1807};
+				angles[]={0,3.0645721,0};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=262;
+			type="Land_fortified_nest_big";
+		};
+		class Item129
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={8134.8584,519.43225,9474.293};
+				angles[]={6.2597528,1.0788126,0.12012189};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+			};
+			id=263;
+			type="Land_fortified_nest_big";
 		};
 	};
 	class Connections
