@@ -100,13 +100,13 @@ ARSENAL_WHITELIST_NV = [
 ];
 
 ARSENAL_WHITELIST_BINOC = [
-<#include arsenal/whitelist-ace-binocs.txt>
+  <#include arsenal/whitelist-ace-binocs.txt>
   "Binocular"
 ];
 
 ARSENAL_WHITELIST_ITEMS = [
-<#include arsenal/whitelist-ace-items.txt>
-<#include arsenal/whitelist-acre-items.txt>
+  <#include arsenal/whitelist-ace-items.txt>
+  <#include arsenal/whitelist-acre-items.txt>
   "ItemMap",
   "ItemGPS",
   "ItemRadio",

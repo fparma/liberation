@@ -1,21 +1,22 @@
 #!/usr/bin/env bash
 
+# Settings
+MAKE_PBO=0
+RENAME_MISSION_FILE=1
+
+# Variables
 SRC_CUSTOM="dist/nogova_liberation.noe"
 DST_MAIN="dist/nogova_liberation.noe"
-DATE=`date +%Y%m%d-%H%M`
-MAP_BEGIN=`echo "$DST_MAIN" | grep -E -o "^dist/[a-z0-9_-]+"`
-MAP_ENDING=`echo "$DST_MAIN" | grep -E -o "\.[a-z0-9]+$"`
 
-echo "Building Nogovo Liberation"
+###############################################################
+echo "Building Nogovo Liberation Now..."
 
+# Build/Rebuild Dist Dir
 if [ -d dist ]; then
   echo "Dist mission directory found. Deleting old version..."
   rm -rf dist
 fi
-if [ ! -d dist ]; then
-  echo "Dist directory not found, creating..."
-  mkdir dist
-fi
+mkdir dist
 
 # Copy Base Files into dist folder
 cp -r 'src/greuh_liberation.Default' $DST_MAIN
@@ -33,5 +34,13 @@ if [ -d "${DST_MAIN}/meta" ]; then
 fi
 
 # Finish up by renaming the folder with a timestamp
-mv "${DST_MAIN}" "${MAP_BEGIN}_${DATE}${MAP_ENDING}"
+if [ $RENAME_MISSION_FILE -eq 1 ]; then
+  DATE=`date +%Y%m%d-%H%M`
+  MAP_BEGIN=`echo "$DST_MAIN" | grep -E -o "^dist/[a-z0-9_-]+"`
+  MAP_ENDING=`echo "$DST_MAIN" | grep -E -o "\.[a-z0-9]+$"`
+  mv "${DST_MAIN}" "${MAP_BEGIN}_${DATE}${MAP_ENDING}"
+fi
 
+if [ $MAKE_PBO -eq 1 ]; then
+  echo "Building PBO File."
+fi
