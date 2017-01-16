@@ -402,8 +402,8 @@ class Mission
 {
 	class Intel
 	{
-		briefingName="Comfy Liberation";
-		overviewText="@STR_MISSION_DESCRIPTION";
+		briefingName="Comfy Liberation (<#DATETIME>)";
+		overviewText="Capture the Island mission";
 		resistanceEast=1;
 		timeOfChanges=28800;
 		startWeather=0;

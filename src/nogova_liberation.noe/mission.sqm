@@ -535,6 +535,8 @@ class Mission
 {
 	class Intel
 	{
+		briefingName="Comfy Liberation (<#DATETIME>)";
+		overviewText="Capture the Island mission";
 		timeOfChanges=1800.0002;
 		startWeather=1;
 		startFog=0.11679435;
