@@ -100,54 +100,20 @@ ARSENAL_WHITELIST_NV = [
 ];
 
 ARSENAL_WHITELIST_BINOC = [
-  "Binocular",
-  "ACE_VectorDay",
-  "ACE_Vector",
-  "ACE_Yardage450"
+<#include arsenal/whitelist-ace-binocs.txt>
+  "Binocular"
 ];
 
 ARSENAL_WHITELIST_ITEMS = [
+<#include arsenal/whitelist-ace-items.txt>
+<#include arsenal/whitelist-acre-items.txt>
   "ItemMap",
   "ItemGPS",
   "ItemRadio",
   "ItemCompass",
   "ItemWatch",
-
-  "ACE_RangeTable_82mm",
-  "ACRE_PRC117F",
-  "ACRE_PRC148",
-  "ACRE_PRC343",
-  "ACE_ATragMX",
-  "ACE_fieldDressing",
-  "ACE_bloodIV_500",
-  "ACE_bloodIV_250",
-  "ACE_bloodIV",
-  "ACE_SpraypaintBlue",
-  "ACE_CableTie",
-  "ACE_DAGR",
-  "ACE_DefusalKit",
-  "ACE_EntrenchingTool",
-  "ACE_epinephrine",
-  "ACE_Flashlight_MX991",
-  "ACE_SpraypaintGreen",
-  "ACE_IR_Strobe_Item",
-  "ACE_Flashlight_KSF1",
-  "ACE_Kestrel4500",
-  "ACE_M26_Clacker",
-  "ACE_Clacker",
-  "ACE_Flashlight_XL50",
-  "ACE_MapTools",
-  "ACE_microDAGR",
   "MineDetector",
-  "ACE_morphine",
-  "ACE_RangeCard",
-  "ACE_SpraypaintRed",
-  "ACE_Sandbag_empty",
-  "ACE_SpottingScope",
-  "ACE_Tripod",
-  "ToolKit",
-  "ACE_UAVBattery",
-  "ACE_wirecutter"
+  "ToolKit"
 ];
 
 ARSENAL_WHITELIST_ACCS = [
