@@ -1,14 +1,14 @@
 #!/usr/bin/env bash
 
 # Settings
-MAKE_PBO=0
-RENAME_MISSION_FILE=1
-RENAME_MISSION_TITLE=1
-DATE=`date +%Y%m%d-%H%M`
+MAKE_PBO=0              # Build a PBO if true. (Requires mikeros PBO tools)
+RENAME_MISSION_FILE=1   # Adds timestamp to the mission folder/pbo file
+RENAME_MISSION_TITLE=1  # Replaces <#DATETIME> with timestamp in mission name
 
 # Variables
-SRC_CUSTOM="dist/nogova_liberation.noe"
-DST_MAIN="dist/nogova_liberation.noe"
+SRC_CUSTOM="dist/nogova_liberation.noe" # Path to the customization resources.
+DST_MAIN="dist/nogova_liberation.noe"   # Path to the destination folder.
+DATE=`date +%Y%m%d-%H%M`                # Timestamp call & Format specification
 
 ###############################################################
 echo "Building Nogovo Liberation Now..."
