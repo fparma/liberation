@@ -27,4 +27,4 @@
 "ACE_SpottingScope",
 "ACE_Tripod",
 "ACE_UAVBattery",
-"ACE_wirecutter,
+"ACE_wirecutter",
