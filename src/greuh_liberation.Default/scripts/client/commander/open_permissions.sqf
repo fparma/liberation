@@ -80,9 +80,6 @@ _idx = 2;
 	_control ctrlSetFontHeight fontsize;
 	_control ctrlCommit 0;
 
-	[ _idx, 1, 0, localize "STR_PERMISSIONS_LIGHT", localize "STR_PERMISSIONS_TOOLTIP_LIGHT" ] call  permission_create_activetext;
-	[ _idx, 2, 1, localize "STR_PERMISSIONS_ARMORED", localize "STR_PERMISSIONS_TOOLTIP_ARMORED" ] call  permission_create_activetext;
-	[ _idx, 3, 2, localize "STR_PERMISSIONS_AIR", localize "STR_PERMISSIONS_TOOLTIP_AIR" ] call  permission_create_activetext;
 	[ _idx, 4, 3, localize "STR_PERMISSIONS_CONSTRUCTION", localize "STR_PERMISSIONS_TOOLTIP_CONSTRUCTION" ] call  permission_create_activetext;
 	[ _idx, 5, 4, localize "STR_PERMISSIONS_RECYCLING", localize "STR_PERMISSIONS_TOOLTIP_RECYCLING" ] call  permission_create_activetext;
 	[ _idx, 6, 5, localize "STR_PERMISSIONS_MISC", localize "STR_PERMISSIONS_TOOLTIP_MISC" ] call  permission_create_activetext;

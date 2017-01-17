@@ -532,15 +532,6 @@
 				<Key ID="STR_PERMISSIONS_TITLE">
 						<Original>PERMISSIONS MANAGEMENT</Original>
 				</Key>
-				<Key ID="STR_PERMISSIONS_LIGHT">
-						<Original>Light Vehicles</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_ARMORED">
-						<Original>Armored Vehicles</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_AIR">
-						<Original>Air Vehicles</Original>
-				</Key>
 				<Key ID="STR_PERMISSIONS_CONSTRUCTION">
 						<Original>Construction</Original>
 				</Key>
@@ -555,15 +546,6 @@
 				</Key>
 				<Key ID="STR_PERMISSIONS_NONE">
 						<Original>None</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_TOOLTIP_LIGHT">
-						<Original>Allows the player to operate light vehicles as driver and gunner.</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_TOOLTIP_ARMORED">
-						<Original>Allows the player to operate armored vehicles as driver, gunner and commander.</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_TOOLTIP_AIR">
-						<Original>Allows the player to operate air vehicles as driver and gunner.</Original>
 				</Key>
 				<Key ID="STR_PERMISSIONS_TOOLTIP_CONSTRUCTION">
 						<Original>Allows the player to use the BUILD menu.</Original>
