@@ -84,11 +84,11 @@
   "CUP_NVG_PVS7",
   "ACE_NVG_Gen2">
 <#define ARSENAL_WHITELIST_BINOC|
-  <#include arsenal/whitelist-ace-binocs.txt>
+  <#include arsenal/whitelist-ace-binocs.h>
   "Binocular">
 <#define ARSENAL_WHITELIST_ITEMS|
-  <#include arsenal/whitelist-ace-items.txt>
-  <#include arsenal/whitelist-acre-items.txt>
+  <#include arsenal/whitelist-ace-items.h>
+  <#include arsenal/whitelist-acre-items.h>
   "ItemMap",
   "ItemGPS",
   "ItemRadio",
