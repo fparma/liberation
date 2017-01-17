@@ -1,4 +1,4 @@
-ARSENAL_WHITELIST_WEAPONS = [
+<#define ARSENAL_WHITELIST_WEAPONS|
   "rhs_weap_m4a1_carryhandle_m203S",
   "rhs_weap_m4a1_carryhandle_pmag",
   "CUP_lmg_m249_pip1",
@@ -13,10 +13,8 @@ ARSENAL_WHITELIST_WEAPONS = [
   "ACE_VMH3",
   "RH_m1911",
   "srifle_DMR_02_F",
-  "srifle_DMR_06_olive_F"
-];
-
-ARSENAL_WHITELIST_MAGAZINES = [
+  "srifle_DMR_06_olive_F">
+<#define ARSENAL_WHITELIST_MAGAZINES|
   "hlc_30rnd_556x45_SOST",
   "hlc_30rnd_556x45_SPR",
   "hlc_200rnd_556x45_T_SAW",
@@ -47,37 +45,29 @@ ARSENAL_WHITELIST_MAGAZINES = [
   "SmokeShell",
   "DemoCharge_Remote_Mag",
   "ATMine_Range_Mag",
-  "SatchelCharge_Remote_Mag"
-];
-
-ARSENAL_WHITELIST_UNIFORMS = [
+  "SatchelCharge_Remote_Mag">
+<#define ARSENAL_WHITELIST_UNIFORMS|
   "FP_U_B_CombatUniform_WDL",
   "FP_U_B_CombatUniform_WDL_Sleeves",
   "U_B_PilotCoveralls",
-  "FP_U_B_CombatUniform_Sage_Sleeves"
-];
-
-ARSENAL_WHITELIST_VESTS = [
+  "FP_U_B_CombatUniform_Sage_Sleeves">
+<#define ARSENAL_WHITELIST_VESTS|
   "V_PlateCarrier1_rgr",
   "V_PlateCarrier2_rgr",
   "usm_vest_rba_lbe_gr",
   "usm_vest_rba_lbv_gr",
   "usm_vest_rba_lbv_mg",
   "usm_vest_rba_lbe_rm",
-  "usm_vest_rba_lbv_rmp"
-];
-
-ARSENAL_WHITELIST_BACKPACKS = [
+  "usm_vest_rba_lbv_rmp">
+<#define ARSENAL_WHITELIST_BACKPACKS|
   "B_AssaultPack_rgr",
   "B_Carryall_oli",
   "B_FieldPack_oli",
   "ace_gunbag",
   "B_Kitbag_rgr",
   "ACE_TacticalLadder_Pack",
-  "B_Parachute"
-];
-
-ARSENAL_WHITELIST_HELMETS = [
+  "B_Parachute">
+<#define ARSENAL_WHITELIST_HELMETS|
   "H_Bandanna_sgg",
   "H_Watchcap_camo",
   "H_Booniehat_oli",
@@ -85,26 +75,18 @@ ARSENAL_WHITELIST_HELMETS = [
   "H_PilotHelmetHeli_B",
   "FP_Helmet_M81",
   "usm_helmet_pasgt_w",
-  "usm_bdu_8point_wdl"
-];
-
-ARSENAL_WHITELIST_MASKS = [
+  "usm_bdu_8point_wdl">
+<#define ARSENAL_WHITELIST_MASKS|
   "G_Aviator",
   "G_Balaclava_blk",
-  "G_Combat"
-];
-
-ARSENAL_WHITELIST_NV = [
+  "G_Combat">
+<#define ARSENAL_WHITELIST_NV|
   "CUP_NVG_PVS7",
-  "ACE_NVG_Gen2"
-];
-
-ARSENAL_WHITELIST_BINOC = [
+  "ACE_NVG_Gen2">
+<#define ARSENAL_WHITELIST_BINOC|
   <#include arsenal/whitelist-ace-binocs.txt>
-  "Binocular"
-];
-
-ARSENAL_WHITELIST_ITEMS = [
+  "Binocular">
+<#define ARSENAL_WHITELIST_ITEMS|
   <#include arsenal/whitelist-ace-items.txt>
   <#include arsenal/whitelist-acre-items.txt>
   "ItemMap",
@@ -113,10 +95,8 @@ ARSENAL_WHITELIST_ITEMS = [
   "ItemCompass",
   "ItemWatch",
   "MineDetector",
-  "ToolKit"
-];
-
-ARSENAL_WHITELIST_ACCS = [
+  "ToolKit">
+<#define ARSENAL_WHITELIST_ACCS|
   "RH_barska_rds",
   "optic_DMS",
   "CUP_optic_Elcan_reflex",
@@ -141,19 +121,9 @@ ARSENAL_WHITELIST_ACCS = [
   "rhsusf_acc_grip2",
   "rhsusf_acc_grip1",
   "RH_HBLM",
-  "bipod_01_F_blk"
-];
-
-[ missionNamespace, ARSENAL_WHITELIST_WEAPONS, true] call BIS_fnc_addVirtualWeaponCargo;
-[ missionNamespace, ARSENAL_WHITELIST_MAGAZINES, true] call BIS_fnc_addVirtualMagazineCargo;
-[ missionNamespace, ARSENAL_WHITELIST_BACKPACKS, true] call BIS_fnc_addVirtualBackpackCargo;
-[ missionNamespace,
-ARSENAL_WHITELIST_UNIFORMS +
-ARSENAL_WHITELIST_VESTS +
-ARSENAL_WHITELIST_HELMETS +
-ARSENAL_WHITELIST_MASKS +
-ARSENAL_WHITELIST_NV +
-ARSENAL_WHITELIST_BINOC +
-ARSENAL_WHITELIST_ITEMS +
-ARSENAL_WHITELIST_ACCS
-, true] call BIS_fnc_addVirtualItemCargo;
+  "bipod_01_F_blk">
+<#define ARSENAL_WHITELIST_ITEMS_CATEGORY|<#ARSENAL_WHITELIST_UNIFORMS><#ARSENAL_WHITELIST_VESTS><#ARSENAL_WHITELIST_HELMETS><#ARSENAL_WHITELIST_MASKS><#ARSENAL_WHITELIST_NV><#ARSENAL_WHITELIST_BINOC><#ARSENAL_WHITELIST_ITEMS><#ARSENAL_WHITELIST_ACCS>>
+[ missionNamespace, <#ARSENAL_WHITELIST_WEAPONS>, true] call BIS_fnc_addVirtualWeaponCargo;
+[ missionNamespace, <#ARSENAL_WHITELIST_MAGAZINES>, true] call BIS_fnc_addVirtualMagazineCargo;
+[ missionNamespace, <#ARSENAL_WHITELIST_BACKPACKS>, true] call BIS_fnc_addVirtualBackpackCargo;
+[ missionNamespace, <#ARSENAL_WHITELIST_ITEMS_CATEGORY>, true] call BIS_fnc_addVirtualItemCargo;
