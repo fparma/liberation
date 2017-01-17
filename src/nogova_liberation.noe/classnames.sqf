@@ -140,9 +140,6 @@ boats_names = [ "B_Boat_Transport_01_F", "B_Boat_Armed_01_minigun_F" ];
 elite_vehicles = ["CUP_B_M1A1_Woodland_USMC", "CUP_B_AV8B_GBU12_USMC"];
 
 ai_resupply_sources = [ Respawn_truck_typename, huron_typename, Arsenal_typename, "B_Slingload_01_Ammo_F", "B_APC_Tracked_01_CRV_F", "B_Truck_01_ammo_F", "JNS_Skycrane_Pod_Ammo_BLU_Black" ];
-vehicle_repair_sources = [ "B_APC_Tracked_01_CRV_F", "C_Offroad_01_repair_F", "B_Truck_01_Repair_F", "B_Slingload_01_Repair_F", "JNS_Skycrane_Pod_Repair_BLU_Black" ];
-vehicle_rearm_sources = [ "B_APC_Tracked_01_CRV_F", "B_Truck_01_ammo_F", "B_Slingload_01_Ammo_F", "JNS_Skycrane_Pod_Ammo_BLU_Black" ];
-vehicle_refuel_sources = [ "B_APC_Tracked_01_CRV_F", "B_Truck_01_fuel_F", "B_Slingload_01_Fuel_F" ];
 
 squads = [
 	[blufor_squad_inf_light,20,0,0],
