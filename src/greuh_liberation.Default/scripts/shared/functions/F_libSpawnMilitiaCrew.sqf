@@ -1,7 +1,7 @@
 params [ "_vehicle" ];
 private [ "_grp", "_vehcrew" ];
 
-diag_log format [ "Spawning militia crew at %1", time ];
+// diag_log format [ "Spawning militia crew at %1", time ];
 
 _grp = createGroup GRLIB_side_enemy;
 _vehcrew = [];
@@ -17,4 +17,4 @@ while { count units _grp < 3 } do {
 	}
 } foreach (units _grp);
 
-diag_log format [ "Done Spawning militia crew at %1", time ];
+// diag_log format [ "Done Spawning militia crew at %1", time ];

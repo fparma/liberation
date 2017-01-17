@@ -1,4 +1,4 @@
-diag_log format [ "Spawning regular squad at %1", time ];
+// diag_log format [ "Spawning regular squad at %1", time ];
 
 params [ "_sector", "_squadies_to_spawn" ];
 private [ "_sectorpos", "_spawnpos", "_grp", "_unitidx", "_corrected_amount" ];
@@ -28,6 +28,6 @@ if ( _sector in sectors_capture ) then {
 	} foreach (units _grp);
 };
 
-diag_log format [ "Done Spawning regular squad at %1", time ];
+// diag_log format [ "Done Spawning regular squad at %1", time ];
 
 _grp;
