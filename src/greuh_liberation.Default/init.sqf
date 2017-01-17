@@ -21,8 +21,6 @@ if (!isDedicated && !hasInterface && isMultiplayer) then {
 if (!isDedicated && hasInterface) then {
 	waitUntil { alive player };
 	[] call compileFinal preprocessFileLineNumbers "scripts\client\init_client.sqf";
-} else {
-	setViewDistance 2000;
 };
 
 disableRemoteSensors true;
