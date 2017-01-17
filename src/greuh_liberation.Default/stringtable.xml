@@ -589,15 +589,6 @@
 				<Key ID="STR_PERMISSIONS_PARAM">
 						<Original>Permissions Management</Original>
 				</Key>
-				<Key ID="STR_PERMISSION_NO_LIGHT">
-						<Original>You don't have permission from the commander to use light vehicles.</Original>
-				</Key>
-				<Key ID="STR_PERMISSION_NO_ARMOR">
-						<Original>You don't have permission from the commander to use armored vehicles.</Original>
-				</Key>
-				<Key ID="STR_PERMISSION_NO_AIR">
-						<Original>You don't have permission from the commander to use air vehicles.</Original>
-				</Key>
 				<Key ID="STR_PERMISSION_WARNING">
 						<Original>No permissions have been set. The commander must setup the permissions to allow player actions and vehicle usage. Alternatively, the permission system can be disabled from the mission options.</Original>
 				</Key>
@@ -670,23 +661,8 @@
 				<Key ID="STR_CLEANUP_PARAM3">
 						<Original>Enabled - 4 hours delay</Original>
 				</Key>
-				<Key ID="STR_SORRY">
-						<Original>Sorry!</Original>
-				</Key>
 				<Key ID="STR_COMMANDER_NOT_AUTHORIZED">
 						<Original>You are not authorized to use the commander slot on this server.</Original>
-				</Key>
-				<Key ID="STR_MAKE_RESPAWN_LOADOUT">
-						<Original>Save respawn loadout</Original>
-				</Key>
-				<Key ID="STR_MAKE_RESPAWN_LOADOUT_HINT">
-						<Original>Your current loadout will be restored on every respawn.</Original>
-				</Key>
-				<Key ID="STR_LOAD_PLAYER_LOADOUT">
-						<Original>Load from player</Original>
-				</Key>
-				<Key ID="STR_LOAD_PLAYER_LOADOUT_HINT">
-						<Original>Successful loadout transfer from %1.</Original>
 				</Key>
 				<Key ID="STR_LOADOUT">
 						<Original>Loadout:</Original>
