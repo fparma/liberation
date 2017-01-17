@@ -53,7 +53,6 @@ wait_to_spawn_sector = compileFinal preprocessFileLineNumbers "scripts\server\se
 [] spawn compileFinal preprocessFileLineNumbers "scripts\server\game\synchronise_vars.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\server\offloading\offload_calculation.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\server\offloading\offload_manager.sqf";
-[] spawn compileFinal preprocessFileLineNumbers "scripts\server\offloading\show_fps.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\server\patrols\civilian_patrols.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\server\patrols\manage_patrols.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\server\patrols\reinforcements_resetter.sqf";
