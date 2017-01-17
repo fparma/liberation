@@ -30,5 +30,3 @@ GRLIB_halo_altitude = 1800;
 GRLIB_civ_killing_penalty = 15;
 
 if ( GRLIB_blufor_cap > 100 ) then { GRLIB_blufor_cap = 100 }; // Don't forget that the human commander manages those, not the server
-
-GRLIB_offload_diag = false;
