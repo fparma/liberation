@@ -163,8 +163,4 @@ while { true } do {
 	if (dialog) then {
 		closeDialog 0;
 	};
-
-	if (alive player && deploy == 1) then {
-		[_spawn_str] spawn spawn_camera;
-	};
 };

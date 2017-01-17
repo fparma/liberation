@@ -231,9 +231,6 @@ while { dialog && alive player } do {
 			player setDir _destdir;
 
 			sleep 0.01;
-
-			[ localize 'STR_SQUAD_DEPLOY' ] spawn spawn_camera;
-
 		};
 
 		GRLIB_squadaction = -1;

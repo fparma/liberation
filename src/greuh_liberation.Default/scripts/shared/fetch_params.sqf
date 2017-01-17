@@ -2,7 +2,6 @@ if ( isMultiplayer ) then {
 	GRLIB_difficulty_modifier = ["Difficulty",1] call bis_fnc_getParamValue;
 	GRLIB_time_factor = ["DayDuration",12] call bis_fnc_getParamValue;
 	GRLIB_resources_multiplier = ["ResourcesMultiplier",1] call bis_fnc_getParamValue;
-	GRLIB_deployment_cinematic = ["DeploymentCinematic",1] call bis_fnc_getParamValue;
 	GRLIB_unitcap = ["Unitcap",1] call bis_fnc_getParamValue;
 	GRLIB_adaptive_opfor = ["AdaptToPlayercount",1] call bis_fnc_getParamValue;
 	GRLIB_civilian_activity = ["civilians",1] call bis_fnc_getParamValue;
@@ -23,7 +22,6 @@ if ( isMultiplayer ) then {
 	GRLIB_difficulty_modifier = 1;
 	GRLIB_time_factor = 12;
 	GRLIB_resources_multiplier = 1;
-	GRLIB_deployment_cinematic = 0;
 	GRLIB_adaptive_opfor = 1;
 	GRLIB_unitcap = 1;
 	GRLIB_civilian_activity = 1;
@@ -42,7 +40,6 @@ if ( isMultiplayer ) then {
 	GRLIB_max_squad_size = 10;
 };
 
-if ( GRLIB_deployment_cinematic == 1 ) then { GRLIB_deployment_cinematic = true } else { GRLIB_deployment_cinematic = false };
 if ( GRLIB_build_first_fob == 1 ) then { GRLIB_build_first_fob = true } else { GRLIB_build_first_fob = false };
 if ( GRLIB_adaptive_opfor == 1 ) then { GRLIB_adaptive_opfor = true } else { GRLIB_adaptive_opfor = false };
 if ( GRLIB_passive_income == 1 ) then { GRLIB_passive_income = true } else { GRLIB_passive_income = false };

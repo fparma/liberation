@@ -1,7 +1,6 @@
 [] call compileFinal preprocessFileLineNumbers "scripts\client\misc\init_markers.sqf";
 
 ["Preload"] call BIS_fnc_arsenal;
-spawn_camera = compileFinal preprocessFileLineNumbers "scripts\client\spawn\spawn_camera.sqf";
 cinematic_camera = compileFinal preprocessFileLineNumbers "scripts\client\ui\cinematic_camera.sqf";
 write_credit_line = compileFinal preprocessFileLineNumbers "scripts\client\ui\write_credit_line.sqf";
 

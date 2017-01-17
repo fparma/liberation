@@ -120,12 +120,6 @@ class Params
 		texts[] = { $STR_PARAMS_DISABLED, $STR_CLEANUP_PARAM1, $STR_CLEANUP_PARAM2, $STR_CLEANUP_PARAM3 };
 		default = 0;
 	};
-	class DeploymentCinematic {
-		title = $STR_PARAMS_DEPLOYMENTCAMERA;
-		values[] = { 1, 0 };
-		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-		default = 0;
-	};
 	class FirstFob {
 		title = $STR_PARAMS_FIRSTFOB;
 		values[] = { 1, 0 };
