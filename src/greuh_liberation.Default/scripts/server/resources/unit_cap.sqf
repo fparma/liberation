@@ -8,5 +8,5 @@ while { true } do {
 		};
 	} foreach allUnits;
 	unitcap = _local_unitcap;
-	sleep 1.06;
+	sleep 2;
 };
