@@ -50,9 +50,6 @@ while { true } do {
 
 	};
 
-	if (huron distance lhd < 500) then {
-		deletevehicle huron;
-	};
 	sleep 0.25;
 
 };
