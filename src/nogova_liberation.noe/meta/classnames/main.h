@@ -24,7 +24,8 @@
 <#define BLUFOR_UNIT_HAT|"B_soldier_AT_F">                      // Dedicated AT
 <#define BLUFOR_UNIT_AA|"B_soldier_AA_F">                       // Anti Air
 <#define BLUFOR_UNIT_MMG|"B_HeavyGunner_F">                     // Medium Machine Gunner
-<#define BLUFOR_UNIT_SNIPER|"B_sniper_F">                       // Sniper / Sharpshooter
+<#define BLUFOR_UNIT_SNIPER|"B_sniper_F">                       // Sniper
+<#define BLUFOR_UNIT_SHARPSHOOTER|"">                           // Sharpshooter
 <#define BLUFOR_UNIT_CREWMAN|"B_crew_F">                        // Crewman
 <#define BLUFOR_UNIT_PILOT|"B_Pilot_F">                         // Jet Pilot
 <#define BLUFOR_UNIT_HELIPILOT|"B_helipilot_F">                 // Helicopter Pilot
@@ -50,3 +51,6 @@
 <#define OPFOR_UNIT_PILOT|"">                                   // Jet Pilot
 <#define OPFOR_UNIT_HELIPILOT|"">                               // Helicopter Pilot
 <#define OPFOR_UNIT_PARATROOPER|"CUP_O_RU_Officer_VDV_EMR">     // Paratrooper
+
+// Buildable Object Defines & Function
+<#define B|[#1,0,0,0]>
