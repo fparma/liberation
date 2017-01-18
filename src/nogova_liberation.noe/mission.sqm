@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={9247.0557,769.72601,8682.96};
-		dir[]={-0.22197807,-0.5181784,-0.82608914};
-		up[]={-0.13451257,0.85516483,-0.50058299};
-		aside[]={-0.96584415,1.0534022e-006,0.25953212};
+		pos[]={7586.2671,184.42781,1342.338};
+		dir[]={-0.12037698,-0.82550335,-0.55155718};
+		up[]={-0.17601763,0.5644182,-0.80650264};
+		aside[]={-0.97708762,7.4698619e-008,0.21324822};
 	};
 };
 binarizationWanted=0;
@@ -40,6 +40,7 @@ addons[]=
 	"ace_explosives",
 	"A3_Characters_F",
 	"CUP_Creatures_Military_USMC",
+	"FP_CUPUSMCReplacement",
 	"A3_Modules_F",
 	"A3_Modules_F_Curator_Misc",
 	"A3_Structures_F_Mil_BagFence",
@@ -71,7 +72,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=31;
+		items=32;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -173,84 +174,89 @@ class AddonsMetaData
 		};
 		class Item15
 		{
+			className="FP_CUPUSMCReplacement";
+			name="FP_CUPUSMCReplacement";
+		};
+		class Item16
+		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item16
+		class Item17
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item17
+		class Item18
 		{
 			className="CUP_Farm_WTower";
 			name="CUP_Farm_WTower";
 		};
-		class Item18
+		class Item19
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item19
+		class Item20
 		{
 			className="CUP_Pila_DBE1";
 			name="CUP_Pila_DBE1";
 		};
-		class Item20
+		class Item21
 		{
 			className="CUP_Zakladna_DBE1";
 			name="CUP_Zakladna_DBE1";
 		};
-		class Item21
+		class Item22
 		{
 			className="CUP_Ind_Garage01";
 			name="CUP_Ind_Garage01";
 		};
-		class Item22
+		class Item23
 		{
 			className="CUP_Ind_Workshop01";
 			name="CUP_Ind_Workshop01";
 		};
-		class Item23
+		class Item24
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item24
+		class Item25
 		{
 			className="CUP_CAStructuresHouse_HouseV2";
 			name="CUP_CAStructuresHouse_HouseV2";
 		};
-		class Item25
+		class Item26
 		{
 			className="CUP_CAStructuresLand_Nav_Boathouse";
 			name="CUP_CAStructuresLand_Nav_Boathouse";
 		};
-		class Item26
+		class Item27
 		{
 			className="CUP_CAStructuresBarn_W";
 			name="CUP_CAStructuresBarn_W";
 		};
-		class Item27
+		class Item28
 		{
 			className="CUP_CAStructures_Mil";
 			name="CUP_CAStructures_Mil";
 		};
-		class Item28
+		class Item29
 		{
 			className="CUP_WarfareBuildings";
 			name="CUP_WarfareBuildings";
 		};
-		class Item29
+		class Item30
 		{
 			className="CUP_StandaloneTerrains_Core_Faction";
 			name="CUP_StandaloneTerrains_Core_Faction";
 		};
-		class Item30
+		class Item31
 		{
 			className="CUP_CAStructuresHouse_Church_05R";
 			name="CUP_CAStructuresHouse_Church_05R";
@@ -561,7 +567,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=130;
+		items=129;
 		class Item0
 		{
 			dataType="Marker";
@@ -647,9 +653,9 @@ class Mission
 		class Item7
 		{
 			dataType="Marker";
-			position[]={8631.7393,-4.7293656e-028,7551.061};
+			position[]={8631.7393,-1.5076371e-030,7551.061};
 			name="capture_2";
-			text="Little Lamplight";
+			text="Rabenstein Church";
 			type="n_art";
 			colorName="ColorEAST";
 			id=11;
@@ -2055,7 +2061,7 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=1;
+				items=2;
 				class Item0
 				{
 					dataType="Object";
@@ -2096,6 +2102,47 @@ class Mission
 										};
 									};
 									value=1.03;
+								};
+							};
+						};
+						nAttributes=1;
+					};
+				};
+				class Item1
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={7593,7.7100334,1268.05};
+					};
+					side="West";
+					flags=5;
+					class Attributes
+					{
+						description="Platoon Medic";
+						isPlayable=1;
+					};
+					id=154;
+					type="CUP_B_USMC_Medic";
+					atlOffset=4.7683716e-007;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
 								};
 							};
 						};
@@ -3204,61 +3251,6 @@ class Mission
 			side="West";
 			class Entities
 			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={7593,7.7100334,1268.05};
-					};
-					side="West";
-					flags=7;
-					class Attributes
-					{
-						description="Platoon Medic";
-						isPlayable=1;
-					};
-					id=154;
-					type="CUP_B_USMC_Medic";
-					atlOffset=4.7683716e-007;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=0.98000002;
-								};
-							};
-						};
-						nAttributes=1;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=153;
-			atlOffset=4.7683716e-007;
-		};
-		class Item111
-		{
-			dataType="Group";
-			side="West";
-			class Entities
-			{
 				items=10;
 				class Item0
 				{
@@ -3457,7 +3449,7 @@ class Mission
 			id=159;
 			atlOffset=4.7683716e-007;
 		};
-		class Item112
+		class Item111
 		{
 			dataType="Group";
 			side="West";
@@ -3660,7 +3652,7 @@ class Mission
 			};
 			id=181;
 		};
-		class Item113
+		class Item112
 		{
 			dataType="Group";
 			side="West";
@@ -3859,7 +3851,7 @@ class Mission
 			};
 			id=192;
 		};
-		class Item114
+		class Item113
 		{
 			dataType="Group";
 			side="West";
@@ -3920,7 +3912,7 @@ class Mission
 			};
 			id=217;
 		};
-		class Item115
+		class Item114
 		{
 			dataType="Group";
 			side="West";
@@ -3981,7 +3973,7 @@ class Mission
 			};
 			id=223;
 		};
-		class Item116
+		class Item115
 		{
 			dataType="Group";
 			side="West";
@@ -4026,7 +4018,7 @@ class Mission
 			};
 			id=229;
 		};
-		class Item117
+		class Item116
 		{
 			dataType="Group";
 			side="West";
@@ -4073,7 +4065,7 @@ class Mission
 			id=233;
 			atlOffset=-4.7683716e-007;
 		};
-		class Item118
+		class Item117
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4089,7 +4081,7 @@ class Mission
 			id=240;
 			type="Land_HouseV2_02_Interier";
 		};
-		class Item119
+		class Item118
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4104,8 +4096,9 @@ class Mission
 			};
 			id=241;
 			type="Land_HouseV2_04_interier_dam";
+			atlOffset=-1.9073486e-006;
 		};
-		class Item120
+		class Item119
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4121,7 +4114,7 @@ class Mission
 			type="Land_Nav_Boathouse";
 			atlOffset=1.713007;
 		};
-		class Item121
+		class Item120
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4137,7 +4130,7 @@ class Mission
 			id=244;
 			type="Land_Barn_W_02";
 		};
-		class Item122
+		class Item121
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4153,7 +4146,7 @@ class Mission
 			id=250;
 			type="Land_Mil_Barracks_i";
 		};
-		class Item123
+		class Item122
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4169,7 +4162,7 @@ class Mission
 			id=251;
 			type="Land_Mil_Barracks_i";
 		};
-		class Item124
+		class Item123
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4185,7 +4178,7 @@ class Mission
 			type="Land_Mil_Guardhouse";
 			atlOffset=0.25626373;
 		};
-		class Item125
+		class Item124
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4201,7 +4194,7 @@ class Mission
 			id=253;
 			type="USMC_WarfareBVehicleServicePoint";
 		};
-		class Item126
+		class Item125
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4217,7 +4210,7 @@ class Mission
 			id=257;
 			type="Land_Church_05R";
 		};
-		class Item127
+		class Item126
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4233,7 +4226,7 @@ class Mission
 			id=259;
 			type="Land_HouseV2_05";
 		};
-		class Item128
+		class Item127
 		{
 			dataType="Object";
 			class PositionInfo
@@ -4249,7 +4242,7 @@ class Mission
 			id=262;
 			type="Land_fortified_nest_big";
 		};
-		class Item129
+		class Item128
 		{
 			dataType="Object";
 			class PositionInfo
