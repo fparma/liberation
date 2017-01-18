@@ -12,10 +12,8 @@ waitUntil { !isNil "save_is_loaded" };
 
 _spawn_str = "";
 
-waitUntil { !isNil "introDone" };
-waitUntil { introDone };
-waitUntil { !isNil "cinematic_camera_stop" };
-waitUntil { cinematic_camera_stop };
+//waitUntil { !isNil "cinematic_camera_stop" };
+//waitUntil { cinematic_camera_stop };
 
 _basenamestr = "BASE CHIMERA";
 
