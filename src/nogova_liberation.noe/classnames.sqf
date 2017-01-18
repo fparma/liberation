@@ -119,8 +119,8 @@ support_vehicles = [
 	["B_Slingload_01_Repair_F",5,0,0],
 	["B_Slingload_01_Fuel_F",5,0,0],
 	["B_Slingload_01_Ammo_F",5,0,0],
-	["Box_NATO_AmmoVeh_F",0,154,0],
-	["Box_East_AmmoVeh_F",0,115,0]
+	[<#MAIN_AMMOBOX_BLUFOR>,0,154,0],
+	[<#MAIN_AMMOBOX_OPFOR>,0,115,0]
 ];
 
 
@@ -147,23 +147,23 @@ squads = [
 	[blufor_squad_para,20,0,0]
 ];
 
-opfor_sentry = "CUP_O_RU_Soldier_EMR";
-opfor_rifleman = "CUP_O_RU_Soldier_EMR";
-opfor_grenadier = "CUP_O_RU_Soldier_GL_EMR";
-opfor_squad_leader = "CUP_O_RU_Soldier_SL_EMR";
-opfor_team_leader = "CUP_O_RU_Soldier_TL_EMR";
-opfor_marksman = "CUP_O_RU_Soldier_Marksman_EMR";
-opfor_machinegunner = "CUP_O_RU_Soldier_AR_EMR";
-opfor_heavygunner = "CUP_O_RU_Soldier_MG_EMR";
-opfor_medic = "CUP_O_RU_Medic_EMR";
-opfor_rpg = "CUP_O_RU_Soldier_AT_EMR";
-opfor_at = "CUP_O_RU_Soldier_HAT_EMR";
-opfor_aa = "CUP_O_RU_Soldier_AA_EMR";
-opfor_officer = "CUP_O_RU_Officer_EMR";
-opfor_sharpshooter = "CUP_O_RU_Sniper_EMR";
-opfor_sniper = "CUP_O_RU_Sniper_KSVK_EMR";
-opfor_engineer = "CUP_O_RU_Engineer_EMR";
-opfor_paratrooper = "CUP_O_RU_Officer_VDV_EMR";
+opfor_sentry = <#OPFOR_UNIT_RIFLEMAN>;
+opfor_rifleman = <#OPFOR_UNIT_RIFLEMAN>;
+opfor_grenadier = <#OPFOR_UNIT_GRENADIER>;
+opfor_squad_leader = <#OPFOR_UNIT_SQL>;
+opfor_team_leader = <#OPFOR_UNIT_FTL>;
+opfor_marksman = <#OPFOR_UNIT_MARKSMAN>;
+opfor_machinegunner = <#OPFOR_UNIT_AUTORIFLEMAN>;
+opfor_heavygunner = <#OPFOR_UNIT_MMG>;
+opfor_medic = <#OPFOR_UNIT_MEDIC>;
+opfor_rpg = <#OPFOR_UNIT_LAT>;
+opfor_at = <#OPFOR_UNIT_HAT>;
+opfor_aa = <#OPFOR_UNIT_AA>;
+opfor_officer = <#OPFOR_UNIT_OFFICER>;
+opfor_sharpshooter = <#OPFOR_UNIT_SHARPSHOOTER>;
+opfor_sniper = <#OPFOR_UNIT_SNIPER>;
+opfor_engineer = <#OPFOR_UNIT_ENGINEER>;
+opfor_paratrooper = <#OPFOR_UNIT_PARATROOPER>;
 opfor_mrap = "CUP_O_UAZ_Unarmed_RU";
 opfor_mrap_armed = "CUP_O_UAZ_MG_RU";
 opfor_transport_helo = "CUP_O_Mi8_RU";
@@ -174,22 +174,22 @@ opfor_fuel_container = "Land_Pod_Heli_Transport_04_fuel_F";
 opfor_ammo_container = "Land_Pod_Heli_Transport_04_ammo_F";
 opfor_flag = "FlagCarrierRU";
 opfor_infantry = [
-	opfor_sentry,
-	opfor_rifleman,
-	opfor_grenadier,
-	opfor_squad_leader,
-	opfor_team_leader,
-	opfor_marksman,
-	opfor_machinegunner,
-	opfor_heavygunner,
-	opfor_medic,
-	opfor_rpg,
-	opfor_at,
-	opfor_aa,
-	opfor_officer,
-	opfor_sharpshooter,
-	opfor_sniper,
-	opfor_engineer
+	<#OPFOR_UNIT_RIFLEMAN>,
+	<#OPFOR_UNIT_RIFLEMAN>,
+	<#OPFOR_UNIT_GRENADIER>,
+	<#OPFOR_UNIT_SQL>,
+	<#OPFOR_UNIT_FTL>,
+	<#OPFOR_UNIT_MARKSMAN>,
+	<#OPFOR_UNIT_AUTORIFLEMAN>,
+	<#OPFOR_UNIT_MMG>,
+	<#OPFOR_UNIT_MEDIC>,
+	<#OPFOR_UNIT_LAT>,
+	<#OPFOR_UNIT_HAT>,
+	<#OPFOR_UNIT_AA>,
+	<#OPFOR_UNIT_OFFICER>,
+	<#OPFOR_UNIT_SHARPSHOOTER>,
+	<#OPFOR_UNIT_SNIPER>,
+	<#OPFOR_UNIT_ENGINEER>
 ];
 
 //========================================
@@ -197,57 +197,57 @@ opfor_infantry = [
 //========================================
 
 opfor_squad_low_intensity = [
-	opfor_team_leader,
-	opfor_machinegunner,
-	opfor_medic,
-	opfor_rpg,
-	opfor_sentry,
-	opfor_sentry,
-	opfor_sentry,
-	opfor_sentry
+	<#OPFOR_UNIT_FTL>,
+	<#OPFOR_UNIT_AUTORIFLEMAN>,
+	<#OPFOR_UNIT_MEDIC>,
+	<#OPFOR_UNIT_HAT>,
+	<#OPFOR_UNIT_RIFLEMAN>,
+	<#OPFOR_UNIT_RIFLEMAN>,
+	<#OPFOR_UNIT_RIFLEMAN>,
+	<#OPFOR_UNIT_RIFLEMAN>
 ];
 
 opfor_squad_8_standard = [
-	opfor_squad_leader,
-	opfor_team_leader,
-	opfor_machinegunner,
-	opfor_heavygunner,
-	opfor_medic,
-	opfor_marksman,
-	opfor_grenadier,
-	opfor_rpg
+	<#OPFOR_UNIT_SQL>,
+	<#OPFOR_UNIT_FTL>,
+	<#OPFOR_UNIT_AUTORIFLEMAN>,
+	<#OPFOR_UNIT_MMG>,
+	<#OPFOR_UNIT_MEDIC>,
+	<#OPFOR_UNIT_MARKSMAN>,
+	<#OPFOR_UNIT_GRENADIER>,
+	<#OPFOR_UNIT_LAT>
 ];
 
 opfor_squad_8_infkillers = [
-	opfor_squad_leader,
-	opfor_machinegunner,
-	opfor_machinegunner,
-	opfor_heavygunner,
-	opfor_medic,
-	opfor_marksman,
-	opfor_sharpshooter,
-	opfor_sniper
+	<#OPFOR_UNIT_SQL>,
+	<#OPFOR_UNIT_AUTORIFLEMAN>,
+	<#OPFOR_UNIT_AUTORIFLEMAN>,
+	<#OPFOR_UNIT_MMG>,
+	<#OPFOR_UNIT_MEDIC>,
+	<#OPFOR_UNIT_MARKSMAN>,
+	<#OPFOR_UNIT_SHARPSHOOTER>,
+	<#OPFOR_UNIT_SNIPER>
 ];
 
 opfor_squad_8_tankkillers = [
-	opfor_squad_leader,
-	opfor_medic,
-	opfor_machinegunner,
-	opfor_rpg,
-	opfor_rpg,
-	opfor_at,
-	opfor_at,
-	opfor_at
+	<#OPFOR_UNIT_SQL>,
+	<#OPFOR_UNIT_MEDIC>,
+	<#OPFOR_UNIT_AUTORIFLEMAN>,
+	<#OPFOR_UNIT_LAT>,
+	<#OPFOR_UNIT_LAT>,
+	<#OPFOR_UNIT_HAT>,
+	<#OPFOR_UNIT_HAT>,
+	<#OPFOR_UNIT_HAT>
 ];
 opfor_squad_8_airkillers = [
-	opfor_squad_leader,
-	opfor_medic,
-	opfor_machinegunner,
-	opfor_rpg,
-	opfor_rpg,
-	opfor_aa,
-	opfor_aa,
-	opfor_aa
+	<#OPFOR_UNIT_SQL>,
+	<#OPFOR_UNIT_MEDIC>,
+	<#OPFOR_UNIT_MMG>,
+	<#OPFOR_UNIT_LAT>,
+	<#OPFOR_UNIT_LAT>,
+	<#OPFOR_UNIT_AA>,
+	<#OPFOR_UNIT_AA>,
+	<#OPFOR_UNIT_AA>
 ];
 
 original_resistance = [
