@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Settings
-MAKE_PBO=1              # Build a PBO if true. (Requires mikeros PBO tools)
+MAKE_PBO=0              # Build a PBO if true. (Requires mikeros PBO tools)
 RENAME_MISSION_FILE=1   # Adds timestamp to the mission folder/pbo file
 RENAME_MISSION_TITLE=1  # Replaces <#DATETIME> with timestamp in mission name
 
@@ -28,6 +28,7 @@ cp -r src/nogova_liberation.noe/* "${SRC_CUSTOM}/"
 
 # Begin Pre-Processing of certain custom files
 cat "${DST_MAIN}/arsenal.sqf" | gpp -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/arsenal.sqf"
+cat "${DST_MAIN}/classnames.sqf" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/classnames.sqf"
 
 # Edit the mission Title if defined.
 # While developing the mission, you don't want the mission title to be processed or else the <#DATETIME> May get lost.

@@ -1,36 +1,33 @@
-FOB_typename = "Land_Cargo_HQ_V1_F";
-FOB_box_typename = "B_Slingload_01_Cargo_F";
-FOB_truck_typename = "B_Truck_01_box_F";
-Arsenal_typename = "B_supplyCrate_F";
-Respawn_truck_typename = "B_Truck_01_medical_F";
-huron_typename = "B_Heli_Transport_03_unarmed_F";
-ammobox_b_typename = "Box_NATO_AmmoVeh_F";
-ammobox_o_typename = "Box_East_AmmoVeh_F";
-opfor_ammobox_transport = "O_Truck_03_transport_F";
+<#exec true <#include classnames/main.h>>
+
+FOB_typename = <#MAIN_FOB_TYPE>;
+FOB_box_typename = <#MAIN_FOB_BOX>;
+FOB_truck_typename = <#MAIN_TRUCK>;
+Arsenal_typename = <#MAIN_ARSENAL_BOX>;
+Respawn_truck_typename = <#MAIN_TRUCK_RESPAWN>;
+huron_typename = <#MAIN_TRANSPORT_HELO>;
+ammobox_b_typename = <#MAIN_AMMOBOX_BLUFOR>;
+ammobox_o_typename = <#MAIN_AMMOBOX_OPFOR>;
+opfor_ammobox_transport = <#MAIN_TRUCK_AMMOBOX_OPFOR>;
 commander_classname = "CUP_B_USMC_Officer";
 crewman_classname = "CUP_B_USMC_Crew";
 pilot_classname = "CUP_B_USMC_Pilot";
 
 infantry_units = [
-	["B_soldier_F",2,0,0],
-	["B_soldier_GL_F",3,0,0],
-	["B_soldier_AR_F",3,0,0],
-	["B_medic_F",3,0,0],
-	["B_soldier_M_F",3,0,0],
-	["B_engineer_F",3,0,0],
-	["B_soldier_LAT_F",4,0,0],
-	["B_Sharpshooter_F",5,0,0],
-	["B_HeavyGunner_F",5,0,0],
-	["B_recon_F",4,0,0],
-	["B_recon_medic_F",4,0,0],
-	["B_recon_M_F",5,0,0],
-	["B_Recon_Sharpshooter_F",8,0,0],
-	["B_soldier_AA_F",5,10,0],
-	["B_soldier_AT_F",5,10,0],
-	["B_sniper_F",10,0,0],
-	["B_soldier_PG_F",2,0,0],
-	["B_crew_F",1,0,0],
-	["B_helipilot_F",1,0,0]
+	[<#BLUFOR_UNIT_RIFLEMAN>,2,0,0],
+	[<#BLUFOR_UNIT_GRENADIER>,3,0,0],
+	[<#BLUFOR_UNIT_AUTORIFLEMAN>,3,0,0],
+	[<#BLUFOR_UNIT_MEDIC>,3,0,0],
+	[<#BLUFOR_UNIT_MARKSMAN>,3,0,0],
+	[<#BLUFOR_UNIT_ENGINEER>,3,0,0],
+	[<#BLUFOR_UNIT_LAT>,4,0,0],
+	[<#BLUFOR_UNIT_MMG>,5,0,0],
+	[<#BLUFOR_UNIT_AA>,5,10,0],
+	[<#BLUFOR_UNIT_HAT>,5,10,0],
+	[<#BLUFOR_UNIT_SNIPER>,10,0,0],
+	[<#BLUFOR_UNIT_PILOT>,1,0,0],
+	[<#BLUFOR_UNIT_HELIPILOT>,1,0,0],
+	[<#BLUFOR_UNIT_CREWMAN>,1,0,0]
 ];
 
 light_vehicles = [
@@ -127,13 +124,13 @@ support_vehicles = [
 ];
 
 
-blufor_squad_inf_light = [ "B_Soldier_SL_F","B_Soldier_TL_F","B_Soldier_GL_F","B_soldier_AR_F","B_Soldier_GL_F","B_medic_F","B_Soldier_LAT_F","B_Soldier_F","B_Soldier_F" ];
-blufor_squad_inf = [ "B_Soldier_SL_F","B_Soldier_TL_F","B_Soldier_AR_F","B_HeavyGunner_F","B_medic_F","B_Soldier_GL_F","B_Soldier_LAT_F","B_Soldier_LAT_F","B_soldier_M_F","B_Sharpshooter_F" ];
-blufor_squad_at = [ "B_Soldier_SL_F","B_soldier_AT_F","B_soldier_AT_F","B_soldier_AT_F","B_medic_F","B_soldier_F" ];
-blufor_squad_aa = [ "B_Soldier_SL_F","B_soldier_AA_F","B_soldier_AA_F","B_soldier_AA_F","B_medic_F","B_soldier_F" ];
-blufor_squad_recon = [ "B_recon_TL_F","B_recon_F","B_recon_exp_F","B_recon_medic_F","B_recon_LAT_F","B_recon_LAT_F","B_recon_M_F","B_Recon_Sharpshooter_F","B_recon_F" ];
-blufor_squad_para = [ "B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F","B_soldier_PG_F" ];
-blufor_squad_inf_light = [ "B_Soldier_SL_F","B_Soldier_TL_F","B_Soldier_GL_F","B_soldier_AR_F","B_Soldier_GL_F","B_medic_F","B_Soldier_LAT_F","B_Soldier_F","B_Soldier_F"];
+blufor_squad_inf_light = [ <#BLUFOR_UNIT_SQL>,<#BLUFOR_UNIT_FTL>,<#BLUFOR_UNIT_GRENADIER>,<#BLUFOR_UNIT_AUTORIFLEMAN>,<#BLUFOR_UNIT_GRENADIER>,<#BLUFOR_UNIT_MEDIC>,<#BLUFOR_UNIT_LAT>,<#BLUFOR_UNIT_RIFLEMAN>,<#BLUFOR_UNIT_RIFLEMAN> ];
+blufor_squad_inf = [ <#BLUFOR_UNIT_SQL>,<#BLUFOR_UNIT_FTL>,<#BLUFOR_UNIT_AUTORIFLEMAN>,<#BLUFOR_UNIT_MMG>,<#BLUFOR_UNIT_MEDIC>,<#BLUFOR_UNIT_GRENADIER>,<#BLUFOR_UNIT_LAT>,<#BLUFOR_UNIT_LAT>,<#BLUFOR_UNIT_MARKSMAN>,<#BLUFOR_UNIT_SNIPER> ];
+blufor_squad_at = [ <#BLUFOR_UNIT_SQL>,<#BLUFOR_UNIT_HAT>,<#BLUFOR_UNIT_HAT>,<#BLUFOR_UNIT_HAT>,<#BLUFOR_UNIT_MEDIC>,<#BLUFOR_UNIT_RIFLEMAN> ];
+blufor_squad_aa = [ <#BLUFOR_UNIT_SQL>,<#BLUFOR_UNIT_AA>,<#BLUFOR_UNIT_AA>,<#BLUFOR_UNIT_AA>,<#BLUFOR_UNIT_MEDIC>,<#BLUFOR_UNIT_RIFLEMAN> ];
+blufor_squad_recon = [ <#BLUFOR_UNIT_FTL>,<#BLUFOR_UNIT_RIFLEMAN>,<#BLUFOR_UNIT_RIFLEMAN>,<#BLUFOR_UNIT_MEDIC>,<#BLUFOR_UNIT_LAT>,<#BLUFOR_UNIT_LAT>,<#BLUFOR_UNIT_MARKSMAN>,<#BLUFOR_UNIT_SNIPER>,<#BLUFOR_UNIT_RIFLEMAN> ];
+blufor_squad_para = [ <#BLUFOR_UNIT_PARATROOPER>,<#BLUFOR_UNIT_PARATROOPER>,<#BLUFOR_UNIT_PARATROOPER>,<#BLUFOR_UNIT_PARATROOPER>,<#BLUFOR_UNIT_PARATROOPER>,<#BLUFOR_UNIT_PARATROOPER>,<#BLUFOR_UNIT_PARATROOPER>,<#BLUFOR_UNIT_PARATROOPER>,<#BLUFOR_UNIT_PARATROOPER>,<#BLUFOR_UNIT_PARATROOPER> ];
+blufor_squad_inf_light = [ <#BLUFOR_UNIT_SQL>,<#BLUFOR_UNIT_FTL>,<#BLUFOR_UNIT_GRENADIER>,<#BLUFOR_UNIT_AUTORIFLEMAN>,<#BLUFOR_UNIT_GRENADIER>,<#BLUFOR_UNIT_MEDIC>,<#BLUFOR_UNIT_LAT>,<#BLUFOR_UNIT_RIFLEMAN>,<#BLUFOR_UNIT_RIFLEMAN>];
 
 uavs = [ "B_UAV_01_F","B_UAV_02_F","B_UAV_02_CAS_F","B_UGV_01_F","B_UGV_01_rcws_F" ];
 boats_names = [ "B_Boat_Transport_01_F", "B_Boat_Armed_01_minigun_F" ];
