@@ -48,22 +48,6 @@ while { true } do {
 	_standard_map_pos = ctrlPosition ((findDisplay 5201) displayCtrl 251);
 	_frame_pos = ctrlPosition ((findDisplay 5201) displayCtrl 198);
 
-	_saved_loadouts = profileNamespace getVariable "bis_fnc_saveInventory_data";
-	_loadouts_data = [];
-	_counter = 0;
-	if ( !isNil "_saved_loadouts" ) then {
-		{
-			if ( _counter % 2 == 0 ) then {
-				_loadouts_data pushback _x;
-			};
-			_counter = _counter + 1;
-		} foreach _saved_loadouts;
-	};
-
-	lbAdd [ 203, "--"] ;
-	{ lbAdd [ 203, _x ]; } foreach _loadouts_data;
-	lbSetCurSel [ 203, 0 ];
-
 	while { dialog && alive player && deploy == 0} do {
 		choiceslist = [ [ _basenamestr, getpos base_chimera ] ];
 
@@ -141,10 +125,6 @@ while { true } do {
 		} else {
 			_destpos = ((choiceslist select _idxchoice) select 1);
 			player setpos [((_destpos select 0) + 5) - (random 10),((_destpos select 1) + 5) - (random 10),0];
-		};
-
-		if ( (lbCurSel 203) > 0 ) then {
-			[ player, [ profileNamespace, _loadouts_data select ((lbCurSel 203) - 1) ] ] call bis_fnc_loadInventory;
 		};
 	};
 
