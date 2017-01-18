@@ -13,7 +13,6 @@ _uiticks = 0;
 waitUntil { !isNil "synchro_done" };
 waitUntil { synchro_done };
 
-if ( isNil "cinematic_camera_started" ) then { cinematic_camera_started = false };
 if ( isNil "halojumping" ) then { halojumping = false };
 
 while { true } do {
@@ -23,13 +22,13 @@ while { true } do {
 		_first_iteration = true;
 
 	};
-	if ( alive player && !dialog && !_overlayshown && !cinematic_camera_started && !halojumping ) then {
+	if ( alive player && !dialog && !_overlayshown && !halojumping ) then {
 		cutRsc["statusoverlay", "PLAIN", 1];
 		_overlayshown = true;
 		_first_iteration = true;
 		_uiticks = 0;
 	};
-	if ( ( !alive player || dialog || cinematic_camera_started ) && _overlayshown) then {
+	if ( ( !alive player || dialog ) && _overlayshown) then {
 		cutRsc["blank", "PLAIN", 0];
 		_overlayshown = false;
 		_first_iteration = true;

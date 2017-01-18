@@ -11,10 +11,6 @@ waitUntil { !isNil "blufor_sectors" };
 waitUntil { !isNil "save_is_loaded" };
 
 _spawn_str = "";
-
-//waitUntil { !isNil "cinematic_camera_stop" };
-//waitUntil { cinematic_camera_stop };
-
 _basenamestr = "BASE CHIMERA";
 
 while { true } do {

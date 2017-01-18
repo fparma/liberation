@@ -1,7 +1,6 @@
 [] call compileFinal preprocessFileLineNumbers "scripts\client\misc\init_markers.sqf";
 
 ["Preload"] call BIS_fnc_arsenal;
-cinematic_camera = compileFinal preprocessFileLineNumbers "scripts\client\ui\cinematic_camera.sqf";
 write_credit_line = compileFinal preprocessFileLineNumbers "scripts\client\ui\write_credit_line.sqf";
 
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\actions\action_manager.sqf";
@@ -23,7 +22,5 @@ write_credit_line = compileFinal preprocessFileLineNumbers "scripts\client\ui\wr
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\ui\ui_manager.sqf";
 
 player addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
-
-[] spawn compileFinal preprocessFileLineNumbers "scripts\client\ui\intro.sqf";
 
 [ player ] joinSilent (createGroup GRLIB_side_friendly);
