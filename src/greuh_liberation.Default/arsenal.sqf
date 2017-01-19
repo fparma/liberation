@@ -92,6 +92,7 @@
   <#include arsenal/acre-items-common.h>
   >
 <#define ARSENAL_WHITELIST_ACCS|
+  <#include arsenal/fp-acc-riflegrenades.h>
   "RH_barska_rds",
   "optic_DMS",
   "CUP_optic_Elcan_reflex",
