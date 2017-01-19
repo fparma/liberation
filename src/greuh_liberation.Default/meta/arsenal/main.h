@@ -4,7 +4,18 @@
 <#define ARSENAL_WHITELIST_WEAPONS|
 <#include arsenal/ace-weapons-common.h>
 "rhs_weap_m4a1_carryhandle_m203S",
+"rhs_weap_m4a1_carryhandle_m203",
 "rhs_weap_m4a1_carryhandle_pmag",
+"rhs_weap_m27iar",
+"rhs_weap_m27iar_grip",
+"rhs_weap_m16a4_carryhandle",
+"rhs_weap_m16a4",
+"rhs_weap_m16a4_carryhandle_M203",
+"hlc_rifle_awmagnum",
+"hlc_rifle_awMagnum_OD_ghillie",
+"hlc_m249_pip1",
+"hlc_m249_pip3",
+"hlc_lmg_mk48mod1",
 "CUP_lmg_m249_pip1",
 "hlc_lmg_mg42kws_b",
 "CUP_launch_Javelin",
@@ -28,6 +39,21 @@
 "hlc_200rnd_556x45_M_SAW",
 "hlc_200Rnd_792x57_T_MG42",
 "hlc_200Rnd_792x57_B_MG42",
+"hlc_5rnd_300WM_FMJ_AWM",
+"hlc_5rnd_300WM_mk248_AWM",
+"hlc_5rnd_300WM_BTSP_AWM",
+"hlc_5rnd_300WM_AP_AWM",
+"hlc_5rnd_300WM_SBT_AWM",
+"hlc_5rnd_300WM_T_AWM",
+"hlc_200rnd_556x45_M_SAW",
+"hlc_200rnd_556x45_B_SAW",
+"hlc_200rnd_556x45_T_SAW",
+"hlc_200rnd_556x45_Mdim_SAW",
+"hlc_100Rnd_762x51_M_M60E4",
+"hlc_100Rnd_762x51_B_M60E4",
+"hlc_100Rnd_762x51_Barrier_M60E4",
+"hlc_100Rnd_762x51_T_M60E4",
+"hlc_100Rnd_762x51_Mdim_M60E4",
 "CUP_Javelin_M",
 "CUP_SMAW_HEAA_M",
 "CUP_SMAW_HEDP_M",
@@ -43,6 +69,7 @@
 "CUP_1Rnd_HEDP_M203",
 "CUP_1Rnd_HE_M203",
 "CUP_1Rnd_StarFlare_Red_M203",
+"ACE_HuntIR_M203",
 "1Rnd_SmokeRed_Grenade_shell",
 "1Rnd_Smoke_Grenade_shell",
 "HandGrenade",
@@ -57,10 +84,9 @@
 // UNIFORMS
 //####################################
 <#define ARSENAL_WHITELIST_UNIFORMS|
-"FP_U_B_CombatUniform_WDL",
-"FP_U_B_CombatUniform_WDL_Sleeves",
-"U_B_PilotCoveralls",
-"FP_U_B_CombatUniform_Sage_Sleeves",>
+"usm_bdu_w",
+"usm_bdu_odg",
+"U_B_PilotCoveralls",>
 
 //####################################
 // VESTS
@@ -118,22 +144,26 @@
 // BINOCULARS
 //####################################
 <#define ARSENAL_WHITELIST_BINOC|
-<#include arsenal/vanilla-binocs-common.h>
-<#include arsenal/ace-binocs-common.h>>
+<#include arsenal/vanilla-binocs-common.h>  // Import the Standard Vanilla Binoculars
+<#include arsenal/ace-binocs-common.h>>     // Import the ACE Binoculars
 
 //####################################
 // MISC ITEMS
 //####################################
 <#define ARSENAL_WHITELIST_ITEMS|
-<#include arsenal/vanilla-items-common.h>
-<#include arsenal/ace-items-common.h>
-<#include arsenal/acre-items-common.h>>
+<#include arsenal/vanilla-items-common.h>   // Import the vanilla Items
+<#include arsenal/ace-items-common.h>       // Import the common ACE Items
+<#include arsenal/acre-items-common.h>>     // Import the ACRE Radios
 
 //####################################
 // ACCESSORIES
 //####################################
 <#define ARSENAL_WHITELIST_ACCS|
 <#include arsenal/fp-acc-riflegrenades.h>
+"ACE_muzzle_mzls_B",
+
+"muzzle_snds_M",
+
 "RH_barska_rds",
 "optic_DMS",
 "CUP_optic_Elcan_reflex",

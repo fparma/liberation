@@ -27,7 +27,7 @@ cp -r 'src/greuh_liberation.Default' $DST_MAIN
 cp -r src/nogova_liberation.noe/* "${SRC_CUSTOM}/"
 
 # Begin Pre-Processing of certain custom files
-cat "${DST_MAIN}/arsenal.sqf" | gpp -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/arsenal.sqf"
+cat "${DST_MAIN}/arsenal.sqf" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/arsenal.sqf"
 cat "${DST_MAIN}/classnames.sqf" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/classnames.sqf"
 
 # Edit the mission Title if defined.
