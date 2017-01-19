@@ -79,11 +79,13 @@
   "G_Balaclava_blk",
   "G_Combat",>
 <#define ARSENAL_WHITELIST_NV|
-  "CUP_NVG_PVS7",
-  "ACE_NVG_Gen2",>
+  <#include arsenal/vanilla-nightvision-common.h>
+  <#include arsenal/ace-nightvision-common.h>
+  "CUP_NVG_PVS7",>
 <#define ARSENAL_WHITELIST_BINOC|
+  <#include arsenal/vanilla-binocs-common.h>
   <#include arsenal/ace-binocs-common.h>
-  "Binocular",>
+  >
 <#define ARSENAL_WHITELIST_ITEMS|
   <#include arsenal/vanilla-items-common.h>
   <#include arsenal/ace-items-common.h>

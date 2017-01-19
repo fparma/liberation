@@ -5,3 +5,6 @@
 "ItemWatch",
 "MineDetector",
 "ToolKit",
+"B_UavTerminal",
+"O_UavTerminal",
+"I_UavTerminal",
