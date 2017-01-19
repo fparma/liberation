@@ -14,10 +14,6 @@ if (isServer) then {
 	[] call compileFinal preprocessFileLineNumbers "scripts\server\init_server.sqf";
 };
 
-if (!isDedicated && !hasInterface && isMultiplayer) then {
-	[] spawn compileFinal preprocessFileLineNumbers "scripts\server\offloading\hc_manager.sqf";
-};
-
 if (!isDedicated && hasInterface) then {
 	waitUntil { alive player };
 	[] call compileFinal preprocessFileLineNumbers "scripts\client\init_client.sqf";
