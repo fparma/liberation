@@ -1,4 +1,5 @@
 <#define ARSENAL_WHITELIST_WEAPONS|
+  <#include arsenal/ace-weapons-common.h>
   "rhs_weap_m4a1_carryhandle_m203S",
   "rhs_weap_m4a1_carryhandle_pmag",
   "CUP_lmg_m249_pip1",
@@ -9,8 +10,6 @@
   "CUP_launch_FIM92Stinger",
   "RH_m9",
   "RH_g19",
-  "ACE_VMM3",
-  "ACE_VMH3",
   "RH_m1911",
   "srifle_DMR_02_F",
   "srifle_DMR_06_olive_F">
@@ -60,12 +59,11 @@
   "usm_vest_rba_lbe_rm",
   "usm_vest_rba_lbv_rmp",>
 <#define ARSENAL_WHITELIST_BACKPACKS|
+  <#include arsenal/ace-backpacks-common.h>
   "B_AssaultPack_rgr",
   "B_Carryall_oli",
   "B_FieldPack_oli",
-  "ace_gunbag",
   "B_Kitbag_rgr",
-  "ACE_TacticalLadder_Pack",
   "B_Parachute">
 <#define ARSENAL_WHITELIST_HELMETS|
   "H_Bandanna_sgg",
@@ -84,18 +82,13 @@
   "CUP_NVG_PVS7",
   "ACE_NVG_Gen2",>
 <#define ARSENAL_WHITELIST_BINOC|
-  <#include arsenal/whitelist-ace-binocs.h>
+  <#include arsenal/ace-binocs-common.h>
   "Binocular",>
 <#define ARSENAL_WHITELIST_ITEMS|
-  <#include arsenal/whitelist-ace-items.h>
-  <#include arsenal/whitelist-acre-items.h>
-  "ItemMap",
-  "ItemGPS",
-  "ItemRadio",
-  "ItemCompass",
-  "ItemWatch",
-  "MineDetector",
-  "ToolKit",>
+  <#include arsenal/vanilla-items-common.h>
+  <#include arsenal/ace-items-common.h>
+  <#include arsenal/acre-items-common.h>
+  >
 <#define ARSENAL_WHITELIST_ACCS|
   "RH_barska_rds",
   "optic_DMS",
