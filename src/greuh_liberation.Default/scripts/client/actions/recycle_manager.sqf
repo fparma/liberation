@@ -43,7 +43,7 @@ while { true } do {
 			} foreach _recycleable_vehicles;
 
 			if ( !_next_vehicle_already_in_list ) then {
-				_idact_next = _next_vehicle addAction [ "<t color='#FFFF00'>" + localize "STR_RECYCLE" + "</t>", "scripts\client\actions\do_recycle.sqf", "", -900, true, true, "", "build_confirmed == 0 && (  _this distance _target < veh_action_distance ) && (vehicle player == player)"];
+				_idact_next = _next_vehicle addAction [ "<t color='#FFFF00'>Recycle</t>", "scripts\client\actions\do_recycle.sqf", "", -900, true, true, "", "build_confirmed == 0 && (  _this distance _target < veh_action_distance ) && (vehicle player == player)"];
 				_recycleable_vehicles pushback [ _next_vehicle, _idact_next ] ;
 			};
 		} foreach _detected_vehicles;

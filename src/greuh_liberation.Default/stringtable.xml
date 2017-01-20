@@ -16,18 +16,6 @@
 				<Key ID="STR_FUEL">
 						<Original>Fuel</Original>
 				</Key>
-				<Key ID="STR_ROTATION">
-						<Original>-- Rotation</Original>
-				</Key>
-				<Key ID="STR_PLACEMENT">
-						<Original>-- Build</Original>
-				</Key>
-				<Key ID="STR_PLACEMENT_BIS">
-						<Original>-- Build and Repeat</Original>
-				</Key>
-				<Key ID="STR_CANCEL">
-						<Original>-- Cancel</Original>
-				</Key>
 				<Key ID="STR_CANCEL_HINT">
 						<Original>Building canceled.</Original>
 				</Key>
@@ -100,17 +88,8 @@
 				<Key ID="STR_WIPE_YES">
 						<Original>!! THE SAVEGAME WILL BE WIPED, NO RECOVERY POSSIBLE !!</Original>
 				</Key>
-				<Key ID="STR_UNFLIP">
-						<Original>-- UNFLIP</Original>
-				</Key>
-				<Key ID="STR_GRID">
-						<Original>-- Grid mode</Original>
-				</Key>
 				<Key ID="STR_SPAWN_NEAR">
 						<Original>Near</Original>
-				</Key>
-				<Key ID="STR_RECYCLE">
-						<Original>-- RECYCLE</Original>
 				</Key>
 				<Key ID="STR_RECYCLING">
 						<Original>Recycling</Original>
