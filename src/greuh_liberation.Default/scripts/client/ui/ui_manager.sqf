@@ -13,8 +13,6 @@ _uiticks = 0;
 waitUntil { !isNil "synchro_done" };
 waitUntil { synchro_done };
 
-if ( isNil "halojumping" ) then { halojumping = false };
-
 while { true } do {
 
 	if ( isNull ((uiNamespace getVariable 'GUI_OVERLAY') displayCtrl (101)) && _overlayshown ) then {
@@ -22,7 +20,7 @@ while { true } do {
 		_first_iteration = true;
 
 	};
-	if ( alive player && !dialog && !_overlayshown && !halojumping ) then {
+	if ( alive player && !dialog && !_overlayshown ) then {
 		cutRsc["statusoverlay", "PLAIN", 1];
 		_overlayshown = true;
 		_first_iteration = true;

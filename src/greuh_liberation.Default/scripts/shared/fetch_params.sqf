@@ -10,7 +10,6 @@ if ( isMultiplayer ) then {
 	GRLIB_param_wipe_savegame_2 = ["WipeSave2",0] call bis_fnc_getParamValue;
 	GRLIB_passive_income = ["PassiveIncome",0] call bis_fnc_getParamValue;
 	GRLIB_permissions_param = ["Permissions",1] call bis_fnc_getParamValue;
-	GRLIB_halo_param = ["HaloJump",1] call bis_fnc_getParamValue;
 	GRLIB_cleanup_vehicles = ["CleanupVehicles",2] call bis_fnc_getParamValue;
 	GRLIB_csat_aggressivity = ["Aggressivity",1] call bis_fnc_getParamValue;
 	GRLIB_ammo_bounties = [ "AmmoBounties",0] call bis_fnc_getParamValue;
@@ -30,7 +29,6 @@ if ( isMultiplayer ) then {
 	GRLIB_param_wipe_savegame_2 = 0;
 	GRLIB_passive_income = 0;
 	GRLIB_permissions_param = 1;
-	GRLIB_halo_param = 1;
 	GRLIB_cleanup_vehicles = 2;
 	GRLIB_csat_aggressivity = 1;
 	GRLIB_ammo_bounties = 1;

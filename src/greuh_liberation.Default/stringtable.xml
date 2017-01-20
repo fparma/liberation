@@ -595,36 +595,6 @@
 				<Key ID="STR_FOB_REPACKAGE_HINT">
 						<Original>FOB repackaged.</Original>
 				</Key>
-				<Key ID="STR_HALO_PARAM">
-						<Original>HALO Jump:</Original>
-				</Key>
-				<Key ID="STR_HALO_PARAM1">
-						<Original>Enabled - No cooldown</Original>
-				</Key>
-				<Key ID="STR_HALO_PARAM2">
-						<Original>Enabled - 5 minutes cooldown</Original>
-				</Key>
-				<Key ID="STR_HALO_PARAM3">
-						<Original>Enabled - 10 minutes cooldown</Original>
-				</Key>
-				<Key ID="STR_HALO_PARAM4">
-						<Original>Enabled - 15 minutes cooldown</Original>
-				</Key>
-				<Key ID="STR_HALO_PARAM5">
-						<Original>Enabled - 20 minutes cooldown</Original>
-				</Key>
-				<Key ID="STR_HALO_PARAM6">
-						<Original>Enabled - 30 minutes cooldown</Original>
-				</Key>
-				<Key ID="STR_HALO_DENIED_COOLDOWN">
-						<Original>Can't perform HALO jump, you are on cooldown for %1 more minute(s).</Original>
-				</Key>
-				<Key ID="STR_HALO_ACTION">
-						<Original>-- HALO JUMP</Original>
-				</Key>
-				<Key ID="STR_HALO_TITLE">
-						<Original>HALO JUMP</Original>
-				</Key>
 				<Key ID="STR_DEPLOY_IN_PROGRESS">
 						<Original>Deployment in progress...</Original>
 				</Key>

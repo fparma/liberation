@@ -7,7 +7,6 @@ _idact_redeploy = -1;
 _idact_squad = -1;
 _idact_commander = -1;
 _idact_repackage = -1;
-_idact_halo = -1;
 _idact_secondary = -1;
 _distfob = 100;
 _distbuildfob = 10;
