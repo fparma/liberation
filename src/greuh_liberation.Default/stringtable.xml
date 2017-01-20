@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Liberation">
 		<Package name="Liberation">
-				<Key ID="STR_BUILD_ACTION">
-						<Original>-- BUILD --</Original>
-				</Key>
 				<Key ID="STR_BUILD_TITLE">
 						<Original>BUILD MENU</Original>
 				</Key>
@@ -40,9 +37,6 @@
 				<Key ID="STR_PLACEMENT_IMPOSSIBLE">
 						<Original>Can't place here: there are %1 object(s) within %2 meters of the object position.</Original>
 				</Key>
-				<Key ID="STR_FOB_ACTION">
-						<Original>-- DEPLOY FOB --</Original>
-				</Key>
 				<Key ID="STR_FOB_BUILDING_IMPOSSIBLE">
 						<Original>Can't deploy a new FOB here, you must be at least %1 meters away from every other FOB. Nearest FOB is %2 meters away.</Original>
 				</Key>
@@ -69,9 +63,6 @@
 				</Key>
 				<Key ID="STR_DEPLOY_BUTTON">
 						<Original>Deploy</Original>
-				</Key>
-				<Key ID="STR_DEPLOY_ACTION">
-						<Original>-- REDEPLOY --</Original>
 				</Key>
 				<Key ID="STR_BUILD_CREW">
 						<Original>Build (Crew)</Original>
@@ -466,9 +457,6 @@
 				<Key ID="STR_SQUAD_MANAGEMENT">
 						<Original>SQUAD MANAGEMENT</Original>
 				</Key>
-				<Key ID="STR_SQUAD_MANAGEMENT_ACTION">
-						<Original>-- SQUAD MANAGEMENT</Original>
-				</Key>
 				<Key ID="STR_DEPLOY_ON_MEMBER">
 						<Original>Replace</Original>
 				</Key>
@@ -562,9 +550,6 @@
 				<Key ID="STR_PERMISSIONS_TOOLTIP_NONE">
 						<Original>Removes all permissions from the player.</Original>
 				</Key>
-				<Key ID="STR_COMMANDER_ACTION">
-						<Original>-- PERMISSIONS</Original>
-				</Key>
 				<Key ID="STR_SAVE_CHANGES">
 						<Original>Save Changes</Original>
 				</Key>
@@ -582,9 +567,6 @@
 				</Key>
 				<Key ID="STR_DEFAULT">
 						<Original>Default</Original>
-				</Key>
-				<Key ID="STR_FOB_REPACKAGE">
-						<Original>-- REPACKAGE FOB --</Original>
 				</Key>
 				<Key ID="STR_FOB_REPACKAGE_TITLE">
 						<Original>REPACKAGE FOB</Original>
@@ -639,12 +621,6 @@
 				</Key>
 				<Key ID="STR_AGGRESSIVITY_PARAM4">
 						<Original>Extreme</Original>
-				</Key>
-				<Key ID="STR_INTEL">
-						<Original>-- TAKE INTEL</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_OBJECTIVES">
-						<Original>--SECONDARY OBJECTIVES</Original>
 				</Key>
 				<Key ID="STR_AMMO_BOUNTIES">
 						<Original>Ammunition bounties:</Original>
