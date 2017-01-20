@@ -640,15 +640,6 @@
 				<Key ID="STR_AGGRESSIVITY_PARAM4">
 						<Original>Extreme</Original>
 				</Key>
-				<Key ID="STR_REPAIRING">
-						<Original>Repairing</Original>
-				</Key>
-				<Key ID="STR_REARMING">
-						<Original>Rearming in %1s</Original>
-				</Key>
-				<Key ID="STR_REFUELING">
-						<Original>Refueling</Original>
-				</Key>
 				<Key ID="STR_INTEL">
 						<Original>-- TAKE INTEL</Original>
 				</Key>
