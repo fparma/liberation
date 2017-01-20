@@ -2,7 +2,7 @@ setViewDistance 2000;
 
 
 // ACE Interation Root
-_FPC_Interact_Root = ['FPC_INTERACTION_ROOT','Liberation Interactions','',{},{true}] call ace_interact_menu_fnc_createAction;
+_FPC_Interact_Root = ['FPC_INTERACTION_ROOT','Liberation','',{},{true}] call ace_interact_menu_fnc_createAction;
 [ACE_player, 1, ["ACE_SelfActions"], _FPC_Interact_Root] call ace_interact_menu_fnc_addActionToObject;
 
 // Arsenal Handling
