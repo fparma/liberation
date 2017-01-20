@@ -26,7 +26,6 @@ GRLIB_fob_range = 150;
 GRLIB_cleanup_delay = 1200;
 GRLIB_surrender_chance = 80;
 GRLIB_secondary_missions_costs = [ 0, 0, 0 ];  // [FOB, Convoy, SAR]
-GRLIB_halo_altitude = 1800;
 GRLIB_civ_killing_penalty = 15;
 
 if ( GRLIB_blufor_cap > 100 ) then { GRLIB_blufor_cap = 100 }; // Don't forget that the human commander manages those, not the server
