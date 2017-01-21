@@ -3,7 +3,7 @@
 # Settings
 MAKE_PBO=0              # Build a PBO if true. (Requires mikeros PBO tools)
 RENAME_MISSION_FILE=1   # Adds timestamp to the mission folder/pbo file
-RENAME_MISSION_TITLE=1  # Replaces <#DATETIME> with timestamp in mission name
+RENAME_MISSION_TITLE=0  # Replaces <#DATETIME> with timestamp in mission name
 
 # Variables
 SRC_CUSTOM="dist/nogova_liberation.noe" # Path to the customization resources.

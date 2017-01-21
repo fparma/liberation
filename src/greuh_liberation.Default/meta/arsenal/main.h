@@ -25,6 +25,7 @@
 "RH_m9",
 "RH_g19",
 "RH_m1911",
+"RH_Mk11",
 "srifle_DMR_02_F",
 "srifle_DMR_06_olive_F">
 
@@ -65,7 +66,10 @@
 "10Rnd_338_Mag",
 "ACE_10Rnd_338_API526_Mag",
 "ACE_10Rnd_338_300gr_HPBT_Mag",
-"20Rnd_762x51_Mag",
+"ACE_20Rnd_762x51_Mk316_Mod_0_Mag",
+"ACE_20Rnd_762x51_M118LR_Mag",
+"ACE_20Rnd_762x51_Mk319_Mod_0_Mag",
+"ACE_20Rnd_762x51_M993_AP_Mag",
 "CUP_1Rnd_HEDP_M203",
 "CUP_1Rnd_HE_M203",
 "CUP_1Rnd_StarFlare_Red_M203",
@@ -86,7 +90,13 @@
 <#define ARSENAL_WHITELIST_UNIFORMS|
 "usm_bdu_w",
 "usm_bdu_odg",
-"U_B_PilotCoveralls",>
+"U_B_CombatUniform_wdl_w",
+"U_B_CombatUniform_wdl_tshirt_w",
+"U_B_CombatUniform_wdl_vest_w",
+"U_B_CombatUniform_sgg_vest_s",
+"U_B_FullGhillie_lsh",
+"U_B_PilotCoveralls",
+"U_B_HeliPilotCoveralls",>
 
 //####################################
 // VESTS
@@ -129,8 +139,16 @@
 //####################################
 <#define ARSENAL_WHITELIST_MASKS|
 "G_Aviator",
+"G_Bandanna_aviator",
+"G_Bandanna_oli",
+"G_Bandanna_khk",
 "G_Balaclava_blk",
-"G_Combat",>
+"G_Balaclava_oli",
+"G_Combat",
+"G_Balaclava_combat",
+"CUP_RUS_Balaclava_grn",
+"CUP_RUS_Balaclava_blk",
+"G_Lady_Blue",>
 
 //####################################
 // NIGHTVISION
@@ -162,7 +180,24 @@
 <#include arsenal/fp-acc-riflegrenades.h>
 "ACE_muzzle_mzls_B",
 
+"RH_m110sd",
 "muzzle_snds_M",
+"muzzle_snds_H_MG",
+"muzzle_snds_H_MG_blk_F",
+"hlc_muzzle_556NATO_KAC",
+
+"RH_gemtech9",
+"RH_X300",
+
+"RH_anpvs4",
+"RH_anpvs10",
+
+"optic_Arco_blk_F",
+"optic_Arco",
+"optic_ERCO_blk_F",
+"optic_ERCO_khk_F",
+"optic_Hamr_khk_F",
+"optic_SOS",
 
 "RH_barska_rds",
 "optic_DMS",
