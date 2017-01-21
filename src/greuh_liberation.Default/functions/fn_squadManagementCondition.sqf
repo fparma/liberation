@@ -1,0 +1,1 @@
+if ( (leader group player == player) && (count units group player > 1) && alive player && vehicle player == player && build_confirmed == 0) then {true} else {false};

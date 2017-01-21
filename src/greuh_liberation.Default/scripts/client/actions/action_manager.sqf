@@ -1,15 +1,3 @@
-
-private [ "_idact_buildfob", "_distfob",  "_distbuildfob", "_distredeploy", "_idact_commander" ];
-
-_idact_buildfob = -1;
-_idact_squad = -1;
-_idact_commander = -1;
-_idact_repackage = -1;
-_idact_secondary = -1;
-_distfob = 100;
-_distbuildfob = 10;
-_distredeploy = 20;
-
 GRLIB_removefobboxes = false;
 
 waitUntil { !isNil "build_confirmed" };
@@ -18,62 +6,11 @@ waitUntil { one_synchro_done };
 
 while { true } do {
 
-	_nearfob = [] call F_getNearestFob;
-	_fobdistance = 9999;
-	if ( count _nearfob == 3 ) then {
-		_fobdistance = player distance _nearfob;
-	};
-
-	_nearfobbox = ( (getpos player) nearEntities [ [ FOB_box_typename, FOB_truck_typename ] , _distbuildfob ] );
-
+	_nearfobbox = ( (getpos player) nearEntities [ [ FOB_box_typename, FOB_truck_typename ] , 10 ] );
 	if ( GRLIB_removefobboxes ) then {
 		GRLIB_removefobboxes = false;
 		if ( count _nearfobbox > 0 ) then {
 			deletevehicle (_nearfobbox select 0);
-		};
-	};
-
-	if ( (leader group player == player) && (count units group player > 1) && alive player && vehicle player == player) then {
-		if ( _idact_squad == -1 ) then {
-			_idact_squad = player addAction ["<t color='#80FF80'>Squad Management</t>","scripts\client\ui\squad_management.sqf","",-760,false,true,"","build_confirmed == 0"];
-		};
-	} else {
-		if ( _idact_squad != -1 ) then {
-			player removeAction _idact_squad;
-			_idact_squad = -1;
-		};
-	};
-
-	if ( ( player == ( [] call F_getCommander ) || [] call F_isAdmin ) && alive player && vehicle player == player && GRLIB_permissions_param ) then {
-		if ( _idact_commander == -1 ) then {
-			_idact_commander = player addAction ["<t color='#FF8000'>Permissions</t>","scripts\client\commander\open_permissions.sqf","",-995,false,true,"","build_confirmed == 0"];
-		};
-	} else {
-		if ( _idact_commander != -1 ) then {
-			player removeAction _idact_commander;
-			_idact_commander = -1;
-		};
-	};
-
-	if (  _fobdistance < _distredeploy  && alive player && vehicle player == player && ( player == ( [] call F_getCommander ) || [] call F_isAdmin ) ) then {
-		if ( _idact_repackage == -1 ) then {
-			_idact_repackage = player addAction ["<t color='#FFFF00'>Repackage FOB</t>","scripts\client\actions\do_repackage_fob.sqf","",-991,false,true,"","build_confirmed == 0"];
-		};
-	} else {
-		if ( _idact_repackage != -1 ) then {
-			player removeAction _idact_repackage;
-			_idact_repackage = -1;
-		};
-	};
-
-	if ( ( count GRLIB_all_fobs > 0 ) && ( GRLIB_endgame == 0 ) && (_fobdistance < _distredeploy) && alive player && vehicle player == player && ( ( [ player, 5 ] call F_fetchPermission ) || ( player == ( [] call F_getCommander ) || [] call F_isAdmin ) ) ) then {
-		if ( _idact_secondary == -1 ) then {
-			_idact_secondary = player addAction ["<t color='#FFFF00'>Secondary Objectives</t>","scripts\client\ui\secondary_ui.sqf","",-993,false,true,"","build_confirmed == 0"];
-		};
-	} else {
-		if ( _idact_secondary != -1 ) then {
-			player removeAction _idact_secondary;
-			_idact_secondary = -1;
 		};
 	};
 
