@@ -1,9 +1,8 @@
 
-private [ "_idact_build", "_idact_buildfob", "_idact_redeploy", "_distfob",  "_distbuildfob", "_distspawn", "_distredeploy", "_idact_commander" ];
+private [ "_idact_build", "_idact_buildfob", "_distfob",  "_distbuildfob", "_distspawn", "_distredeploy", "_idact_commander" ];
 
 _idact_build = -1;
 _idact_buildfob = -1;
-_idact_redeploy = -1;
 _idact_squad = -1;
 _idact_commander = -1;
 _idact_repackage = -1;
@@ -37,16 +36,7 @@ while { true } do {
 		};
 	};
 
-	if ( (_fobdistance < _distredeploy || count _nearspawn != 0) && alive player && vehicle player == player ) then {
-		if ( _idact_redeploy == -1 ) then {
-			_idact_redeploy = player addAction ["<t color='#80FF80'>Redeploy</t>","scripts\client\actions\redeploy.sqf","",-750,false,true,"","build_confirmed == 0"];
-		};
-	} else {
-		if ( _idact_redeploy != -1 ) then {
-			player removeAction _idact_redeploy;
-			_idact_redeploy = -1;
-		};
-	};
+
 
 	if ( _fobdistance < _distfob && alive player && vehicle player == player && ( (  [ player, 3 ] call F_fetchPermission ) || ( player == ( [] call F_getCommander ) || [] call F_isAdmin ) ) ) then {
 		if ( _idact_build == -1 ) then {
