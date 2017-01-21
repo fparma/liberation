@@ -17,6 +17,8 @@ class CfgFunctions {
       file = "functions";
       class arsenalCondition;
       class redeployCondition;
+      class buildMenuCondition;
+      class deployFobCondition;
       class openArsenal;
       class getFobDistance;
       class getNearSpawn;

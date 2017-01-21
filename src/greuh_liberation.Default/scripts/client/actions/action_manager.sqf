@@ -1,7 +1,6 @@
 
-private [ "_idact_build", "_idact_buildfob", "_distfob",  "_distbuildfob", "_distspawn", "_distredeploy", "_idact_commander" ];
+private [ "_idact_buildfob", "_distfob",  "_distbuildfob", "_distredeploy", "_idact_commander" ];
 
-_idact_build = -1;
 _idact_buildfob = -1;
 _idact_squad = -1;
 _idact_commander = -1;
@@ -9,7 +8,6 @@ _idact_repackage = -1;
 _idact_secondary = -1;
 _distfob = 100;
 _distbuildfob = 10;
-_distspawn = 10;
 _distredeploy = 20;
 
 GRLIB_removefobboxes = false;
@@ -27,36 +25,11 @@ while { true } do {
 	};
 
 	_nearfobbox = ( (getpos player) nearEntities [ [ FOB_box_typename, FOB_truck_typename ] , _distbuildfob ] );
-	_nearspawn = ( (getpos player) nearEntities [ [ Respawn_truck_typename, huron_typename ] , _distspawn ] );
 
 	if ( GRLIB_removefobboxes ) then {
 		GRLIB_removefobboxes = false;
 		if ( count _nearfobbox > 0 ) then {
 			deletevehicle (_nearfobbox select 0);
-		};
-	};
-
-
-
-	if ( _fobdistance < _distfob && alive player && vehicle player == player && ( (  [ player, 3 ] call F_fetchPermission ) || ( player == ( [] call F_getCommander ) || [] call F_isAdmin ) ) ) then {
-		if ( _idact_build == -1 ) then {
-			_idact_build = player addAction ["<t color='#FFFF00'>Build</t>","scripts\client\build\open_build_menu.sqf","",-985,false,true,"","build_confirmed == 0"];
-		};
-	} else {
-		if ( _idact_build != -1 ) then {
-			player removeAction _idact_build;
-			_idact_build = -1;
-		};
-	};
-
-	if ( count _nearfobbox != 0 && alive player && vehicle player == player && !(surfaceIsWater getpos player) && ( ( [ player, 3 ] call F_fetchPermission ) || ( player == ( [] call F_getCommander ) || [] call F_isAdmin ) ) ) then {
-		if ( _idact_buildfob == -1 ) then {
-			_idact_buildfob = player addAction ["<t color='#FFFF00'>Deploy FOB</t>","scripts\client\build\do_build_fob.sqf","",-990,false,true,"","build_confirmed == 0"];
-		};
-	} else {
-		if ( _idact_buildfob != -1 ) then {
-			player removeAction _idact_buildfob;
-			_idact_buildfob = -1;
 		};
 	};
 

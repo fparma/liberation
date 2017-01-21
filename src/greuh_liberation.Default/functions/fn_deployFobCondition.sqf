@@ -1,0 +1,2 @@
+// 10 = _distbuildfob
+if ( count ( (getpos player) nearEntities [ [ FOB_box_typename, FOB_truck_typename ] , 10 ] ) != 0 && alive player && vehicle player == player && !(surfaceIsWater getpos player) && ( ( [ player, 3 ] call F_fetchPermission ) || ( player == ( [] call F_getCommander ) || [] call F_isAdmin ) ) && build_confirmed == 0 ) then {true} else {false};

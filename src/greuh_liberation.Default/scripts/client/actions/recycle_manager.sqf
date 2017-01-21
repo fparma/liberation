@@ -19,7 +19,7 @@ waitUntil { sleep 1; !isNil "GRLIB_all_fobs" };
 while { true } do {
 
 	waitUntil { sleep 1; count GRLIB_all_fobs > 0 };
-	waitUntil { sleep 1; ( player distance ( [] call F_getNearestFob)) < (2 * GRLIB_fob_range) };
+	waitUntil { sleep 1; ( player distance ([] call F_getNearestFob) ) < (2 * GRLIB_fob_range) };
 
 	if (  [ player, 4 ] call F_fetchPermission ) then {
 
