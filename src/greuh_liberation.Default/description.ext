@@ -11,6 +11,8 @@ class Header {
 #include "ui\liberation_notifications.hpp"
 #include "ui\mission_params.hpp"
 
+#include "XEH.hpp"
+
 class CfgFunctions {
   class FPC {
     class Arsenal {
@@ -26,6 +28,7 @@ class CfgFunctions {
       class openArsenal;
       class getFobDistance;
       class getNearSpawn;
+      class overrideArsenal;
     };
   };
 };
