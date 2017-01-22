@@ -26,7 +26,10 @@ while { true } do {
 	build_invalid = 0;
 	_classname = "";
 	if ( buildtype == 99 ) then {
-		GRLIB_removefobboxes = true;
+    _nearfobbox = ( (getpos player) nearEntities [ [ FOB_box_typename, FOB_truck_typename ] , 10 ] );
+    if ( count _nearfobbox > 0 ) then {
+      deletevehicle (_nearfobbox select 0);
+    };
 		_classname = FOB_typename;
 	} else {
 		_classname = ((build_lists select buildtype) select buildindex) select 0;

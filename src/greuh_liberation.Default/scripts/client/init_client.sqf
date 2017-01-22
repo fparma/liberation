@@ -3,7 +3,6 @@
 ["Preload"] call BIS_fnc_arsenal;
 write_credit_line = compileFinal preprocessFileLineNumbers "scripts\client\ui\write_credit_line.sqf";
 
-[] spawn compileFinal preprocessFileLineNumbers "scripts\client\actions\action_manager.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\actions\intel_manager.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\actions\recycle_manager.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\build\build_overlay.sqf";
