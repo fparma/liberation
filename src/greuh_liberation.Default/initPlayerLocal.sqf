@@ -1,3 +1,5 @@
+firstload = true;
+
 // ACE Interation Root
 [ACE_player, 1, ["ACE_SelfActions"], ['FPC_INTERACTION_ROOT','Liberation','',{},{true}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 
