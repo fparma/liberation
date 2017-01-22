@@ -12,6 +12,9 @@ if (firstload) then {
   ACE_player forceAddUniform "usm_bdu_w";
   ACE_player addHeadgear "usm_helmet_pasgt_w";
   ACE_player addVest "usm_vest_rba_lbe_rm";
+  ACE_player linkItem "ItemMap";
+  ACE_player linkItem "ItemCompass";
+  ACE_player linkItem "ItemWatch";
   firstload = false;
 };
 
