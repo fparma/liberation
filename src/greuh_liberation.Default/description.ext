@@ -29,6 +29,7 @@ class CfgFunctions {
       class getFobDistance;
       class getNearSpawn;
       class overrideArsenal;
+      class show_redeploy_dialog;
     };
   };
 };
