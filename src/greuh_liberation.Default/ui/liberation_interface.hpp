@@ -9,3 +9,6 @@
 #include "liberation_permissions.hpp"
 #include "liberation_repackage_fob.hpp"
 #include "liberation_secondary.hpp"
+
+#include "comfy_common_ui.hpp"
+#include "arsenal\riflegrenades.hpp"

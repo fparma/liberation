@@ -333,6 +333,7 @@ class kndr_MapControl
 	};
 };
 
+/*
 class RscText
 {
         type = CT_STATIC;
@@ -343,7 +344,7 @@ class RscText
         font = "Bitstream";
         sizeEx = 0.04;
 };
-
+*/
 
 class StdText {
     idc = -1;
