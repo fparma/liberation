@@ -15,7 +15,7 @@ class Header {
 
 class CfgFunctions {
   class FPC {
-    class Arsenal {
+    class Common {
       file = "functions";
       class arsenalCondition;
       class redeployCondition;
@@ -30,6 +30,10 @@ class CfgFunctions {
       class getNearSpawn;
       class overrideArsenal;
       class show_redeploy_dialog;
+    };
+    class Common {
+      file = "functions\arsenal";
+      class equipRifleGrenade;
     };
   };
 };

@@ -83,7 +83,7 @@ class fpc_arsenal_riflegrenades {
     {
     	idc = 1001;
 
-    	text = "APAV 40 (High Explosive Riflegrenade)<br /><br />The APAV 40 (""Anti-Personnel/Anti-VÃ©hicule, 40mm"") is a 40 mm anti-personnel rifle grenade used by the French Army."; //--- ToDo: Localize;
+    	text = "APAV 40 (High Explosive Riflegrenade)<br /><br />The APAV 40 (""Anti-Personnel/Anti-Vehicule, 40mm"") is a 40 mm anti-personnel rifle grenade used by the French Army."; //--- ToDo: Localize;
     	x = 8 * GUI_GRID_W + GUI_GRID_X;
     	y = 7 * GUI_GRID_H + GUI_GRID_Y;
     	w = 20 * GUI_GRID_W;
@@ -115,6 +115,7 @@ class fpc_arsenal_riflegrenades {
     class RscButton_1600: RscButton
     {
     	idc = 1600;
+    	action = "[2, ""R3F_AC58""] call FPC_fnc_equipRifleGrenade";
 
     	text = "Add to Backpack"; //--- ToDo: Localize;
     	x = 29 * GUI_GRID_W + GUI_GRID_X;
@@ -125,6 +126,7 @@ class fpc_arsenal_riflegrenades {
     class RscButton_1601: RscButton
     {
     	idc = 1601;
+    	action = "[2, ""R3F_APAV40""] call FPC_fnc_equipRifleGrenade";
 
     	text = "Add to Backpack"; //--- ToDo: Localize;
     	x = 29 * GUI_GRID_W + GUI_GRID_X;
@@ -135,6 +137,7 @@ class fpc_arsenal_riflegrenades {
     class RscButton_1602: RscButton
     {
     	idc = 1602;
+    	action = "[2, ""R3F_ECL40""] call FPC_fnc_equipRifleGrenade";
 
     	text = "Add to Backpack"; //--- ToDo: Localize;
     	x = 29 * GUI_GRID_W + GUI_GRID_X;
@@ -145,6 +148,7 @@ class fpc_arsenal_riflegrenades {
     class RscButton_1603: RscButton
     {
     	idc = 1603;
+    	action = "[2, ""R3F_FUM40""] call FPC_fnc_equipRifleGrenade";
 
     	text = "Add to Backpack"; //--- ToDo: Localize;
     	x = 29 * GUI_GRID_W + GUI_GRID_X;
@@ -155,6 +159,7 @@ class fpc_arsenal_riflegrenades {
     class RscButton_1604: RscButton
     {
     	idc = 1604;
+    	action = "[1, ""R3F_AC58""] call FPC_fnc_equipRifleGrenade";
 
     	text = "Add to Vest"; //--- ToDo: Localize;
     	x = 29 * GUI_GRID_W + GUI_GRID_X;
@@ -165,6 +170,7 @@ class fpc_arsenal_riflegrenades {
     class RscButton_1605: RscButton
     {
     	idc = 1605;
+    	action = "[1, ""R3F_APAV40""] call FPC_fnc_equipRifleGrenade";
 
     	text = "Add to Vest"; //--- ToDo: Localize;
     	x = 29 * GUI_GRID_W + GUI_GRID_X;
@@ -175,6 +181,7 @@ class fpc_arsenal_riflegrenades {
     class RscButton_1606: RscButton
     {
     	idc = 1606;
+    	action = "[1, ""R3F_ECL40""] call FPC_fnc_equipRifleGrenade";
 
     	text = "Add to Vest"; //--- ToDo: Localize;
     	x = 29 * GUI_GRID_W + GUI_GRID_X;
@@ -185,6 +192,7 @@ class fpc_arsenal_riflegrenades {
     class RscButton_1607: RscButton
     {
     	idc = 1607;
+    	action = "[1, ""R3F_FUM40""] call FPC_fnc_equipRifleGrenade";
 
     	text = "Add to Vest"; //--- ToDo: Localize;
     	x = 29 * GUI_GRID_W + GUI_GRID_X;
