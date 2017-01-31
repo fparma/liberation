@@ -2,7 +2,7 @@ waitUntil { !isNil "GRLIB_all_fobs" };
 waitUntil { !isNil "save_is_loaded" };
 
 firstloop = true;
-huron = objNull;
+HELO_TRANSPORT = objNull;
 _savedhuron = objNull;
 
 while { true } do {
@@ -14,41 +14,23 @@ while { true } do {
 	} foreach vehicles;
 
 	if ( firstloop && !isNull _savedhuron ) then {
-		huron = _savedhuron;
+		HELO_TRANSPORT = _savedhuron;
 	} else {
-		huron = huron_typename createVehicle ( getpos huronspawn );
-		huron allowdamage false;
-		huron setpos ( getpos huronspawn );
-		huron setDir 0;
+		HELO_TRANSPORT = huron_typename createVehicle ( getpos huronspawn );
+		HELO_TRANSPORT setpos ( getpos huronspawn );
+		HELO_TRANSPORT setDir 0;
 	};
 
 	firstloop = false;
 
-	huron AnimateDoor ["Door_rear_source", 1, true];
-	publicVariable "huron";
-	clearWeaponCargoGlobal huron;
-	clearMagazineCargoGlobal huron;
-	clearItemCargoGlobal huron;
-	clearBackpackCargoGlobal huron;
-	huron setDamage 0;
-	sleep 0.5;
-	huron enableSimulationGlobal true;
-	huron setDamage 0;
-	sleep 1.5;
+	publicVariable "HELO_TRANSPORT";
+	clearWeaponCargoGlobal HELO_TRANSPORT;
+	clearMagazineCargoGlobal HELO_TRANSPORT;
+	clearItemCargoGlobal HELO_TRANSPORT;
+	clearBackpackCargoGlobal HELO_TRANSPORT;
 
-	huron setDamage 0;
-	huron allowdamage true;
-
-	if ( alive huron ) then {
-
-		waitUntil {
-			sleep 1;
-			!alive huron;
-		};
+	if ( alive HELO_TRANSPORT ) then {
+		waitUntil {sleep 1;!alive HELO_TRANSPORT;};
 		sleep 15;
-
 	};
-
-	sleep 0.25;
-
 };
