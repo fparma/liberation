@@ -17,14 +17,6 @@ class CfgFunctions {
   class FPC {
     class Common {
       file = "functions\common";
-      class arsenalCondition;
-      class redeployCondition;
-      class buildMenuCondition;
-      class deployFobCondition;
-      class squadManagementCondition;
-      class permissionCondition;
-      class repackageCondition;
-      class secondaryObjectiveCondition;
       class openArsenal;
       class getFobDistance;
       class getNearSpawn;
@@ -34,6 +26,17 @@ class CfgFunctions {
     class Arsenal {
       file = "functions\arsenal";
       class equipRifleGrenade;
+    };
+    class InteractConditions {
+      file = "functions\interact_conditions";
+      class arsenalCondition;
+      class redeployCondition;
+      class buildMenuCondition;
+      class deployFobCondition;
+      class squadManagementCondition;
+      class permissionCondition;
+      class repackageCondition;
+      class secondaryObjectiveCondition;
     };
   };
 };
