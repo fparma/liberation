@@ -14,7 +14,6 @@ if ( isServer ) then {
 		_nearby_bigtown = [ sectors_bigtown, {  (!(_x in blufor_sectors)) && ( _unit distance (markerpos _x) < 250 ) } ] call BIS_fnc_conditionalSelect;
 		if ( count _nearby_bigtown > 0 ) then {
 			combat_readiness = combat_readiness + (0.5 * GRLIB_difficulty_modifier);
-			stats_readiness_earned = stats_readiness_earned + (0.5 * GRLIB_difficulty_modifier);
 			if ( combat_readiness > 100.0 && GRLIB_difficulty_modifier < 2 ) then { combat_readiness = 100.0 };
 		};
 
@@ -43,43 +42,18 @@ if ( isServer ) then {
 		if ( air_weight < 0 ) then { air_weight = 0 };
 	};
 
-	if ( isPlayer _unit ) then { stats_player_deaths = stats_player_deaths + 1 };
-
 	if ( _unit isKindOf "Man" ) then {
 		if ( side (group _unit) == GRLIB_side_civilian ) then {
-			stats_civilians_killed = stats_civilians_killed + 1;
 			if ( isPlayer _killer ) then {
-				stats_civilians_killed_by_players = stats_civilians_killed_by_players + 1;
-
 				if ( GRLIB_civ_penalties ) then {
 					resources_ammo = resources_ammo - GRLIB_civ_killing_penalty;
 					[ [ name _unit, GRLIB_civ_killing_penalty, _killer ] , "remote_call_civ_penalty" ] call BIS_fnc_MP;
 				};
 			};
 		};
-
-		if ( side _killer == GRLIB_side_friendly ) then {
-			if ( side (group _unit) == GRLIB_side_enemy ) then {
-				stats_opfor_soldiers_killed = stats_opfor_soldiers_killed + 1;
-				if ( isplayer _killer ) then {
-					stats_opfor_killed_by_players = stats_opfor_killed_by_players + 1;
-				};
-			};
-
-			if ( side (group _unit) == GRLIB_side_friendly ) then {
-				stats_blufor_teamkills = stats_blufor_teamkills + 1;
-			};
-		} else {
-			if ( side (group _unit) == GRLIB_side_friendly ) then {
-				stats_blufor_soldiers_killed = stats_blufor_soldiers_killed + 1;
-			};
-		};
 	} else {
 		if ( typeof _unit in all_hostile_classnames ) then {
-			stats_opfor_vehicles_killed = stats_opfor_vehicles_killed + 1;
 			if ( isplayer _killer ) then {
-				stats_opfor_vehicles_killed_by_players = stats_opfor_vehicles_killed_by_players + 1;
-
 				if ( GRLIB_ammo_bounties ) then {
 					private [ "_bounty" ];
 
@@ -97,8 +71,6 @@ if ( isServer ) then {
 				};
 
 			};
-		} else {
-			stats_blufor_vehicles_killed = stats_blufor_vehicles_killed + 1;
 		};
 	};
 };

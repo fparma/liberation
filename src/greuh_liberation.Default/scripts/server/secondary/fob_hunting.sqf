@@ -121,7 +121,6 @@ waitUntil {
 };
 
 combat_readiness = round (combat_readiness * GRLIB_secondary_objective_impact);
-stats_secondary_objectives = stats_secondary_objectives + 1;
 
 sleep 3;
 

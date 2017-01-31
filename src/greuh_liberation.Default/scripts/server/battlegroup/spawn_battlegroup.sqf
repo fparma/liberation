@@ -53,8 +53,6 @@ if ( _spawn_marker != "" ) then {
 	combat_readiness = combat_readiness - (round ((last_battlegroup_size / 2) + (random (last_battlegroup_size / 2))));
 	if ( combat_readiness < 0 ) then { combat_readiness = 0 };
 
-	stats_hostile_battlegroups = stats_hostile_battlegroups + 1;
-
 	{
 		if ( local _x ) then {
 			_headless_client = [] call F_lessLoadedHC;

@@ -50,7 +50,6 @@ if ( GRLIB_endgame == 0 ) then {
 		reset_battlegroups_ai = true;
 		[_thispos] call destroy_fob;
 		[] call recalculate_caps;
-		stats_fobs_lost = stats_fobs_lost + 1;
 	} else {
 		[ [ _thispos , 3 ] , "remote_call_fob" ] call BIS_fnc_MP;
 		{ [_x] spawn prisonner_ai; } foreach ( [ _thispos nearEntities [ "Man", GRLIB_capture_size * 0.8], { side group _x == GRLIB_side_enemy } ] call BIS_fnc_conditionalSelect );

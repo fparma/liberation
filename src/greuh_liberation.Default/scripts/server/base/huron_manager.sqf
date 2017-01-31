@@ -45,7 +45,6 @@ while { true } do {
 			sleep 1;
 			!alive huron;
 		};
-		stats_spartan_respawns = stats_spartan_respawns + 1;
 		sleep 15;
 
 	};

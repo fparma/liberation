@@ -31,7 +31,6 @@ if ( combat_readiness > 15 ) then {
 				if ( (random combat_readiness) > (20 + (30 / GRLIB_csat_aggressivity) ) ) then {
 					[ _targetsector ] spawn send_paratroopers;
 				};
-				stats_reinforcements_called = stats_reinforcements_called + 1;
 			};
 		};
 	};

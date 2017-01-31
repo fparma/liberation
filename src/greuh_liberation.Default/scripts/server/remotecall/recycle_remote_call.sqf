@@ -10,4 +10,3 @@ if ( _price > 0 ) then {
 	resources_ammo = resources_ammo + _price;
 };
 please_recalculate = true;
-stats_vehicles_recycled = stats_vehicles_recycled + 1;

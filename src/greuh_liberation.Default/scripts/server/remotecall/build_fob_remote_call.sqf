@@ -16,5 +16,3 @@ if ( _create_fob_building ) then {
 
 sleep 3;
 [ [ _new_fob, 0 ] , "remote_call_fob" ] call BIS_fnc_MP;
-
-stats_fobs_built = stats_fobs_built + 1;

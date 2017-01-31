@@ -12,7 +12,6 @@ while { true } do {
 		if ( (combat_readiness < ((count blufor_sectors) * 2) && combat_readiness < 35 ) ||
 			(combat_readiness < ((count blufor_sectors) * 1.25) && combat_readiness < 60 )) then {
 			combat_readiness = combat_readiness + 0.25;
-			stats_readiness_earned = stats_readiness_earned + 0.25;
 		};
 	};
 
