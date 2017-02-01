@@ -5,7 +5,7 @@
 <#define MAIN_TRUCK_RESPAWN|"B_Truck_01_medical_F">             // Mobile Respawn Vehicle
 <#define MAIN_TRUCK_AMMOBOX_OPFOR|"O_Truck_03_transport_F">     // Opfor transport truck Definition
 <#define MAIN_ARSENAL_BOX|"B_supplyCrate_F">                    // Arsenal Box Classname
-<#define MAIN_TRANSPORT_HELO|"B_Heli_Transport_03_unarmed_F">   // Main Transport helicopter (Transporting FOB Capable)
+<#define MAIN_TRANSPORT_HELO|"CUP_B_CH47F_USA">                 // Main Transport helicopter (Transporting FOB Capable)
 <#define MAIN_AMMOBOX_BLUFOR|"Box_NATO_AmmoVeh_F">              // Blufor Vehicle Ammobox Definition
 <#define MAIN_AMMOBOX_OPFOR|"Box_East_AmmoVeh_F">               // Opfor Vehicle Ammobox Definition
 
@@ -51,6 +51,28 @@
 <#define OPFOR_UNIT_PILOT|"">                                   // Jet Pilot
 <#define OPFOR_UNIT_HELIPILOT|"">                               // Helicopter Pilot
 <#define OPFOR_UNIT_PARATROOPER|"CUP_O_RU_Officer_VDV_EMR">     // Paratrooper
+
+<#define INDFOR_UNIT_SQL|"CUP_O_INS_Story_Bardak">              // Squadleader
+<#define INDFOR_UNIT_FTL|"">                                    // Fireteam Leader
+<#define INDFOR_UNIT_OFFICER|"CUP_O_INS_Story_Lopotev">         // Officer
+<#define INDFOR_UNIT_RIFLEMAN|"CUP_O_INS_Soldier">              // Rifleman
+<#define INDFOR_UNIT_GRENADIER|"CUP_O_INS_Soldier_GL">          // Grenadier
+<#define INDFOR_UNIT_AUTORIFLEMAN|"CUP_O_INS_Soldier_AR">       // Autorifleman (LMG)
+<#define INDFOR_UNIT_MEDIC|"CUP_O_INS_Medic">                   // Medic
+<#define INDFOR_UNIT_MARKSMAN|"">                               // Marksman
+<#define INDFOR_UNIT_ENGINEER|"CUP_O_INS_Soldier_Engineer">     // Engineer
+<#define INDFOR_UNIT_LAT|"CUP_O_INS_Soldier_AT">                // Light AT
+<#define INDFOR_UNIT_HAT|"">                                    // Dedicated AT
+<#define INDFOR_UNIT_AA|"CUP_O_INS_Soldier_AA">                 // Anti Air
+<#define INDFOR_UNIT_MMG|"CUP_O_INS_Soldier_MG">                // Medium Machine Gunner
+<#define INDFOR_UNIT_SNIPER|"CUP_O_INS_Sniper">                 // Sniper
+<#define INDFOR_UNIT_SHARPSHOOTER|"">                           // Sharpshooter
+<#define INDFOR_UNIT_CREWMAN|"">                                // Crewman
+<#define INDFOR_UNIT_PILOT|"">                                  // Jet Pilot
+<#define INDFOR_UNIT_HELIPILOT|"">                              // Helicopter Pilot
+<#define INDFOR_UNIT_PARATROOPER|"">                            // Paratrooper
+
+
 
 // Buildable Object Defines & Function
 <#define B|[#1,0,0,0]>

@@ -251,37 +251,37 @@ opfor_squad_8_airkillers = [
 ];
 
 original_resistance = [
-"CUP_O_INS_Soldier_AA",
-"CUP_O_INS_Soldier_Ammo",
-"CUP_O_INS_Soldier_AT",
-"CUP_O_INS_Soldier_AR",
-"CUP_O_INS_Story_Lopotev",
-"CUP_O_INS_Soldier_Engineer",
-"CUP_O_INS_Soldier_GL",
-"CUP_O_INS_Story_Bardak",
-"CUP_O_INS_Soldier_MG",
-"CUP_O_INS_Medic",
-"CUP_O_INS_Soldier",
-"CUP_O_INS_Soldier_AK74",
-"CUP_O_INS_Soldier_Exp",
-"CUP_O_INS_Sniper"
+  <#INDFOR_UNIT_OFFICER>,
+  <#INDFOR_UNIT_AA>,
+  "CUP_O_INS_Soldier_Ammo",
+  <#INDFOR_UNIT_LAT>,
+  <#INDFOR_UNIT_AUTORIFLEMAN>,
+  <#INDFOR_UNIT_ENGINEER>,
+  <#INDFOR_UNIT_GRENADIER>,
+  <#INDFOR_UNIT_SQL>,
+  <#INDFOR_UNIT_MMG>,
+  <#INDFOR_UNIT_MEDIC>,
+  <#INDFOR_UNIT_RIFLEMAN>,
+  "CUP_O_INS_Soldier_AK74",
+  "CUP_O_INS_Soldier_Exp",
+  <#INDFOR_UNIT_SNIPER>
 ];
 
 militia_squad = [
-"CUP_O_INS_Soldier_AA",
-"CUP_O_INS_Soldier_Ammo",
-"CUP_O_INS_Soldier_AT",
-"CUP_O_INS_Soldier_AR",
-"CUP_O_INS_Story_Lopotev",
-"CUP_O_INS_Soldier_Engineer",
-"CUP_O_INS_Soldier_GL",
-"CUP_O_INS_Story_Bardak",
-"CUP_O_INS_Soldier_MG",
-"CUP_O_INS_Medic",
-"CUP_O_INS_Soldier",
-"CUP_O_INS_Soldier_AK74",
-"CUP_O_INS_Soldier_Exp",
-"CUP_O_INS_Sniper"
+  <#INDFOR_UNIT_SQL>,
+  <#INDFOR_UNIT_AA>,
+  "CUP_O_INS_Soldier_Ammo",
+  <#INDFOR_UNIT_LAT>,
+  <#INDFOR_UNIT_AUTORIFLEMAN>,
+  <#INDFOR_UNIT_ENGINEER>,
+  <#INDFOR_UNIT_GRENADIER>,
+  <#INDFOR_UNIT_SQL>,
+  <#INDFOR_UNIT_MMG>,
+  <#INDFOR_UNIT_MEDIC>,
+  <#INDFOR_UNIT_RIFLEMAN>,
+  "CUP_O_INS_Soldier_AK74",
+  "CUP_O_INS_Soldier_Exp",
+  <#INDFOR_UNIT_SNIPER>
 ];
 
 militia_vehicles = [
