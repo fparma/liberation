@@ -650,7 +650,7 @@ class Mission
 			class Attributes
 			{
 				skill=0.60000002;
-				name="huronspawn";
+				name="HELO_SPAWNMARKER";
 			};
 			id=198;
 			type="Land_HelipadCircle_F";

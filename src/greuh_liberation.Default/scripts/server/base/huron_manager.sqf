@@ -13,8 +13,8 @@ while { true } do {
 	if ( firstloop && !isNull _savedhuron ) then {
 		HELO_TRANSPORT = _savedhuron;
 	} else {
-		HELO_TRANSPORT = huron_typename createVehicle ( getpos huronspawn );
-		HELO_TRANSPORT setpos ( getpos huronspawn );
+		HELO_TRANSPORT = huron_typename createVehicle ( getpos HELO_SPAWNMARKER );
+		HELO_TRANSPORT setpos ( getpos HELO_SPAWNMARKER );
 		HELO_TRANSPORT setDir 0;
 	};
 
