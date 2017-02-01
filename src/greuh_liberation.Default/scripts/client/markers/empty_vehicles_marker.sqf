@@ -43,7 +43,7 @@ while { true } do {
 	{
 		_marker = _vehmarkers select (_markedveh find _x);
 		_marker setMarkerPosLocal getpos _x;
-		_marker setMarkerTextLocal  (getText (_cfg >> typeOf _x >> "displayName"));
+		_marker setMarkerTextLocal (getText (_cfg >> typeOf _x >> "displayName"));
 
 	} foreach _markedveh;
 

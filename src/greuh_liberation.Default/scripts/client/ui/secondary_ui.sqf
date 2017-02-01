@@ -41,7 +41,7 @@ while { dialog && alive player && dostartsecondary == 0 } do {
 
 	_missioncost = GRLIB_secondary_missions_costs select _oldchoice;
 
-	if ( ( _missioncost <= resources_intel ) && ( !GRLIB_secondary_starting ) )  then {
+	if ( ( _missioncost <= resources_intel ) && ( !GRLIB_secondary_starting ) ) then {
 		ctrlEnable [ 103, true ];
 		((findDisplay 6842) displayCtrl (103)) ctrlSetTooltip "";
 	} else {

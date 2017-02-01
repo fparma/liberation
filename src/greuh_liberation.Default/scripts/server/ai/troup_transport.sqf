@@ -1,7 +1,7 @@
 _troup_transport = _this select 0;
 _transport_group = (group (driver _troup_transport));
 _start_pos = getpos _troup_transport;
-_dat_objective =  ([getpos _troup_transport] call F_getNearestBluforObjective) select 0;
+_dat_objective = ([getpos _troup_transport] call F_getNearestBluforObjective) select 0;
 _unload_distance = 1000;
 sleep 1;
 _initial_crewcount = count crew _troup_transport;
@@ -22,7 +22,7 @@ if ((alive _troup_transport) && (alive (driver _troup_transport))) then {
 
 	sleep 3;
 
-	_transport_waypoint =  _transport_group addWaypoint [getpos _troup_transport, 0,0];
+	_transport_waypoint = _transport_group addWaypoint [getpos _troup_transport, 0,0];
 	_transport_waypoint setWaypointType "TR UNLOAD";
 	_transport_waypoint setWaypointCompletionRadius 200;
 

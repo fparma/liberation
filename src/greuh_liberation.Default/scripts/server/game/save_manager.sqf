@@ -163,8 +163,8 @@ if ( count GRLIB_vehicle_to_military_base_links == 0 ) then {
 	_assigned_vehicles = [];
 
 	while { count _assigned_bases < count sectors_military && count _assigned_vehicles < count elite_vehicles } do {
-		_nextbase =  ( [ sectors_military, { !(_x in _assigned_bases) } ] call BIS_fnc_conditionalSelect ) call BIS_fnc_selectRandom;
-		_nextvehicle =  ( [ elite_vehicles, { !(_x in _assigned_vehicles) } ] call BIS_fnc_conditionalSelect ) call BIS_fnc_selectRandom;
+		_nextbase = ( [ sectors_military, { !(_x in _assigned_bases) } ] call BIS_fnc_conditionalSelect ) call BIS_fnc_selectRandom;
+		_nextvehicle = ( [ elite_vehicles, { !(_x in _assigned_vehicles) } ] call BIS_fnc_conditionalSelect ) call BIS_fnc_selectRandom;
 		_assigned_bases pushback _nextbase;
 		_assigned_vehicles pushback _nextvehicle;
 		GRLIB_vehicle_to_military_base_links pushback [_nextvehicle, _nextbase];
@@ -194,7 +194,7 @@ while { true } do {
 				((typeof _x) in _classnames_to_save ) &&
 				( alive _x) &&
 				( speed _x < 5 ) &&
-				( isNull  attachedTo _x ) &&
+				( isNull attachedTo _x ) &&
 				(((getpos _x) select 2) < 10 ) &&
 				( getObjectType _x >= 8 )
  				} ] call BIS_fnc_conditionalSelect;
@@ -203,9 +203,9 @@ while { true } do {
 
 			{
 				_nextgroup = _x;
-				if (  side _nextgroup == GRLIB_side_friendly ) then {
+				if ( side _nextgroup == GRLIB_side_friendly ) then {
 					if ( { isPlayer _x } count ( units _nextgroup ) == 0 ) then {
-						if ( { alive _x } count ( units _nextgroup ) > 0  ) then {
+						if ( { alive _x } count ( units _nextgroup ) > 0 ) then {
 							if ( _fobpos distance (leader _nextgroup) < GRLIB_fob_range * 2 ) then {
 								private [ "_grouparray" ];
 								_grouparray = [];

@@ -10,7 +10,7 @@ while { GRLIB_endgame == 0 } do {
 
 	sleep (random 30);
 
-	while {  [] call F_opforCap > GRLIB_patrol_cap } do {
+	while { [] call F_opforCap > GRLIB_patrol_cap } do {
 			sleep (random 30);
 	};
 
@@ -59,7 +59,7 @@ while { GRLIB_endgame == 0 } do {
 
 	while { _patrol_continue } do {
 		sleep 60;
-		if ( count (units _grp) == 0  ) then {
+		if ( count (units _grp) == 0 ) then {
 			_patrol_continue = false;
 		} else {
 			if ( time - _started_time > 900 ) then {

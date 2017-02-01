@@ -20,7 +20,7 @@
 	PARAMETER(S):
 	0 : target unit
 	1 : array of strings/arrays containing desired target unit's loadout, obtained from get_loadout.sqf
-	2 : (optional) array of options, default [] : ["ammo"]  will allow loading of partially emptied magazines, otherwise magazines will be full
+	2 : (optional) array of options, default [] : ["ammo"] will allow loading of partially emptied magazines, otherwise magazines will be full
 
 	addAction support:
 	Sets player's loadout from global var loadout

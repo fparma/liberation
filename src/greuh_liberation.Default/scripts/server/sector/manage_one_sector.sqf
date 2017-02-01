@@ -38,7 +38,7 @@ _opforcount = [] call F_opforCap;
 
 // diag_log format [ "Sector %2 checkpoint C at %1", time, _sector ];
 
-if ( (!(_sector in blufor_sectors)) &&  ( ( [ getmarkerpos _sector , [ _opforcount ] call F_getCorrectedSectorRange , GRLIB_side_friendly ] call F_getUnitsCount ) > 0 ) ) then {
+if ( (!(_sector in blufor_sectors)) && ( ( [ getmarkerpos _sector , [ _opforcount ] call F_getCorrectedSectorRange , GRLIB_side_friendly ] call F_getUnitsCount ) > 0 ) ) then {
 
 	// diag_log format [ "Sector %2 checkpoint D at %1", time, _sector ];
 

@@ -11,7 +11,7 @@ if ( isServer ) then {
 
 	if ( side _killer == GRLIB_side_friendly ) then {
 
-		_nearby_bigtown = [ sectors_bigtown, {  (!(_x in blufor_sectors)) && ( _unit distance (markerpos _x) < 250 ) } ] call BIS_fnc_conditionalSelect;
+		_nearby_bigtown = [ sectors_bigtown, { (!(_x in blufor_sectors)) && ( _unit distance (markerpos _x) < 250 ) } ] call BIS_fnc_conditionalSelect;
 		if ( count _nearby_bigtown > 0 ) then {
 			combat_readiness = combat_readiness + (0.5 * GRLIB_difficulty_modifier);
 			if ( combat_readiness > 100.0 && GRLIB_difficulty_modifier < 2 ) then { combat_readiness = 100.0 };
@@ -22,12 +22,12 @@ if ( isServer ) then {
 			armor_weight = armor_weight - 0.66;
 			air_weight = air_weight - 0.66;
 		} else {
-			if ( (typeof (vehicle _killer) ) in land_vehicles_classnames ) then  {
+			if ( (typeof (vehicle _killer) ) in land_vehicles_classnames ) then {
 				infantry_weight = infantry_weight - 0.66;
 				armor_weight = armor_weight + 1;
 				air_weight = air_weight - 0.66;
 			};
-			if ( (typeof (vehicle _killer) ) in air_vehicles_classnames ) then  {
+			if ( (typeof (vehicle _killer) ) in air_vehicles_classnames ) then {
 				infantry_weight = infantry_weight - 0.66;
 				armor_weight = armor_weight - 0.66;
 				air_weight = air_weight + 1;

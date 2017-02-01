@@ -4,7 +4,7 @@ if ( combat_readiness > 15 ) then {
 	_init_units_count = ( ([ getmarkerpos _targetsector , GRLIB_capture_size , GRLIB_side_enemy ] call F_getUnitsCount) );
 
 	if ( !(_targetsector in sectors_bigtown)) then {
-		while { (_init_units_count * 0.75) <=  ( [ getmarkerpos _targetsector , GRLIB_capture_size , GRLIB_side_enemy ] call F_getUnitsCount ) } do {
+		while { (_init_units_count * 0.75) <= ( [ getmarkerpos _targetsector , GRLIB_capture_size , GRLIB_side_enemy ] call F_getUnitsCount ) } do {
 			sleep 5;
 		};
 	};
@@ -24,10 +24,10 @@ if ( combat_readiness > 15 ) then {
 
 			sleep 15;
 
-			if ( (_targetsector in active_sectors) && !(_targetsector in blufor_sectors) && !(_nearestower in blufor_sectors) && (!([] call F_isBigtownActive) || _targetsector in sectors_bigtown)  ) then {
+			if ( (_targetsector in active_sectors) && !(_targetsector in blufor_sectors) && !(_nearestower in blufor_sectors) && (!([] call F_isBigtownActive) || _targetsector in sectors_bigtown) ) then {
 				reinforcements_sector_under_attack = _targetsector;
 				reinforcements_set = true;
-				[ [ "lib_reinforcements" , [ markertext  _targetsector ] ] , "bis_fnc_shownotification" ] call BIS_fnc_MP;
+				[ [ "lib_reinforcements" , [ markertext _targetsector ] ] , "bis_fnc_shownotification" ] call BIS_fnc_MP;
 				if ( (random combat_readiness) > (20 + (30 / GRLIB_csat_aggressivity) ) ) then {
 					[ _targetsector ] spawn send_paratroopers;
 				};

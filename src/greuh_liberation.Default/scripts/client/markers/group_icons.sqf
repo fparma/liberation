@@ -9,13 +9,13 @@ while { true } do {
 	{
 		if ((_x != group player) && ((side _x == GRLIB_side_friendly))) then {
 			if ( (_x in _iconed_groups) && (
-				(count units _x == 0) ||  (side _x == GRLIB_side_friendly && (((leader _x) distance (getmarkerpos GRLIB_respawn_marker) < 100))))) then {
+				(count units _x == 0) || (side _x == GRLIB_side_friendly && (((leader _x) distance (getmarkerpos GRLIB_respawn_marker) < 100))))) then {
 				clearGroupIcons _x;
 				_iconed_groups = _iconed_groups - [_x];
 			};
 
 			if ( !(_x in _iconed_groups) && (
-				(count units _x > 0) &&  (side _x == GRLIB_side_friendly && (((leader _x) distance (getmarkerpos GRLIB_respawn_marker) > 100))))) then {
+				(count units _x > 0) && (side _x == GRLIB_side_friendly && (((leader _x) distance (getmarkerpos GRLIB_respawn_marker) > 100))))) then {
 				clearGroupIcons _x;
 				_localgroup = _x;
 				_grouptype = [_localgroup] call F_getGroupType;
@@ -28,7 +28,7 @@ while { true } do {
 					case "support": { _groupicon = "b_maint" };
 					case "static": { _groupicon = "b_mortar" };
 					case "uav": { _groupicon = "b_uav" };
-					default {  };
+					default {};
 				};
 
 				_localgroup addGroupIcon [ _groupicon, [ 0,0 ] ];

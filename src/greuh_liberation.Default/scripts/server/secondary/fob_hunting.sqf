@@ -22,7 +22,7 @@ _template = ([] call (compile preprocessFileLineNumbers ( _fob_templates call bi
 _objects_to_build = _template select 0;
 _objectives_to_build = _template select 1;
 _defenders_to_build = _template select 2;
-_base_corners =  _template select 3;
+_base_corners = _template select 3;
 
 {
 	_nextclass = _x select 0;

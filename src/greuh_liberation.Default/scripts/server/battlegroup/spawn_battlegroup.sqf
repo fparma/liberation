@@ -38,7 +38,7 @@ if ( _spawn_marker != "" ) then {
 		(crew _vehicle) joinSilent _nextgrp;
 		[_nextgrp] spawn battlegroup_ai;
 		_bg_groups pushback _nextgrp;
-		if ( ( _x in opfor_troup_transports ) &&  ( [] call F_opforCap < GRLIB_battlegroup_cap ) ) then {
+		if ( ( _x in opfor_troup_transports ) && ( [] call F_opforCap < GRLIB_battlegroup_cap ) ) then {
 			[_vehicle] spawn troup_transport;
 		};
 		last_battlegroup_size = last_battlegroup_size + 1;

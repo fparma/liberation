@@ -14,7 +14,7 @@ if ( !GRLIB_permissions_param ) then {
 		if ( time > GRLIB_last_permission_check_time + 10 ) then {
 			GRLIB_last_permission_check_time = time;
 			_uidvar = getPlayerUID _source;
-			{ if ( _uidvar == _x select 0 ) exitWith { GRLIB_permissions_cache  = [] + (_x select 1) }; } foreach GRLIB_permissions;
+			{ if ( _uidvar == _x select 0 ) exitWith { GRLIB_permissions_cache = [] + (_x select 1) }; } foreach GRLIB_permissions;
 		};
 
 		if ( count GRLIB_permissions_cache > _permission ) then {

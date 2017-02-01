@@ -1,10 +1,10 @@
-private [ "_actionned_captive_units", "_near_people",  "_near_intel", "_actionned_intel_items" ];
+private [ "_actionned_captive_units", "_near_people", "_near_intel", "_actionned_intel_items" ];
 _actionned_captive_units = [];
 _actionned_intel_items = [];
 
 while { true } do {
 
-	if (  [ player, 5 ] call F_fetchPermission  ) then {
+	if ( [ player, 5 ] call F_fetchPermission ) then {
 		_near_intel = (getPosATL player) nearEntities [[GRLIB_intel_laptop, GRLIB_intel_file], 5];
 
 		{

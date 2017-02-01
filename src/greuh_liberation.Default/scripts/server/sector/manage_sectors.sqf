@@ -9,7 +9,7 @@ while { GRLIB_endgame == 0 } do {
 		private [ "_nextsector", "_corrected_sector_size", "_opforcount" ];
 
 		_nextsector = _x;
-		_opforcount =  [] call F_opforCap;
+		_opforcount = [] call F_opforCap;
 
 		if ( _opforcount < GRLIB_sector_cap ) then {
 

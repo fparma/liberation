@@ -29,7 +29,7 @@ permission_create_activetext = compileFinal '
 	params [ "_idx", "_column", "_permission", "_text", "_tooltip" ];
 
 	_control = (findDisplay 5118) ctrlCreate [ "RscActiveText", ((10 * _idx) + 111) + _column, (findDisplay 5118) displayCtrl 9969 ];
-	_control ctrlSetPosition [ 0.072 * _column * safeZoneW, (_idx * 0.025) * safezoneH, 0.072 * safeZoneW, 0.025  * safezoneH];
+	_control ctrlSetPosition [ 0.072 * _column * safeZoneW, (_idx * 0.025) * safezoneH, 0.072 * safeZoneW, 0.025 * safezoneH];
 	_control ctrlSetText _text;
 	_control ctrlSetFontHeight fontsize;
 	_control ctrlSetTooltip _tooltip;
@@ -69,23 +69,23 @@ _idx = 2;
 	if ( _idx % 2 == 0 ) then {
 
 		_control = (findDisplay 5118) ctrlCreate [ "RscBackground", -1, (findDisplay 5118) displayCtrl 9969 ];
-		_control ctrlSetPosition [ 0,  (_idx * 0.025) * safezoneH, 0.595 * safeZoneW, 0.025  * safezoneH];
+		_control ctrlSetPosition [ 0, (_idx * 0.025) * safezoneH, 0.595 * safeZoneW, 0.025 * safezoneH];
 		_control ctrlSetBackgroundColor [0.75,1,0.75,0.12];
 		_control ctrlCommit 0;
 	};
 
 	_control = (findDisplay 5118) ctrlCreate [ "RscText", (10 * _idx), (findDisplay 5118) displayCtrl 9969 ];
-	_control ctrlSetPosition [ 0,  (_idx * 0.025) * safezoneH, 0.072 * safeZoneW, 0.025  * safezoneH];
+	_control ctrlSetPosition [ 0, (_idx * 0.025) * safezoneH, 0.072 * safeZoneW, 0.025 * safezoneH];
 	_control ctrlSetText (_nextplayer select 1);
 	_control ctrlSetFontHeight fontsize;
 	_control ctrlCommit 0;
 
-	[ _idx, 4, 3, localize "STR_PERMISSIONS_CONSTRUCTION", localize "STR_PERMISSIONS_TOOLTIP_CONSTRUCTION" ] call  permission_create_activetext;
-	[ _idx, 5, 4, localize "STR_PERMISSIONS_RECYCLING", localize "STR_PERMISSIONS_TOOLTIP_RECYCLING" ] call  permission_create_activetext;
-	[ _idx, 6, 5, localize "STR_PERMISSIONS_MISC", localize "STR_PERMISSIONS_TOOLTIP_MISC" ] call  permission_create_activetext;
+	[ _idx, 4, 3, localize "STR_PERMISSIONS_CONSTRUCTION", localize "STR_PERMISSIONS_TOOLTIP_CONSTRUCTION" ] call permission_create_activetext;
+	[ _idx, 5, 4, localize "STR_PERMISSIONS_RECYCLING", localize "STR_PERMISSIONS_TOOLTIP_RECYCLING" ] call permission_create_activetext;
+	[ _idx, 6, 5, localize "STR_PERMISSIONS_MISC", localize "STR_PERMISSIONS_TOOLTIP_MISC" ] call permission_create_activetext;
 
 	_control = (findDisplay 5118) ctrlCreate [ "RscButton", ((10 * _idx) + 111) + 7, (findDisplay 5118) displayCtrl 9969 ];
-	_control ctrlSetPosition [ ((0.075 * 7) - 0.02) * safeZoneW, ((_idx * 0.025) * safezoneH) + 0.0025, (0.035 * safeZoneW), 0.022  * safezoneH];
+	_control ctrlSetPosition [ ((0.075 * 7) - 0.02) * safeZoneW, ((_idx * 0.025) * safezoneH) + 0.0025, (0.035 * safeZoneW), 0.022 * safezoneH];
 	_control ctrlSetText (localize "STR_PERMISSIONS_ALL");
 	_control ctrlSetFontHeight fontsize;
 	_control ctrlSetTooltip (localize "STR_PERMISSIONS_TOOLTIP_ALL");
@@ -93,7 +93,7 @@ _idx = 2;
 	_control ctrlCommit 0;
 
 	_control = (findDisplay 5118) ctrlCreate [ "RscButton", ((10 * _idx) + 111) + 8, (findDisplay 5118) displayCtrl 9969 ];
-	_control ctrlSetPosition [ ((0.075 * 7) + 0.02) * safeZoneW, (_idx * 0.025) * safezoneH + 0.0025, 0.035 * safeZoneW, 0.022  * safezoneH];
+	_control ctrlSetPosition [ ((0.075 * 7) + 0.02) * safeZoneW, (_idx * 0.025) * safezoneH + 0.0025, 0.035 * safeZoneW, 0.022 * safezoneH];
 	_control ctrlSetText (localize "STR_PERMISSIONS_NONE");
 	_control ctrlSetFontHeight fontsize;
 	_control ctrlSetTooltip (localize "STR_PERMISSIONS_TOOLTIP_NONE");

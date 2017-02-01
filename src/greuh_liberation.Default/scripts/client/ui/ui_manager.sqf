@@ -119,7 +119,7 @@ while { true } do {
 					_bar ctrlCommit 2;
 				};
 				((uiNamespace getVariable 'GUI_OVERLAY') displayCtrl (205)) ctrlSetText (markerText _nearest_active_sector);
-				{ ((uiNamespace getVariable 'GUI_OVERLAY') displayCtrl (_x)) ctrlShow true; } foreach  _sectorcontrols;
+				{ ((uiNamespace getVariable 'GUI_OVERLAY') displayCtrl (_x)) ctrlShow true; } foreach _sectorcontrols;
 				if ( _nearest_active_sector in blufor_sectors ) then {
 					((uiNamespace getVariable 'GUI_OVERLAY') displayCtrl (205)) ctrlSetTextColor [0,0.3,1.0,1];
 				} else {
@@ -128,7 +128,7 @@ while { true } do {
 
 				"zone_capture" setMarkerSizeLocal [ _zone_size,_zone_size ];
 			} else {
-				{ ((uiNamespace getVariable 'GUI_OVERLAY') displayCtrl (_x)) ctrlShow false; } foreach  _sectorcontrols;
+				{ ((uiNamespace getVariable 'GUI_OVERLAY') displayCtrl (_x)) ctrlShow false; } foreach _sectorcontrols;
 				"zone_capture" setmarkerposlocal markers_reset;
 			};
 		};

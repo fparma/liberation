@@ -1,2 +1,2 @@
 // _distredeploy = 20;
-if (  ([] call FPC_fnc_getFobDistance) < 20  && alive player && vehicle player == player && ( player == ( [] call F_getCommander ) || [] call F_isAdmin ) && build_confirmed == 0) then {true} else {false};
+if ( ([] call FPC_fnc_getFobDistance) < 20 && alive player && vehicle player == player && ( player == ( [] call F_getCommander ) || [] call F_isAdmin ) && build_confirmed == 0) then {true} else {false};

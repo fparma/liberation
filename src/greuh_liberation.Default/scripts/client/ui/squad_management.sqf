@@ -20,20 +20,20 @@ hideObject _targetobject;
 
 _squad_camera = "camera" camCreate (getpos player);
 _squad_camera cameraEffect ["internal","back", "rtt"];
-_squad_camera camSetTarget  _targetobject;
+_squad_camera camSetTarget _targetobject;
 _squad_camera camcommit 0;
 "rtt" setPiPEffect [0];
 
 while { dialog && alive player } do {
 
-	if (  { alive _x } count (units group player) != _membercount ) then {
+	if ( { alive _x } count (units group player) != _membercount ) then {
 
 		_membercount = { alive _x } count (units group player);
 
 		lbClear 101;
 		{
 			if ( alive _x ) then {
-				_unitname =  format ["%1. ", [ _x ] call F_getUnitPositionId];
+				_unitname = format ["%1. ", [ _x ] call F_getUnitPositionId];
 				if(isPlayer _x) then {
 					if ( count (squadParams _x ) != 0) then {
 						_unitname = "[" + ((squadParams _x select 0) select 0) + "] ";

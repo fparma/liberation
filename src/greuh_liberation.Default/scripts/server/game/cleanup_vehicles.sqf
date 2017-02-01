@@ -25,10 +25,10 @@ while { GRLIB_cleanup_vehicles > 0 } do {
 		} ;
 
 		if ( _reset_ticker ) then {
-			_nextvehicle setVariable  [ "GRLIB_empty_vehicle_ticker", 0 ];
+			_nextvehicle setVariable [ "GRLIB_empty_vehicle_ticker", 0 ];
 		};
 
-		if (  _nextvehicle getVariable [ "GRLIB_empty_vehicle_ticker", 0 ] >= ( 6 * GRLIB_cleanup_vehicles ) ) then {
+		if ( _nextvehicle getVariable [ "GRLIB_empty_vehicle_ticker", 0 ] >= ( 6 * GRLIB_cleanup_vehicles ) ) then {
 			deleteVehicle _nextvehicle;
 		};
 

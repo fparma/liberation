@@ -263,7 +263,7 @@ _data = [
 	vest _target, //9 ""
 	[vestItems _target, "Vest"] call _getMagsAmmo, //10
 
-	backpack _target, //11  ""
+	backpack _target, //11 ""
 	[_backPackItems, "Backpack"] call _getMagsAmmo, //12
 
 	_loadedMagazines, //13 (optional) [[primary mags],[handgun mags],[secondary mags],[other mags]]

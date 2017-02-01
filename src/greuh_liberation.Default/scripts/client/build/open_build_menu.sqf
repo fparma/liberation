@@ -68,17 +68,17 @@ while { dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
 				((findDisplay 5501) displayCtrl (110)) lnbAddRow [ _entrytext, format [ "%1" ,_x select 1], format [ "%1" ,_x select 2], format [ "%1" ,_x select 3]];
 
 				_icon = getText ( _cfg >> (_x select 0) >> "icon");
-				if(isText  (configFile >> "CfgVehicleIcons" >> _icon)) then {
+				if(isText (configFile >> "CfgVehicleIcons" >> _icon)) then {
 					_icon = (getText (configFile >> "CfgVehicleIcons" >> _icon));
 				};
-				lnbSetPicture  [110, [((lnbSize 110) select 0) - 1, 0],_icon];
+				lnbSetPicture [110, [((lnbSize 110) select 0) - 1, 0],_icon];
 			} else {
-				if ( ((lnbSize  110) select 0) <= count squads_names ) then {
-					_squadname = squads_names select ((lnbSize  110) select 0);
+				if ( ((lnbSize 110) select 0) <= count squads_names ) then {
+					_squadname = squads_names select ((lnbSize 110) select 0);
 				} else {
 					_squadname = "";
 				};
-				((findDisplay 5501) displayCtrl (110)) lnbAddRow  [_squadname, format [ "%1" ,_x select 1], format [ "%1" ,_x select 2], format [ "%1" ,_x select 3]];
+				((findDisplay 5501) displayCtrl (110)) lnbAddRow [_squadname, format [ "%1" ,_x select 1], format [ "%1" ,_x select 2], format [ "%1" ,_x select 3]];
 			};
 
 			_affordable = true;
@@ -91,15 +91,15 @@ while { dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
 			};
 
 			if ( _affordable ) then {
-				((findDisplay 5501) displayCtrl (110)) lnbSetColor  [[((lnbSize 110) select 0) - 1, 0], [1,1,1,1]];
-				((findDisplay 5501) displayCtrl (110)) lnbSetColor  [[((lnbSize 110) select 0) - 1, 1], [1,1,1,1]];
-				((findDisplay 5501) displayCtrl (110)) lnbSetColor  [[((lnbSize 110) select 0) - 1, 2], [1,1,1,1]];
-				((findDisplay 5501) displayCtrl (110)) lnbSetColor  [[((lnbSize 110) select 0) - 1, 3], [1,1,1,1]];
+				((findDisplay 5501) displayCtrl (110)) lnbSetColor [[((lnbSize 110) select 0) - 1, 0], [1,1,1,1]];
+				((findDisplay 5501) displayCtrl (110)) lnbSetColor [[((lnbSize 110) select 0) - 1, 1], [1,1,1,1]];
+				((findDisplay 5501) displayCtrl (110)) lnbSetColor [[((lnbSize 110) select 0) - 1, 2], [1,1,1,1]];
+				((findDisplay 5501) displayCtrl (110)) lnbSetColor [[((lnbSize 110) select 0) - 1, 3], [1,1,1,1]];
 			} else {
-				((findDisplay 5501) displayCtrl (110)) lnbSetColor  [[((lnbSize 110) select 0) - 1, 0], [0.4,0.4,0.4,1]];
-				((findDisplay 5501) displayCtrl (110)) lnbSetColor  [[((lnbSize 110) select 0) - 1, 1], [0.4,0.4,0.4,1]];
-				((findDisplay 5501) displayCtrl (110)) lnbSetColor  [[((lnbSize 110) select 0) - 1, 2], [0.4,0.4,0.4,1]];
-				((findDisplay 5501) displayCtrl (110)) lnbSetColor  [[((lnbSize 110) select 0) - 1, 3], [0.4,0.4,0.4,1]];
+				((findDisplay 5501) displayCtrl (110)) lnbSetColor [[((lnbSize 110) select 0) - 1, 0], [0.4,0.4,0.4,1]];
+				((findDisplay 5501) displayCtrl (110)) lnbSetColor [[((lnbSize 110) select 0) - 1, 1], [0.4,0.4,0.4,1]];
+				((findDisplay 5501) displayCtrl (110)) lnbSetColor [[((lnbSize 110) select 0) - 1, 2], [0.4,0.4,0.4,1]];
+				((findDisplay 5501) displayCtrl (110)) lnbSetColor [[((lnbSize 110) select 0) - 1, 3], [0.4,0.4,0.4,1]];
 			};
 
 		} foreach _build_list;
@@ -158,7 +158,7 @@ while { dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
 	_link_str = localize "STR_VEHICLE_UNLOCKED";
 	if (!_linked_unlocked) then { _link_color = "#e00000"; _link_str = localize "STR_VEHICLE_LOCKED"; };
 	if ( _linked ) then {
-		((findDisplay 5501) displayCtrl (161)) ctrlSetStructuredText parseText ( "<t color='" + _link_color + "' align='center'>" + _link_str +  "<br/>" + ( markerText _base_link ) + "</t>" );
+		((findDisplay 5501) displayCtrl (161)) ctrlSetStructuredText parseText ( "<t color='" + _link_color + "' align='center'>" + _link_str + "<br/>" + ( markerText _base_link ) + "</t>" );
 	} else {
 		((findDisplay 5501) displayCtrl (161)) ctrlSetStructuredText parseText "";
 	};
