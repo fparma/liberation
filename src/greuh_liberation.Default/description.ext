@@ -38,5 +38,9 @@ class CfgFunctions {
       class repackageCondition;
       class secondaryObjectiveCondition;
     };
+    class Logistics {
+      file = "functions\logistics";
+      class SlingLoading { postInit = 1; };
+    };
   };
 };
