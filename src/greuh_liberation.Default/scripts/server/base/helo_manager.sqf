@@ -3,15 +3,15 @@ waitUntil { !isNil "save_is_loaded" };
 
 firstloop = true;
 HELO_TRANSPORT = objNull;
-_savedhuron = objNull;
+private _savedhelo = objNull;
 
 while { true } do {
 
 	// Check if the Helicopter is loaded from a save.
-	{if ( typeof _x == HELO_CLASSNAME ) then {_savedhuron = _x;};} foreach vehicles;
+	{if ( typeof _x == HELO_CLASSNAME ) then {_savedhelo = _x;};} foreach vehicles;
 
-	if ( firstloop && !isNull _savedhuron ) then {
-		HELO_TRANSPORT = _savedhuron;
+	if ( firstloop && !isNull _savedhelo ) then {
+		HELO_TRANSPORT = _savedhelo;
 	} else {
 		HELO_TRANSPORT = HELO_CLASSNAME createVehicle ( getpos HELO_SPAWNMARKER );
 		HELO_TRANSPORT setpos ( getpos HELO_SPAWNMARKER );

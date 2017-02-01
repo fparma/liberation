@@ -1,9 +1,9 @@
-private [ "_huronlocal" ];
+private [ "_helo" ];
 
 while { true } do {
-	_huronlocal = [] call F_spartanScan;
-	if ( !( isNull _huronlocal) ) then {
-		"HELO_MAPMARKER" setmarkerposlocal (getpos _huronlocal);
+	_helo = [] call F_spartanScan;
+	if ( !( isNull _helo) ) then {
+		"HELO_MAPMARKER" setmarkerposlocal (getpos _helo);
 	} else {
 		"HELO_MAPMARKER" setmarkerposlocal markers_reset;
 	};
