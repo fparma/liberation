@@ -1,12 +1,11 @@
-class Params
-{
-	class MissionOptions{
+class Params {
+	class MissionOptions {
 		title = $STR_PARAMS_MISSIONOPTIONS;
-		values[] = { "" };
-		texts[] = { "" };
+		values[] = {""};
+		texts[] = {""};
 		default = "";
 	};
-	class Unitcap{
+	class Unitcap {
 		title = $STR_PARAMS_UNITCAP;
 		values[] = {0.5,0.75,1,1.25,1.5,2};
 		texts[] = {$STR_PARAMS_UNITCAP1,$STR_PARAMS_UNITCAP2,$STR_PARAMS_UNITCAP3,$STR_PARAMS_UNITCAP4,$STR_PARAMS_UNITCAP5,$STR_PARAMS_UNITCAP6};
@@ -44,47 +43,47 @@ class Params
 	};
 	class Spacer1 {
 		title = "";
-		values[] = { "" };
-		texts[] = { "" };
+		values[] = {""};
+		texts[] = {""};
 		default = "";
 	};
-	class Civilians{
+	class Civilians {
 		title = $STR_PARAMS_CIVILIANS;
 		values[] = {0,0.5,1,2};
 		texts[] = {$STR_PARAMS_CIVILIANS1,$STR_PARAMS_CIVILIANS2,$STR_PARAMS_CIVILIANS3,$STR_PARAMS_CIVILIANS4};
 		default = 1;
 	};
-	class PassiveIncome{
+	class PassiveIncome {
 		title = $STR_PARAM_PASSIVE_INCOME;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
 		default = 0;
 	};
-	class AmmoBounties{
+	class AmmoBounties {
 		title = $STR_AMMO_BOUNTIES;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
 		default = 1;
 	};
-	class CivPenalties{
+	class CivPenalties {
 		title = $STR_CIV_PENALTIES;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
 		default = 1;
 	};
-	class BluforDefenders{
+	class BluforDefenders {
 		title = $STR_PARAM_BLUFOR_DEFENDERS;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
 		default = 1;
 	};
-	class MaximumFobs{
+	class MaximumFobs {
 		title = $STR_PARAM_FOBS_COUNT;
 		values[] = {3,5,7,10,15,20,26};
 		texts[] = {3,5,7,10,15,20,26};
 		default = 26;
 	};
-	class MaxSquadSize{
+	class MaxSquadSize {
 		title = $STR_PARAM_SQUAD_SIZE;
 		values[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
 		texts[] = {0,1,2,4,6,8,10,12,16,20,24,30,36};
@@ -92,17 +91,17 @@ class Params
 	};
 	class Space2 {
 		title = "";
-		values[] = { "" };
-		texts[] = { "" };
+		values[] = {""};
+		texts[] = {""};
 		default = "";
 	};
-	class TechnicalOptions{
+	class TechnicalOptions {
 		title = $STR_PARAMS_TECHNICALOPTIONS;
-		values[] = { "" };
-		texts[] = { "" };
+		values[] = {""};
+		texts[] = {""};
 		default = "";
 	};
-	class Permissions{
+	class Permissions {
 		title = $STR_PERMISSIONS_PARAM;
 		values[] = {1,0};
 		texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
@@ -120,13 +119,13 @@ class Params
 		texts[] = { $STR_YES, $STR_NO };
 		default = 0;
 	};
-	class WipeSave1{
+	class WipeSave1 {
 		title = $STR_WIPE_TITLE;
 		values[] = {0,1};
 		texts[] =  {$STR_WIPE_NO,$STR_WIPE_YES};
 		default = 0;
 	};
-	class WipeSave2{
+	class WipeSave2 {
 		title = $STR_WIPE_TITLE_2;
 		values[] = {0,1};
 		texts[] = {$STR_WIPE_NO,$STR_WIPE_YES};
