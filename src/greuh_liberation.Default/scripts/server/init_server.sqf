@@ -39,7 +39,7 @@ manage_one_sector = compileFinal preprocessFileLineNumbers "scripts\server\secto
 wait_to_spawn_sector = compileFinal preprocessFileLineNumbers "scripts\server\sector\wait_to_spawn_sector.sqf";
 
 [] spawn compileFinal preprocessFileLineNumbers "scripts\server\base\startgame.sqf";
-[] spawn compileFinal preprocessFileLineNumbers "scripts\server\base\huron_manager.sqf";
+[] spawn compileFinal preprocessFileLineNumbers "scripts\server\base\helo_manager.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\server\battlegroup\counter_battlegroup.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\server\battlegroup\random_battlegroups.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\server\battlegroup\readiness_increase.sqf";
