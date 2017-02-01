@@ -11,7 +11,7 @@
 
 // Blufor Units (Not necessary arma3's blufor side, but rather the player side. )
 // TODO: Add Sharpshooter
-// TODO: Add Officer? (If Needed)
+<#define BLUFOR_UNIT_OFFICER|"B_officer_F">                     // Officer
 <#define BLUFOR_UNIT_SQL|"B_Soldier_SL_F">                      // Squadleader
 <#define BLUFOR_UNIT_FTL|"B_Soldier_TL_F">                      // Fireteam Leader
 <#define BLUFOR_UNIT_RIFLEMAN|"B_soldier_F">                    // Rifleman
