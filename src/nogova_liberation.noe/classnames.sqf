@@ -5,7 +5,7 @@ FOB_box_typename = <#MAIN_FOB_BOX>;
 FOB_truck_typename = <#MAIN_TRUCK>;
 Arsenal_typename = <#MAIN_ARSENAL_BOX>;
 Respawn_truck_typename = <#MAIN_TRUCK_RESPAWN>;
-huron_typename = <#MAIN_TRANSPORT_HELO>;
+HELO_CLASSNAME = <#MAIN_TRANSPORT_HELO>;
 ammobox_b_typename = <#MAIN_AMMOBOX_BLUFOR>;
 ammobox_o_typename = <#MAIN_AMMOBOX_OPFOR>;
 opfor_ammobox_transport = <#MAIN_TRUCK_AMMOBOX_OPFOR>;
@@ -136,7 +136,7 @@ uavs = [ "B_UAV_01_F","B_UAV_02_F","B_UAV_02_CAS_F","B_UGV_01_F","B_UGV_01_rcws_
 boats_names = [ "B_Boat_Transport_01_F", "B_Boat_Armed_01_minigun_F" ];
 elite_vehicles = ["CUP_B_M1A1_Woodland_USMC", "CUP_B_AV8B_GBU12_USMC"];
 
-ai_resupply_sources = [ Respawn_truck_typename, huron_typename, Arsenal_typename, "B_Slingload_01_Ammo_F", "B_APC_Tracked_01_CRV_F", "B_Truck_01_ammo_F" ];
+ai_resupply_sources = [ Respawn_truck_typename, HELO_CLASSNAME, Arsenal_typename, "B_Slingload_01_Ammo_F", "B_APC_Tracked_01_CRV_F", "B_Truck_01_ammo_F" ];
 
 squads = [
 	[blufor_squad_inf_light,20,0,0],

@@ -22,8 +22,8 @@ ai_groups = [];
 saved_intel_res = 0;
 GRLIB_player_scores = [];
 
-no_kill_handler_classnames = [FOB_typename, huron_typename];
-_classnames_to_save = [FOB_typename, huron_typename];
+no_kill_handler_classnames = [FOB_typename, HELO_CLASSNAME];
+_classnames_to_save = [FOB_typename, HELO_CLASSNAME];
 _classnames_to_save_blu = [];
 _building_classnames = [FOB_typename];
 {
