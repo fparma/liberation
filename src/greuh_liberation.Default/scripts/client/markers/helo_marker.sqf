@@ -7,5 +7,5 @@ while { true } do {
 	} else {
 		"HELO_MAPMARKER" setmarkerposlocal markers_reset;
 	};
-	sleep 4.9;
+	sleep 5;
 };
