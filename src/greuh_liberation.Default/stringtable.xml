@@ -1,636 +1,636 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project name="Liberation">
-		<Package name="Liberation">
-				<Key ID="STR_BUILD_TITLE">
-						<Original>BUILD MENU</Original>
-				</Key>
-				<Key ID="STR_BUILD_BUTTON">
-						<Original>Build</Original>
-				</Key>
-				<Key ID="STR_MANPOWER">
-						<Original>Manpower</Original>
-				</Key>
-				<Key ID="STR_AMMO">
-						<Original>Ammunition</Original>
-				</Key>
-				<Key ID="STR_FUEL">
-						<Original>Fuel</Original>
-				</Key>
-				<Key ID="STR_CANCEL_HINT">
-						<Original>Building canceled.</Original>
-				</Key>
-				<Key ID="STR_CONFIRM_HINT">
-						<Original>Building confirmed.</Original>
-				</Key>
-				<Key ID="STR_PLACEMENT_IMPOSSIBLE">
-						<Original>Can't place here: there are %1 object(s) within %2 meters of the object position.</Original>
-				</Key>
-				<Key ID="STR_FOB_BUILDING_IMPOSSIBLE">
-						<Original>Can't deploy a new FOB here, you must be at least %1 meters away from every other FOB. Nearest FOB is %2 meters away.</Original>
-				</Key>
-				<Key ID="STR_FOB_BUILDING_IMPOSSIBLE_SECTOR">
-						<Original>Can't deploy a new FOB here, you must be at least %1 meters away from every capturable zone. Nearest zone is %2 meters away.</Original>
-				</Key>
-				<Key ID="STR_BUILD_ERROR_WATER">
-						<Original>Can't build on water.</Original>
-				</Key>
-				<Key ID="STR_BUILD_ERROR_DISTANCE">
-						<Original>Can't build further than %1 meters away from the FOB.</Original>
-				</Key>
-				<Key ID="STR_FOBBOX">
-						<Original>FOB Container</Original>
-				</Key>
-				<Key ID="STR_FOBTRUCK">
-						<Original>FOB Truck</Original>
-				</Key>
-				<Key ID="STR_RESPAWN_TRUCK">
-						<Original>Mobile Respawn</Original>
-				</Key>
-				<Key ID="STR_DEPLOY_TITLE">
-						<Original>DEPLOYMENT</Original>
-				</Key>
-				<Key ID="STR_DEPLOY_BUTTON">
-						<Original>Deploy</Original>
-				</Key>
-				<Key ID="STR_BUILD_CREW">
-						<Original>Build (Crew)</Original>
-				</Key>
-				<Key ID="STR_LIGHT_RIFLE_SQUAD">
-						<Original>Light Rifle Squad</Original>
-						</Key>
-				<Key ID="STR_RIFLE_SQUAD">
-						<Original>Heavy Rifle Squad</Original>
-				</Key>
-				<Key ID="STR_AT_SQUAD">
-						<Original>AT Squad</Original>
-				</Key>
-				<Key ID="STR_AA_SQUAD">
-						<Original>AA Squad</Original>
-				</Key>
-				<Key ID="STR_RECON_SQUAD">
-						<Original>Recon Squad</Original>
-				</Key>
-				<Key ID="STR_PARA_SQUAD">
-						<Original>Paratroopers Squad</Original>
-				</Key>
-				<Key ID="STR_UNITCAP">
-						<Original>Unit cap</Original>
-				</Key>
-				<Key ID="STR_WIPE_TITLE">
-						<Original>Wipe savegame?:</Original>
-				</Key>
-				<Key ID="STR_WIPE_TITLE_2">
-						<Original>Confirm : Wipe savegame?:</Original>
-				</Key>
-				<Key ID="STR_WIPE_NO">
-						<Original>No</Original>
-				</Key>
-				<Key ID="STR_WIPE_YES">
-						<Original>!! THE SAVEGAME WILL BE WIPED, NO RECOVERY POSSIBLE !!</Original>
-				</Key>
-				<Key ID="STR_SPAWN_NEAR">
-						<Original>Near</Original>
-				</Key>
-				<Key ID="STR_RECYCLING">
-						<Original>Recycling</Original>
-				</Key>
-				<Key ID="STR_RECYCLING_YIELD">
-						<Original>Recycling this %1 will yield:</Original>
-				</Key>
-				<Key ID="STR_RECYCLING_PROCEED">
-						<Original>Recycle</Original>
-				</Key>
-				<Key ID="STR_RECYCLING_CANCEL">
-						<Original>Cancel</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_SECTORCAPTURED_TITLE">
-						<Original>SECTOR CAPTURED</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_SECTORCAPTURED_TEXT">
-						<Original>Our forces have captured %1.</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_SECTORATTACKED_TITLE">
-						<Original>SECTOR ATTACKED</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_SECTORATTACKED_TEXT">
-						<Original>Hostiles forces are attacking %1!</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_SECTORLOST_TITLE">
-						<Original>SECTOR LOST</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_SECTORLOST_TEXT">
-						<Original>We have lost control over %1!</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_SECTORSAFE_TITLE">
-						<Original>SECTOR SAFE</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_SECTORSAFE_TEXT">
-						<Original>%1 is no longer under threat.</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_FOBBUILT_TITLE">
-						<Original>NEW FOB BUILT</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_FOBBUILT_TEXT">
-						<Original>FOB %1 is now operational.</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_FOBSAFE_TITLE">
-						<Original>FOB SAFE</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_FOBSAFE_TEXT">
-						<Original>FOB %1 is no longer under threat.</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_FOBATTACKED_TITLE">
-						<Original>FOB ATTACKED</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_FOBATTACKED_TEXT">
-						<Original>FOB %1 is under attack!</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_FOBLOST_TITLE">
-						<Original>FOB DESTROYED</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_FOBLOST_TEXT">
-						<Original>FOB %1 has been destroyed!</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_BATTLEGROUP_TITLE">
-						<Original>HOSTILE FORCES INCOMING</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_BATTLEGROUP_TEXT">
-						<Original>Hostile forces spotted near %1.</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_INTEL_TITLE">
-						<Original>NEW INTELLIGENCE</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_FOB_TEXT">
-						<Original>Hostile FOB near %1.</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_PRISONER_TEXT">
-						<Original>We have interrogated a prisoner.</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_DOCUMENT_TEXT">
-						<Original>We have found secret documents.</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_SECONDARY_TITLE">
-						<Original>SECONDARY OBJECTIVE</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_SECONDARY_TEXT">
-						<Original>Hostile FOB destroyed.</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_REINFORCEMENTS_TITLE">
-						<Original>HOSTILE REINFORCEMENTS</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_REINFORCEMENTS_TEXT">
-						<Original>Hostile forces reinforcing %1.</Original>
-				</Key>
-				<Key ID="STR_VICTORY_TITLE">
-						<Original>VICTORY</Original>
-				</Key>
-				<Key ID="STR_VICTORY_TEXT">
-						<Original>You have Liberated the region from the enemy oppression!</Original>
-				</Key>
-				<Key ID="STR_PARAMS_MISSIONOPTIONS">
-						<Original>== MISSION OPTIONS ==</Original>
-				</Key>
-				<Key ID="STR_PARAMS_TECHNICALOPTIONS">
-						<Original>== TECHNICAL OPTIONS ==</Original>
-				</Key>
-				<Key ID="STR_PARAMS_DAYDURATION">
-						<Original>Day duration (hours):</Original>
-				</Key>
-				<Key ID="STR_PARAMS_DIFFICULTY">
-						<Original>Difficulty:</Original>
-				</Key>
-				<Key ID="STR_PARAMS_DIFFICULTY1">
-						<Original>Tourist</Original>
-				</Key>
-				<Key ID="STR_PARAMS_DIFFICULTY2">
-						<Original>Easy</Original>
-				</Key>
-				<Key ID="STR_PARAMS_DIFFICULTY3">
-						<Original>Normal</Original>
-				</Key>
-				<Key ID="STR_PARAMS_DIFFICULTY4">
-						<Original>Moderate</Original>
-				</Key>
-				<Key ID="STR_PARAMS_DIFFICULTY5">
-						<Original>Hard</Original>
-				</Key>
-				<Key ID="STR_PARAMS_DIFFICULTY6">
-						<Original>Extreme</Original>
-				</Key>
-				<Key ID="STR_PARAMS_DIFFICULTY7">
-						<Original>Ludicrous</Original>
-				</Key>
-				<Key ID="STR_PARAMS_DIFFICULTY8">
-						<Original>Oh god oh god we're all gonna die</Original>
-				</Key>
-				<Key ID="STR_PARAMS_RESOURCESMULTIPLIER">
-						<Original>Resources multiplier:</Original>
-				</Key>
-				<Key ID="STR_PARAMS_INTRO">
-						<Original>Introduction:</Original>
-				</Key>
-				<Key ID="STR_PARAMS_DEPLOYMENTCAMERA">
-						<Original>Deployment Cinematic:</Original>
-				</Key>
-				<Key ID="STR_PARAMS_ENABLED">
-						<Original>Enabled</Original>
-				</Key>
-				<Key ID="STR_PARAMS_DISABLED">
-						<Original>Disabled</Original>
-				</Key>
-				<Key ID="STR_PARAMS_FIRSTFOB">
-						<Original>Start the campaign with the first FOB already built:</Original>
-				</Key>
-				<Key ID="STR_YES">
-						<Original>Yes</Original>
-				</Key>
-				<Key ID="STR_NO">
-						<Original>No</Original>
-				</Key>
-				<Key ID="STR_PARAMS_UNITCAP">
-						<Original>Maximum amount of AI units:</Original>
-				</Key>
-				<Key ID="STR_PARAMS_UNITCAP1">
-						<Original>50% - Recommended for local hosting</Original>
-				</Key>
-				<Key ID="STR_PARAMS_UNITCAP2">
-						<Original>75% - Dedicated server recommended</Original>
-				</Key>
-				<Key ID="STR_PARAMS_UNITCAP3">
-						<Original>100% - Dedicated server recommended</Original>
-				</Key>
-				<Key ID="STR_PARAMS_UNITCAP4">
-						<Original>125% - Dedicated server with headless client recommended</Original>
-				</Key>
-				<Key ID="STR_PARAMS_UNITCAP5">
-						<Original>150% - Dedicated server with multiple headless clients recommended</Original>
-				</Key>
-				<Key ID="STR_PARAMS_UNITCAP6">
-						<Original>200% - Dedicated server with multiple headless clients recommended</Original>
-				</Key>
-				<Key ID="STR_PARAMS_CIVILIANS">
-						<Original>Civilian activity:</Original>
-				</Key>
-				<Key ID="STR_PARAMS_CIVILIANS1">
-						<Original>None</Original>
-				</Key>
-				<Key ID="STR_PARAMS_CIVILIANS2">
-						<Original>Reduced</Original>
-				</Key>
-				<Key ID="STR_PARAMS_CIVILIANS3">
-						<Original>Normal</Original>
-				</Key>
-				<Key ID="STR_PARAMS_CIVILIANS4">
-						<Original>Increased</Original>
-				</Key>
-				<Key ID="STR_FRIENDLY_FIRE">
-						<Original>Warning: friendly fire</Original>
-				</Key>
-				<Key ID="STR_PARAM_TEAMKILL_PENALTY">
-						<Original>Teamkill penalty:</Original>
-				</Key>
-				<Key ID="STR_PARAM_ADAPT_TO_PLAYERCOUNT">
-						<Original>Hostile presence adapts to player count:</Original>
-				</Key>
-				<Key ID="STR_PARAM_PASSIVE_INCOME">
-						<Original>Replace ammo boxes spawns with passive income:</Original>
-				</Key>
-				<Key ID="STR_BUILD1">
-						<Original>Infantry Units</Original>
-				</Key>
-				<Key ID="STR_BUILD2">
-						<Original>Light Vehicles</Original>
-				</Key>
-				<Key ID="STR_BUILD3">
-						<Original>Armored Vehicles</Original>
-				</Key>
-				<Key ID="STR_BUILD4">
-						<Original>Air Vehicles</Original>
-				</Key>
-				<Key ID="STR_BUILD5">
-						<Original>Static Defenses</Original>
-				</Key>
-				<Key ID="STR_BUILD6">
-						<Original>Buildings</Original>
-				</Key>
-				<Key ID="STR_BUILD7">
-						<Original>Logistics</Original>
-				</Key>
-				<Key ID="STR_BUILD8">
-						<Original>Infantry squads</Original>
-				</Key>
-				<Key ID="STR_ACTIVE_SECTORS">
-						<Original>Active Sectors:</Original>
-				</Key>
-				<Key ID="STR_OVERLOAD_HINT">
-						<Original>The unitcap setting has been exceeded and further sector activation is temporarily halted. You can now see the list of currently active sectors where you shall concentrate your efforts.</Original>
-				</Key>
-				<Key ID="STR_VEHICLE_LOCKED">
-						<Original>LOCKED BY</Original>
-				</Key>
-				<Key ID="STR_VEHICLE_UNLOCKED">
-						<Original>UNLOCKED BY</Original>
-				</Key>
-				<Key ID="STR_SQUAD_MANAGEMENT">
-						<Original>SQUAD MANAGEMENT</Original>
-				</Key>
-				<Key ID="STR_DEPLOY_ON_MEMBER">
-						<Original>Replace</Original>
-				</Key>
-				<Key ID="STR_DEPLOY_ON_MEMBER_TOOLTIP">
-						<Original>You will deploy on the selected squad member and replace them while keeping your current loadout.</Original>
-				</Key>
-				<Key ID="STR_REMOVE_MEMBER">
-						<Original>Remove</Original>
-				</Key>
-				<Key ID="STR_REMOVE_MEMBER_TOOLTIP">
-						<Original>The selected squad member will be deleted.</Original>
-				</Key>
-				<Key ID="STR_RESUPPLY">
-						<Original>Resupply</Original>
-				</Key>
-				<Key ID="STR_RESUPPLY_TOOLTIP">
-						<Original>If the selected squad member is close enough from a resupply point (mobile spawn or FOB) they will get a brand new, full loadout.</Original>
-				</Key>
-				<Key ID="STR_CONFIRM">
-						<Original>Confirm</Original>
-				</Key>
-				<Key ID="STR_HEALTH">
-						<Original>Health:</Original>
-				</Key>
-				<Key ID="STR_DISTANCE">
-						<Original>Distance:</Original>
-				</Key>
-				<Key ID="STR_PRIMARY_WEAPON">
-						<Original>Primary</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_WEAPON">
-						<Original>Secondary</Original>
-				</Key>
-				<Key ID="STR_NONE">
-						<Original>None</Original>
-				</Key>
-				<Key ID="STR_DRIVER">
-						<Original>Driver</Original>
-				</Key>
-				<Key ID="STR_GUNNER">
-						<Original>Gunner</Original>
-				</Key>
-				<Key ID="STR_COMMANDER">
-						<Original>Commander</Original>
-				</Key>
-				<Key ID="STR_PASSENGER">
-						<Original>Passenger</Original>
-				</Key>
-				<Key ID="STR_SQUAD_DEPLOY">
-						<Original>Squad deploy</Original>
-				</Key>
-				<Key ID="STR_REMOVE_OK">
-						<Original>You have deleted the selected squad member.</Original>
-				</Key>
-				<Key ID="STR_RESUPPLY_OK">
-						<Original>The selected squad member has been resupplied.</Original>
-				</Key>
-				<Key ID="STR_RESUPPLY_KO">
-						<Original>The selected squad member isn't close enough to an FOB or mobile spawn.</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_TITLE">
-						<Original>PERMISSIONS MANAGEMENT</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_CONSTRUCTION">
-						<Original>Construction</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_RECYCLING">
-						<Original>Recycling</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_MISC">
-						<Original>Others</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_ALL">
-						<Original>All</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_NONE">
-						<Original>None</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_TOOLTIP_CONSTRUCTION">
-						<Original>Allows the player to use the BUILD menu.</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_TOOLTIP_RECYCLING">
-						<Original>Allows the player to use the RECYCLE action.</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_TOOLTIP_MISC">
-						<Original>Allows the player to use other actions: unflip, ammo box manipulation, prisoners capture, etc.</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_TOOLTIP_ALL">
-						<Original>Gives all permissions to the player.</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_TOOLTIP_NONE">
-						<Original>Removes all permissions from the player.</Original>
-				</Key>
-				<Key ID="STR_SAVE_CHANGES">
-						<Original>Save Changes</Original>
-				</Key>
-				<Key ID="STR_PERMISSIONS_PARAM">
-						<Original>Permissions Management</Original>
-				</Key>
-				<Key ID="STR_PERMISSION_WARNING">
-						<Original>No permissions have been set. The commander must setup the permissions to allow player actions and vehicle usage. Alternatively, the permission system can be disabled from the mission options.</Original>
-				</Key>
-				<Key ID="STR_EDIT_LOADOUT">
-						<Original>Edit loadout</Original>
-				</Key>
-				<Key ID="STR_LOAD_LOADOUT">
-						<Original>Take loadout</Original>
-				</Key>
-				<Key ID="STR_DEFAULT">
-						<Original>Default</Original>
-				</Key>
-				<Key ID="STR_FOB_REPACKAGE_TITLE">
-						<Original>REPACKAGE FOB</Original>
-				</Key>
-				<Key ID="STR_FOB_REPACKAGE_CONFIRM">
-						<Original>Are you sure you want to repackage this FOB?</Original>
-				</Key>
-				<Key ID="STR_FOB_REPACKAGE_HINT">
-						<Original>FOB repackaged.</Original>
-				</Key>
-				<Key ID="STR_DEPLOY_IN_PROGRESS">
-						<Original>Deployment in progress...</Original>
-				</Key>
-				<Key ID="STR_BUILD_ENEMIES_NEARBY">
-						<Original>Cannot build: hostile forces nearby.</Original>
-				</Key>
-				<Key ID="STR_CLEANUP_PARAM">
-						<Original>Cleanup abandoned vehicles outside of FOB:</Original>
-				</Key>
-				<Key ID="STR_CLEANUP_PARAM1">
-						<Original>Enabled - 1 hour delay</Original>
-				</Key>
-				<Key ID="STR_CLEANUP_PARAM2">
-						<Original>Enabled - 2 hours delay</Original>
-				</Key>
-				<Key ID="STR_CLEANUP_PARAM3">
-						<Original>Enabled - 4 hours delay</Original>
-				</Key>
-				<Key ID="STR_COMMANDER_NOT_AUTHORIZED">
-						<Original>You are not authorized to use the commander slot on this server.</Original>
-				</Key>
-				<Key ID="STR_LOADOUT">
-						<Original>Loadout:</Original>
-				</Key>
-				<Key ID="STR_SPAWN_POINT">
-						<Original>Deployment location:</Original>
-				</Key>
-				<Key ID="STR_AGGRESSIVITY_PARAM">
-						<Original>Enemy aggressivity:</Original>
-				</Key>
-				<Key ID="STR_AGGRESSIVITY_PARAM0">
-						<Original>Anemic</Original>
-				</Key>
-				<Key ID="STR_AGGRESSIVITY_PARAM1">
-						<Original>Weak</Original>
-				</Key>
-				<Key ID="STR_AGGRESSIVITY_PARAM2">
-						<Original>Normal</Original>
-				</Key>
-				<Key ID="STR_AGGRESSIVITY_PARAM3">
-						<Original>Strong</Original>
-				</Key>
-				<Key ID="STR_AGGRESSIVITY_PARAM4">
-						<Original>Extreme</Original>
-				</Key>
-				<Key ID="STR_AMMO_BOUNTIES">
-						<Original>Ammunition bounties:</Original>
-				</Key>
-				<Key ID="STR_BOUNTY_MESSAGE">
-						<Original>Bounty of %1 for a %2 destroyed by %3.</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_OBJECTIVES_TITLE">
-						<Original>SECONDARY OBJECTIVES</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_OBJECTIVES_START">
-						<Original>Start</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_INTEL">
-						<Original>Current intel: %1</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_NOT_ENOUGH_INTEL">
-						<Original>Insufficient Intel Points.</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_IN_PROGRESS">
-						<Original>Secondary Objective already in progress!</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_INCOMING_TEXT">
-						<Original>Hostile forces are heading towards %1.</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_CSAT_CONVOY">
-						<Original>Enemy Convoy</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_CSAT_CONVOY_WP">
-						<Original>Waypoint</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_CONVOY_DESTROYED_TEXT">
-						<Original>Enemy Convoy neutralized.</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_CONVOY_SPOTTED_TEXT">
-						<Original>Enemy Convoy near %1.</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_MISSION0">
-						<Original>FOB Hunting</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_BRIEFING0">
-						<Original>
-						&lt;t size='1.3' color='#ffa000'&gt;FOB HUNTING&lt;/t&gt;
-						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='1'&gt;
-						Hostile forces use an array of small logistic bases situated behind the front lines. Destroying those assets would greatly disrupt the enemy supply lines and impair their capacity to react to our actions.&lt;/t&gt;
-						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='1'&gt;
-						Your mission is to destroy all supply assets (trucks and containers) at the objective by any means at your disposal. Unfortunately our intelligence is not able to provide you with a precise position for the base, you will have to locate the objective in the red zone on your map.&lt;/t&gt;
-						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='1.15' color='#00a0ff'&gt;Cost: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
-						&lt;br/&gt;
-						&lt;t size='1.15' color='#ffa000'&gt;Reward: Enemy alert level reduced by 40%&lt;/t&gt;
-						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
-						</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_MISSION1">
-						<Original>Convoy Hijack</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_BRIEFING1">
-						<Original>
-						&lt;t size='1.3' color='#ffa000'&gt;CONVOY HIJACK&lt;/t&gt;
-						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='1'&gt;
-						Enemy forces use road convoys to resupply their defensive positions. Intercepting one of these convoys would effectively disrupt their supply lines and we could use the occasion to retrieve a hefty amount of ammunition.&lt;/t&gt;
-						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='1'&gt;
-						Your mission is to stop the enemy convoy by any means necessary. You can destroy it, or hijack it to retrieve all the ammunition you can grab. The target will be spotted on your map.&lt;/t&gt;
-						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='1.15' color='#00a0ff'&gt;Cost: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
-						&lt;br/&gt;
-						&lt;t size='1.15' color='#ffa000'&gt;Reward: Enemy Alert level reduced by 15%&lt;/t&gt;
-						&lt;br/&gt;
-						&lt;t size='1.15' color='#ffa000'&gt;Bonus: All the ammunition you can retrieve.&lt;/t&gt;
-						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='10'&gt;&lt;img image='res\secondary\convoy_obj.jpg'/&gt;&lt;/t&gt;
-						</Original>
-				</Key>
-				<!-- Added in v0.922 -->
-				<Key ID="STR_PARAM_BLUFOR_DEFENDERS">
-						<Original>Friendly defenders in owned sectors:</Original>
-				</Key>
-				<Key ID="STR_PARAM_AUTODANGER">
-						<Original>Auto-danger behaviour on friendly forces:</Original>
-				</Key>
-				<Key ID="STR_PARAM_FOBS_COUNT">
-						<Original>Maximum number of FOBs allowed:</Original>
-				</Key>
-				<Key ID="STR_HINT_FOBS_EXCEEDED">
-						<Original>You are not allowed to deploy more than %1 FOBs at the same time.</Original>
-				</Key>
-				<Key ID="STR_HINT_LOADOUT_LOADED">
-						<Original>%1 loadout successfully loaded.</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_MISSION2">
-						<Original>Search and Rescue</Original>
-				</Key>
-				<Key ID="STR_SECONDARY_BRIEFING2">
-						<Original>
-						&lt;t size='1.3' color='#ffa000'&gt;SEARCH AND RESCUE&lt;/t&gt;
-						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='1'&gt;
-						We have lost contact with a recon helicopter on mission behind the enemy lines. We believe the chopper was shot down by hostile forces.&lt;/t&gt;
-						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='1'&gt;
-						The helicopter may have crashlanded anywhere in a large zone around its last known position. Your mission is to retrieve the chopper crew and their precious intel. Hostile forces may have found them first, so you must be quick, careful, as well as ready to engage.&lt;/t&gt;
-						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='1.15' color='#00a0ff'&gt;Cost: 5&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
-						&lt;br/&gt;
-						&lt;t size='1.15' color='#ffa000'&gt;Reward: 20 Intel points (10 for each crew alive).&lt;/t&gt;
-						&lt;br/&gt;&lt;br/&gt;
-						&lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
-						</Original>
-				</Key>
-				<!-- Added in v0.924 -->
-				<Key ID="STR_CIV_PENALTIES">
-						<Original>Penalty for killing civilians:</Original>
-				</Key>
-				<Key ID="STR_CIV_PENALTY_MESSAGE">
-						<Original>Penalty of %1 for killing of civilian named %2 by %3.</Original>
-				</Key>
-				<Key ID="STR_PARAM_SQUAD_SIZE">
-						<Original>AI recruitment limit per squad:</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_SAR_STARTED">
-						<Original>Crashed helicopter near %1.</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_SAR_FAILED">
-						<Original>SAR mission failed, both crew are KIA.</Original>
-				</Key>
-				<Key ID="STR_NOTIFICATION_SAR_SUCCESS">
-						<Original>SAR mission succeeded.</Original>
-				</Key>
-		</Package>
+    <Package name="Liberation">
+        <Key ID="STR_BUILD_TITLE">
+            <Original>BUILD MENU</Original>
+        </Key>
+        <Key ID="STR_BUILD_BUTTON">
+            <Original>Build</Original>
+        </Key>
+        <Key ID="STR_MANPOWER">
+            <Original>Manpower</Original>
+        </Key>
+        <Key ID="STR_AMMO">
+            <Original>Ammunition</Original>
+        </Key>
+        <Key ID="STR_FUEL">
+            <Original>Fuel</Original>
+        </Key>
+        <Key ID="STR_CANCEL_HINT">
+            <Original>Building canceled.</Original>
+        </Key>
+        <Key ID="STR_CONFIRM_HINT">
+            <Original>Building confirmed.</Original>
+        </Key>
+        <Key ID="STR_PLACEMENT_IMPOSSIBLE">
+            <Original>Can't place here: there are %1 object(s) within %2 meters of the object position.</Original>
+        </Key>
+        <Key ID="STR_FOB_BUILDING_IMPOSSIBLE">
+            <Original>Can't deploy a new FOB here, you must be at least %1 meters away from every other FOB. Nearest FOB is %2 meters away.</Original>
+        </Key>
+        <Key ID="STR_FOB_BUILDING_IMPOSSIBLE_SECTOR">
+            <Original>Can't deploy a new FOB here, you must be at least %1 meters away from every capturable zone. Nearest zone is %2 meters away.</Original>
+        </Key>
+        <Key ID="STR_BUILD_ERROR_WATER">
+            <Original>Can't build on water.</Original>
+        </Key>
+        <Key ID="STR_BUILD_ERROR_DISTANCE">
+            <Original>Can't build further than %1 meters away from the FOB.</Original>
+        </Key>
+        <Key ID="STR_FOBBOX">
+            <Original>FOB Container</Original>
+        </Key>
+        <Key ID="STR_FOBTRUCK">
+            <Original>FOB Truck</Original>
+        </Key>
+        <Key ID="STR_RESPAWN_TRUCK">
+            <Original>Mobile Respawn</Original>
+        </Key>
+        <Key ID="STR_DEPLOY_TITLE">
+            <Original>DEPLOYMENT</Original>
+        </Key>
+        <Key ID="STR_DEPLOY_BUTTON">
+            <Original>Deploy</Original>
+        </Key>
+        <Key ID="STR_BUILD_CREW">
+            <Original>Build (Crew)</Original>
+        </Key>
+        <Key ID="STR_LIGHT_RIFLE_SQUAD">
+            <Original>Light Rifle Squad</Original>
+            </Key>
+        <Key ID="STR_RIFLE_SQUAD">
+            <Original>Heavy Rifle Squad</Original>
+        </Key>
+        <Key ID="STR_AT_SQUAD">
+            <Original>AT Squad</Original>
+        </Key>
+        <Key ID="STR_AA_SQUAD">
+            <Original>AA Squad</Original>
+        </Key>
+        <Key ID="STR_RECON_SQUAD">
+            <Original>Recon Squad</Original>
+        </Key>
+        <Key ID="STR_PARA_SQUAD">
+            <Original>Paratroopers Squad</Original>
+        </Key>
+        <Key ID="STR_UNITCAP">
+            <Original>Unit cap</Original>
+        </Key>
+        <Key ID="STR_WIPE_TITLE">
+            <Original>Wipe savegame?:</Original>
+        </Key>
+        <Key ID="STR_WIPE_TITLE_2">
+            <Original>Confirm : Wipe savegame?:</Original>
+        </Key>
+        <Key ID="STR_WIPE_NO">
+            <Original>No</Original>
+        </Key>
+        <Key ID="STR_WIPE_YES">
+            <Original>!! THE SAVEGAME WILL BE WIPED, NO RECOVERY POSSIBLE !!</Original>
+        </Key>
+        <Key ID="STR_SPAWN_NEAR">
+            <Original>Near</Original>
+        </Key>
+        <Key ID="STR_RECYCLING">
+            <Original>Recycling</Original>
+        </Key>
+        <Key ID="STR_RECYCLING_YIELD">
+            <Original>Recycling this %1 will yield:</Original>
+        </Key>
+        <Key ID="STR_RECYCLING_PROCEED">
+            <Original>Recycle</Original>
+        </Key>
+        <Key ID="STR_RECYCLING_CANCEL">
+            <Original>Cancel</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_SECTORCAPTURED_TITLE">
+            <Original>SECTOR CAPTURED</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_SECTORCAPTURED_TEXT">
+            <Original>Our forces have captured %1.</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_SECTORATTACKED_TITLE">
+            <Original>SECTOR ATTACKED</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_SECTORATTACKED_TEXT">
+            <Original>Hostiles forces are attacking %1!</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_SECTORLOST_TITLE">
+            <Original>SECTOR LOST</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_SECTORLOST_TEXT">
+            <Original>We have lost control over %1!</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_SECTORSAFE_TITLE">
+            <Original>SECTOR SAFE</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_SECTORSAFE_TEXT">
+            <Original>%1 is no longer under threat.</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_FOBBUILT_TITLE">
+            <Original>NEW FOB BUILT</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_FOBBUILT_TEXT">
+            <Original>FOB %1 is now operational.</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_FOBSAFE_TITLE">
+            <Original>FOB SAFE</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_FOBSAFE_TEXT">
+            <Original>FOB %1 is no longer under threat.</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_FOBATTACKED_TITLE">
+            <Original>FOB ATTACKED</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_FOBATTACKED_TEXT">
+            <Original>FOB %1 is under attack!</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_FOBLOST_TITLE">
+            <Original>FOB DESTROYED</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_FOBLOST_TEXT">
+            <Original>FOB %1 has been destroyed!</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_BATTLEGROUP_TITLE">
+            <Original>HOSTILE FORCES INCOMING</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_BATTLEGROUP_TEXT">
+            <Original>Hostile forces spotted near %1.</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_INTEL_TITLE">
+            <Original>NEW INTELLIGENCE</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_FOB_TEXT">
+            <Original>Hostile FOB near %1.</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_PRISONER_TEXT">
+            <Original>We have interrogated a prisoner.</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_DOCUMENT_TEXT">
+            <Original>We have found secret documents.</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_SECONDARY_TITLE">
+            <Original>SECONDARY OBJECTIVE</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_SECONDARY_TEXT">
+            <Original>Hostile FOB destroyed.</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_REINFORCEMENTS_TITLE">
+            <Original>HOSTILE REINFORCEMENTS</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_REINFORCEMENTS_TEXT">
+            <Original>Hostile forces reinforcing %1.</Original>
+        </Key>
+        <Key ID="STR_VICTORY_TITLE">
+            <Original>VICTORY</Original>
+        </Key>
+        <Key ID="STR_VICTORY_TEXT">
+            <Original>You have Liberated the region from the enemy oppression!</Original>
+        </Key>
+        <Key ID="STR_PARAMS_MISSIONOPTIONS">
+            <Original>== MISSION OPTIONS ==</Original>
+        </Key>
+        <Key ID="STR_PARAMS_TECHNICALOPTIONS">
+            <Original>== TECHNICAL OPTIONS ==</Original>
+        </Key>
+        <Key ID="STR_PARAMS_DAYDURATION">
+            <Original>Day duration (hours):</Original>
+        </Key>
+        <Key ID="STR_PARAMS_DIFFICULTY">
+            <Original>Difficulty:</Original>
+        </Key>
+        <Key ID="STR_PARAMS_DIFFICULTY1">
+            <Original>Tourist</Original>
+        </Key>
+        <Key ID="STR_PARAMS_DIFFICULTY2">
+            <Original>Easy</Original>
+        </Key>
+        <Key ID="STR_PARAMS_DIFFICULTY3">
+            <Original>Normal</Original>
+        </Key>
+        <Key ID="STR_PARAMS_DIFFICULTY4">
+            <Original>Moderate</Original>
+        </Key>
+        <Key ID="STR_PARAMS_DIFFICULTY5">
+            <Original>Hard</Original>
+        </Key>
+        <Key ID="STR_PARAMS_DIFFICULTY6">
+            <Original>Extreme</Original>
+        </Key>
+        <Key ID="STR_PARAMS_DIFFICULTY7">
+            <Original>Ludicrous</Original>
+        </Key>
+        <Key ID="STR_PARAMS_DIFFICULTY8">
+            <Original>Oh god oh god we're all gonna die</Original>
+        </Key>
+        <Key ID="STR_PARAMS_RESOURCESMULTIPLIER">
+            <Original>Resources multiplier:</Original>
+        </Key>
+        <Key ID="STR_PARAMS_INTRO">
+            <Original>Introduction:</Original>
+        </Key>
+        <Key ID="STR_PARAMS_DEPLOYMENTCAMERA">
+            <Original>Deployment Cinematic:</Original>
+        </Key>
+        <Key ID="STR_PARAMS_ENABLED">
+            <Original>Enabled</Original>
+        </Key>
+        <Key ID="STR_PARAMS_DISABLED">
+            <Original>Disabled</Original>
+        </Key>
+        <Key ID="STR_PARAMS_FIRSTFOB">
+            <Original>Start the campaign with the first FOB already built:</Original>
+        </Key>
+        <Key ID="STR_YES">
+            <Original>Yes</Original>
+        </Key>
+        <Key ID="STR_NO">
+            <Original>No</Original>
+        </Key>
+        <Key ID="STR_PARAMS_UNITCAP">
+            <Original>Maximum amount of AI units:</Original>
+        </Key>
+        <Key ID="STR_PARAMS_UNITCAP1">
+            <Original>50% - Recommended for local hosting</Original>
+        </Key>
+        <Key ID="STR_PARAMS_UNITCAP2">
+            <Original>75% - Dedicated server recommended</Original>
+        </Key>
+        <Key ID="STR_PARAMS_UNITCAP3">
+            <Original>100% - Dedicated server recommended</Original>
+        </Key>
+        <Key ID="STR_PARAMS_UNITCAP4">
+            <Original>125% - Dedicated server with headless client recommended</Original>
+        </Key>
+        <Key ID="STR_PARAMS_UNITCAP5">
+            <Original>150% - Dedicated server with multiple headless clients recommended</Original>
+        </Key>
+        <Key ID="STR_PARAMS_UNITCAP6">
+            <Original>200% - Dedicated server with multiple headless clients recommended</Original>
+        </Key>
+        <Key ID="STR_PARAMS_CIVILIANS">
+            <Original>Civilian activity:</Original>
+        </Key>
+        <Key ID="STR_PARAMS_CIVILIANS1">
+            <Original>None</Original>
+        </Key>
+        <Key ID="STR_PARAMS_CIVILIANS2">
+            <Original>Reduced</Original>
+        </Key>
+        <Key ID="STR_PARAMS_CIVILIANS3">
+            <Original>Normal</Original>
+        </Key>
+        <Key ID="STR_PARAMS_CIVILIANS4">
+            <Original>Increased</Original>
+        </Key>
+        <Key ID="STR_FRIENDLY_FIRE">
+            <Original>Warning: friendly fire</Original>
+        </Key>
+        <Key ID="STR_PARAM_TEAMKILL_PENALTY">
+            <Original>Teamkill penalty:</Original>
+        </Key>
+        <Key ID="STR_PARAM_ADAPT_TO_PLAYERCOUNT">
+            <Original>Hostile presence adapts to player count:</Original>
+        </Key>
+        <Key ID="STR_PARAM_PASSIVE_INCOME">
+            <Original>Replace ammo boxes spawns with passive income:</Original>
+        </Key>
+        <Key ID="STR_BUILD1">
+            <Original>Infantry Units</Original>
+        </Key>
+        <Key ID="STR_BUILD2">
+            <Original>Light Vehicles</Original>
+        </Key>
+        <Key ID="STR_BUILD3">
+            <Original>Armored Vehicles</Original>
+        </Key>
+        <Key ID="STR_BUILD4">
+            <Original>Air Vehicles</Original>
+        </Key>
+        <Key ID="STR_BUILD5">
+            <Original>Static Defenses</Original>
+        </Key>
+        <Key ID="STR_BUILD6">
+            <Original>Buildings</Original>
+        </Key>
+        <Key ID="STR_BUILD7">
+            <Original>Logistics</Original>
+        </Key>
+        <Key ID="STR_BUILD8">
+            <Original>Infantry squads</Original>
+        </Key>
+        <Key ID="STR_ACTIVE_SECTORS">
+            <Original>Active Sectors:</Original>
+        </Key>
+        <Key ID="STR_OVERLOAD_HINT">
+            <Original>The unitcap setting has been exceeded and further sector activation is temporarily halted. You can now see the list of currently active sectors where you shall concentrate your efforts.</Original>
+        </Key>
+        <Key ID="STR_VEHICLE_LOCKED">
+            <Original>LOCKED BY</Original>
+        </Key>
+        <Key ID="STR_VEHICLE_UNLOCKED">
+            <Original>UNLOCKED BY</Original>
+        </Key>
+        <Key ID="STR_SQUAD_MANAGEMENT">
+            <Original>SQUAD MANAGEMENT</Original>
+        </Key>
+        <Key ID="STR_DEPLOY_ON_MEMBER">
+            <Original>Replace</Original>
+        </Key>
+        <Key ID="STR_DEPLOY_ON_MEMBER_TOOLTIP">
+            <Original>You will deploy on the selected squad member and replace them while keeping your current loadout.</Original>
+        </Key>
+        <Key ID="STR_REMOVE_MEMBER">
+            <Original>Remove</Original>
+        </Key>
+        <Key ID="STR_REMOVE_MEMBER_TOOLTIP">
+            <Original>The selected squad member will be deleted.</Original>
+        </Key>
+        <Key ID="STR_RESUPPLY">
+            <Original>Resupply</Original>
+        </Key>
+        <Key ID="STR_RESUPPLY_TOOLTIP">
+            <Original>If the selected squad member is close enough from a resupply point (mobile spawn or FOB) they will get a brand new, full loadout.</Original>
+        </Key>
+        <Key ID="STR_CONFIRM">
+            <Original>Confirm</Original>
+        </Key>
+        <Key ID="STR_HEALTH">
+            <Original>Health:</Original>
+        </Key>
+        <Key ID="STR_DISTANCE">
+            <Original>Distance:</Original>
+        </Key>
+        <Key ID="STR_PRIMARY_WEAPON">
+            <Original>Primary</Original>
+        </Key>
+        <Key ID="STR_SECONDARY_WEAPON">
+            <Original>Secondary</Original>
+        </Key>
+        <Key ID="STR_NONE">
+            <Original>None</Original>
+        </Key>
+        <Key ID="STR_DRIVER">
+            <Original>Driver</Original>
+        </Key>
+        <Key ID="STR_GUNNER">
+            <Original>Gunner</Original>
+        </Key>
+        <Key ID="STR_COMMANDER">
+            <Original>Commander</Original>
+        </Key>
+        <Key ID="STR_PASSENGER">
+            <Original>Passenger</Original>
+        </Key>
+        <Key ID="STR_SQUAD_DEPLOY">
+            <Original>Squad deploy</Original>
+        </Key>
+        <Key ID="STR_REMOVE_OK">
+            <Original>You have deleted the selected squad member.</Original>
+        </Key>
+        <Key ID="STR_RESUPPLY_OK">
+            <Original>The selected squad member has been resupplied.</Original>
+        </Key>
+        <Key ID="STR_RESUPPLY_KO">
+            <Original>The selected squad member isn't close enough to an FOB or mobile spawn.</Original>
+        </Key>
+        <Key ID="STR_PERMISSIONS_TITLE">
+            <Original>PERMISSIONS MANAGEMENT</Original>
+        </Key>
+        <Key ID="STR_PERMISSIONS_CONSTRUCTION">
+            <Original>Construction</Original>
+        </Key>
+        <Key ID="STR_PERMISSIONS_RECYCLING">
+            <Original>Recycling</Original>
+        </Key>
+        <Key ID="STR_PERMISSIONS_MISC">
+            <Original>Others</Original>
+        </Key>
+        <Key ID="STR_PERMISSIONS_ALL">
+            <Original>All</Original>
+        </Key>
+        <Key ID="STR_PERMISSIONS_NONE">
+            <Original>None</Original>
+        </Key>
+        <Key ID="STR_PERMISSIONS_TOOLTIP_CONSTRUCTION">
+            <Original>Allows the player to use the BUILD menu.</Original>
+        </Key>
+        <Key ID="STR_PERMISSIONS_TOOLTIP_RECYCLING">
+            <Original>Allows the player to use the RECYCLE action.</Original>
+        </Key>
+        <Key ID="STR_PERMISSIONS_TOOLTIP_MISC">
+            <Original>Allows the player to use other actions: unflip, ammo box manipulation, prisoners capture, etc.</Original>
+        </Key>
+        <Key ID="STR_PERMISSIONS_TOOLTIP_ALL">
+            <Original>Gives all permissions to the player.</Original>
+        </Key>
+        <Key ID="STR_PERMISSIONS_TOOLTIP_NONE">
+            <Original>Removes all permissions from the player.</Original>
+        </Key>
+        <Key ID="STR_SAVE_CHANGES">
+            <Original>Save Changes</Original>
+        </Key>
+        <Key ID="STR_PERMISSIONS_PARAM">
+            <Original>Permissions Management</Original>
+        </Key>
+        <Key ID="STR_PERMISSION_WARNING">
+            <Original>No permissions have been set. The commander must setup the permissions to allow player actions and vehicle usage. Alternatively, the permission system can be disabled from the mission options.</Original>
+        </Key>
+        <Key ID="STR_EDIT_LOADOUT">
+            <Original>Edit loadout</Original>
+        </Key>
+        <Key ID="STR_LOAD_LOADOUT">
+            <Original>Take loadout</Original>
+        </Key>
+        <Key ID="STR_DEFAULT">
+            <Original>Default</Original>
+        </Key>
+        <Key ID="STR_FOB_REPACKAGE_TITLE">
+            <Original>REPACKAGE FOB</Original>
+        </Key>
+        <Key ID="STR_FOB_REPACKAGE_CONFIRM">
+            <Original>Are you sure you want to repackage this FOB?</Original>
+        </Key>
+        <Key ID="STR_FOB_REPACKAGE_HINT">
+            <Original>FOB repackaged.</Original>
+        </Key>
+        <Key ID="STR_DEPLOY_IN_PROGRESS">
+            <Original>Deployment in progress...</Original>
+        </Key>
+        <Key ID="STR_BUILD_ENEMIES_NEARBY">
+            <Original>Cannot build: hostile forces nearby.</Original>
+        </Key>
+        <Key ID="STR_CLEANUP_PARAM">
+            <Original>Cleanup abandoned vehicles outside of FOB:</Original>
+        </Key>
+        <Key ID="STR_CLEANUP_PARAM1">
+            <Original>Enabled - 1 hour delay</Original>
+        </Key>
+        <Key ID="STR_CLEANUP_PARAM2">
+            <Original>Enabled - 2 hours delay</Original>
+        </Key>
+        <Key ID="STR_CLEANUP_PARAM3">
+            <Original>Enabled - 4 hours delay</Original>
+        </Key>
+        <Key ID="STR_COMMANDER_NOT_AUTHORIZED">
+            <Original>You are not authorized to use the commander slot on this server.</Original>
+        </Key>
+        <Key ID="STR_LOADOUT">
+            <Original>Loadout:</Original>
+        </Key>
+        <Key ID="STR_SPAWN_POINT">
+            <Original>Deployment location:</Original>
+        </Key>
+        <Key ID="STR_AGGRESSIVITY_PARAM">
+            <Original>Enemy aggressivity:</Original>
+        </Key>
+        <Key ID="STR_AGGRESSIVITY_PARAM0">
+            <Original>Anemic</Original>
+        </Key>
+        <Key ID="STR_AGGRESSIVITY_PARAM1">
+            <Original>Weak</Original>
+        </Key>
+        <Key ID="STR_AGGRESSIVITY_PARAM2">
+            <Original>Normal</Original>
+        </Key>
+        <Key ID="STR_AGGRESSIVITY_PARAM3">
+            <Original>Strong</Original>
+        </Key>
+        <Key ID="STR_AGGRESSIVITY_PARAM4">
+            <Original>Extreme</Original>
+        </Key>
+        <Key ID="STR_AMMO_BOUNTIES">
+            <Original>Ammunition bounties:</Original>
+        </Key>
+        <Key ID="STR_BOUNTY_MESSAGE">
+            <Original>Bounty of %1 for a %2 destroyed by %3.</Original>
+        </Key>
+        <Key ID="STR_SECONDARY_OBJECTIVES_TITLE">
+            <Original>SECONDARY OBJECTIVES</Original>
+        </Key>
+        <Key ID="STR_SECONDARY_OBJECTIVES_START">
+            <Original>Start</Original>
+        </Key>
+        <Key ID="STR_SECONDARY_INTEL">
+            <Original>Current intel: %1</Original>
+        </Key>
+        <Key ID="STR_SECONDARY_NOT_ENOUGH_INTEL">
+            <Original>Insufficient Intel Points.</Original>
+        </Key>
+        <Key ID="STR_SECONDARY_IN_PROGRESS">
+            <Original>Secondary Objective already in progress!</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_INCOMING_TEXT">
+            <Original>Hostile forces are heading towards %1.</Original>
+        </Key>
+        <Key ID="STR_SECONDARY_CSAT_CONVOY">
+            <Original>Enemy Convoy</Original>
+        </Key>
+        <Key ID="STR_SECONDARY_CSAT_CONVOY_WP">
+            <Original>Waypoint</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_CONVOY_DESTROYED_TEXT">
+            <Original>Enemy Convoy neutralized.</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_CONVOY_SPOTTED_TEXT">
+            <Original>Enemy Convoy near %1.</Original>
+        </Key>
+        <Key ID="STR_SECONDARY_MISSION0">
+            <Original>FOB Hunting</Original>
+        </Key>
+        <Key ID="STR_SECONDARY_BRIEFING0">
+            <Original>
+            &lt;t size='1.3' color='#ffa000'&gt;FOB HUNTING&lt;/t&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;t size='1'&gt;
+            Hostile forces use an array of small logistic bases situated behind the front lines. Destroying those assets would greatly disrupt the enemy supply lines and impair their capacity to react to our actions.&lt;/t&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;t size='1'&gt;
+            Your mission is to destroy all supply assets (trucks and containers) at the objective by any means at your disposal. Unfortunately our intelligence is not able to provide you with a precise position for the base, you will have to locate the objective in the red zone on your map.&lt;/t&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;t size='1.15' color='#00a0ff'&gt;Cost: 15&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+            &lt;br/&gt;
+            &lt;t size='1.15' color='#ffa000'&gt;Reward: Enemy alert level reduced by 40%&lt;/t&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
+            </Original>
+        </Key>
+        <Key ID="STR_SECONDARY_MISSION1">
+            <Original>Convoy Hijack</Original>
+        </Key>
+        <Key ID="STR_SECONDARY_BRIEFING1">
+            <Original>
+            &lt;t size='1.3' color='#ffa000'&gt;CONVOY HIJACK&lt;/t&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;t size='1'&gt;
+            Enemy forces use road convoys to resupply their defensive positions. Intercepting one of these convoys would effectively disrupt their supply lines and we could use the occasion to retrieve a hefty amount of ammunition.&lt;/t&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;t size='1'&gt;
+            Your mission is to stop the enemy convoy by any means necessary. You can destroy it, or hijack it to retrieve all the ammunition you can grab. The target will be spotted on your map.&lt;/t&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;t size='1.15' color='#00a0ff'&gt;Cost: 10&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+            &lt;br/&gt;
+            &lt;t size='1.15' color='#ffa000'&gt;Reward: Enemy Alert level reduced by 15%&lt;/t&gt;
+            &lt;br/&gt;
+            &lt;t size='1.15' color='#ffa000'&gt;Bonus: All the ammunition you can retrieve.&lt;/t&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;t size='10'&gt;&lt;img image='res\secondary\convoy_obj.jpg'/&gt;&lt;/t&gt;
+            </Original>
+        </Key>
+        <!-- Added in v0.922 -->
+        <Key ID="STR_PARAM_BLUFOR_DEFENDERS">
+            <Original>Friendly defenders in owned sectors:</Original>
+        </Key>
+        <Key ID="STR_PARAM_AUTODANGER">
+            <Original>Auto-danger behaviour on friendly forces:</Original>
+        </Key>
+        <Key ID="STR_PARAM_FOBS_COUNT">
+            <Original>Maximum number of FOBs allowed:</Original>
+        </Key>
+        <Key ID="STR_HINT_FOBS_EXCEEDED">
+            <Original>You are not allowed to deploy more than %1 FOBs at the same time.</Original>
+        </Key>
+        <Key ID="STR_HINT_LOADOUT_LOADED">
+            <Original>%1 loadout successfully loaded.</Original>
+        </Key>
+        <Key ID="STR_SECONDARY_MISSION2">
+            <Original>Search and Rescue</Original>
+        </Key>
+        <Key ID="STR_SECONDARY_BRIEFING2">
+            <Original>
+            &lt;t size='1.3' color='#ffa000'&gt;SEARCH AND RESCUE&lt;/t&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;t size='1'&gt;
+            We have lost contact with a recon helicopter on mission behind the enemy lines. We believe the chopper was shot down by hostile forces.&lt;/t&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;t size='1'&gt;
+            The helicopter may have crashlanded anywhere in a large zone around its last known position. Your mission is to retrieve the chopper crew and their precious intel. Hostile forces may have found them first, so you must be quick, careful, as well as ready to engage.&lt;/t&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;t size='1.15' color='#00a0ff'&gt;Cost: 5&lt;img image='\A3\Ui_f\data\GUI\Cfg\Ranks\general_gs.paa'/&gt;&lt;/t&gt;
+            &lt;br/&gt;
+            &lt;t size='1.15' color='#ffa000'&gt;Reward: 20 Intel points (10 for each crew alive).&lt;/t&gt;
+            &lt;br/&gt;&lt;br/&gt;
+            &lt;t size='10'&gt;&lt;img image='res\secondary\fob_obj.jpg'/&gt;&lt;/t&gt;
+            </Original>
+        </Key>
+        <!-- Added in v0.924 -->
+        <Key ID="STR_CIV_PENALTIES">
+            <Original>Penalty for killing civilians:</Original>
+        </Key>
+        <Key ID="STR_CIV_PENALTY_MESSAGE">
+            <Original>Penalty of %1 for killing of civilian named %2 by %3.</Original>
+        </Key>
+        <Key ID="STR_PARAM_SQUAD_SIZE">
+            <Original>AI recruitment limit per squad:</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_SAR_STARTED">
+            <Original>Crashed helicopter near %1.</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_SAR_FAILED">
+            <Original>SAR mission failed, both crew are KIA.</Original>
+        </Key>
+        <Key ID="STR_NOTIFICATION_SAR_SUCCESS">
+            <Original>SAR mission succeeded.</Original>
+        </Key>
+    </Package>
 </Project>

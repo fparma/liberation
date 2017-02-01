@@ -11,12 +11,12 @@ enableSaving [ false, false ];
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\init_shared.sqf";
 
 if (isServer) then {
-	[] call compileFinal preprocessFileLineNumbers "scripts\server\init_server.sqf";
+  [] call compileFinal preprocessFileLineNumbers "scripts\server\init_server.sqf";
 };
 
 if (!isDedicated && hasInterface) then {
-	waitUntil { alive player };
-	[] call compileFinal preprocessFileLineNumbers "scripts\client\init_client.sqf";
+  waitUntil { alive player };
+  [] call compileFinal preprocessFileLineNumbers "scripts\client\init_client.sqf";
 };
 
 disableRemoteSensors true;
