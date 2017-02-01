@@ -14,7 +14,7 @@ _newvehicle addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
 { _x addMPEventHandler ["MPKilled", {_this spawn kill_manager}]; } foreach (crew _newvehicle);
 
 while { count units _para_group < 8 } do {
-	opfor_paratrooper createUnit [ getmarkerpos _spawnsector, _para_group, 'this addMPEventHandler ["MPKilled", {_this spawn kill_manager}]'];
+  opfor_paratrooper createUnit [ getmarkerpos _spawnsector, _para_group, 'this addMPEventHandler ["MPKilled", {_this spawn kill_manager}]'];
 };
 
 { _x moveInCargo _newvehicle } foreach (units _para_group);
@@ -65,15 +65,15 @@ _pilot_group setCurrentWaypoint [ _para_group, 1];
 _newvehicle flyInHeight 100;
 
 waitUntil { sleep 1;
-	!(alive _newvehicle) || (damage _newvehicle > 0.2 ) || (_newvehicle distance _targetpos < 400 )
+  !(alive _newvehicle) || (damage _newvehicle > 0.2 ) || (_newvehicle distance _targetpos < 400 )
 };
 
 _newvehicle flyInHeight 100;
 
 {
-	unassignVehicle _x;
-	moveout _x;
-	sleep 0.5;
+  unassignVehicle _x;
+  moveout _x;
+  sleep 0.5;
 } foreach (units _para_group);
 
 _newvehicle flyInHeight 100;

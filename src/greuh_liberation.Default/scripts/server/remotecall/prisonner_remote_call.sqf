@@ -5,11 +5,11 @@ _resistance_prisonner_intel_yield = 3;
 _csat_prisonner_intel_yield = 6;
 
 if ( isServer ) then {
-	_yield = _csat_prisonner_intel_yield;
-	if ( ( typeof _unit ) in all_resistance_troops ) then {
-		_yield = _resistance_prisonner_intel_yield;
-	};
-	resources_intel = resources_intel + ( _yield + (round (random _yield)));
+  _yield = _csat_prisonner_intel_yield;
+  if ( ( typeof _unit ) in all_resistance_troops ) then {
+    _yield = _resistance_prisonner_intel_yield;
+  };
+  resources_intel = resources_intel + ( _yield + (round (random _yield)));
 
-	[ [ 0 ] , "remote_call_intel" ] call BIS_fnc_MP;
+  [ [ 0 ] , "remote_call_intel" ] call BIS_fnc_MP;
 };

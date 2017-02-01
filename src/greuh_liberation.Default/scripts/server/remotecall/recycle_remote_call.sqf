@@ -7,6 +7,6 @@ if ( !(alive _object_recycled) ) exitWith {};
 
 deleteVehicle _object_recycled;
 if ( _price > 0 ) then {
-	resources_ammo = resources_ammo + _price;
+  resources_ammo = resources_ammo + _price;
 };
 please_recalculate = true;

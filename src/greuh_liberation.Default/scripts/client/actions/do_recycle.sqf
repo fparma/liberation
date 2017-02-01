@@ -14,11 +14,11 @@ ctrlSetText [ 132, format [ "%1", round ((_objectinfo select 2) * GRLIB_recyclin
 ctrlSetText [ 133, format [ "%1", round ( _objectinfo select 3) ] ];
 
 while { dialog && (alive player) && dorecycle == 0 } do {
-	sleep 0.1;
+  sleep 0.1;
 };
 
 if ( dialog ) then { closeDialog 0 };
 
 if ( dorecycle == 1 && !(isnull _vehtorecycle) && alive _vehtorecycle) then {
-	[ [ _vehtorecycle, round ((_objectinfo select 2) * GRLIB_recycling_percentage) ] , "recycle_remote_call" ] call BIS_fnc_MP;
+  [ [ _vehtorecycle, round ((_objectinfo select 2) * GRLIB_recycling_percentage) ] , "recycle_remote_call" ] call BIS_fnc_MP;
 };

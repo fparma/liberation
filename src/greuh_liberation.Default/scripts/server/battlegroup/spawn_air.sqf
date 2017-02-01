@@ -8,16 +8,16 @@ _air_grp = createGroup GRLIB_side_enemy;
 
 for [ {_idx=0},{_idx < _planes_number},{_idx=_idx+1}] do {
 
-	_air_spawnpos = markerpos _air_spawnpoint;
-	_air_spawnpos = [(((_air_spawnpos select 0) + 500) - random 1000),(((_air_spawnpos select 1) + 500) - random 1000),0];
+  _air_spawnpos = markerpos _air_spawnpoint;
+  _air_spawnpos = [(((_air_spawnpos select 0) + 500) - random 1000),(((_air_spawnpos select 1) + 500) - random 1000),0];
 
-	_newvehicle = createVehicle [_plane_type, _air_spawnpos, [], 0, "FLY"];
-	_newvehicle flyInHeight (120 + (random 180));
-	createVehicleCrew _newvehicle;
-	_newvehicle addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
-	{ _x addMPEventHandler ["MPKilled", {_this spawn kill_manager}]; } foreach (crew _newvehicle);
+  _newvehicle = createVehicle [_plane_type, _air_spawnpos, [], 0, "FLY"];
+  _newvehicle flyInHeight (120 + (random 180));
+  createVehicleCrew _newvehicle;
+  _newvehicle addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
+  { _x addMPEventHandler ["MPKilled", {_this spawn kill_manager}]; } foreach (crew _newvehicle);
 
-	(crew _newvehicle) joinSilent _air_grp;
+  (crew _newvehicle) joinSilent _air_grp;
 };
 
 while {(count (waypoints _air_grp)) != 0} do {deleteWaypoint ((waypoints _air_grp) select 0);};

@@ -11,7 +11,7 @@ _countopfor_ownership = [_thatpos, _localsize, GRLIB_side_enemy ] call F_getUnit
 
 _blufor_ratio = 0;
 if ( _countblufor_ownership + _countopfor_ownership != 0 ) then {
-	_blufor_ratio = _countblufor_ownership / ( _countblufor_ownership + _countopfor_ownership);
+  _blufor_ratio = _countblufor_ownership / ( _countblufor_ownership + _countopfor_ownership);
 };
 
 if ( _countblufor_ownership == 0 && _countopfor_ownership <= _cap_thresold_count ) then { _sectorside = GRLIB_side_civilian; };

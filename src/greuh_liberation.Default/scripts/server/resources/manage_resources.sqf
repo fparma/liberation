@@ -8,57 +8,57 @@ resources_intel = saved_intel_res;
 
 while { GRLIB_endgame == 0 } do {
 
-	_base_tick_period = 4800;
+  _base_tick_period = 4800;
 
-	if ( count allPlayers > 0 ) then {
+  if ( count allPlayers > 0 ) then {
 
-		_blufor_mil_sectors = [];
-		{
-			if ( _x in sectors_military ) then {
-				_blufor_mil_sectors pushback _x;
-				_base_tick_period = _base_tick_period * 0.82;
-			};
-		} foreach blufor_sectors;
+    _blufor_mil_sectors = [];
+    {
+      if ( _x in sectors_military ) then {
+        _blufor_mil_sectors pushback _x;
+        _base_tick_period = _base_tick_period * 0.82;
+      };
+    } foreach blufor_sectors;
 
-		_base_tick_period = _base_tick_period / GRLIB_resources_multiplier;
+    _base_tick_period = _base_tick_period / GRLIB_resources_multiplier;
 
-		if ( _base_tick_period < 300 ) then { _base_tick_period = 300 };
+    if ( _base_tick_period < 300 ) then { _base_tick_period = 300 };
 
-		sleep _base_tick_period;
+    sleep _base_tick_period;
 
-		if ( count _blufor_mil_sectors > 0 ) then {
+    if ( count _blufor_mil_sectors > 0 ) then {
 
-			if ( GRLIB_passive_income ) then {
+      if ( GRLIB_passive_income ) then {
 
-				_ammo_increase = round ( 50 + (random 25));
-				resources_ammo = resources_ammo + _ammo_increase;
+        _ammo_increase = round ( 50 + (random 25));
+        resources_ammo = resources_ammo + _ammo_increase;
 
-			} else {
+      } else {
 
-				if ( ( { typeof _x == ammobox_b_typename } count vehicles ) <= ( ceil ( ( count _blufor_mil_sectors ) * 1.3 ) ) ) then {
+        if ( ( { typeof _x == ammobox_b_typename } count vehicles ) <= ( ceil ( ( count _blufor_mil_sectors ) * 1.3 ) ) ) then {
 
-					_spawnsector = ( _blufor_mil_sectors call BIS_fnc_selectRandom );
-					_spawnpos = zeropos;
-					while { _spawnpos distance zeropos < 1000 } do {
-						_spawnpos = ( [ ( markerpos _spawnsector), random 50, random 360 ] call BIS_fnc_relPos ) findEmptyPosition [ 10, 100, 'B_Heli_Transport_01_F' ];
-						if ( count _spawnpos == 0 ) then { _spawnpos = zeropos; };
-					};
+          _spawnsector = ( _blufor_mil_sectors call BIS_fnc_selectRandom );
+          _spawnpos = zeropos;
+          while { _spawnpos distance zeropos < 1000 } do {
+            _spawnpos = ( [ ( markerpos _spawnsector), random 50, random 360 ] call BIS_fnc_relPos ) findEmptyPosition [ 10, 100, 'B_Heli_Transport_01_F' ];
+            if ( count _spawnpos == 0 ) then { _spawnpos = zeropos; };
+          };
 
-					_newbox = ammobox_b_typename createVehicle _spawnpos;
-					_newbox setpos _spawnpos;
-					_newbox setdir (random 360);
-					clearWeaponCargoGlobal _newbox;
-					clearMagazineCargoGlobal _newbox;
-					clearItemCargoGlobal _newbox;
-					clearBackpackCargoGlobal _newbox;
-					_newbox addMPEventHandler ['MPKilled', {_this spawn kill_manager}];
+          _newbox = ammobox_b_typename createVehicle _spawnpos;
+          _newbox setpos _spawnpos;
+          _newbox setdir (random 360);
+          clearWeaponCargoGlobal _newbox;
+          clearMagazineCargoGlobal _newbox;
+          clearItemCargoGlobal _newbox;
+          clearBackpackCargoGlobal _newbox;
+          _newbox addMPEventHandler ['MPKilled', {_this spawn kill_manager}];
 
-					[ [_newbox, 500 ] , "F_setMass" ] call BIS_fnc_MP;
+          [ [_newbox, 500 ] , "F_setMass" ] call BIS_fnc_MP;
 
-				};
-			};
-		};
-	};
+        };
+      };
+    };
+  };
 
-	sleep 300;
+  sleep 300;
 };

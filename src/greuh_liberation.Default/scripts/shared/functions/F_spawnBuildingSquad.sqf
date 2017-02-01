@@ -7,9 +7,9 @@ _everythingspawned = [];
 
 _infsquad_classnames = [];
 if ( _infsquad == "militia" ) then {
-	_infsquad_classnames = militia_squad;
+  _infsquad_classnames = militia_squad;
 } else {
-	_infsquad_classnames = ([] call F_getAdaptiveSquadComp);
+  _infsquad_classnames = ([] call F_getAdaptiveSquadComp);
 };
 
 // diag_log format [ "Spawning building squad Checkpoint A at %1", time ];
@@ -23,10 +23,10 @@ while { (count _squadtospawnnn) < _building_ai_max } do { _squadtospawnnn pushba
 _position_indexes = [];
 _position_count = count _buildingpositions;
 while { count _position_indexes < count _squadtospawnnn } do {
-	_nextposit = floor (random _position_count);
-	if ( !(_nextposit in _position_indexes) ) then {
-		_position_indexes pushback _nextposit;
-	}
+  _nextposit = floor (random _position_count);
+  if ( !(_nextposit in _position_indexes) ) then {
+    _position_indexes pushback _nextposit;
+  }
 };
 
 // diag_log format [ "Spawning building squad Checkpoint C at %1", time ];
@@ -34,25 +34,25 @@ while { count _position_indexes < count _squadtospawnnn } do {
 _grp = createGroup GRLIB_side_enemy;
 _idxposit = 0;
 {
-	_x createUnit [ _sectorpos, _grp ];
-	_nextunit = (units _grp) select ((count (units _grp)) -1);
-	_nextunit addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
-	_nextunit setpos (_buildingpositions select (_position_indexes select _idxposit));
-	_nextunit setdir (random 360);
-	[ _nextunit, _sector ] spawn building_defence_ai;
+  _x createUnit [ _sectorpos, _grp ];
+  _nextunit = (units _grp) select ((count (units _grp)) -1);
+  _nextunit addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
+  _nextunit setpos (_buildingpositions select (_position_indexes select _idxposit));
+  _nextunit setdir (random 360);
+  [ _nextunit, _sector ] spawn building_defence_ai;
 
-	_idxposit = _idxposit + 1;
+  _idxposit = _idxposit + 1;
 
-	if ( count units _grp > 10 ) then {
-		_everythingspawned = _everythingspawned + (units _grp);
-		_grp = createGroup GRLIB_side_enemy;
-	};
+  if ( count units _grp > 10 ) then {
+    _everythingspawned = _everythingspawned + (units _grp);
+    _grp = createGroup GRLIB_side_enemy;
+  };
 } foreach _squadtospawnnn;
 
 // diag_log format [ "Spawning building squad Checkpoint D at %1", time ];
 
 if ( !(isNull _grp)) then {
-	_everythingspawned = _everythingspawned + (units _grp);
+  _everythingspawned = _everythingspawned + (units _grp);
 };
 
 // diag_log format [ "Done Spawning building squad at %1", time ];
