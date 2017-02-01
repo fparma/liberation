@@ -7,11 +7,8 @@ _savedhuron = objNull;
 
 while { true } do {
 
-	{
-		if ( typeof _x == huron_typename ) then {
-			_savedhuron = _x;
-		};
-	} foreach vehicles;
+	// Check if the Helicopter is loaded from a save.
+	{if ( typeof _x == huron_typename ) then {_savedhuron = _x;};} foreach vehicles;
 
 	if ( firstloop && !isNull _savedhuron ) then {
 		HELO_TRANSPORT = _savedhuron;
@@ -32,5 +29,6 @@ while { true } do {
 	if ( alive HELO_TRANSPORT ) then {
 		waitUntil {sleep 1;!alive HELO_TRANSPORT;};
 		sleep 15;
+		deleteVehicle HELO_TRANSPORT;
 	};
 };
