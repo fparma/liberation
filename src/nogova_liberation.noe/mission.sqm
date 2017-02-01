@@ -640,7 +640,7 @@ class Mission
 		{
 			dataType="Marker";
 			position[]={10872.745,127.46079,3399.1482};
-			name="huronmarker";
+			name="HELO_MAPMARKER";
 			text="Spartan 01";
 			type="b_air";
 			id=18;
