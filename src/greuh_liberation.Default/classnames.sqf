@@ -68,17 +68,10 @@ static_vehicles = [
 ];
 
 buildings = [
-	["Land_CncBarrierMedium4_F",0,0,0],
-	["Land_CncWall4_F",0,0,0],
-	["Land_CncShelter_F",0,0,0],
-	["Land_HBarrier_5_F",0,0,0],
-	["Land_HBarrierBig_F",0,0,0],
-	["Land_HBarrierWall6_F",0,0,0],
-	["Land_HBarrierWall_corner_F",0,0,0],
-	["Land_HBarrierTower_F",0,0,0],
-	["Land_BagBunker_Large_F",0,0,0],
-	["Land_BagBunker_Small_F",0,0,0],
-	["Land_BagBunker_Tower_F",0,0,0],
+	<#include classnames/objects/concrete_barrier.h>
+	<#include classnames/objects/hbarrier_green.h>
+	<#include classnames/objects/bunkers_green.h>
+  <#include classnames/objects/sandbags_green.h>
 	["Land_PortableLight_single_F",0,0,0],
 	["CamoNet_BLUFOR_open_F",0,0,0],
 	["CamoNet_BLUFOR_big_F",0,0,0],
@@ -87,7 +80,6 @@ buildings = [
 	["Flag_NATO_F",0,0,0],
 	["Land_HelipadSquare_F",0,0,0],
 	["Land_Razorwire_F",0,0,0],
-	["Land_BagFence_Round_F",0,0,0],
 	["Land_ToolTrolley_02_F",0,0,0],
 	["Land_WeldingTrolley_01_F",0,0,0],
 	["Land_GasTank_02_F",0,0,0],
@@ -110,6 +102,7 @@ buildings = [
 
 support_vehicles = [
 	[Arsenal_typename,10,0,0],
+  <#include classnames/support/ammobox_nato_pacific.h>
 	[Respawn_truck_typename,20,0,5],
 	[FOB_box_typename,30,50,0],
 	[FOB_truck_typename,30,50,5],
@@ -119,8 +112,8 @@ support_vehicles = [
 	["B_Slingload_01_Repair_F",5,0,0],
 	["B_Slingload_01_Fuel_F",5,0,0],
 	["B_Slingload_01_Ammo_F",5,0,0],
-	[<#MAIN_AMMOBOX_BLUFOR>,0,154,0],
-	[<#MAIN_AMMOBOX_OPFOR>,0,115,0]
+	[<#MAIN_AMMOBOX_BLUFOR>,0,15,0],
+	[<#MAIN_AMMOBOX_OPFOR>,0,15,0]
 ];
 
 

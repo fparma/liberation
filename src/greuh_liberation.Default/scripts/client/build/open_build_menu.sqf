@@ -57,7 +57,7 @@ while { dialog && alive player && (dobuild == 0 || buildtype == 1)} do {
           _entrytext = localize "STR_FOBBOX";
         };
         if ( _classnamevar == Arsenal_typename ) then {
-          _entrytext = localize "STR_ARSENAL_BOX";
+          _entrytext = "Arsenal Box";
         };
         if ( _classnamevar == Respawn_truck_typename ) then {
           _entrytext = localize "STR_RESPAWN_TRUCK";
