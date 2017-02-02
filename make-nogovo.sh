@@ -2,6 +2,7 @@
 
 # Settings
 MAKE_PBO=0              # Build a PBO if true. (Requires mikeros PBO tools)
+LINT_MISSION=1              # Lint the Mission Folder
 RENAME_MISSION_FILE=1   # Adds timestamp to the mission folder/pbo file
 RENAME_MISSION_TITLE=0  # Replaces <#DATETIME> with timestamp in mission name
 
@@ -44,6 +45,10 @@ fi
 if [ -d "${DST_MAIN}/meta" ]; then
   echo "Removing Meta Folder from Mission"
   rm -rf "${DST_MAIN}/meta"
+fi
+
+if [ $LINT_MISSION -eq 1 ]; then
+  makepbo -PQ "${DST_MAIN}"
 fi
 
 # Finish up by renaming the folder with a timestamp
