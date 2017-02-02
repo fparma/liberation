@@ -246,12 +246,12 @@ while { true } do {
         clearItemCargoGlobal _vehicle;
         clearBackpackCargoGlobal _vehicle;
 
-        if ( buildtype == 6 ) {
+        if ( buildtype == 6 ) then {
           // Buildtype 6 is Buildings.
           // Adds ACE Logistics Cargo/Drag/Carry Supports to building Objects.
           [_vehicle, true, 1] call ace_cargo_fnc_makeLoadable;
-          [_vehicle, true, [0,1,1], 0] call ace_dragging_fnc_setCarryable;
-          [_vehicle, true, [0,0,0], 0] call ace_dragging_fnc_setDraggable;
+          [_vehicle, true, [0,3,1], 0] call ace_dragging_fnc_setCarryable;
+          [_vehicle, true, [0,3,0], 0] call ace_dragging_fnc_setDraggable;
         };
 
         if ( buildtype == 6 || buildtype == 99 ) then {
