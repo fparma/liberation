@@ -41,5 +41,5 @@ while { true } do {
     };
   };
 
-  sleep 5.12;
+  sleep 6;
 };
