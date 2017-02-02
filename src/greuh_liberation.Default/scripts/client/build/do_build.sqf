@@ -233,14 +233,27 @@ while { true } do {
         _vehdir = getdir _vehicle;
         deleteVehicle _vehicle;
         sleep 0.1;
+
+        // Spawn the Desired Object
         _vehicle = _classname createVehicle _truepos;
         _vehicle allowDamage false;
         _vehicle setdir _vehdir;
         _vehicle setpos _truepos;
+
+        //Clear the Cargo of the object
         clearWeaponCargoGlobal _vehicle;
         clearMagazineCargoGlobal _vehicle;
         clearItemCargoGlobal _vehicle;
         clearBackpackCargoGlobal _vehicle;
+
+        if ( buildtype == 6 ) {
+          // Buildtype 6 is Buildings.
+          // Adds ACE Logistics Cargo/Drag/Carry Supports to building Objects.
+          [_vehicle, true, 1] call ace_cargo_fnc_makeLoadable;
+          [_vehicle, true, [0,1,1], 0] call ace_dragging_fnc_setCarryable;
+          [_vehicle, true, [0,0,0], 0] call ace_dragging_fnc_setDraggable;
+        };
+
         if ( buildtype == 6 || buildtype == 99 ) then {
           _vehicle setVectorUp [0,0,1];
         } else {
@@ -265,7 +278,6 @@ while { true } do {
         if(buildtype != 6) then {
           _vehicle addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
           { _x addMPEventHandler ["MPKilled", {_this spawn kill_manager}]; } foreach (crew _vehicle);
-
         };
       };
 
