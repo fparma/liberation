@@ -1,4 +1,5 @@
 sectors_allSectors = [];
+sectors_allSectors_border = [];
 sectors_capture = [];
 sectors_bigtown = [];
 sectors_factory = [];
@@ -48,5 +49,14 @@ sectors_airspawn = [];
 
   if ( _ismissionsector ) then {
     sectors_allSectors pushback _x;
+
+    // Create and Add Border around every valid sector.
+    _border = createMarkerLocal [format ["%1_border",_x], (getMarkerPos _x)];
+    _border setMarkerColorLocal "ColorBlack";
+    _border setMarkerShapeLocal "ELLIPSE";
+    _border setMarkerBrushLocal "Border";
+    _border setMarkerSizeLocal [1000,1000];
+    _border setMarkerAlphaLocal 0.3;
+    sectors_allSectors_border pushBack _border;
   };
 } foreach allMapMarkers;

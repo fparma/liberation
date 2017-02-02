@@ -18,6 +18,14 @@ while { true } do {
       _marker setMarkerPosLocal (GRLIB_all_fobs select _idx);
       _marker setMarkerTextLocal format ["FOB %1",military_alphabet select _idx];
       _marker setMarkerColorLocal "ColorYellow";
+
+      _secondary_marker_zone = createMarkerLocal [format ["fobmarker_radius%1",_idx], markers_reset];
+      _secondary_marker_zone setMarkerColorLocal "ColorYellow";
+      _secondary_marker_zone setMarkerShapeLocal "ELLIPSE";
+      _secondary_marker_zone setMarkerBrushLocal "SolidBorder";
+      _secondary_marker_zone setMarkerPosLocal (GRLIB_all_fobs select _idx);
+      _secondary_marker_zone setMarkerSizeLocal [100,100];
+
       _markers pushback _marker;
     };
   };
