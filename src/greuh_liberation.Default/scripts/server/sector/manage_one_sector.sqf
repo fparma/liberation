@@ -119,7 +119,7 @@ if ( (!(_sector in blufor_sectors)) && ( ( [ getmarkerpos _sector , [ _opforcoun
       _squad2 = ([] call F_getAdaptiveSquadComp);
     };
     _building_ai_max = 0;
-    if((random 100) > 95) then { _vehtospawn pushback ( [] call F_getAdaptiveVehicle ); };
+    if((random 100) > 50) then { _vehtospawn pushback ( [] call F_getAdaptiveVehicle ); };
   };
 
   // diag_log format [ "Sector %2 checkpoint E at %1", time, _sector ];
