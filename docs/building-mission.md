@@ -19,4 +19,10 @@ The mission of your choice can be built by opening up a terminal (MSYS/MSYS2 She
 ```
 
 # Explaining whats going on in the build process
-...
+
+First, the shell script copies the .Default folder from the src/ folder, which contains the entire base of the mission and puts it in the dist/ folder.
+After that, depending on which script you ran, it will copy the customization files, which will be placed over the Default folder contents. Allowing individual missions to override files if required.
+
+After that, the pre-processing happens. the gpp.exe tool is responsible for the preprocessing. It is a general purpose pre-processor,  which handles includes and macros outside of arma's macro/preprocessor system. If you don't know what a preprocessor or macro preprocessor is, you can read more here: https://en.wikipedia.org/wiki/Preprocessor
+
+After the macro preprocessing happens, we rename the folder with timestamp (if set in the shell script) and lint + build the PBO.
