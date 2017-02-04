@@ -1,7 +1,7 @@
 fullmap = 0;
 _old_fullmap = 0;
 _spawn_str = "";
-_basenamestr = "BASE CHIMERA";
+_basenamestr = "Staging Zone";
 
 waitUntil { !isNil "GRLIB_all_fobs" };
 waitUntil { !isNil "blufor_sectors" };

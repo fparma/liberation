@@ -5,7 +5,7 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=1025;
+	toggles=1157;
 	class ItemIDProvider
 	{
 		nextID=265;
@@ -27,8 +27,6 @@ addons[]=
 {
 	"A3_Ui_F",
 	"ace_map",
-	"CUP_BaseConfigs",
-	"CUP_CA_Config",
 	"A3_Structures_F_Mil_Helipads",
 	"A3_Structures_F_System",
 	"A3_Characters_F",
@@ -66,7 +64,7 @@ class AddonsMetaData
 {
 	class List
 	{
-		items=26;
+		items=24;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -83,132 +81,122 @@ class AddonsMetaData
 		};
 		class Item2
 		{
-			className="CUP_BaseConfigs";
-			name="CUP_BaseConfigs";
-		};
-		class Item3
-		{
-			className="CUP_CA_Config";
-			name="CUP_CA_Config";
-		};
-		class Item4
-		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item5
+		class Item3
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item6
+		class Item4
 		{
 			className="A3_Characters_F";
 			name="Arma 3 Alpha - Characters and Clothing";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item7
+		class Item5
 		{
 			className="CUP_Creatures_Military_USMC";
 			name="CUP_Creatures_Military_USMC";
 		};
-		class Item8
+		class Item6
 		{
 			className="FP_CUPUSMCReplacement";
 			name="FP_CUPUSMCReplacement";
 		};
-		class Item9
+		class Item7
 		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item10
+		class Item8
 		{
 			className="A3_Modules_F_Curator";
 			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item11
+		class Item9
 		{
 			className="A3_Structures_F_Ind";
 			name="Arma 3 - Industrial Structures";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
 		};
-		class Item12
+		class Item10
 		{
 			className="CUP_Farm_WTower";
 			name="CUP_Farm_WTower";
 		};
-		class Item13
+		class Item11
 		{
 			className="CUP_Buildings_Config";
 			name="CUP_Buildings_Config";
 		};
-		class Item14
+		class Item12
 		{
 			className="CUP_Pila_DBE1";
 			name="CUP_Pila_DBE1";
 		};
-		class Item15
+		class Item13
 		{
 			className="CUP_Zakladna_DBE1";
 			name="CUP_Zakladna_DBE1";
 		};
-		class Item16
+		class Item14
 		{
 			className="CUP_Ind_Garage01";
 			name="CUP_Ind_Garage01";
 		};
-		class Item17
+		class Item15
 		{
 			className="CUP_Ind_Workshop01";
 			name="CUP_Ind_Workshop01";
 		};
-		class Item18
+		class Item16
 		{
 			className="CUP_Misc3_Config";
 			name="CUP_Misc3_Config";
 		};
-		class Item19
+		class Item17
 		{
 			className="CUP_CAStructuresHouse_HouseV2";
 			name="CUP_CAStructuresHouse_HouseV2";
 		};
-		class Item20
+		class Item18
 		{
 			className="CUP_CAStructuresLand_Nav_Boathouse";
 			name="CUP_CAStructuresLand_Nav_Boathouse";
 		};
-		class Item21
+		class Item19
 		{
 			className="CUP_CAStructuresBarn_W";
 			name="CUP_CAStructuresBarn_W";
 		};
-		class Item22
+		class Item20
 		{
 			className="CUP_CAStructures_Mil";
 			name="CUP_CAStructures_Mil";
 		};
-		class Item23
+		class Item21
 		{
 			className="CUP_WarfareBuildings";
 			name="CUP_WarfareBuildings";
 		};
-		class Item24
+		class Item22
 		{
 			className="CUP_StandaloneTerrains_Core_Faction";
 			name="CUP_StandaloneTerrains_Core_Faction";
 		};
-		class Item25
+		class Item23
 		{
 			className="CUP_CAStructuresHouse_Church_05R";
 			name="CUP_CAStructuresHouse_Church_05R";
@@ -639,21 +627,22 @@ class Mission
 		class Item10
 		{
 			dataType="Marker";
-			position[]={10872.745,127.46079,3399.1482};
+			position[]={10845,0,3383};
 			name="HELO_MAPMARKER";
-			text="Spartan 01";
+			text="Transport Helo";
 			type="b_air";
 			id=18;
+			atlOffset=-124.87677;
 		};
 		class Item11
 		{
 			dataType="Marker";
-			position[]={10846,-1.7535591e-008,3380};
+			position[]={10845,0,3382};
 			name="base_chimera";
-			text="BASE RAINFALL";
-			type="Faction_US";
+			text="Staging Zone";
+			type="b_hq";
 			id=19;
-			atlOffset=-125.02207;
+			atlOffset=-124.92598;
 		};
 		class Item12
 		{
