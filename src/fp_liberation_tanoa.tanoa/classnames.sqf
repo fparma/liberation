@@ -56,7 +56,6 @@ air_vehicles = [
 	["B_Heli_Light_01_armed_F",0,15,5],
 	["B_Heli_Transport_01_F",0,0,10],
 	["B_Heli_Transport_01_camo_F",0,0,10],
-	["B_Heli_Transport_03_F",0,0,15],
   ["B_Heli_Transport_03_unarmed_F",0,0,15],
   ["B_Heli_Attack_01_F",0,80,35],
   ["B_T_VTOL_01_armed_F",0,120,40],
