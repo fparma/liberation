@@ -1,12 +1,7 @@
-
-
 params [ "_sector" ];
 private [ "_sectorpos", "_stopit", "_spawncivs", "_building_ai_max", "_infsquad", "_building_range", "_local_capture_size", "_iedcount","_combat_readiness_increase","_vehtospawn","_managed_units","_squad1", "_squad2", "_squad3", "_squad4", "_minimum_building_positions", "_popfactor", "_sector_despawn_tickets", "_opforcount" ];
 
 waitUntil { !isNil "combat_readiness" };
-
-// diag_log format [ "Sector %2 checkpoint A at %1", time, _sector ];
-
 _sectorpos = getmarkerpos _sector;
 _stopit = false;
 _spawncivs = false;
@@ -31,12 +26,8 @@ if ( isNil "active_sectors" ) then { active_sectors = [] };
 if ( _sector in active_sectors ) exitWith {};
 active_sectors pushback _sector; publicVariable "active_sectors";
 
-// diag_log format [ "Sector %2 checkpoint B at %1", time, _sector ];
-
 _opforcount = [] call F_opforCap;
 [ _sector, _opforcount ] call wait_to_spawn_sector;
-
-// diag_log format [ "Sector %2 checkpoint C at %1", time, _sector ];
 
 if ( (!(_sector in blufor_sectors)) && ( ( [ getmarkerpos _sector , [ _opforcount ] call F_getCorrectedSectorRange , GRLIB_side_friendly ] call F_getUnitsCount ) > 0 ) ) then {
 
@@ -173,33 +164,14 @@ if ( (!(_sector in blufor_sectors)) && ( ( [ getmarkerpos _sector , [ _opforcoun
 
   _managed_units = _managed_units + ( [ _sectorpos ] call F_spawnMilitaryPostSquad );
 
-  // Spawn Squad 1 and make it patrol the sector.
-  if ( count _squad1 > 0 ) then {
-    _grp = [ _sector, _squad1 ] call F_spawnRegularSquad;
-    [ _grp, _sectorpos ] spawn add_defense_waypoints;
-    _managed_units = _managed_units + (units _grp);
-  };
-
-  // Spawn Squad 2 and make it patrol the sector.
-  if ( count _squad2 > 0 ) then {
-    _grp = [ _sector, _squad2 ] call F_spawnRegularSquad;
-    [ _grp, _sectorpos ] spawn add_defense_waypoints;
-    _managed_units = _managed_units + (units _grp);
-  };
-
-  // Spawn Squad 3 and make it patrol the sector.
-  if ( count _squad3 > 0 ) then {
-    _grp = [ _sector, _squad3 ] call F_spawnRegularSquad;
-    [ _grp, _sectorpos ] spawn add_defense_waypoints;
-    _managed_units = _managed_units + (units _grp);
-  };
-
-  // Spawn Squad 4 and make it patrol the sector.
-  if ( count _squad4 > 0 ) then {
-    _grp = [ _sector, _squad4 ] call F_spawnRegularSquad;
-    [ _grp, _sectorpos ] spawn add_defense_waypoints;
-    _managed_units = _managed_units + (units _grp);
-  };
+  // Spawn Squads and make them patrol the sector.
+  {
+    if ( count _x > 0 ) then {
+      _grp = [ _sector, _x ] call F_spawnRegularSquad;
+      [ _grp, _sectorpos ] spawn add_defense_waypoints;
+      _managed_units = _managed_units + (units _grp);
+    };
+  } foreach [_squad1, _squad2, _squad3, _squad4];
 
   // Spawn civilians in sector
   if ( _spawncivs && GRLIB_civilian_activity > 0) then {
