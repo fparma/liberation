@@ -7,8 +7,8 @@ RENAME_MISSION_FILE=1   # Adds timestamp to the mission folder/pbo file
 RENAME_MISSION_TITLE=0  # Replaces <#DATETIME> with timestamp in mission name
 
 # Variables
-SRC_CUSTOM="src/nogova_liberation.noe" # Path to the customization resources.
-DST_MAIN="dist/nogova_liberation.noe"   # Path to the destination folder.
+SRC_CUSTOM="src/fp_liberation_tanoa.tanoa" # Path to the customization resources.
+DST_MAIN="dist/fp_liberation_tanoa.tanoa"   # Path to the destination folder.
 DATE=`date +%Y%m%d-%H%M`                # Timestamp call & Format specification
 
 ###############################################################
