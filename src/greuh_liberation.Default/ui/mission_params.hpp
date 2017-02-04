@@ -5,6 +5,12 @@ class Params {
     texts[] = {""};
     default = "";
   };
+  class ArsenalLimitation {
+    title = "Arsenal Limitation";
+    values[] = {1, 0};
+    texts[] = {"Yes", "No"};
+    default = 1;
+  };
   class Unitcap {
     title = $STR_PARAMS_UNITCAP;
     values[] = {0.5,0.75,1,1.25,1.5,2};

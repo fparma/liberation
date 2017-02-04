@@ -17,7 +17,6 @@ class CfgFunctions {
   class FPC {
     class Common {
       file = "functions\common";
-      class openArsenal;
       class getFobDistance;
       class getNearSpawn;
       class overrideArsenal;
