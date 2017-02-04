@@ -8,7 +8,7 @@ class EditorData
 	toggles=517;
 	class ItemIDProvider
 	{
-		nextID=1898;
+		nextID=1901;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1402.7296,26.057489,716.46704};
-		dir[]={0.52530324,-0.56422919,0.63696736};
-		up[]={0.35898802,0.82561415,0.43529856};
-		aside[]={0.77149558,2.2846507e-007,-0.63624913};
+		pos[]={1413.2686,26.057489,731.82507};
+		dir[]={-0.52753919,-0.77982873,0.33706552};
+		up[]={-0.65714025,0.62599266,0.41987255};
+		aside[]={0.53842962,7.9348683e-007,0.84269053};
 	};
 };
 binarizationWanted=0;
@@ -101,7 +101,10 @@ randomSeed=7060701;
 class ScenarioData
 {
 	author="Kaukassus";
+	respawnDialog=0;
 	disabledAI=1;
+	respawn=3;
+	respawnDelay=5;
 	class Header
 	{
 		gameType="CTI";
