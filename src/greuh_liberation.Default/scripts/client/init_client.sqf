@@ -19,5 +19,3 @@
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\ui\ui_manager.sqf";
 
 player addMPEventHandler ["MPKilled", {_this spawn kill_manager}];
-
-[ player ] joinSilent (createGroup GRLIB_side_friendly);
