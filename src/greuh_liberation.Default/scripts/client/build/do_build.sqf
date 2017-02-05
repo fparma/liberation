@@ -263,10 +263,6 @@ while { true } do {
           [ _vehicle ] call F_forceBluforCrew;
         };
 
-        if ( _classname == FOB_box_typename ) then {
-          [ [_vehicle, 3000 ] , "F_setMass" ] call BIS_fnc_MP;
-        };
-
         sleep 0.3;
         _vehicle allowDamage true;
         _vehicle setDamage 0;

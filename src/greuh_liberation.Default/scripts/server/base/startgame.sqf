@@ -32,8 +32,6 @@ if ( count GRLIB_all_fobs == 0 ) then {
       _fobbox setpos (getpos base_boxspawn);
       _fobbox setdir 215;
 
-      [ [_fobbox, 3000 ] , "F_setMass" ] call BIS_fnc_MP;
-
       sleep 3;
 
       waitUntil {

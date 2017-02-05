@@ -24,7 +24,6 @@ F_spawnRegularSquad = compileFinal preprocessFileLineNumbers "scripts\shared\fun
 F_spawnCivilians = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_spawnCivilians.sqf";
 F_getNearbyPlayers = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_getNearbyPlayers.sqf";
 F_lessLoadedHC = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_lessLoadedHC.sqf";
-F_setMass = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_setMass.sqf";
 F_adaptiveOpforFactor = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_adaptiveOpforFactor.sqf";
 F_getFobName = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_getFobName.sqf";
 F_isBigtownActive = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_isBigtownActive.sqf";
