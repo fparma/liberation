@@ -33,3 +33,6 @@ when under OPFOR control, radio towers will be used to call in reinforcements wh
 ## Big Cities
 **Description**
 Victory will be accomplished when all of the Big City territories are under BLUFOR Control.
+
+**Actions**
+* Part of the victory condition
