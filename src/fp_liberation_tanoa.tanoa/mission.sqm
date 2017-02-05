@@ -5,14 +5,14 @@ class EditorData
 	angleGridStep=0.2617994;
 	scaleGridStep=1;
 	autoGroupingDist=10;
-	toggles=517;
+	toggles=645;
 	class ItemIDProvider
 	{
-		nextID=1901;
+		nextID=1902;
 	};
 	class MarkerIDProvider
 	{
-		nextID=1;
+		nextID=2;
 	};
 	class LayerIndexProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={1413.2686,26.057489,731.82507};
-		dir[]={-0.52753919,-0.77982873,0.33706552};
-		up[]={-0.65714025,0.62599266,0.41987255};
-		aside[]={0.53842962,7.9348683e-007,0.84269053};
+		pos[]={1402.1479,26.121559,705.65167};
+		dir[]={-0.082767613,-0.51511949,0.85311657};
+		up[]={-0.049743328,0.85711533,0.51271552};
+		aside[]={0.99532843,3.2804746e-007,0.096566223};
 	};
 };
 binarizationWanted=0;
@@ -394,7 +394,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=242;
+		items=243;
 		class Item0
 		{
 			dataType="Marker";
@@ -3761,6 +3761,14 @@ class Mission
 			};
 			id=1895;
 			atlOffset=-7.6293945e-006;
+		};
+		class Item242
+		{
+			dataType="Marker";
+			position[]={1403,0.98800522,753};
+			name="ghost_spot";
+			type="Empty";
+			id=1901;
 		};
 	};
 };
