@@ -103,6 +103,7 @@ buildings = [
 support_vehicles = [
 	[Arsenal_typename,10,0,0],
   <#include classnames/support/ammobox_nato_pacific.h>
+  <#include classnames/support/ace_spares.h>
 	[Respawn_truck_typename,20,0,5],
 	[FOB_box_typename,30,50,0],
 	[FOB_truck_typename,30,50,5],
