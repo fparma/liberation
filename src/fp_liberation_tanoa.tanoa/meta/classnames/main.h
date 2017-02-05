@@ -23,7 +23,7 @@
 <#define BLUFOR_UNIT_LAT|"B_T_soldier_LAT_F">                   // Light AT
 <#define BLUFOR_UNIT_HAT|"B_T_soldier_AT_F">                    // Dedicated AT
 <#define BLUFOR_UNIT_AA|"B_T_soldier_AA_F">                     // Anti Air
-<#define BLUFOR_UNIT_MMG|"B_T_HeavyGunner_F">                   // Medium Machine Gunner
+<#define BLUFOR_UNIT_MMG|"B_T_soldier_AR_F">                    // Medium Machine Gunner
 <#define BLUFOR_UNIT_SNIPER|"B_T_sniper_F">                     // Sniper
 <#define BLUFOR_UNIT_SHARPSHOOTER|"">                           // Sharpshooter
 <#define BLUFOR_UNIT_CREWMAN|"B_T_crew_F">                      // Crewman
