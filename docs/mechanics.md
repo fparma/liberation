@@ -1,5 +1,5 @@
 # Mission Specific gameplay mechanics
-Source: http://greuh-liberation.wikia.com/wiki/Mechanics
+This document explains various concepts and gameplay mechanics specific to this mission.
 
 ## Reinforcement System
 This refers to the Enemy reinforcements assisting a Sector that is currently being attacked by BLUFOR troops.
@@ -66,3 +66,5 @@ Because of performance limitations we can not have all enemy AI up on the whole 
 Every 60 seconds your progress is saved. but only vehicles withing 250 meters of friendly FOB's are saved. So server restarts will cleanup all further vehicles).
 
 The Savegame is stored within the <profile>.vars.Arma3Profile File.
+
+This means, if the mission is performing badly, you can bring all the vehicles and Objects you want to save back to base, and restart the mission.
