@@ -85,6 +85,7 @@ while { true } do {
 
       _ghost_spot = (getmarkerpos "ghost_spot") findEmptyPosition [0,100];
 
+      hintC (str _classname) + " || " + (str _ghost_spot); // DEBUG
       _vehicle = _classname createVehicleLocal _ghost_spot;
       _vehicle allowdamage false;
       _vehicle setVehicleLock "LOCKED";
