@@ -1,3 +1,4 @@
+build_confirmed = 0;
 enableSaving [ false, false ];
 
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\liberation_functions.sqf";
