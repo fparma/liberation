@@ -30,9 +30,9 @@ if (isNil "_gear") then {
     } forEach [3,4,5]; // Uniform, Vest, Backpack
   };
   
-  firstload = false;
   player setUnitLoadout [_gear, true];
 };
 
+firstload = false;
 [] spawn FPC_fnc_show_redeploy_dialog;
 
