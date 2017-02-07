@@ -1,21 +1,37 @@
-ACE_player setUnitLoadout (ACE_player getVariable ["Saved_Loadout",[]]);
+removeHeadgear player;
+removeAllContainers player;
+removeAllItems player;
+removeAllWeapons player;
+removeAllAssignedItems player;
 
-if (firstload) then {
-  removeAllWeapons ACE_player;
-  removeAllItems ACE_player;
-  removeAllAssignedItems ACE_player;
-  removeUniform ACE_player;
-  removeVest ACE_player;
-  removeBackpack ACE_player;
-  removeHeadgear ACE_player;
-  removeGoggles ACE_player;
-  ACE_player forceAddUniform "U_B_T_Soldier_SL_F";
-  ACE_player addHeadgear "H_HelmetB_tna_F";
-  ACE_player addVest "V_Chestrig_rgr";
-  ACE_player linkItem "ItemMap";
-  ACE_player linkItem "ItemCompass";
-  ACE_player linkItem "ItemWatch";
-  firstload = false;
+private _gear = profileNamespace getVariable (format ["%1_fpcGear", GRLIB_save_key]);
+if (isNil "_gear") then {
+  player forceAddUniform "usm_bdu_w";
+  player addHeadgear "usm_helmet_pasgt_w";
+  player addVest "usm_vest_rba_lbe_rm";
+  player linkItem "ItemMap";
+  player linkItem "ItemCompass";
+  player linkItem "ItemWatch";
+} else {
+  if (isNil "fpc_firstload") then {
+    {
+      private _container = _gear select _x;
+      if !(_container isEqualTo []) then {
+        _container params ["","_itemsArray"];
+        {
+          _x params ["_itemClassname"];
+          // Handle Unique ACRE radios
+          if ((getNumber (configFile >> "CfgWeapons" >> _itemClassname >> "acre_isUnique")) > 0) then {
+            _x set [0, getText (configFile >> "CfgWeapons" >> _itemClassname >> "acre_baseClass")];
+          };
+        } forEach _itemsArray;
+      };
+    } forEach [3,4,5]; // Uniform, Vest, Backpack
+  };
+
+  player setUnitLoadout [_gear, true];
 };
 
+fpc_firstload = false;
 [] spawn FPC_fnc_show_redeploy_dialog;
+
