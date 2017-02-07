@@ -20,6 +20,7 @@ class CfgFunctions {
       class getFobDistance;
       class getNearSpawn;
       class overrideArsenal;
+      class interrogate;
       class show_redeploy_dialog;
     };
     class Arsenal {
@@ -36,6 +37,7 @@ class CfgFunctions {
       class permissionCondition;
       class repackageCondition;
       class secondaryObjectiveCondition;
+      class interrogateCondition;
     };
     class Logistics {
       file = "functions\logistics";
