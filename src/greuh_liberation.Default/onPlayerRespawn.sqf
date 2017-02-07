@@ -4,7 +4,6 @@ removeAllItems player;
 removeAllWeapons player;
 removeAllAssignedItems player;
 
-diag_log "respawn";
 
 private _gear = profileNamespace getVariable (format ["%1_fpcGear", GRLIB_save_key]);
 if (isNil "_gear") then {
