@@ -1,6 +1,5 @@
 fullmap = 0;
 _old_fullmap = 0;
-_spawn_str = "";
 _basenamestr = "Staging Zone";
 
 waitUntil { !isNil "GRLIB_all_fobs" };
@@ -96,7 +95,6 @@ while { dialog && alive player && deploy == 0} do {
 
 if (dialog && deploy == 1) then {
   _idxchoice = lbCurSel 201;
-  _spawn_str = (choiceslist select _idxchoice) select 0;
 
   if (count (choiceslist select _idxchoice) == 3) then {
     _truck = (choiceslist select _idxchoice) select 2;
