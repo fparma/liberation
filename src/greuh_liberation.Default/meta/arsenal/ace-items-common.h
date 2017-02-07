@@ -31,3 +31,4 @@
 "ACE_SpraypaintGreen",
 "ACE_SpraypaintRed",
 "ACE_bodyBag",
+"ACE_HuntIR_monitor",
