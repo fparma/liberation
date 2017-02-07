@@ -29,15 +29,16 @@ _frame_pos = ctrlPosition ((findDisplay 5201) displayCtrl 198);
 while { dialog && alive player && deploy == 0} do {
   choiceslist = [ [ _basenamestr, getpos base_chimera ] ];
 
-  for [{_idx=0},{_idx < count GRLIB_all_fobs},{_idx=_idx+1}] do {
-    choiceslist = choiceslist + [[format [ "FOB %1 - %2", (military_alphabet select _idx),mapGridPosition (GRLIB_all_fobs select _idx) ],GRLIB_all_fobs select _idx]];
-  };
+  {
+    choiceslist pushBack [format [ "FOB %1 - %2", (military_alphabet select _forEachIndex),mapGridPosition _x], _x];
+  } forEach GRLIB_all_fobs;
 
-  _respawn_trucks = call F_getMobileRespawns;
-
-  for [ {_idx=0},{_idx < count _respawn_trucks},{_idx=_idx+1} ] do {
-    choiceslist = choiceslist + [[format [ "%1 - %2", localize "STR_RESPAWN_TRUCK",mapGridPosition (getpos (_respawn_trucks select _idx)) ],getpos (_respawn_trucks select _idx),(_respawn_trucks select _idx)]];
-  };
+  {
+    private _mRespawn = _x;
+    if ({_mRespawn distance (_x select 1) < 200} count choiceslist isEqualTo 0) then {
+      choiceslist pushBack [format [ "%1 - %2", localize "STR_RESPAWN_TRUCK", mapGridPosition _x], getPos _x];
+    };
+  } forEach (call F_getMobileRespawns);
 
   lbClear 201;
   {
