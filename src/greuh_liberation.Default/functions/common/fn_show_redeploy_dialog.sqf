@@ -94,15 +94,9 @@ while { dialog && alive player && deploy == 0} do {
 };
 
 if (dialog && deploy == 1) then {
-  _idxchoice = lbCurSel 201;
-
-  if (count (choiceslist select _idxchoice) == 3) then {
-    _truck = (choiceslist select _idxchoice) select 2;
-    player setpos ([_truck, 5 + (random 3), random 360] call BIS_fnc_relPos)
-  } else {
-    _destpos = ((choiceslist select _idxchoice) select 1);
-    player setpos [((_destpos select 0) + 5) - (random 10),((_destpos select 1) + 5) - (random 10),0];
-  };
+  private _pos = (choiceslist select (lbCurSel 201)) select 1;
+  private _empty = _pos findEmptyPosition [0, 50, "CAManBase"];
+  player setPos ([_empty, _pos] select (_empty isEqualTo []));
 };
 
 respawn_camera cameraEffect ["Terminate","back"];
