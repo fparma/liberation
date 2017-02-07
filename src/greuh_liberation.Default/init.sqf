@@ -18,6 +18,7 @@ if ((["ArsenalLimitation",1] call bis_fnc_getParamValue) == 1) then {
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\init_shared.sqf";
 
 if (isServer) then {
+  setTimeMultiplier 30;
   [] call compileFinal preprocessFileLineNumbers "scripts\server\init_server.sqf";
 };
 
