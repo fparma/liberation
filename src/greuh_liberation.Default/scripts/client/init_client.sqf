@@ -1,7 +1,5 @@
 [] call compileFinal preprocessFileLineNumbers "scripts\client\misc\init_markers.sqf";
 
-["Preload"] call BIS_fnc_arsenal;
-
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\actions\intel_manager.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\actions\recycle_manager.sqf";
 [] spawn compileFinal preprocessFileLineNumbers "scripts\client\build\build_overlay.sqf";
