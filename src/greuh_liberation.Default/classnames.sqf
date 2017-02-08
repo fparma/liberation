@@ -405,6 +405,18 @@ GRLIB_intel_chair = "Land_CampingChair_V2_F";
 GRLIB_intel_file = "Land_File1_F";
 GRLIB_intel_laptop = "Land_Laptop_device_F";
 GRLIB_ignore_colisions_when_building = [
+	"ACE_MedicalLitterBase",
+	"ACE_MedicalLitter_clean",
+	"ACE_MedicalLitter_bandage1",
+	"ACE_MedicalLitter_bandage2",
+	"ACE_MedicalLitter_bandage3",
+	"ACE_MedicalLitter_packingBandage",
+	"ACE_MedicalLitter_gloves",
+	"ACE_MedicalLitter_adenosine",
+	"ACE_MedicalLitter_atropine",
+	"ACE_MedicalLitter_epinephrine",
+	"ACE_MedicalLitter_morphine",
+	"ACE_MedicalLitter_QuickClot",
 	"Land_Flush_Light_red_F",
 	"Land_Flush_Light_green_F",
 	"Land_Flush_Light_yellow_F",
@@ -415,5 +427,6 @@ GRLIB_ignore_colisions_when_building = [
 	"TMR_Autorest_Georef",
 	"Land_ClutterCutter_large_F"
 ];
+
 GRLIB_sar_wreck = "Land_Wreck_Heli_Attack_01_F";
 GRLIB_sar_fire = "test_EmptyObjectForFireBig";
