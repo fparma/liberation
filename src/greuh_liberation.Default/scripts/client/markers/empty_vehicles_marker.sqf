@@ -6,7 +6,8 @@ _cfg = configFile >> "cfgVehicles";
 _vehtomark = [];
 
 _support_to_skip = [
-  ammobox_o_typename,
+  "ACE_Wheel",
+  "ACE_Track",
   "B_Slingload_01_Repair_F",
   "B_Slingload_01_Fuel_F",
   "B_Slingload_01_Ammo_F"
@@ -33,7 +34,13 @@ while { true } do {
 
     {
       _marker = createMarkerLocal [ format [ "markedveh%1" ,_x], markers_reset ];
-      _marker setMarkerColorLocal "ColorKhaki";
+      private _clr = switch (typeOf _x) do {
+        case ammobox_b_typename: {GRLIB_color_friendly};
+        case ammobox_o_typename: {GRLIB_color_enemy};
+        default {"ColorKhaki"};
+      };
+
+      _marker setMarkerColorLocal _clr;
       _marker setMarkerTypeLocal "mil_dot";
       _marker setMarkerSizeLocal [ 0.75, 0.75 ];
       _vehmarkers pushback _marker;
