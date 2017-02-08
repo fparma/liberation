@@ -1,6 +1,5 @@
 fullmap = 0;
 _old_fullmap = 0;
-_spawn_str = "";
 _basenamestr = "Staging Zone";
 
 waitUntil { !isNil "GRLIB_all_fobs" };
@@ -30,15 +29,16 @@ _frame_pos = ctrlPosition ((findDisplay 5201) displayCtrl 198);
 while { dialog && alive player && deploy == 0} do {
   choiceslist = [ [ _basenamestr, getpos base_chimera ] ];
 
-  for [{_idx=0},{_idx < count GRLIB_all_fobs},{_idx=_idx+1}] do {
-    choiceslist = choiceslist + [[format [ "FOB %1 - %2", (military_alphabet select _idx),mapGridPosition (GRLIB_all_fobs select _idx) ],GRLIB_all_fobs select _idx]];
-  };
+  {
+    choiceslist pushBack [format [ "FOB %1 - %2", (military_alphabet select _forEachIndex),mapGridPosition _x], _x];
+  } forEach GRLIB_all_fobs;
 
-  _respawn_trucks = call F_getMobileRespawns;
-
-  for [ {_idx=0},{_idx < count _respawn_trucks},{_idx=_idx+1} ] do {
-    choiceslist = choiceslist + [[format [ "%1 - %2", localize "STR_RESPAWN_TRUCK",mapGridPosition (getpos (_respawn_trucks select _idx)) ],getpos (_respawn_trucks select _idx),(_respawn_trucks select _idx)]];
-  };
+  {
+    private _mRespawn = _x;
+    if ({_mRespawn distance (_x select 1) < 200} count choiceslist isEqualTo 0) then {
+      choiceslist pushBack [format [ "%1 - %2", localize "STR_RESPAWN_TRUCK", mapGridPosition _x], getPos _x];
+    };
+  } forEach (call F_getMobileRespawns);
 
   lbClear 201;
   {
@@ -95,16 +95,9 @@ while { dialog && alive player && deploy == 0} do {
 };
 
 if (dialog && deploy == 1) then {
-  _idxchoice = lbCurSel 201;
-  _spawn_str = (choiceslist select _idxchoice) select 0;
-
-  if (count (choiceslist select _idxchoice) == 3) then {
-    _truck = (choiceslist select _idxchoice) select 2;
-    player setpos ([_truck, 5 + (random 3), random 360] call BIS_fnc_relPos)
-  } else {
-    _destpos = ((choiceslist select _idxchoice) select 1);
-    player setpos [((_destpos select 0) + 5) - (random 10),((_destpos select 1) + 5) - (random 10),0];
-  };
+  private _pos = (choiceslist select (lbCurSel 201)) select 1;
+  private _empty = _pos findEmptyPosition [0, 50, "CAManBase"];
+  player setPos ([_empty, _pos] select (_empty isEqualTo []));
 };
 
 respawn_camera cameraEffect ["Terminate","back"];
