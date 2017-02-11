@@ -1,10 +1,3 @@
-if ( !(isNil "GRLIB_param_wipe_savegame_1") && !(isNil "GRLIB_param_wipe_savegame_2") ) then {
-  if ( GRLIB_param_wipe_savegame_1 == 1 && GRLIB_param_wipe_savegame_2 == 1 ) then {
-    profileNamespace setVariable [ GRLIB_save_key,nil ];
-    saveProfileNamespace;
-  };
-};
-
 date_year = date select 0;
 date_month = date select 1;
 date_day = date select 2;

@@ -6,8 +6,6 @@ if ( isMultiplayer ) then {
   GRLIB_adaptive_opfor = ["AdaptToPlayercount",1] call bis_fnc_getParamValue;
   GRLIB_civilian_activity = ["civilians",1] call bis_fnc_getParamValue;
   GRLIB_build_first_fob = ["FirstFob",0] call bis_fnc_getParamValue;
-  GRLIB_param_wipe_savegame_1 = ["WipeSave1",0] call bis_fnc_getParamValue;
-  GRLIB_param_wipe_savegame_2 = ["WipeSave2",0] call bis_fnc_getParamValue;
   GRLIB_passive_income = ["PassiveIncome",0] call bis_fnc_getParamValue;
   GRLIB_permissions_param = ["Permissions",1] call bis_fnc_getParamValue;
   GRLIB_cleanup_vehicles = ["CleanupVehicles",2] call bis_fnc_getParamValue;
@@ -25,8 +23,6 @@ if ( isMultiplayer ) then {
   GRLIB_unitcap = 1;
   GRLIB_civilian_activity = 1;
   GRLIB_build_first_fob = 0;
-  GRLIB_param_wipe_savegame_1 = 0;
-  GRLIB_param_wipe_savegame_2 = 0;
   GRLIB_passive_income = 0;
   GRLIB_permissions_param = 1;
   GRLIB_cleanup_vehicles = 2;
