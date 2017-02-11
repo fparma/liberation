@@ -20,6 +20,10 @@
 [ACE_player, 1, ["ACE_SelfActions", "FPC_SLINGLOADING_ROOT"], ['FP_Slingloading_Release','Release Cargo','',{[] call ASL_Release_Cargo_Action;},{[vehicle ACE_player] call ASL_Can_Release_Cargo;}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 [ACE_player, 1, ["ACE_SelfActions", "FPC_SLINGLOADING_ROOT"], ['FP_Slingloading_Retract','Retract Cargo Ropes','',{[] call ASL_Retract_Ropes_Action;},{[vehicle ACE_player] call ASL_Can_Retract_Ropes;}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 
+// Liberation ACE Helper Actions
+[ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT"], ['FPC_HELPERS_ROOT','Helpers','res\icon-questionmark.paa',{},{true}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
+[ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT", "FPC_HELPERS_ROOT"], ['FPC_HELPERS_INITACELOGI','Reinit Logistics Actions for objects around player','',{[true] call FPC_fnc_initLogisticsInRange;},{true}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
+
 // Interrogate
 _targetRoot = ["FPC_TARGET_ROOT","Liberation","",{},{true}] call ace_interact_menu_fnc_createAction;
 ["CAManBase", 0, ["ACE_MainActions"], _targetRoot, true] call ace_interact_menu_fnc_addActionToClass;

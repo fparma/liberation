@@ -43,5 +43,9 @@ class CfgFunctions {
       file = "functions\logistics";
       class SlingLoading { postInit = 1; };
     };
+    class Actions {
+      file = "functions\actions";
+      class initLogisticsInRange;
+    };
   };
 };
