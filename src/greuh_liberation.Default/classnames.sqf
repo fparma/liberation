@@ -405,6 +405,8 @@ GRLIB_intel_chair = "Land_CampingChair_V2_F";
 GRLIB_intel_file = "Land_File1_F";
 GRLIB_intel_laptop = "Land_Laptop_device_F";
 GRLIB_ignore_colisions_when_building = [
+	"GroundWeaponHolder",
+	"WeaponHolderSimulated",
 	"ACE_MedicalLitterBase",
 	"ACE_MedicalLitter_clean",
 	"ACE_MedicalLitter_bandage1",
