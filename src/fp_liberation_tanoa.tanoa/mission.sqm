@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={8408.4287,66.721443,1372.918};
-		dir[]={0.0098515227,-0.99994999,-0.0017155476};
-		up[]={0.98512465,0.00999978,-0.17154996};
-		aside[]={-0.17155854,0,-0.98517394};
+		pos[]={8441.0303,124.62466,1333.1699};
+		dir[]={-0.32127404,-0.8910498,0.32074222};
+		up[]={-0.6305961,0.4538891,0.62955379};
+		aside[]={0.70654327,-3.3917604e-007,0.70771432};
 	};
 };
 binarizationWanted=0;
@@ -35,15 +35,13 @@ addons[]=
 	"A3_Structures_F_System",
 	"A3_Characters_F",
 	"A3_Characters_F_Exp",
-	"A3_Modules_F",
-	"ace_medical",
-	"ace_weather"
+	"A3_Modules_F"
 };
 class AddonsMetaData
 {
 	class List
 	{
-		items=9;
+		items=7;
 		class Item0
 		{
 			className="A3_Ui_F";
@@ -92,20 +90,6 @@ class AddonsMetaData
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="http://www.arma3.com";
-		};
-		class Item7
-		{
-			className="ace_medical";
-			name="ACE3 - Medical";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
-		};
-		class Item8
-		{
-			className="ace_weather";
-			name="ACE3 - Weather";
-			author="ACE-Team";
-			url="http://ace3mod.com/";
 		};
 	};
 };
@@ -410,7 +394,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=245;
+		items=243;
 		class Item0
 		{
 			dataType="Marker";
@@ -2869,39 +2853,41 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8433.7139,2587.1382,1367.8555};
+				position[]={8433.7139,60.810501,1367.8555};
+				angles[]={0.29756233,0,0.36895972};
 			};
 			name="HC1";
 			isPlayable=1;
 			id=1844;
 			type="HeadlessClient_F";
-			atlOffset=2526.3276;
+			atlOffset=3.8146973e-006;
 		};
 		class Item231
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8433.9541,2589.2974,1360.6865};
+				position[]={8433.9541,62.933205,1360.6865};
+				angles[]={0.20507571,0,0.39876041};
 			};
 			name="HC2";
 			isPlayable=1;
 			id=1845;
 			type="HeadlessClient_F";
-			atlOffset=2526.3643;
 		};
 		class Item232
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8434,2591,1353};
+				position[]={8434,64,1353};
+				angles[]={0.26309082,0,0.32414919};
 			};
 			name="HC3";
 			isPlayable=1;
 			id=1846;
 			type="HeadlessClient_F";
-			atlOffset=2526.3738;
+			atlOffset=-0.62626648;
 		};
 		class Item233
 		{
@@ -3009,12 +2995,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={8425.373,2585.6267,1362.3184};
+				position[]={8425.373,59.293972,1362.3184};
+				angles[]={0.26557523,0,0.34555635};
 			};
 			name="gamelogic";
 			id=1850;
 			type="Logic";
-			atlOffset=2526.3328;
 		};
 		class Item235
 		{
@@ -3785,416 +3771,6 @@ class Mission
 			name="ghost_spot";
 			type="Empty";
 			id=1901;
-		};
-		class Item243
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8407,53.712643,1376};
-				angles[]={0.21782221,0,6.2086563};
-			};
-			id=1902;
-			type="ACE_moduleMedicalSettings";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ACE_moduleMedicalSettings_litterCleanUpDelay";
-					expression="_this setVariable ['litterCleanUpDelay',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=360;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ACE_moduleMedicalSettings_enableScreams";
-					expression="_this setVariable ['enableScreams',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ACE_moduleMedicalSettings_preventInstaDeath";
-					expression="_this setVariable ['preventInstaDeath',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ACE_moduleMedicalSettings_bleedingCoefficient";
-					expression="_this setVariable ['bleedingCoefficient',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ACE_moduleMedicalSettings_increaseTrainingInLocations";
-					expression="_this setVariable ['increaseTrainingInLocations',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ACE_moduleMedicalSettings_enableUnconsciousnessAI";
-					expression="_this setVariable ['enableUnconsciousnessAI',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute6
-				{
-					property="ACE_moduleMedicalSettings_remoteControlledAI";
-					expression="_this setVariable ['remoteControlledAI',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute7
-				{
-					property="ACE_moduleMedicalSettings_painCoefficient";
-					expression="_this setVariable ['painCoefficient',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute8
-				{
-					property="ACE_moduleMedicalSettings_AIDamageThreshold";
-					expression="_this setVariable ['AIDamageThreshold',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0.80000001;
-						};
-					};
-				};
-				class Attribute9
-				{
-					property="ACE_moduleMedicalSettings_playerDamageThreshold";
-					expression="_this setVariable ['playerDamageThreshold',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=3;
-						};
-					};
-				};
-				class Attribute10
-				{
-					property="ACE_moduleMedicalSettings_level";
-					expression="_this setVariable ['level',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute11
-				{
-					property="ACE_moduleMedicalSettings_allowLitterCreation";
-					expression="_this setVariable ['allowLitterCreation',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute12
-				{
-					property="ACE_moduleMedicalSettings_keepLocalSettingsSynced";
-					expression="_this setVariable ['keepLocalSettingsSynced',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute13
-				{
-					property="ACE_moduleMedicalSettings_medicSetting";
-					expression="_this setVariable ['medicSetting',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=14;
-			};
-		};
-		class Item244
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={8407,54.587299,1372};
-				angles[]={0.19996236,0,6.2113123};
-			};
-			id=1904;
-			type="ace_weather_ModuleSettings";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_weather_ModuleSettings_useACEWeather";
-					expression="_this setVariable ['useACEWeather',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute1
-				{
-					property="ace_weather_ModuleSettings_serverUpdateInterval";
-					expression="_this setVariable ['serverUpdateInterval',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"SCALAR"
-								};
-							};
-							value=60;
-						};
-					};
-				};
-				class Attribute2
-				{
-					property="ace_weather_ModuleSettings_syncMisc";
-					expression="_this setVariable ['syncMisc',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute3
-				{
-					property="ace_weather_ModuleSettings_syncRain";
-					expression="_this setVariable ['syncRain',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute4
-				{
-					property="ace_weather_ModuleSettings_enableServerController";
-					expression="_this setVariable ['enableServerController',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				class Attribute5
-				{
-					property="ace_weather_ModuleSettings_syncWind";
-					expression="_this setVariable ['syncWind',_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=1;
-						};
-					};
-				};
-				nAttributes=6;
-			};
 		};
 	};
 };
