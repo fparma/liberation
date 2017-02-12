@@ -7,6 +7,11 @@ RENAME_MISSION_FILE=1     # Adds timestamp to the mission folder/pbo file
 RENAME_MISSION_TITLE=0    # Replaces <#DATETIME> with timestamp in mission name
 DATE=`date +%Y%m%d-%H%M`  # Timestamp call & Format specification
 
+# Check for --pbo Arg
+if [ "$@" = "--pbo" ]; then
+  MAKE_PBO=1
+fi
+
 ###############################################################
 echo "Building Liberation missions Now..."
 

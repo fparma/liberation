@@ -11,11 +11,11 @@ Attention! gpp.exe and mikeros pbo tools need to be in your %PATH% Environment v
 ## Building the mission
 The mission of your choice can be built by opening up a terminal (MSYS/MSYS2 Shell) and navigating into the main repository Folder. Then execute the following command:
 ```sh
-# Where <mission> is the name of the "mission" you want to compile.
-./make-<mission>.sh
+# Builds mission folder for all maps beginning with fp_* in the src folder.
+./make.sh
 
-# Full example:
-./make-nogovo.sh
+# Builds missions just like above but also generates a PBO File.
+./make.sh --pbo
 ```
 
 # Explaining whats going on in the build process
