@@ -8,7 +8,7 @@ RENAME_MISSION_TITLE=0    # Replaces <#DATETIME> with timestamp in mission name
 DATE=`date +%Y%m%d-%H%M`  # Timestamp call & Format specification
 
 # Check for --pbo Arg
-if [ "$@" = "--pbo" ]; then
+if [[ "$@" = "--pbo" ]]; then
   MAKE_PBO=1
 fi
 
@@ -22,8 +22,7 @@ if [ -d dist ]; then
 fi
 mkdir dist
 
-for mission in `find src/ -maxdepth 1 -name "fp_*" -type d`
-do
+for mission in `find src/ -maxdepth 1 -name "fp_*" -type d`; do
   DST_MAIN=${mission/src/dist}
   echo "Processing: $mission"
   # Copy Base Files into dist folder
