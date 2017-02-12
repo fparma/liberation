@@ -14,25 +14,25 @@ crewman_classname = <#BLUFOR_UNIT_CREWMAN>;
 pilot_classname = <#BLUFOR_UNIT_PILOT>;
 
 infantry_units = [
-	[<#BLUFOR_UNIT_RIFLEMAN>,2,0,0],
-	[<#BLUFOR_UNIT_GRENADIER>,3,0,0],
-	[<#BLUFOR_UNIT_AUTORIFLEMAN>,3,0,0],
-	[<#BLUFOR_UNIT_MEDIC>,3,0,0],
-	[<#BLUFOR_UNIT_MARKSMAN>,3,0,0],
-	[<#BLUFOR_UNIT_ENGINEER>,3,0,0],
-	[<#BLUFOR_UNIT_LAT>,4,0,0],
-	[<#BLUFOR_UNIT_AA>,5,10,0],
-	[<#BLUFOR_UNIT_HAT>,5,10,0],
-	[<#BLUFOR_UNIT_SNIPER>,10,0,0],
-	[<#BLUFOR_UNIT_PILOT>,1,0,0],
-	[<#BLUFOR_UNIT_HELIPILOT>,1,0,0],
-	[<#BLUFOR_UNIT_CREWMAN>,1,0,0]
+  [<#BLUFOR_UNIT_RIFLEMAN>,2,0,0],
+  [<#BLUFOR_UNIT_GRENADIER>,3,0,0],
+  [<#BLUFOR_UNIT_AUTORIFLEMAN>,3,0,0],
+  [<#BLUFOR_UNIT_MEDIC>,3,0,0],
+  [<#BLUFOR_UNIT_MARKSMAN>,3,0,0],
+  [<#BLUFOR_UNIT_ENGINEER>,3,0,0],
+  [<#BLUFOR_UNIT_LAT>,4,0,0],
+  [<#BLUFOR_UNIT_AA>,5,10,0],
+  [<#BLUFOR_UNIT_HAT>,5,10,0],
+  [<#BLUFOR_UNIT_SNIPER>,10,0,0],
+  [<#BLUFOR_UNIT_PILOT>,1,0,0],
+  [<#BLUFOR_UNIT_HELIPILOT>,1,0,0],
+  [<#BLUFOR_UNIT_CREWMAN>,1,0,0]
 ];
 
 light_vehicles = [
-	["B_Quadbike_01_F",0,0,1],
-	["B_T_MRAP_01_F",0,0,2],
-	["B_T_MRAP_01_hmg_F",0,15,2],
+  ["B_Quadbike_01_F",0,0,1],
+  ["B_T_MRAP_01_F",0,0,2],
+  ["B_T_MRAP_01_hmg_F",0,15,2],
   ["B_T_MRAP_01_gmg_F",0,25,2],
   ["B_T_LSV_01_unarmed_F",0,0,2],
   ["B_T_LSV_01_armed_F",0,15,2],
@@ -52,82 +52,82 @@ light_vehicles = [
 ];
 
 heavy_vehicles = [
-	["B_T_MBT_01_TUSK_F",0,150,50],
+  ["B_T_MBT_01_TUSK_F",0,150,50],
   ["B_T_MBT_01_cannon_F",0,150,50],
   ["B_T_MBT_01_mlrs_F",0,200,50],
   ["B_T_MBT_01_arty_F",0,200,50]
 ];
 
 air_vehicles = [
-	["B_Heli_Light_01_F",0,0,5],
-	["B_Heli_Light_01_armed_F",0,15,5],
-	["B_Heli_Transport_01_F",0,0,10],
-	["B_Heli_Transport_01_camo_F",0,0,10],
+  ["B_Heli_Light_01_F",0,0,5],
+  ["B_Heli_Light_01_armed_F",0,15,5],
+  ["B_Heli_Transport_01_F",0,0,10],
+  ["B_Heli_Transport_01_camo_F",0,0,10],
   ["B_Heli_Transport_03_unarmed_F",0,0,15],
   ["B_Heli_Attack_01_F",0,80,35],
   ["B_T_VTOL_01_armed_F",0,120,40],
   ["B_T_VTOL_01_infantry_F",0,0,40],
-	["B_T_VTOL_01_vehicle_F",0,0,40]
+  ["B_T_VTOL_01_vehicle_F",0,0,40]
 ];
 
 static_vehicles = [
-	["B_HMG_01_F",0,10,0],
-	["B_HMG_01_high_F",0,10,0],
-	["B_GMG_01_F",0,20,0],
-	["B_GMG_01_high_F",0,20,0],
-	["B_static_AA_F",0,25,0],
-	["B_static_AT_F",0,30,0],
-	["B_Mortar_01_F",0,50,0]
+  ["B_HMG_01_F",0,10,0],
+  ["B_HMG_01_high_F",0,10,0],
+  ["B_GMG_01_F",0,20,0],
+  ["B_GMG_01_high_F",0,20,0],
+  ["B_static_AA_F",0,25,0],
+  ["B_static_AT_F",0,30,0],
+  ["B_Mortar_01_F",0,50,0]
 ];
 
 buildings = [
-	<#include classnames/objects/concrete_barrier.h>
-	<#include classnames/objects/hbarrier_green.h>
-	<#include classnames/objects/bunkers_green.h>
+  <#include classnames/objects/concrete_barrier.h>
+  <#include classnames/objects/hbarrier_green.h>
+  <#include classnames/objects/bunkers_green.h>
   <#include classnames/objects/sandbags_green.h>
-	["Land_PortableLight_single_F",0,0,0],
-	["CamoNet_BLUFOR_open_F",0,0,0],
-	["CamoNet_BLUFOR_big_F",0,0,0],
-	["Land_Cargo_House_V1_F",0,0,0],
-	["Land_Cargo_Patrol_V1_F",0,0,0],
-	["Flag_NATO_F",0,0,0],
-	["Land_HelipadSquare_F",0,0,0],
-	["Land_Razorwire_F",0,0,0],
-	["Land_ToolTrolley_02_F",0,0,0],
-	["Land_WeldingTrolley_01_F",0,0,0],
-	["Land_GasTank_02_F",0,0,0],
-	["Land_Workbench_01_F",0,0,0],
-	["Land_WaterTank_F",0,0,0],
-	["Land_WaterBarrel_F",0,0,0],
-	["Land_MetalCase_01_large_F",0,0,0],
-	["CargoNet_01_box_F",0,0,0],
-	["Land_CampingChair_V1_F",0,0,0],
-	["Land_CampingChair_V2_F",0,0,0],
-	["Land_CampingTable_F",0,0,0],
-	["MapBoard_altis_F",0,0,0],
-	["Land_Metal_rack_Tall_F",0,0,0],
-	["PortableHelipadLight_01_blue_F",0,0,0],
-	["Land_DieselGroundPowerUnit_01_F",0,0,0],
-	["Land_Pallet_MilBoxes_F",0,0,0],
-	["Land_PaperBox_open_full_F",0,0,0],
-	["Land_ClutterCutter_large_F",0,0,0]
+  ["Land_PortableLight_single_F",0,0,0],
+  ["CamoNet_BLUFOR_open_F",0,0,0],
+  ["CamoNet_BLUFOR_big_F",0,0,0],
+  ["Land_Cargo_House_V1_F",0,0,0],
+  ["Land_Cargo_Patrol_V1_F",0,0,0],
+  ["Flag_NATO_F",0,0,0],
+  ["Land_HelipadSquare_F",0,0,0],
+  ["Land_Razorwire_F",0,0,0],
+  ["Land_ToolTrolley_02_F",0,0,0],
+  ["Land_WeldingTrolley_01_F",0,0,0],
+  ["Land_GasTank_02_F",0,0,0],
+  ["Land_Workbench_01_F",0,0,0],
+  ["Land_WaterTank_F",0,0,0],
+  ["Land_WaterBarrel_F",0,0,0],
+  ["Land_MetalCase_01_large_F",0,0,0],
+  ["CargoNet_01_box_F",0,0,0],
+  ["Land_CampingChair_V1_F",0,0,0],
+  ["Land_CampingChair_V2_F",0,0,0],
+  ["Land_CampingTable_F",0,0,0],
+  ["MapBoard_altis_F",0,0,0],
+  ["Land_Metal_rack_Tall_F",0,0,0],
+  ["PortableHelipadLight_01_blue_F",0,0,0],
+  ["Land_DieselGroundPowerUnit_01_F",0,0,0],
+  ["Land_Pallet_MilBoxes_F",0,0,0],
+  ["Land_PaperBox_open_full_F",0,0,0],
+  ["Land_ClutterCutter_large_F",0,0,0]
 ];
 
 support_vehicles = [
-	[Arsenal_typename,10,0,0],
+  [Arsenal_typename,10,0,0],
   <#include classnames/support/ammobox_nato_pacific.h>
   <#include classnames/support/ace_spares.h>
-	[Respawn_truck_typename,20,0,5],
-	[FOB_box_typename,30,50,0],
-	[FOB_truck_typename,30,50,5],
-	["B_T_Truck_01_ammo_F",0,30,10],
-	["B_T_Truck_01_fuel_F",5,0,2],
-	["B_T_Truck_01_Repair_F",10,0,5],
-	["B_Slingload_01_Repair_F",5,0,0],
-	["B_Slingload_01_Fuel_F",5,0,0],
-	["B_Slingload_01_Ammo_F",5,0,0],
-	[<#MAIN_AMMOBOX_BLUFOR>,0,15,0],
-	[<#MAIN_AMMOBOX_OPFOR>,0,15,0]
+  [Respawn_truck_typename,20,0,5],
+  [FOB_box_typename,30,50,0],
+  [FOB_truck_typename,30,50,5],
+  ["B_T_Truck_01_ammo_F",0,30,10],
+  ["B_T_Truck_01_fuel_F",5,0,2],
+  ["B_T_Truck_01_Repair_F",10,0,5],
+  ["B_Slingload_01_Repair_F",5,0,0],
+  ["B_Slingload_01_Fuel_F",5,0,0],
+  ["B_Slingload_01_Ammo_F",5,0,0],
+  [<#MAIN_AMMOBOX_BLUFOR>,0,15,0],
+  [<#MAIN_AMMOBOX_OPFOR>,0,15,0]
 ];
 
 
@@ -146,12 +146,12 @@ elite_vehicles = ["B_T_MBT_01_TUSK_F", "B_T_MBT_01_cannon_F", "B_Heli_Attack_01_
 ai_resupply_sources = [ Respawn_truck_typename, HELO_CLASSNAME, Arsenal_typename, "B_Slingload_01_Ammo_F", "B_APC_Tracked_01_CRV_F", "B_Truck_01_ammo_F" ];
 
 squads = [
-	[blufor_squad_inf_light,20,0,0],
-	[blufor_squad_inf,30,0,0],
-	[blufor_squad_at,20,25,0],
-	[blufor_squad_aa,20,25,0],
-	[blufor_squad_recon,25,0,0],
-	[blufor_squad_para,20,0,0]
+  [blufor_squad_inf_light,20,0,0],
+  [blufor_squad_inf,30,0,0],
+  [blufor_squad_at,20,25,0],
+  [blufor_squad_aa,20,25,0],
+  [blufor_squad_recon,25,0,0],
+  [blufor_squad_para,20,0,0]
 ];
 
 opfor_sentry = <#OPFOR_UNIT_RIFLEMAN>;
@@ -181,22 +181,22 @@ opfor_fuel_container = "Land_Pod_Heli_Transport_04_fuel_F";
 opfor_ammo_container = "Land_Pod_Heli_Transport_04_ammo_F";
 opfor_flag = "Flag_CSAT_F";
 opfor_infantry = [
-	<#OPFOR_UNIT_RIFLEMAN>,
-	<#OPFOR_UNIT_RIFLEMAN>,
-	<#OPFOR_UNIT_GRENADIER>,
-	<#OPFOR_UNIT_SQL>,
-	<#OPFOR_UNIT_FTL>,
-	<#OPFOR_UNIT_MARKSMAN>,
-	<#OPFOR_UNIT_AUTORIFLEMAN>,
-	<#OPFOR_UNIT_MMG>,
-	<#OPFOR_UNIT_MEDIC>,
-	<#OPFOR_UNIT_LAT>,
-	<#OPFOR_UNIT_HAT>,
-	<#OPFOR_UNIT_AA>,
-	<#OPFOR_UNIT_OFFICER>,
-	<#OPFOR_UNIT_SHARPSHOOTER>,
-	<#OPFOR_UNIT_SNIPER>,
-	<#OPFOR_UNIT_ENGINEER>
+  <#OPFOR_UNIT_RIFLEMAN>,
+  <#OPFOR_UNIT_RIFLEMAN>,
+  <#OPFOR_UNIT_GRENADIER>,
+  <#OPFOR_UNIT_SQL>,
+  <#OPFOR_UNIT_FTL>,
+  <#OPFOR_UNIT_MARKSMAN>,
+  <#OPFOR_UNIT_AUTORIFLEMAN>,
+  <#OPFOR_UNIT_MMG>,
+  <#OPFOR_UNIT_MEDIC>,
+  <#OPFOR_UNIT_LAT>,
+  <#OPFOR_UNIT_HAT>,
+  <#OPFOR_UNIT_AA>,
+  <#OPFOR_UNIT_OFFICER>,
+  <#OPFOR_UNIT_SHARPSHOOTER>,
+  <#OPFOR_UNIT_SNIPER>,
+  <#OPFOR_UNIT_ENGINEER>
 ];
 
 //========================================
@@ -204,57 +204,57 @@ opfor_infantry = [
 //========================================
 
 opfor_squad_low_intensity = [
-	<#OPFOR_UNIT_FTL>,
-	<#OPFOR_UNIT_AUTORIFLEMAN>,
-	<#OPFOR_UNIT_MEDIC>,
-	<#OPFOR_UNIT_HAT>,
-	<#OPFOR_UNIT_RIFLEMAN>,
-	<#OPFOR_UNIT_RIFLEMAN>,
-	<#OPFOR_UNIT_RIFLEMAN>,
-	<#OPFOR_UNIT_RIFLEMAN>
+  <#OPFOR_UNIT_FTL>,
+  <#OPFOR_UNIT_AUTORIFLEMAN>,
+  <#OPFOR_UNIT_MEDIC>,
+  <#OPFOR_UNIT_HAT>,
+  <#OPFOR_UNIT_RIFLEMAN>,
+  <#OPFOR_UNIT_RIFLEMAN>,
+  <#OPFOR_UNIT_RIFLEMAN>,
+  <#OPFOR_UNIT_RIFLEMAN>
 ];
 
 opfor_squad_8_standard = [
-	<#OPFOR_UNIT_SQL>,
-	<#OPFOR_UNIT_FTL>,
-	<#OPFOR_UNIT_AUTORIFLEMAN>,
-	<#OPFOR_UNIT_MMG>,
-	<#OPFOR_UNIT_MEDIC>,
-	<#OPFOR_UNIT_MARKSMAN>,
-	<#OPFOR_UNIT_GRENADIER>,
-	<#OPFOR_UNIT_LAT>
+  <#OPFOR_UNIT_SQL>,
+  <#OPFOR_UNIT_FTL>,
+  <#OPFOR_UNIT_AUTORIFLEMAN>,
+  <#OPFOR_UNIT_MMG>,
+  <#OPFOR_UNIT_MEDIC>,
+  <#OPFOR_UNIT_MARKSMAN>,
+  <#OPFOR_UNIT_GRENADIER>,
+  <#OPFOR_UNIT_LAT>
 ];
 
 opfor_squad_8_infkillers = [
-	<#OPFOR_UNIT_SQL>,
-	<#OPFOR_UNIT_AUTORIFLEMAN>,
-	<#OPFOR_UNIT_AUTORIFLEMAN>,
-	<#OPFOR_UNIT_MMG>,
-	<#OPFOR_UNIT_MEDIC>,
-	<#OPFOR_UNIT_MARKSMAN>,
-	<#OPFOR_UNIT_SHARPSHOOTER>,
-	<#OPFOR_UNIT_SNIPER>
+  <#OPFOR_UNIT_SQL>,
+  <#OPFOR_UNIT_AUTORIFLEMAN>,
+  <#OPFOR_UNIT_AUTORIFLEMAN>,
+  <#OPFOR_UNIT_MMG>,
+  <#OPFOR_UNIT_MEDIC>,
+  <#OPFOR_UNIT_MARKSMAN>,
+  <#OPFOR_UNIT_SHARPSHOOTER>,
+  <#OPFOR_UNIT_SNIPER>
 ];
 
 opfor_squad_8_tankkillers = [
-	<#OPFOR_UNIT_SQL>,
-	<#OPFOR_UNIT_MEDIC>,
-	<#OPFOR_UNIT_AUTORIFLEMAN>,
-	<#OPFOR_UNIT_LAT>,
-	<#OPFOR_UNIT_LAT>,
-	<#OPFOR_UNIT_HAT>,
-	<#OPFOR_UNIT_HAT>,
-	<#OPFOR_UNIT_HAT>
+  <#OPFOR_UNIT_SQL>,
+  <#OPFOR_UNIT_MEDIC>,
+  <#OPFOR_UNIT_AUTORIFLEMAN>,
+  <#OPFOR_UNIT_LAT>,
+  <#OPFOR_UNIT_LAT>,
+  <#OPFOR_UNIT_HAT>,
+  <#OPFOR_UNIT_HAT>,
+  <#OPFOR_UNIT_HAT>
 ];
 opfor_squad_8_airkillers = [
-	<#OPFOR_UNIT_SQL>,
-	<#OPFOR_UNIT_MEDIC>,
-	<#OPFOR_UNIT_MMG>,
-	<#OPFOR_UNIT_LAT>,
-	<#OPFOR_UNIT_LAT>,
-	<#OPFOR_UNIT_AA>,
-	<#OPFOR_UNIT_AA>,
-	<#OPFOR_UNIT_AA>
+  <#OPFOR_UNIT_SQL>,
+  <#OPFOR_UNIT_MEDIC>,
+  <#OPFOR_UNIT_MMG>,
+  <#OPFOR_UNIT_LAT>,
+  <#OPFOR_UNIT_LAT>,
+  <#OPFOR_UNIT_AA>,
+  <#OPFOR_UNIT_AA>,
+  <#OPFOR_UNIT_AA>
 ];
 
 original_resistance = [
@@ -292,7 +292,7 @@ militia_squad = [
 ];
 
 militia_vehicles = [
-	"I_C_Offroad_02_unarmed_F",
+  "I_C_Offroad_02_unarmed_F",
   "I_C_Van_01_transport_F",
   "I_G_Offroad_01_armed_F"
 ];
@@ -363,9 +363,9 @@ opfor_battlegroup_vehicles_low_intensity = [
 ];
 
 opfor_troup_transports = [
-	"O_T_APC_Wheeled_02_rcws_ghex_F",
-	"O_T_Truck_03_covered_ghex_F",
-	"O_Heli_Light_02_F"
+  "O_T_APC_Wheeled_02_rcws_ghex_F",
+  "O_T_Truck_03_covered_ghex_F",
+  "O_Heli_Light_02_F"
 ];
 
 opfor_choppers = [
@@ -374,36 +374,36 @@ opfor_choppers = [
 ];
 
 opfor_air = [
-	"O_Plane_CAS_02_F",
-	"O_T_VTOL_02_infantry_F"
+  "O_Plane_CAS_02_F",
+  "O_T_VTOL_02_infantry_F"
 ];
 
 civilians = [
-	"C_man_1",
-	"C_man_polo_6_F",
-	"C_man_polo_3_F",
-	"C_man_polo_2_F",
-	"C_man_polo_4_F",
-	"C_man_polo_5_F",
-	"C_man_polo_1_F",
-	"C_man_p_beggar_F",
-	"C_man_1_2_F",
-	"C_man_p_fugitive_F",
-	"C_man_hunter_1_F",
-	"C_journalist_F",
-	"C_man_shorts_2_F",
-	"C_man_w_worker_F"
+  "C_man_1",
+  "C_man_polo_6_F",
+  "C_man_polo_3_F",
+  "C_man_polo_2_F",
+  "C_man_polo_4_F",
+  "C_man_polo_5_F",
+  "C_man_polo_1_F",
+  "C_man_p_beggar_F",
+  "C_man_1_2_F",
+  "C_man_p_fugitive_F",
+  "C_man_hunter_1_F",
+  "C_journalist_F",
+  "C_man_shorts_2_F",
+  "C_man_w_worker_F"
 ];
 
 civilian_vehicles = [
-	"C_Hatchback_01_F",
-	"C_Hatchback_01_sport_F",
-	"C_Offroad_01_F",
-	"C_SUV_01_F",
-	"C_Van_01_transport_F",
-	"C_Van_01_box_F",
-	"C_Van_01_fuel_F",
-	"C_Quadbike_01_F"
+  "C_Hatchback_01_F",
+  "C_Hatchback_01_sport_F",
+  "C_Offroad_01_F",
+  "C_SUV_01_F",
+  "C_Van_01_transport_F",
+  "C_Van_01_box_F",
+  "C_Van_01_fuel_F",
+  "C_Quadbike_01_F"
 ];
 
 build_lists = [[],infantry_units,light_vehicles,heavy_vehicles,air_vehicles,static_vehicles,buildings,support_vehicles,squads];
@@ -423,28 +423,28 @@ GRLIB_intel_chair = "Land_CampingChair_V2_F";
 GRLIB_intel_file = "Land_File1_F";
 GRLIB_intel_laptop = "Land_Laptop_device_F";
 GRLIB_ignore_colisions_when_building = [
-	"ACE_MedicalLitterBase",
-	"ACE_MedicalLitter_clean",
-	"ACE_MedicalLitter_bandage1",
-	"ACE_MedicalLitter_bandage2",
-	"ACE_MedicalLitter_bandage3",
-	"ACE_MedicalLitter_packingBandage",
-	"ACE_MedicalLitter_gloves",
-	"ACE_MedicalLitter_adenosine",
-	"ACE_MedicalLitter_atropine",
-	"ACE_MedicalLitter_epinephrine",
-	"ACE_MedicalLitter_morphine",
-	"ACE_MedicalLitter_QuickClot",
-	"Land_Flush_Light_red_F",
-	"Land_Flush_Light_red_F",
-	"Land_Flush_Light_green_F",
-	"Land_Flush_Light_yellow_F",
-	"Land_runway_edgelight",
-	"Land_runway_edgelight_blue_F",
-	"Land_HelipadSquare_F",
-	"Sign_Sphere100cm_F",
-	"TMR_Autorest_Georef",
-	"Land_ClutterCutter_large_F"
+  "ACE_MedicalLitterBase",
+  "ACE_MedicalLitter_clean",
+  "ACE_MedicalLitter_bandage1",
+  "ACE_MedicalLitter_bandage2",
+  "ACE_MedicalLitter_bandage3",
+  "ACE_MedicalLitter_packingBandage",
+  "ACE_MedicalLitter_gloves",
+  "ACE_MedicalLitter_adenosine",
+  "ACE_MedicalLitter_atropine",
+  "ACE_MedicalLitter_epinephrine",
+  "ACE_MedicalLitter_morphine",
+  "ACE_MedicalLitter_QuickClot",
+  "Land_Flush_Light_red_F",
+  "Land_Flush_Light_red_F",
+  "Land_Flush_Light_green_F",
+  "Land_Flush_Light_yellow_F",
+  "Land_runway_edgelight",
+  "Land_runway_edgelight_blue_F",
+  "Land_HelipadSquare_F",
+  "Sign_Sphere100cm_F",
+  "TMR_Autorest_Georef",
+  "Land_ClutterCutter_large_F"
 ];
 GRLIB_sar_wreck = "Land_Wreck_Heli_Attack_01_F";
 GRLIB_sar_fire = "test_EmptyObjectForFireBig";
