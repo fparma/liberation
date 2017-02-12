@@ -1,10 +1,43 @@
 class Params {
-  class MissionOptions {
-    title = $STR_PARAMS_MISSIONOPTIONS;
+
+  class EnvironmentSettings {
+    title = "== ENVIRONMENT SETTINGS ==";
     values[] = {""};
     texts[] = {""};
     default = "";
   };
+  class DayTime {
+    title = "Time of Day Override:";
+    values[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 };
+    texts[] = { "No Override", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00" };
+    default = 0;
+  };
+  class DayDuration {
+    title = "Day duration (hours):";
+    values[] = { 48, 24, 16, 12, 9.6, 8, 6.8, 6, 4.8, 4, 3, 2.4, 2, 1.6, 1, 0.66, 0.5, 0.375, 0.25};
+    texts[] = { "0.5", "1", "1.5", "2", "2.5", "3","3.5","4","5","6","8","10","12","15","24","36","48","64","96"};
+    default = 4;
+  };
+  class StartingWeather {
+   title = "Starting Weather:";
+   values[] = {0,1,2,3,4};
+   texts[] = {"Clear","Overcast","Rain","Fog","Random"};
+   default = 4;
+  };
+
+  class Spacer_MissionOptions {
+    title = "";
+    values[] = {""};
+    texts[] = {""};
+    default = "";
+  };
+  class MissionOptions {
+    title = "== MISSION OPTIONS ==";
+    values[] = {""};
+    texts[] = {""};
+    default = "";
+  };
+
   class ArsenalLimitation {
     title = "Arsenal Limitation";
     values[] = {1, 0};
@@ -35,24 +68,6 @@ class Params {
     texts[] = {$STR_PARAMS_ENABLED,$STR_PARAMS_DISABLED};
     default = 1;
   };
-  class DayTime {
-    title = "Time of Day Override:";
-    values[] = { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23 };
-    texts[] = { "No Override", "01:00", "02:00", "03:00", "04:00", "05:00", "06:00", "07:00", "08:00", "09:00", "10:00", "11:00", "12:00", "13:00", "14:00", "15:00", "16:00", "17:00", "18:00", "19:00", "20:00", "21:00", "22:00", "23:00" };
-    default = 0;
-  };
-  class DayDuration {
-    title = "Day duration (hours):";
-    values[] = { 48, 24, 16, 12, 9.6, 8, 6.8, 6, 4.8, 4, 3, 2.4, 2, 1.6, 1, 0.66, 0.5, 0.375, 0.25};
-    texts[] = { "0.5", "1", "1.5", "2", "2.5", "3","3.5","4","5","6","8","10","12","15","24","36","48","64","96"};
-    default = 4;
-  };
-  class StartingWeather {
-   title = "Starting Weather:";
-   values[] = {0,1,2,3,4};
-   texts[] = {"Clear","Overcast","Rain","Fog","Random"};
-   default = 4;
-};
   class ResourcesMultiplier {
     title = $STR_PARAMS_RESOURCESMULTIPLIER;
     values[] = { 0.25, 0.5, 0.75, 1, 1.25, 1.5, 2, 3, 5, 10, 20, 50 };

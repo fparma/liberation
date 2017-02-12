@@ -187,9 +187,6 @@
         <Key ID="STR_VICTORY_TEXT">
             <Original>You have Liberated the region from the enemy oppression!</Original>
         </Key>
-        <Key ID="STR_PARAMS_MISSIONOPTIONS">
-            <Original>== MISSION OPTIONS ==</Original>
-        </Key>
         <Key ID="STR_PARAMS_TECHNICALOPTIONS">
             <Original>== TECHNICAL OPTIONS ==</Original>
         </Key>
