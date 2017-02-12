@@ -47,6 +47,10 @@ class CfgFunctions {
       file = "functions\actions";
       class initLogisticsInRange;
     };
+    class Weather {
+      file = "functions\weather";
+      class initWeather;
+    };
   };
 };
 

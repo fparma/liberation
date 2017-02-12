@@ -27,4 +27,6 @@ if (!isDedicated && hasInterface) then {
   [] call compileFinal preprocessFileLineNumbers "scripts\client\init_client.sqf";
 };
 
+[] spawn FPC_fnc_initWeather;
+
 disableRemoteSensors true;
