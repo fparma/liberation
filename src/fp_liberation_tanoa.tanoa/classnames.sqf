@@ -48,7 +48,7 @@ light_vehicles = [
   ["CUP_B_HMMWV_M1114_USMC",0,5,5],
   ["CUP_B_HMMWV_MK19_USMC",0,10,5],
   ["CUP_B_HMMWV_TOW_USMC",0,15,5],
-  ["CUP_B_LR_Transport_GB_W",0,0,2],
+  ["CUP_B_LR_Transport_GB_W",0,0,2]
 ];
 
 heavy_vehicles = [
