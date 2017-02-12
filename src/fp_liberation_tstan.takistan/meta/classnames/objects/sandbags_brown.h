@@ -1,0 +1,5 @@
+["Land_BagFence_Corner_F",0,0,0],
+["Land_BagFence_End_F",0,0,0],
+["Land_BagFence_Long_F",0,0,0],
+["Land_BagFence_Round_F",0,0,0],
+["Land_BagFence_Short_F",0,0,0],
