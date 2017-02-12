@@ -76,6 +76,12 @@ if ( !isNil "greuh_liberation_savegame" ) then {
     GRLIB_player_scores = greuh_liberation_savegame select 15;
   };
 
+  // Set time of day and date.
+  // If an override is defined in the params, use that. Else use the savegame time.
+  private _dayTimeParam = ["DayTime",0] call bis_fnc_getParamValue;
+  if (_dayTimeParam != 0) then {
+    time_of_day = _dayTimeParam;
+  };
   setDate [ 2045, 6, 6, time_of_day, 0];
 
   _correct_fobs = [];

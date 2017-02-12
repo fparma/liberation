@@ -193,9 +193,6 @@
         <Key ID="STR_PARAMS_TECHNICALOPTIONS">
             <Original>== TECHNICAL OPTIONS ==</Original>
         </Key>
-        <Key ID="STR_PARAMS_DAYDURATION">
-            <Original>Day duration (hours):</Original>
-        </Key>
         <Key ID="STR_PARAMS_DIFFICULTY">
             <Original>Difficulty:</Original>
         </Key>

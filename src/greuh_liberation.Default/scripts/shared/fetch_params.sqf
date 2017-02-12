@@ -1,6 +1,5 @@
 if ( isMultiplayer ) then {
   GRLIB_difficulty_modifier = ["Difficulty",1] call bis_fnc_getParamValue;
-  GRLIB_time_factor = ["DayDuration",12] call bis_fnc_getParamValue;
   GRLIB_resources_multiplier = ["ResourcesMultiplier",1] call bis_fnc_getParamValue;
   GRLIB_unitcap = ["Unitcap",1] call bis_fnc_getParamValue;
   GRLIB_adaptive_opfor = ["AdaptToPlayercount",1] call bis_fnc_getParamValue;
@@ -17,7 +16,6 @@ if ( isMultiplayer ) then {
   GRLIB_max_squad_size = ["MaxSquadSize",10] call bis_fnc_getParamValue;
 } else {
   GRLIB_difficulty_modifier = 1;
-  GRLIB_time_factor = 12;
   GRLIB_resources_multiplier = 1;
   GRLIB_adaptive_opfor = 1;
   GRLIB_unitcap = 1;
