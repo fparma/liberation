@@ -31,10 +31,12 @@ if (isNil "_gear") then {
     } forEach [3,4,5]; // Uniform, Vest, Backpack
   };
 
-  
+
   player setUnitLoadout [_gear, true];
 };
 
 fpc_firstload = false;
 [] spawn FPC_fnc_show_redeploy_dialog;
 
+// Set Player as Engineer
+player setVariable["ACE_IsEngineer", 1];
