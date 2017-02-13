@@ -40,7 +40,7 @@ light_vehicles = [
   ["B_T_Truck_01_transport_F",0,0,5],
   ["B_T_APC_Wheeled_01_cannon_F",0,60,20],
   ["B_T_APC_Tracked_01_rcws_F",0,40,25],
-  ["B_T_APC_Tracked_01_CRV_F",0,40,25]
+  ["B_T_APC_Tracked_01_CRV_F",0,40,25],
   ["CUP_B_HMMWV_Unarmed_USMC",0,0,2],
   ["CUP_B_MTVR_USMC",0,0,5],
   ["CUP_B_HMMWV_Ambulance_USMC",0,0,5],
