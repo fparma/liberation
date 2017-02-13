@@ -1,0 +1,5 @@
+["Land_fort_bagfence_long",0,0,0],
+["Land_fort_bagfence_corner",0,0,0],
+["Land_fort_rampart_EP1",0,0,0],
+["Land_Rampart_F",0,0,0],
+["Land_fort_artillery_nest_EP1",0,0,0],
