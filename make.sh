@@ -58,7 +58,7 @@ for mission in `find src/ -maxdepth 1 -name "fp_*" -type d`; do
   # Finish up by renaming the folder with a timestamp
   if [ $RENAME_MISSION_FILE -eq 1 ]; then
     MAP_BEGIN=`echo "$DST_MAIN" | grep -E -o "^dist/[a-zA-Z0-9_-]+"`
-    MAP_ENDIN=`echo "$DST_MAIN" | grep -E -o "\.[a-zA-Z0-9]+$"`
+    MAP_ENDIN=`echo "$DST_MAIN" | grep -E -o "\.[a-zA-Z0-9_]+$"`
     mv "${DST_MAIN}" "${MAP_BEGIN}_${DATE}${MAP_ENDIN}"
   fi
 
