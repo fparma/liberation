@@ -48,7 +48,10 @@ light_vehicles = [
   ["CUP_B_HMMWV_M1114_USMC",0,5,5],
   ["CUP_B_HMMWV_MK19_USMC",0,10,5],
   ["CUP_B_HMMWV_TOW_USMC",0,15,5],
-  ["CUP_B_LR_Transport_GB_W",0,0,2]
+  ["CUP_B_LR_Transport_GB_W",0,0,2],
+  ["B_Boat_Transport_01_F",0,0,2],
+  ["CUP_B_RHIB2Turret_USMC",0,15,5],
+  ["Burnes_MK10",0,0,10]
 ];
 
 heavy_vehicles = [
@@ -143,8 +146,12 @@ blufor_squad_para = [ <#BLUFOR_UNIT_PARATROOPER>,<#BLUFOR_UNIT_PARATROOPER>,<#BL
 blufor_squad_inf_light = [ <#BLUFOR_UNIT_SQL>,<#BLUFOR_UNIT_FTL>,<#BLUFOR_UNIT_GRENADIER>,<#BLUFOR_UNIT_AUTORIFLEMAN>,<#BLUFOR_UNIT_GRENADIER>,<#BLUFOR_UNIT_MEDIC>,<#BLUFOR_UNIT_LAT>,<#BLUFOR_UNIT_RIFLEMAN>,<#BLUFOR_UNIT_RIFLEMAN>];
 
 uavs = [ "B_UAV_01_F","B_UAV_02_F","B_UAV_02_CAS_F","B_UGV_01_F","B_UGV_01_rcws_F" ];
-boats_names = [ "B_Boat_Transport_01_F", "B_Boat_Armed_01_minigun_F" ];
 elite_vehicles = ["B_T_MBT_01_TUSK_F", "B_T_MBT_01_cannon_F", "B_Heli_Attack_01_F", "B_T_VTOL_01_armed_F"];
+
+["B_Boat_Transport_01_F",0,0,2],
+["CUP_B_RHIB2Turret_USMC",0,15,5],
+["Burnes_MK10",0,0,10]
+
 
 ai_resupply_sources = [ Respawn_truck_typename, HELO_CLASSNAME, Arsenal_typename, "B_Slingload_01_Ammo_F", "B_APC_Tracked_01_CRV_F", "B_Truck_01_ammo_F" ];
 

@@ -174,7 +174,7 @@ while { true } do {
           GRLIB_conflicting_objects = [];
         };
 
-        if (count _near_objects == 0 && ((_truepos distance _posfob) < _maxdist) && ( ((!surfaceIsWater _truepos) && (!surfaceIsWater getpos player)) || (_classname in boats_names) ) ) then {
+        if (count _near_objects == 0 && ((_truepos distance _posfob) < _maxdist) && ( ((!surfaceIsWater _truepos) && (!surfaceIsWater getpos player)) ) ) then {
 
           if ( ((buildtype == 6) || (buildtype == 99)) && ((gridmode % 2) == 1) ) then {
             _vehicle setpos [round (_truepos select 0),round (_truepos select 1), _truepos select 2];
@@ -207,9 +207,6 @@ while { true } do {
               { _objs_classnames pushback (typeof _x) } foreach _near_objects;
               hint format [ "Colisions : %1", _objs_classnames ];
             };
-          };
-          if( ((surfaceIsWater _truepos) || (surfaceIsWater getpos player)) && !(_classname in boats_names)) then {
-            GRLIB_ui_notif = localize "STR_BUILD_ERROR_WATER";
           };
           if((_truepos distance _posfob) > _maxdist) then {
             GRLIB_ui_notif = format [localize "STR_BUILD_ERROR_DISTANCE",_maxdist];
