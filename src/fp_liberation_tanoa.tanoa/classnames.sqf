@@ -132,8 +132,8 @@ support_vehicles = [
   ["B_Slingload_01_Repair_F",5,0,0],
   ["B_Slingload_01_Fuel_F",5,0,0],
   ["B_Slingload_01_Ammo_F",5,0,0],
-  [<#MAIN_AMMOBOX_BLUFOR>,0,15,0],
-  [<#MAIN_AMMOBOX_OPFOR>,0,15,0]
+  [<#MAIN_AMMOBOX_BLUFOR>,0,150,0],
+  [<#MAIN_AMMOBOX_OPFOR>,0,150,0]
 ];
 
 
