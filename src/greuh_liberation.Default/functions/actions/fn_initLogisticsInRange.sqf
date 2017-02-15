@@ -1,4 +1,6 @@
-private _stringarray = [];
+private _stringarray = [
+  "ace_rearm_defaultCarriedObject"
+];
 { _stringarray pushBack (_x select 0); } forEach buildings;
 
 private _objects = nearestObjects [ACE_player, _stringarray, 100];
