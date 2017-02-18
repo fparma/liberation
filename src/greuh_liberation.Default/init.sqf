@@ -30,3 +30,7 @@ if (!isDedicated && hasInterface) then {
 [] spawn FPC_fnc_initWeather;
 
 disableRemoteSensors true;
+
+// Set ACE Vars for Max Dragging and Carrying Weight.
+missionNamespace setVariable ["ACE_maxWeightDrag", 8000];
+missionNamespace setVariable ["ACE_maxWeightCarry", 8000];
