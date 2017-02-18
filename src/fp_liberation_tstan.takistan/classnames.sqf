@@ -116,8 +116,8 @@ support_vehicles = [
 	["CUP_O_URAL_Repair_RU",5,0,0],
 	["B_Slingload_01_Fuel_F",5,0,0],
 	["B_Slingload_01_Ammo_F",5,0,0],
-	[<#MAIN_AMMOBOX_BLUFOR>,0,10,0],
-	[<#MAIN_AMMOBOX_OPFOR>,0,10,0]
+	[<#MAIN_AMMOBOX_BLUFOR>,0,150,0],
+	[<#MAIN_AMMOBOX_OPFOR>,0,150,0]
 ];
 
 
