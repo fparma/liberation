@@ -4,6 +4,7 @@ removeAllItems player;
 removeAllWeapons player;
 removeAllAssignedItems player;
 
+player addEventHandler ["HandleRating", {abs (_this select 1);}];
 
 private _gear = profileNamespace getVariable (format ["%1_fpcGear", GRLIB_save_key]);
 if (isNil "_gear") then {
