@@ -1,3 +1,5 @@
+player addEventHandler ["HandleRating", {abs (_this select 1);}];
+
 // Liberation ACE Actions
 [ACE_player, 1, ["ACE_SelfActions"], ['FPC_INTERACTION_ROOT','Liberation','',{},{true}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 [ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT"], ['FPC_INTERACTION_ARSENAL','Open Arsenal','\z\ace\addons\magazinerepack\UI\repack_ca.paa',{["Open",ARSENAL_ISFULL] spawn BIS_fnc_arsenal;},{[] call FPC_fnc_arsenalCondition;}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
