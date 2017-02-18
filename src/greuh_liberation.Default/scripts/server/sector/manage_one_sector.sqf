@@ -28,7 +28,13 @@ active_sectors pushback _sector; publicVariable "active_sectors";
 private _opforcount = [] call F_opforCap;
 [ _sector, _opforcount ] call wait_to_spawn_sector;
 
-if ( (!(_sector in blufor_sectors)) && ( ( [ getmarkerpos _sector , [ _opforcount ] call F_getCorrectedSectorRange , GRLIB_side_friendly ] call F_getUnitsCount ) > 0 ) ) then {
+if (
+    // If the Sector is not in blufor's list of captured sectors yet.
+    (!(_sector in blufor_sectors))
+    &&
+    // Within Sector, get all units of the friendly side inside the sector, and if there's 1 or more, this condition is true.
+    (( [getmarkerpos _sector, [_opforcount] call F_getCorrectedSectorRange, GRLIB_side_friendly ] call F_getUnitsCount ) > 0)
+   ) then {
 
   //===================================================================
   // BIG TOWN SPAWN HANDLING
@@ -205,6 +211,8 @@ if ( (!(_sector in blufor_sectors)) && ( ( [ getmarkerpos _sector , [ _opforcoun
       sleep 60;
       active_sectors = active_sectors - [ _sector ]; publicVariable "active_sectors";
       sleep 600;
+
+      // Cleanup Opfor Units and Vehicles that belong to the enemy.
       {
         if (_x isKindOf "Man") then {
           if ( side group _x != GRLIB_side_friendly ) then {
@@ -214,6 +222,7 @@ if ( (!(_sector in blufor_sectors)) && ( ( [ getmarkerpos _sector , [ _opforcoun
           [ _x ] call F_cleanOpforVehicle;
         };
       } foreach _managed_units;
+
     } else {
       // Sector has not been liberated yet.
       if ( ( [_sectorpos, ( ( [ _opforcount ] call F_getCorrectedSectorRange ) + 300 ), GRLIB_side_friendly ] call F_getUnitsCount ) == 0 ) then {
@@ -224,6 +233,8 @@ if ( (!(_sector in blufor_sectors)) && ( ( [ getmarkerpos _sector , [ _opforcoun
 
       // Despawn Tickets have reached 0 or less than 0.
       if ( _sector_despawn_tickets <= 0 ) then {
+
+        // Cleanup Managed Units
         {
           if (_x isKindOf "Man") then {
             deleteVehicle _x;
