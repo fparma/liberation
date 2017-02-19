@@ -216,7 +216,7 @@ while {deleteManagerPublic} do {
       };
     } count allGroups;
   };
-        sleep 1;
+  sleep 1;
   //================================= SLEEP
   if (_checkPlayerCount) then {
     if ((count (playableUnits + switchableUnits)) >= _playerThreshold) then {
