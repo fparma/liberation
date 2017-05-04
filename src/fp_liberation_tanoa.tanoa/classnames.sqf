@@ -40,7 +40,7 @@ light_vehicles = [
   ["B_T_Truck_01_transport_F",0,0,5],
   ["B_T_APC_Wheeled_01_cannon_F",0,60,20],
   ["B_T_APC_Tracked_01_rcws_F",0,40,25],
-  ["B_T_APC_Tracked_01_CRV_F",0,40,25]
+  ["B_T_APC_Tracked_01_CRV_F",0,40,25],
   ["CUP_B_HMMWV_Unarmed_USMC",0,0,2],
   ["CUP_B_MTVR_USMC",0,0,5],
   ["CUP_B_HMMWV_Ambulance_USMC",0,0,5],
@@ -147,11 +147,6 @@ blufor_squad_inf_light = [ <#BLUFOR_UNIT_SQL>,<#BLUFOR_UNIT_FTL>,<#BLUFOR_UNIT_G
 
 uavs = [ "B_UAV_01_F","B_UAV_02_F","B_UAV_02_CAS_F","B_UGV_01_F","B_UGV_01_rcws_F" ];
 elite_vehicles = ["B_T_MBT_01_TUSK_F", "B_T_MBT_01_cannon_F", "B_Heli_Attack_01_F", "B_T_VTOL_01_armed_F"];
-
-["B_Boat_Transport_01_F",0,0,2],
-["CUP_B_RHIB2Turret_USMC",0,15,5],
-["Burnes_MK10",0,0,10]
-
 
 ai_resupply_sources = [ Respawn_truck_typename, HELO_CLASSNAME, Arsenal_typename, "B_Slingload_01_Ammo_F", "B_APC_Tracked_01_CRV_F", "B_Truck_01_ammo_F" ];
 
