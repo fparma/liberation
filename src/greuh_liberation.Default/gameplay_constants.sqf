@@ -25,7 +25,7 @@ GRLIB_civilians_amount = 10 * GRLIB_civilian_activity;
 GRLIB_fob_range = 150;
 GRLIB_cleanup_delay = 1200;
 GRLIB_surrender_chance = 80;
-GRLIB_secondary_missions_costs = [ 15, 10, 10 ];  // [FOB, Convoy, SAR]
+GRLIB_secondary_missions_costs = [ 15, 10, 5 ];  // [FOB, Convoy, SAR]
 GRLIB_civ_killing_penalty = 15;
 
 if ( GRLIB_blufor_cap > 100 ) then { GRLIB_blufor_cap = 100 }; // Don't forget that the human commander manages those, not the server

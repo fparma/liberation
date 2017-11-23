@@ -22,7 +22,6 @@ class IGUIBack {
 class RscPicture {
   deletable = 0;
   fade = 0;
-  access = 0;
   type = 0;
   idc = -1;
   style = 48;
@@ -46,7 +45,6 @@ class RscPicture {
 class RscStructuredText {
   deletable = 0;
   fade = 0;
-  access = 0;
   type = 13;
   idc = -1;
   style = 0;
@@ -70,7 +68,6 @@ class RscStructuredText {
 class RscText {
   deletable = 0;
   fade = 0;
-  access = 0;
   type = 0;
   idc = -1;
   colorBackground[] = {0,0,0,0};
@@ -95,7 +92,6 @@ class RscText {
 class RscButton {
   deletable = 0;
   fade = 0;
-  access = 0;
   type = 1;
   text = "";
   colorText[] = {1,1,1,1};

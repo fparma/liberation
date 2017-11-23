@@ -42,7 +42,7 @@ class Params {
     title = "Arsenal Limitation";
     values[] = {1, 0};
     texts[] = {"Yes", "No"};
-    default = 1;
+    default = 0;
   };
   class Unitcap {
     title = $STR_PARAMS_UNITCAP;
@@ -138,7 +138,7 @@ class Params {
     title = $STR_PERMISSIONS_PARAM;
     values[] = {1,0};
     texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-    default = 1;
+    default = 0;
   };
   class CleanupVehicles {
     title = $STR_CLEANUP_PARAM;
