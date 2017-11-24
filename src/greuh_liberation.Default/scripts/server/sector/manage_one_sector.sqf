@@ -215,7 +215,7 @@ if (
       // Cleanup Opfor Units and Vehicles that belong to the enemy.
       {
         if (_x isKindOf "Man") then {
-          if ( side group _x != GRLIB_side_friendly ) then {
+          if ( !captive _x ) then {
             deleteVehicle _x;
           };
         } else {
