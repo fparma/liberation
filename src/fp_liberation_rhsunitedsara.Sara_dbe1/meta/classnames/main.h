@@ -6,8 +6,8 @@
 <#define MAIN_TRUCK_AMMOBOX_OPFOR|"O_Truck_03_transport_F">     // Opfor transport truck Definition
 <#define MAIN_ARSENAL_BOX|"B_supplyCrate_F">                    // Arsenal Box Classname
 <#define MAIN_TRANSPORT_HELO|"RHS_CH_47F">           // Main Transport helicopter (Transporting FOB Capable)
-<#define MAIN_AMMOBOX_BLUFOR|"B_CargoNet_01_ammo_F">              // Blufor Vehicle Ammobox Definition
-<#define MAIN_AMMOBOX_OPFOR|"B_CargoNet_01_ammo_F">               // Opfor Vehicle Ammobox Definition
+<#define MAIN_AMMOBOX_BLUFOR|"Box_NATO_AmmoVeh_F">              // Blufor Vehicle Ammobox Definition
+<#define MAIN_AMMOBOX_OPFOR|"Box_East_AmmoVeh_F">               // Opfor Vehicle Ammobox Definition
 
 // Blufor Units (Not necessary arma3's blufor side, but rather the player side. )
 // TODO: Add Sharpshooter
