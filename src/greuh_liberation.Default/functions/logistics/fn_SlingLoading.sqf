@@ -881,7 +881,7 @@ ASL_Is_Supported_Vehicle = {
   _isSupported = false;
   if(not isNull _vehicle) then {
     {
-      if(_vehicle isKindOf _x) then {
+      if(_vehicle isKindOf _x && {!(unitIsUAV _vehicle)}) then {
         _isSupported = true;
       };
     } forEach (missionNamespace getVariable ["ASL_SUPPORTED_VEHICLES_OVERRIDE",ASL_SUPPORTED_VEHICLES]);
