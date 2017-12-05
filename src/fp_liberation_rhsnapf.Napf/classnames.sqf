@@ -191,7 +191,8 @@ support_vehicles = [
 	["B_Slingload_01_Repair_F",25,0,0],								//Huron Repair
 	["B_Slingload_01_Fuel_F",15,0,20],									//Huron Fuel
 	["B_Slingload_01_Ammo_F",15,20,0],									//Huron Ammo
-	["B_CargoNet_01_ammo_F",0,30,0]
+	[<#MAIN_AMMOBOX_BLUFOR>,0,15,0],
+	[<#MAIN_AMMOBOX_OPFOR>,0,15,0]
 ];
 
 
