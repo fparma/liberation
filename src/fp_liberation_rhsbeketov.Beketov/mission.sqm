@@ -8,14 +8,14 @@ class EditorData
 	toggles=513;
 	class ItemIDProvider
 	{
-		nextID=314;
+		nextID=316;
 	};
 	class Camera
 	{
-		pos[]={1669.7885,118.83719,19338.23};
-		dir[]={0.85472882,-0.42908412,0.2921395};
-		up[]={0.40602854,0.90326101,0.1387779};
-		aside[]={0.3234266,-1.2398232e-007,-0.94626361};
+		pos[]={1926.9658,154.45862,19213.051};
+		dir[]={0.029032568,-0.9966352,0.076952852};
+		up[]={0.35179514,0.08221364,0.93245733};
+		aside[]={0.93564737,-7.3690899e-007,-0.35299861};
 	};
 };
 binarizationWanted=0;
@@ -99,6 +99,7 @@ class ScenarioData
 	author="Redball";
 	saving=0;
 	disabledAI=1;
+	respawn=3;
 };
 class CustomAttributes
 {
@@ -134,7 +135,7 @@ class CustomAttributes
 										"STRING"
 									};
 								};
-								value="None";
+								value="Counter";
 							};
 						};
 					};

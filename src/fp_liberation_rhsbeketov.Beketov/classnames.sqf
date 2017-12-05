@@ -34,12 +34,19 @@ light_vehicles = [
   ["rhssaf_m998_olive_2dr_fulltop",5,0,5],                    //HMMWV ECV (Fulltop)
   ["rhssaf_m1025_olive",5,0,5],                 //HMMWV (Unarmed)
   ["rhssaf_m1025_olive_m2",5,5,5],                  //HMMWV (M2)
-  ["rhsgref_ins_g_ural",10,0,5]                   //Ural
+  ["rhsgref_ins_g_ural",10,0,5],                   //Ural
+  ["rhsgref_ins_uaz_open",5,0,5],
+  ["rhsgref_ins_uaz_spg9",5,10,5],
+  ["rhsgref_ins_uaz_ags",5,5,5],
+  ["rhsgref_ins_gaz66",5,0,5],
+  ["rhsgref_ins_gaz66o",5,0,5],
+  ["rhsgref_ins_gaz66_zu23",5,20,10]
+
 ];
 
 heavy_vehicles = [
   ["rhssaf_army_pts",20,15,10],                 //PTS-M
-  ["rhssaf_army_t72s",20,20,10]               //T72-S
+  ["rhsgref_ins_BM21",20,100,30]               //BM21
 ];
 
 air_vehicles = [
@@ -53,7 +60,8 @@ static_vehicles = [
   ["rhssaf_army_nsv_tripod",5,2,0],                   //M02 Coyote
   ["rhssaf_army_m2staticmg_minitripod",5,2,0],            //M119A2
   ["rhssaf_army_d30",15,15,0],                  //D30
-  ["rhssaf_army_m252",15,15,0]                  //M252
+  ["rhssaf_army_m252",15,15,0],                 //M252
+  ["rhsgref_ins_2b14",15,15,0]                  
 ];
 
 buildings = [
