@@ -12,7 +12,7 @@ if ( _infsquad == "militia" ) then {
   _infsquad_classnames = ([] call F_getAdaptiveSquadComp);
 };
 
-if !(_infsquad_classnames isEqualType []) exitWith {};
+if (isNil "_infsquad_classnames") exitWith {};
 
 // diag_log format [ "Spawning building squad Checkpoint A at %1", time ];
 
