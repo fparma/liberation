@@ -12,6 +12,8 @@ if ( _infsquad == "militia" ) then {
   _infsquad_classnames = ([] call F_getAdaptiveSquadComp);
 };
 
+if (isNil "_infsquad_classnames") exitWith {};
+
 // diag_log format [ "Spawning building squad Checkpoint A at %1", time ];
 
 if ( _building_ai_max > floor ((count _buildingpositions) * GRLIB_defended_buildingpos_part)) then { _building_ai_max = floor ((count _buildingpositions) * GRLIB_defended_buildingpos_part)};
