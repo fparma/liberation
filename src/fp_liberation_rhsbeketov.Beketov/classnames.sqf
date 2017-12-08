@@ -30,10 +30,7 @@ infantry_units = [
 ];
 
 light_vehicles = [
-  ["rhssaf_m998_olive_2dr_halftop",5,0,5],                    //HMMWV ECV (Halftop)
-  ["rhssaf_m998_olive_2dr_fulltop",5,0,5],                    //HMMWV ECV (Fulltop)
-  ["rhssaf_m1025_olive",5,0,5],                 //HMMWV (Unarmed)
-  ["rhssaf_m1025_olive_m2",5,5,5],                  //HMMWV (M2)
+  ["rhsgref_ins_g_uaz_dshkm_chdkz",5,5,5],                  
   ["rhsgref_ins_g_ural",10,0,5],                   //Ural
   ["rhsgref_ins_uaz_open",5,0,5],
   ["rhsgref_ins_uaz_spg9",5,10,5],
@@ -46,11 +43,15 @@ light_vehicles = [
 
 heavy_vehicles = [
   ["rhssaf_army_pts",20,15,10],                 //PTS-M
-  ["rhsgref_ins_BM21",20,100,30]               //BM21
+  ["rhsgref_BRDM2_ins_g",20,30,10],
+  ["rhsgref_ins_g_btr60",20,50,15],
+  ["rhsgref_ins_BM21",20,100,20],               //BM21
+  ["rhssaf_army_t72s",30,150,25]
 ];
 
 air_vehicles = [
-  ["rhssaf_airforce_ht48",0,0,10]
+  ["rhssaf_airforce_ht48",0,0,10],
+  ["CUP_O_MI6T_RU",20,0,10]
 
 ];
 
@@ -151,9 +152,9 @@ support_vehicles = [
   ["ACE_Box_82mm_Mo_Illum",5,1,0],
   ["ACE_Wheel",2,0,0],
   ["ACE_Track",2,0,0],
-  ["B_APC_Tracked_01_CRV_F",50,25,35],                //CRV-6e Bobcat
-  ["rhssaf_army_ural_fuel",25,0,25],              //M978A4 Fuel
-  ["rhsgref_ins_g_ural_repair",15,10,10],
+  ["rhssaf_army_ural_fuel",25,0,25],              
+  ["rhsgref_ins_g_ural_repair",15,0,10],
+  ["rhsgref_ins_g_gaz66_ammo",15,20,5],
   [<#MAIN_AMMOBOX_BLUFOR>,0,15,0],
   [<#MAIN_AMMOBOX_OPFOR>,0,15,0]
 ];
@@ -324,23 +325,23 @@ opfor_vehicles = [
 
 opfor_vehicles_low_intensity = [
   "rhsusf_m1025_w_s_Mk19",                          
-  "rhsusf_m1025_w_s",                         
-  "rhsusf_m1025_w_s_m2" 
+  "rhsusf_m1025_w_s_m2",
+  "rhsusf_m113_usarmy"
 ];
 
 opfor_battlegroup_vehicles = [
-  "rhsusf_m1025_w_s_Mk19",                          
-  "rhsusf_m1025_w_s",                         
+  "rhsusf_m1025_w_s_Mk19",
   "rhsusf_m1025_w_s_m2",                          
   "RHS_M2A3_wd",
-  "rhsusf_M1078A1P2_WD_fmtv_usarmy"
+  "rhsusf_M1117_W",
+  "rhsusf_m113_usarmy",
+  "rhsusf_m1a2sep1tuskiiwd_usarmy"
 ];
 
 opfor_battlegroup_vehicles_low_intensity = [
   "rhsusf_m1025_w_s_Mk19",                          
-  "rhsusf_m1025_w_s",                         
-  "rhsusf_m1025_w_s_m2",                          
-  "rhsusf_M1078A1P2_WD_fmtv_usarmy"
+  "rhsusf_m1025_w_s_m2",
+  "rhsusf_M1117_W"                        
 ];
 
 opfor_troup_transports = [
