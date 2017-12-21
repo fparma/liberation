@@ -596,7 +596,9 @@
 <#define ARSENAL_WHITELIST_BACKPACKS|
 <#include arsenal/ace-backpacks-common.h>
 "rhs_assault_umbts",
-"rhs_assault_umbts_engineer_empty">
+"rhs_assault_umbts_engineer_empty",
+"rhs_sidor",
+"rhs_rpg_empty">
 
 //####################################
 // HELMETS
@@ -694,7 +696,15 @@
 //####################################
 // MASKS
 //####################################
-<#define ARSENAL_WHITELIST_MASKS|>
+<#define ARSENAL_WHITELIST_MASKS|
+"rhs_balaclava",
+"rhs_balaclava1_olive",
+"rhs_goggles_black",
+"rhs_goggles_orange",
+"rhs_goggles_yellow",
+"rhs_goggles_clear",
+"rhs_ess_black",
+"rhs_scarf",>
 
 //####################################
 // NIGHTVISION
