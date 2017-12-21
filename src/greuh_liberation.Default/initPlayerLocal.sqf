@@ -1,8 +1,15 @@
 player addEventHandler ["HandleRating", {abs (_this select 1);}];
 
+// Start limiting of Arsenal Assets
+ARSENAL_ISFULL = true;
+if ((["ArsenalLimitation",1] call bis_fnc_getParamValue) == 1) then {
+  ARSENAL_ISFULL = false;
+  [] call compileFinal preprocessFileLineNumbers "arsenal.sqf";
+};
+
 // Liberation ACE Actions
 [ACE_player, 1, ["ACE_SelfActions"], ['FPC_INTERACTION_ROOT','Liberation','',{},{true}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
-[ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT"], ['FPC_INTERACTION_ARSENAL','Open Arsenal','\z\ace\addons\common\UI\repack_ca.paa',{[gamelogic, player,ARSENAL_ISFULL] call ace_arsenal_fnc_openBox;},{[] call FPC_fnc_arsenalCondition;}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
+[ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT"], ['FPC_INTERACTION_ARSENAL','Open Arsenal','\z\ace\addons\common\UI\repack_ca.paa',{[player, player,ARSENAL_ISFULL] call ace_arsenal_fnc_openBox;},{[] call FPC_fnc_arsenalCondition;}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 [ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT"], ['FPC_INTERACTION_REDEPLOY','Redeploy','',{[] spawn FPC_fnc_show_redeploy_dialog;},{[] call FPC_fnc_redeployCondition;}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 [ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT"], ['FPC_INTERACTION_BUILD_MENU','Build Menu','',{[] execVM "scripts\client\build\open_build_menu.sqf";},{[] call FPC_fnc_buildMenuCondition;}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 [ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT"], ['FPC_INTERACTION_DEPLOY_FOB','Build FOB','',{[] execVM "scripts\client\build\do_build_fob.sqf";},{[] call FPC_fnc_deployFobCondition;}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
