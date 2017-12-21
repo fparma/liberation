@@ -89,6 +89,14 @@ class ACE_Settings {
     force = 1;
   };
 
+  // ACE Medical AI damage threshold
+  // 3 = 3 Times the total health
+  class ace_medical_AIDamageThreshold {
+    value = 0.6;
+    typeName = "SCALAR";
+    force = 1;
+  };
+
   // ACE Prevent instadeath
   // 1 = Stop from dying instantly
   class ace_medical_preventInstaDeath {
