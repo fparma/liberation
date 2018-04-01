@@ -52,6 +52,7 @@ air_vehicles = [
   ["CUP_B_MH6J_USA",0,0,5],
   ["CUP_B_UH60L_FFV_US",0,5,10],
   ["CUP_B_AH6J_Escort_USA",0,20,5],
+  ["CUP_B_AH6M_AT_GAU_USA",0,30,5],
   ["CUP_B_CH47F_VIV_USA",0,0,15],
   ["CUP_B_CH47F_USA",0,0,15],
   ["CUP_B_AV8B_GBU12_USMC",0,250,45]
