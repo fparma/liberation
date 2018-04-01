@@ -45,7 +45,10 @@ light_vehicles = [
 heavy_vehicles = [
   ["CUP_B_LAV25M240_USMC",0,50,25],
   ["CUP_B_AAV_USMC",0,50,30],
-  ["CUP_B_M1A1_Woodland_USMC",0,100,50]
+  ["CUP_B_M1A1_Woodland_USMC",0,100,50],
+  ["B_UAV_05_F",0,15,10],
+  ["B_UGV_01_F",0,15,10],
+  ["B_UGV_01_rcws_F",0,35,10]
 ];
 
 air_vehicles = [
