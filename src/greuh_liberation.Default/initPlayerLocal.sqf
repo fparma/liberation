@@ -1,5 +1,12 @@
 player addEventHandler ["HandleRating", {abs (_this select 1);}];
 
+["ace_arsenal_displayClosed", {
+[{
+  profileNamespace setVariable [format ['%1_fpcGear', GRLIB_save_key], getUnitLoadout player];
+  saveProfileNamespace;
+}] call CBA_fnc_execNextFrame;
+}] call CBA_fnc_addEventHandler;
+
 // Start limiting of Arsenal Assets
 ARSENAL_ISFULL = true;
 if ((["ArsenalLimitation",1] call bis_fnc_getParamValue) == 1) then {
