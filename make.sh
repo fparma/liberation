@@ -4,7 +4,7 @@
 MAKE_PBO=1                # Build a PBO if true. (Requires mikeros PBO tools)
 LINT_MISSION=0            # Lint the Mission Folder
 RENAME_MISSION_FILE=1     # Adds timestamp to the mission folder/pbo file
-RENAME_MISSION_TITLE=0    # Replaces <#DATETIME> with timestamp in mission name
+RENAME_MISSION_TITLE=1    # Replaces <#DATETIME> with timestamp in mission name
 DATE=`date +%Y%m%d-%H%M`  # Timestamp call & Format specification
 
 # Check for --pbo Arg
@@ -32,9 +32,11 @@ for mission in `find src/ -maxdepth 1 -name "fp_*" -type d`; do
   cp -r ${mission}/* "${DST_MAIN}/"
 
   # Begin Pre-Processing of certain custom files
-  cat "${DST_MAIN}/arsenal.sqf" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/arsenal.sqf"
-  cat "${DST_MAIN}/classnames.sqf" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/classnames.sqf"
-  cat "${DST_MAIN}/classnames1.sqf" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/classnames1.sqf"
+  
+  cat "${DST_MAIN}/factions/arsenal0.sqf" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/factions/arsenal.sqf"
+  cat "${DST_MAIN}/factions/arsenal1.sqf" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/factions/arsenal1.sqf"
+  cat "${DST_MAIN}/factions/classnames0.sqf" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/factions/classnames0.sqf"
+  cat "${DST_MAIN}/factions/classnames1.sqf" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/factions/classnames1.sqf"
 
   # Edit the mission Title if defined.
   # While developing the mission, you don't want the mission title to be processed or else the <#DATETIME> May get lost.

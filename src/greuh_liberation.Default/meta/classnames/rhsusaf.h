@@ -136,25 +136,25 @@
   
 
 // Opfor Units (Not necessary arma3's opfor side, but rather the enemy's side. )
-<#define OPFOR_UNIT_SQL|"rhsusf_army_ucp_squadleader">                     // Squadleader
-<#define OPFOR_UNIT_FTL|"rhsusf_army_ucp_teamleader">                     // Fireteam Leader
-<#define OPFOR_UNIT_OFFICER|"rhsusf_army_ucp_officer">                    // Officer
-<#define OPFOR_UNIT_RIFLEMAN|"rhsusf_army_ucp_rifleman_m4">                   // Rifleman
-<#define OPFOR_UNIT_GRENADIER|"rhsusf_army_ucp_grenadier">               // Grenadier
-<#define OPFOR_UNIT_AUTORIFLEMAN|"rhsusf_army_ucp_autorifleman">            // Autorifleman (LMG)
-<#define OPFOR_UNIT_MEDIC|"rhsusf_army_ucp_medic">                        // Medic
-<#define OPFOR_UNIT_MARKSMAN|"rhsusf_army_ucp_marksman">                 // Marksman
-<#define OPFOR_UNIT_ENGINEER|"rhsusf_army_ucp_engineer">                  // Engineer
-<#define OPFOR_UNIT_LAT|"rhsusf_army_ucp_riflemanat">                    // Light AT
-<#define OPFOR_UNIT_HAT|"rhsusf_army_ucp_javelin">                     // Dedicated AT
-<#define OPFOR_UNIT_AA|"rhsusf_army_ucp_aa">                      // Anti Air
-<#define OPFOR_UNIT_MMG|"rhsusf_army_ucp_machinegunner">                     // Medium Machine Gunner
-<#define OPFOR_UNIT_SNIPER|"rhsusf_army_ucp_sniper_M107">                      // Sniper
-<#define OPFOR_UNIT_SHARPSHOOTER|"rhsusf_army_ucp_sniper">               // Sharpshooter
-<#define OPFOR_UNIT_CREWMAN|"rhsusf_army_ucp_combatcrewman">                       // Crewman
-<#define OPFOR_UNIT_PILOT|"rhsusf_airforce_jetpilot">                        // Jet Pilot
-<#define OPFOR_UNIT_HELIPILOT|"rhsusf_airforce_pilot">                // Helicopter Pilot
-<#define OPFOR_UNIT_PARATROOPER|"rhsusf_army_ucp_rifleman_101st">             // Paratrooper
+<#define OPFOR_UNIT_SQL|"rhs_msv_emr_sergeant">                     // Squadleader
+<#define OPFOR_UNIT_FTL|"rhs_msv_emr_efreitor">                     // Fireteam Leader
+<#define OPFOR_UNIT_OFFICER|"rhs_msv_emr_officer">                    // Officer
+<#define OPFOR_UNIT_RIFLEMAN|"rhs_msv_emr_rifleman">                   // Rifleman
+<#define OPFOR_UNIT_GRENADIER|"rhs_msv_emr_grenadier">               // Grenadier
+<#define OPFOR_UNIT_AUTORIFLEMAN|"rhs_msv_emr_arifleman">            // Autorifleman (LMG)
+<#define OPFOR_UNIT_MEDIC|"rhs_msv_emr_medic">                        // Medic
+<#define OPFOR_UNIT_MARKSMAN|"rhs_msv_emr_marksman">                 // Marksman
+<#define OPFOR_UNIT_ENGINEER|"rhs_msv_emr_engineer">                  // Engineer
+<#define OPFOR_UNIT_LAT|"rhs_msv_emr_LAT">                    // Light AT
+<#define OPFOR_UNIT_HAT|"rhs_msv_emr_at">                     // Dedicated AT
+<#define OPFOR_UNIT_AA|"rhs_msv_emr_aa">                      // Anti Air
+<#define OPFOR_UNIT_MMG|"rhs_msv_emr_machinegunner">                     // Medium Machine Gunner
+<#define OPFOR_UNIT_SNIPER|"rhs_msv_emr_marksmanF">                      // Sniper
+<#define OPFOR_UNIT_SHARPSHOOTER|"rhs_msv_emr_marksman">               // Sharpshooter
+<#define OPFOR_UNIT_CREWMAN|"rhs_msv_emr_rifleman">                       // Crewman
+<#define OPFOR_UNIT_PILOT|"rhs_msv_emr_rifleman">                        // Jet Pilot
+<#define OPFOR_UNIT_HELIPILOT|"rhs_msv_emr_rifleman">                // Helicopter Pilot
+<#define OPFOR_UNIT_PARATROOPER|"rhs_msv_emr_RShG2"> // Paratrooper
 
 <#define OPFOR_MRAP|"rhs_tigr_msv">
 <#define OPFOR_MRAPARMED|"rhs_tigr_sts_msv">
