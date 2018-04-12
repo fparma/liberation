@@ -38,10 +38,17 @@ class Params {
     default = "";
   };
 
+  class SelectedFaction {
+    title = "Faction Selection";
+    values[] = {0, 1};
+    texts[] = {"NATO vs CSAT (Limited Arsenal Unavailable)", "RHSUSAF vs RHSAFRF"};
+    default = 1;
+  };
+
   class ArsenalLimitation {
     title = "Arsenal Limitation";
-    values[] = {1, 0};
-    texts[] = {"Yes", "No"};
+    values[] = {0, 1};
+    texts[] = {"No", "Yes"};
     default = 0;
   };
   class Unitcap {

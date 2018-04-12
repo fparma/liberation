@@ -7,9 +7,9 @@ removeAllAssignedItems player;
 
 private _gear = profileNamespace getVariable (format ["%1_fpcGear", GRLIB_save_key]);
 if (isNil "_gear") then {
-  player forceAddUniform "usm_bdu_w";
-  player addHeadgear "usm_helmet_pasgt_w";
-  player addVest "usm_vest_rba_lbe_rm";
+  player forceAddUniform "U_B_CombatUniform_mcam_vest";
+  player addHeadgear "H_HelmetSpecB_snakeskin";
+  player addVest "V_TacVest_camo";
   player linkItem "ItemMap";
   player linkItem "ItemCompass";
   player linkItem "ItemWatch";

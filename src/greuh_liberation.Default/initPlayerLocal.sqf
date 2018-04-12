@@ -8,10 +8,12 @@ player addEventHandler ["HandleRating", {abs (_this select 1);}];
 }] call CBA_fnc_addEventHandler;
 
 // Start limiting of Arsenal Assets
+selectedFactionParam = "SelectedFaction" call BIS_fnc_getParamValue;
 ARSENAL_ISFULL = true;
 if ((["ArsenalLimitation",1] call bis_fnc_getParamValue) == 1) then {
+	selectedFactionArsenal = format ["factions\arsenal%1.sqf", selectedFactionParam];
   ARSENAL_ISFULL = false;
-  [] call compileFinal preprocessFileLineNumbers "arsenal.sqf";
+  [] call compileFinal preprocessFileLineNumbers selectedFactionArsenal;
 };
 
 // Liberation ACE Actions

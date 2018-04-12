@@ -1,7 +1,0 @@
-"ItemMap",
-"ItemRadio",
-"O_UavTerminal",
-"ItemCompass",
-"ItemWatch",
-"MineDetector",
-"ToolKit",
