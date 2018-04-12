@@ -1,7 +1,6 @@
-//Change the file this references to use different preset
-//Presets available:
-//Main - Vanilla NATO vs CSAT
-//RHSUSAF - RHS USAF vs RHS AFRF (WIP)
+//Filename should match the number below (e.g classnames1.sqf)
+//[0] Main - Vanilla NATO vs CSAT (WIP)
+//[1] RHSUSAF - RHS USAF vs RHS AFRF 
 <#exec true <#include classnames/main.h>>
 
 FOB_typename = <#MAIN_FOB_TYPE>;

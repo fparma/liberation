@@ -10,6 +10,7 @@ player addEventHandler ["HandleRating", {abs (_this select 1);}];
 // Start limiting of Arsenal Assets
 ARSENAL_ISFULL = true;
 if ((["ArsenalLimitation",1] call bis_fnc_getParamValue) == 1) then {
+	selectedFactionArsenal = format ["factions\arsenal%1.sqf", selectedFactionParam]
   ARSENAL_ISFULL = false;
   [] call compileFinal preprocessFileLineNumbers "arsenal.sqf";
 };
