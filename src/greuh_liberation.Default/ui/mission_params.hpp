@@ -47,8 +47,8 @@ class Params {
 
   class ArsenalLimitation {
     title = "Arsenal Limitation";
-    values[] = {1, 0};
-    texts[] = {"Yes", "No"};
+    values[] = {0};
+    texts[] = {"No"};
     default = 0;
   };
   class Unitcap {
