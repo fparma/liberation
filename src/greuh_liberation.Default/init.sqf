@@ -5,8 +5,14 @@ enableSaving [ false, false ];
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\init_sectors.sqf";
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\fetch_params.sqf";
 [] call compileFinal preprocessFileLineNumbers "gameplay_constants.sqf";
-[] call compileFinal preprocessFileLineNumbers "classnames.sqf";
-[] call compileFinal preprocessFileLineNumbers "custom.sqf";
+
+selectedFactionParam = "SelectedFaction" call BIS_fnc_getParamValue;
+
+classNamesFile = format ["classnames%1.sqf", selectedFactionParam];
+
+GRLIB_save_key = format ["COMFY_LIBERATION_%1_%2", worldName, selectedFactionParam];
+
+[] call compileFinal preprocessFileLineNumbers classNamesFile;
 
 [] call compileFinal preprocessFileLineNumbers "scripts\shared\init_shared.sqf";
 

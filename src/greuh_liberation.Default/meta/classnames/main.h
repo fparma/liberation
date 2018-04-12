@@ -31,6 +31,63 @@
 <#define BLUFOR_UNIT_HELIPILOT|"B_helipilot_F">                 // Helicopter Pilot
 <#define BLUFOR_UNIT_PARATROOPER|"B_soldier_PG_F">              // Paratrooper
 
+// Blufor Buyable Vehicles
+<#define BLUFOR_LIGHTVEHICLES|
+  ["",0,0,25],
+  ["",0,50,30],
+  ["",0,100,50],
+  ["",0,15,10],
+  ["",0,15,10],
+  ["",0,35,10]
+  >
+
+ // Blufor Buyable Vehicles
+<#define BLUFOR_HEAVYVEHICLES|
+  ["",0,0,25],
+  ["",0,50,30],
+  ["",0,100,50],
+  ["",0,15,10],
+  ["",0,15,10],
+  ["",0,35,10]
+  >
+
+  // Blufor Buyable Vehicles
+<#define BLUFOR_AIRVEHICLES|
+  ["",0,0,25],
+  ["",0,50,30],
+  ["",0,100,50],
+  ["",0,15,10],
+  ["",0,15,10],
+  ["",0,35,10]
+  >
+
+  // Blufor Buyable Vehicles
+<#define BLUFOR_STATICS|
+  ["",0,0,25],
+  ["",0,50,30],
+  ["",0,100,50],
+  ["",0,15,10],
+  ["",0,15,10],
+  ["",0,35,10]
+  >
+
+//Specify logistics trucks ammo, repair, fuel and optionally any addition support vehicles you want to be available.
+
+w<#define BLUFOR_LOGITRUCKS|
+  ["",0,0,25],
+  ["",0,50,30],
+  ["",0,100,50],
+  ["",0,15,10],
+  ["",0,15,10],
+  ["",0,35,10]
+  >
+// Elite vehicles are locked behind a random military base, these should be vehicles present in the above list
+
+   <#define BLUFOR_ELITES|
+  "",
+  ""
+  >
+
 // Opfor Units (Not necessary arma3's opfor side, but rather the enemy's side. )
 <#define OPFOR_UNIT_SQL|"CUP_O_RU_Soldier_SL_EMR">              // Squadleader
 <#define OPFOR_UNIT_FTL|"CUP_O_RU_Soldier_TL_EMR">              // Fireteam Leader
@@ -52,6 +109,47 @@
 <#define OPFOR_UNIT_HELIPILOT|"">                               // Helicopter Pilot
 <#define OPFOR_UNIT_PARATROOPER|"CUP_O_RU_Officer_VDV_EMR">     // Paratrooper
 
+<#define OPFOR_MRAP|"CUP_O_UAZ_Unarmed_RU">
+<#define OPFOR_MRAPARMED|"CUP_O_UAZ_MG_RU">
+<#define OPFORTRANSHELO|"CUP_O_Mi8_RU">
+<#define OPFORTRANSTRUCK|"CUP_O_Ural_RU">
+<#define OPFORFUELTRUCK|"CUP_O_Ural_Refuel_RU">
+<#define OPFORAMMOTRUCK|"CUP_O_Ural_Reammo_RU">
+<#define OPFOR_FLAG|"">
+
+//These fields are used in varying combination to make up standard vehicle spawns and battlegroups at different intensities
+
+//Light vehicles
+<#define OPFOR_VEHICLES_TIER1|
+  ""
+  >
+
+//Medium Vehicles (APCs etc)
+<#define OPFOR_VEHICLES_TIER2|
+  ""
+  >
+//Heavy Vehicles (Armor, Tanks etc)
+<#define OPFOR_VEHICLES_TIER3|
+  ""
+  >
+
+//Helicopters
+
+<#define OPFOR_VEHICLES_HELI|
+  ""
+  >
+
+//Heavy air vehicles (jets etc)
+
+<#define OPFOR_VEHICLES_JET|
+  ""
+  >
+
+<#define OPFOR_TROOPTRANSPORT|
+  ""
+  >
+
+
 <#define INDFOR_UNIT_SQL|"CUP_O_INS_Story_Bardak">              // Squadleader
 <#define INDFOR_UNIT_FTL|"">                                    // Fireteam Leader
 <#define INDFOR_UNIT_OFFICER|"CUP_O_INS_Story_Lopotev">         // Officer
@@ -72,6 +170,37 @@
 <#define INDFOR_UNIT_HELIPILOT|"">                              // Helicopter Pilot
 <#define INDFOR_UNIT_PARATROOPER|"">                            // Paratrooper
 
+<#define INDFOR_VEHICLES|
+  "CUP_O_Datsun_PK"
+  >
+
+<#define CIVILIANS|
+  "C_man_1",
+  "C_man_polo_6_F",
+  "C_man_polo_3_F",
+  "C_man_polo_2_F",
+  "C_man_polo_4_F",
+  "C_man_polo_5_F",
+  "C_man_polo_1_F",
+  "C_man_p_beggar_F",
+  "C_man_1_2_F",
+  "C_man_p_fugitive_F",
+  "C_man_hunter_1_F",
+  "C_journalist_F",
+  "C_man_shorts_2_F",
+  "C_man_w_worker_F"
+  >
+
+ <#define CIVILIAN_VEHICLES|
+  "C_Hatchback_01_F",
+  "C_Hatchback_01_sport_F",
+  "C_Offroad_01_F",
+  "C_SUV_01_F",
+  "C_Van_01_transport_F",
+  "C_Van_01_box_F",
+  "C_Van_01_fuel_F",
+  "C_Quadbike_01_F"
+  >
 
 
 // Buildable Object Defines & Function

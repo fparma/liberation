@@ -2,7 +2,7 @@
 //Presets available:
 //Main - Vanilla NATO vs CSAT
 //RHSUSAF - RHS USAF vs RHS AFRF (WIP)
-<#exec true <#include classnames/main.h>>
+<#exec true <#include classnames/rhsusaf.h>>
 
 FOB_typename = <#MAIN_FOB_TYPE>;
 FOB_box_typename = <#MAIN_FOB_BOX>;

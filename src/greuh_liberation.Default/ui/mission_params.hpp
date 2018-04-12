@@ -38,6 +38,13 @@ class Params {
     default = "";
   };
 
+  class SelectedFaction {
+    title = "Faction Selection";
+    values[] = {0, 1};
+    texts[] = {"NATO vs CSAT", "RHSUSAF vs RHSAFRF"};
+    default = 1;
+  }
+
   class ArsenalLimitation {
     title = "Arsenal Limitation";
     values[] = {1, 0};
