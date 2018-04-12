@@ -1,3 +1,8 @@
+// 
+//In liberation scripts BLUFOR is always the player side, and OPFOR the opposing side
+//Units do not have to match to their ingame side (e.g you can use units from any side for blufor down below).
+//Vehicle costs are decided by the set of numbers after the classname (manpower, ammo, fuel), e.g ["B_MRAP_01_F",0,0,5]
+
 // Main Objects
 <#define MAIN_FOB_TYPE|"Land_Cargo_HQ_V1_F">                    // FOB Base Object
 <#define MAIN_FOB_BOX|"B_Slingload_01_Cargo_F">                 // FOB Packaged Box (For Slingloading)
@@ -5,12 +10,12 @@
 <#define MAIN_TRUCK_RESPAWN|"B_Truck_01_medical_F">             // Mobile Respawn Vehicle
 <#define MAIN_TRUCK_AMMOBOX_OPFOR|"O_Truck_03_transport_F">     // Opfor transport truck Definition
 <#define MAIN_ARSENAL_BOX|"B_supplyCrate_F">                    // Arsenal Box Classname
-<#define MAIN_TRANSPORT_HELO|"B_Heli_Transport_03_unarmed_F">                 // Main Transport helicopter (Transporting FOB Capable)
+<#define MAIN_TRANSPORT_HELO|"B_Heli_Transport_03_unarmed_F">   // Main Transport helicopter (Make sure it's capable of slingloading the FOB BOX above)
 <#define MAIN_AMMOBOX_BLUFOR|"Box_NATO_AmmoVeh_F">              // Blufor Vehicle Ammobox Definition
 <#define MAIN_AMMOBOX_OPFOR|"Box_East_AmmoVeh_F">               // Opfor Vehicle Ammobox Definition
 
-// Blufor Units (Not necessary arma3's blufor side, but rather the player side. )
-// TODO: Add Sharpshooter
+// Blufor Units
+
 <#define BLUFOR_UNIT_OFFICER|"B_officer_F">                     // Officer
 <#define BLUFOR_UNIT_SQL|"B_Soldier_SL_F">                      // Squadleader
 <#define BLUFOR_UNIT_FTL|"B_Soldier_TL_F">                      // Fireteam Leader
@@ -98,7 +103,7 @@
   ["B_Truck_01_transport_F",10,0,10],       //HEMTT Transport
   ["B_Truck_01_Repair_F",15,0,10]>          //HEMTT Repair
   
-// Elite vehicles are locked behind a random military base, these should be vehicles present in the above list
+// Elite vehicles are locked behind a random military base, these should be vehicles present in the above lists
 
 <#define BLUFOR_ELITE_VEHICLES|
   "B_AFV_Wheeled_01_cannon_F",                
@@ -146,7 +151,8 @@
 <#define OPFOR_FLAG|"Flag_CSAT_F">
 
 //These fields are used in varying combination to make up standard vehicle spawns and battlegroups at different intensities
-//You can use the same classname multiple times to increase the chance of it being selected
+//When a vehicle is spawned a randomly chosen classname is picked from the available, so 
+//you can use the same classname multiple times to increase the chance of it being selected
 
 //Light vehicles 
 <#define OPFOR_VEHICLES_TIER1|
@@ -180,12 +186,14 @@
   "O_Heli_Light_02_dynamicLoadout_F",                        //Ka-60 Kasatka
   "O_Heli_Attack_02_dynamicLoadout_F">                  //Mi-48 Kajman
 
-//Heavy air vehicles (jets etc)
+//Jets
 
 <#define OPFOR_VEHICLES_JET|
   "O_Plane_Fighter_02_F",                          //To-201 Shikra
   "O_Plane_CAS_02_dynamicLoadout_F">              //Yak-130
   
+
+//Troop transports, include both air and ground troop transports
 
 <#define OPFOR_TROOPTRANSPORT|
   "O_Truck_03_transport_F",                       //Typhoon Transport
@@ -194,7 +202,8 @@
   "O_Heli_Transport_04_bench_F",                         //Mi-290 Taru
   "O_Truck_02_transport-F">                       //KamAZ Transport
   
-
+//Independent faction that shows up in small outposts and towns at low intensity, you can always set these to the same as OPFOR units if you don't want
+//to use a third faction
 
 <#define INDFOR_UNIT_SQL|"I_G_Soldier_SL_F">                  // Squadleader
 <#define INDFOR_UNIT_FTL|"I_G_Soldier_F">              // Fireteam Leader
