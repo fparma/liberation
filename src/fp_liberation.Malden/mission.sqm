@@ -84,7 +84,7 @@ class AddonsMetaData
 randomSeed=2008318;
 class ScenarioData
 {
-	author="Kaukassus";
+	author="Redball/Kaukassus";
 	respawnDialog=0;
 	disabledAI=1;
 	respawn=3;
@@ -338,6 +338,7 @@ class CustomAttributes
 };
 class Mission
 {
+	assetType="Free";
 	class Intel
 	{
 		briefingName="Comfy Liberation (<#DATETIME>)";
@@ -1635,7 +1636,7 @@ class Mission
 			type="o_support";
 			colorName="ColorEAST";
 			id=578;
-			atlOffset=55.974167;
+			atlOffset=56.110001;
 		};
 		class Item37
 		{
@@ -1668,7 +1669,7 @@ class Mission
 			type="o_support";
 			colorName="ColorEAST";
 			id=581;
-			atlOffset=46.250397;
+			atlOffset=54.139999;
 		};
 		class Item40
 		{
@@ -2787,7 +2788,7 @@ class Mission
 			name="opfor_point_34";
 			type="Empty";
 			id=695;
-			atlOffset=-8.0334625;
+			atlOffset=-8.0334549;
 		};
 		class Item149
 		{
@@ -2823,7 +2824,7 @@ class Mission
 			name="opfor_point_38";
 			type="Empty";
 			id=699;
-			atlOffset=-8.6265411;
+			atlOffset=-8.6265335;
 		};
 		class Item153
 		{

@@ -92,7 +92,7 @@ class AddonsMetaData
 randomSeed=2008318;
 class ScenarioData
 {
-	author="Kaukassus";
+	author="Redball/Kaukassus";
 	respawnDialog=0;
 	disabledAI=1;
 	respawn=3;
@@ -346,6 +346,7 @@ class CustomAttributes
 };
 class Mission
 {
+	assetType="Free";
 	class Intel
 	{
 		briefingName="Comfy Liberation (<#DATETIME>)";
@@ -3496,8 +3497,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={14527,5.6661549,5888.0508};
-						angles[]={0.034652505,0,0.055941612};
+						position[]={14527,5.6661515,5888.0498};
+						angles[]={0.034644786,0,0.055937801};
 					};
 					side="West";
 					flags=6;
@@ -3506,16 +3507,54 @@ class Mission
 						skill=0.60000002;
 						rank="COLONEL";
 						init="removeallWeapons this; removebackpack this;";
-						name="commandant_1";
+						name="commandant";
 						description="Platoon Commander";
 						isPlayable=1;
 					};
 					id=528;
 					type="B_T_Officer_F";
-					atlOffset=3.4809113e-005;
+					atlOffset=-4.7683716e-007;
 					class CustomAttributes
 					{
 						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male06ENG";
+								};
+							};
+						};
+						class Attribute2
 						{
 							property="pitch";
 							expression="_this setpitch _value;";
@@ -3534,7 +3573,7 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						nAttributes=3;
 					};
 				};
 				class Item1
@@ -3583,7 +3622,7 @@ class Mission
 			{
 			};
 			id=527;
-			atlOffset=3.4809113e-005;
+			atlOffset=-4.7683716e-007;
 		};
 		class Item338
 		{

@@ -33,10 +33,12 @@ for mission in `find src/ -maxdepth 1 -name "fp_*" -type d`; do
 
   # Begin Pre-Processing of certain custom files
   
-  cat "${DST_MAIN}/factions/arsenal0.sqf" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/factions/arsenal.sqf"
-  cat "${DST_MAIN}/factions/arsenal1.sqf" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/factions/arsenal1.sqf"
-  cat "${DST_MAIN}/factions/classnames0.sqf" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/factions/classnames0.sqf"
-  cat "${DST_MAIN}/factions/classnames1.sqf" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${DST_MAIN}/factions/classnames1.sqf"
+  for arsenal in `find ${DST_MAIN}/factions/ -maxdepth 2 -name "arsenal*" -type f`; do
+    cat "${arsenal}" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${arsenal}"
+  done
+  for classname in `find ${DST_MAIN}/factions/ -maxdepth 2 -name "classname*" -type f`; do
+    cat "${classname}" | gpp -x -H --nostdinc --nocurinc -I${DST_MAIN}/meta -o "${classname}"
+  done
 
   # Edit the mission Title if defined.
   # While developing the mission, you don't want the mission title to be processed or else the <#DATETIME> May get lost.
