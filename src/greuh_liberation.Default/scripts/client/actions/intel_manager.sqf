@@ -1,4 +1,4 @@
-private [ "_actionned_captive_units", "_near_people", "_near_intel", "_actionned_intel_items" ];
+private [ "_actionned_captive_units", "_near_intel", "_actionned_intel_items" ];
 _actionned_captive_units = [];
 _actionned_intel_items = [];
 
