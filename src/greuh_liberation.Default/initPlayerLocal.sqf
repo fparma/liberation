@@ -41,7 +41,7 @@ if ((["ArsenalLimitation",1] call bis_fnc_getParamValue) == 1) then {
 // Liberation ACE Helper Actions
 [ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT"], ['FPC_HELPERS_ROOT','Helpers','res\icon-questionmark.paa',{},{true}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 [ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT", "FPC_HELPERS_ROOT"], ['FPC_HELPERS_INITACELOGI','Reinit Logistics Actions for objects around player','',{[true] call FPC_fnc_initLogisticsInRange;},{true}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
-
+[ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT", "FPC_HELPERS_ROOT"], ['FPC_HELPERS_RESETLIBMENU','Reinit Liberation Menu','',{build_confirmed=0;},{true}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 // Interrogate
 _targetRoot = ["FPC_TARGET_ROOT","Liberation","",{},{true}] call ace_interact_menu_fnc_createAction;
 ["CAManBase", 0, ["ACE_MainActions"], _targetRoot, true] call ace_interact_menu_fnc_addActionToClass;
