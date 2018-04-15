@@ -113,3 +113,16 @@ class ACE_Settings {
     force = 1;
   };
 };
+
+class CfgDebriefingSections {
+    // FPARMA end stats
+    class fparma_stats {
+        title = "Mission Statistics";
+        variable = "fpa_common_stats";
+    };
+    // ACEX Killtracker
+    class acex_killTracker {
+        title = "Acex Killed Events";
+        variable = "acex_killTracker_outputText";
+    };
+};
