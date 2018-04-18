@@ -8,7 +8,7 @@ class EditorData
 	toggles=517;
 	class ItemIDProvider
 	{
-		nextID=726;
+		nextID=730;
 	};
 	class MarkerIDProvider
 	{
@@ -16,10 +16,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={10252.792,89.993271,2162.7925};
-		dir[]={-0.71849614,-0.62939078,0.29608646};
-		up[]={-0.58192307,0.77708411,0.23980571};
-		aside[]={0.38101539,-2.3516986e-007,0.92458975};
+		pos[]={9993.4512,46.502697,2283.7952};
+		dir[]={-0.71581864,-0.59296077,0.36886635};
+		up[]={-0.52710634,0.80521894,0.27162293};
+		aside[]={0.45808041,-2.8748764e-007,0.88894695};
 	};
 };
 binarizationWanted=0;
@@ -28,10 +28,10 @@ addons[]=
 	"A3_Ui_F",
 	"A3_Characters_F_Exp",
 	"A3_Characters_F",
-	"A3_Modules_F_Curator_Curator",
 	"A3_Modules_F",
 	"A3_Structures_F_Mil_Helipads",
-	"A3_Structures_F_System"
+	"A3_Structures_F_System",
+	"A3_Modules_F_Curator_Curator"
 };
 class AddonsMetaData
 {
@@ -61,29 +61,29 @@ class AddonsMetaData
 		};
 		class Item3
 		{
-			className="A3_Modules_F_Curator";
-			name="Arma 3 Zeus Update - Scripted Modules";
-			author="Bohemia Interactive";
-			url="https://www.arma3.com";
-		};
-		class Item4
-		{
 			className="A3_Modules_F";
 			name="Arma 3 Alpha - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item5
+		class Item4
 		{
 			className="A3_Structures_F_Mil";
 			name="Arma 3 - Military Buildings and Structures";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
-		class Item6
+		class Item5
 		{
 			className="A3_Structures_F";
 			name="Arma 3 - Buildings and Structures";
+			author="Bohemia Interactive";
+			url="https://www.arma3.com";
+		};
+		class Item6
+		{
+			className="A3_Modules_F_Curator";
+			name="Arma 3 Zeus Update - Scripted Modules";
 			author="Bohemia Interactive";
 			url="https://www.arma3.com";
 		};
@@ -374,7 +374,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=156;
+		items=157;
 		class Item0
 		{
 			dataType="Marker";
@@ -2692,108 +2692,229 @@ class Mission
 		};
 		class Item143
 		{
-			dataType="Group";
-			side="East";
-			class Entities
-			{
-				items=1;
-				class Item0
-				{
-					dataType="Object";
-					class PositionInfo
-					{
-						position[]={9937.998,16.296764,2306.3206};
-					};
-					side="East";
-					flags=7;
-					class Attributes
-					{
-						name="opForZeus";
-						description="Game Master";
-						isPlayable=1;
-					};
-					id=702;
-					type="O_officer_F";
-					atlOffset=-0.085124969;
-					class CustomAttributes
-					{
-						class Attribute0
-						{
-							property="acex_headless_blacklist";
-							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"BOOL"
-										};
-									};
-									value=0;
-								};
-							};
-						};
-						class Attribute1
-						{
-							property="speaker";
-							expression="_this setspeaker _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"STRING"
-										};
-									};
-									value="Male03PER";
-								};
-							};
-						};
-						class Attribute2
-						{
-							property="pitch";
-							expression="_this setpitch _value;";
-							class Value
-							{
-								class data
-								{
-									class type
-									{
-										type[]=
-										{
-											"SCALAR"
-										};
-									};
-									value=1.03;
-								};
-							};
-						};
-						nAttributes=3;
-					};
-				};
-			};
-			class Attributes
-			{
-			};
-			id=701;
-			atlOffset=-0.085124969;
+			dataType="Marker";
+			position[]={10090.22,8.2192975e+017,2200.2354};
+			name="respawn_west";
+			type="Empty";
+			id=715;
+			atlOffset=8.2192975e+017;
 		};
 		class Item144
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={9941.127,16.161249,2306.7776};
+				position[]={10101.972,2477.8801,2212.5518};
 			};
-			id=703;
+			name="HC1";
+			isPlayable=1;
+			id=716;
+			type="HeadlessClient_F";
+			atlOffset=2475.187;
+		};
+		class Item145
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10102.21,2477.9158,2205.3818};
+			};
+			name="HC2";
+			isPlayable=1;
+			id=717;
+			type="HeadlessClient_F";
+			atlOffset=2475.2014;
+		};
+		class Item146
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10102.257,2477.9971,2197.6963};
+			};
+			name="HC3";
+			isPlayable=1;
+			id=718;
+			type="HeadlessClient_F";
+			atlOffset=2475.2588;
+		};
+		class Item147
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={10089.927,2479.4612,2207.1572};
+			};
+			name="gamelogic";
+			id=719;
+			type="Logic";
+			atlOffset=2475.1423;
+		};
+		class Item148
+		{
+			dataType="Marker";
+			position[]={10162.071,1.8720826,2189.376};
+			name="HELO_MAPMARKER_1";
+			text="Transport Helo";
+			type="b_air";
+			colorName="ColorWEST";
+			id=720;
+		};
+		class Item149
+		{
+			dataType="Marker";
+			position[]={10157,3.1590947e+029,2212};
+			name="base_chimera";
+			text="Staging Zone";
+			type="b_hq";
+			colorName="ColorWEST";
+			id=721;
+			atlOffset=3.1590947e+029;
+		};
+		class Item150
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10148,1.2347839,2200};
+				angles[]={0,0,0.03757694};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="HELO_SPAWNMARKER";
+			};
+			id=722;
+			type="Land_HelipadCircle_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item151
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10178,0.73281491,2212};
+				angles[]={0.15240216,0,0.012007865};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="base_boxspawn";
+			};
+			id=723;
+			type="Land_ClutterCutter_medium_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item152
+		{
+			dataType="Object";
+			class PositionInfo
+			{
+				position[]={10153,0.53680176,2230};
+				angles[]={0.038379788,0,0.0095993113};
+			};
+			side="Empty";
+			flags=4;
+			class Attributes
+			{
+				skill=0.60000002;
+				name="base_chimera";
+			};
+			id=724;
+			type="Land_ClutterCutter_small_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ace_isMedicalFacility";
+					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"BOOL"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=1;
+			};
+		};
+		class Item153
+		{
+			dataType="Marker";
+			position[]={10163.588,8.2456493,2151.2988};
+			name="ghost_spot";
+			type="Empty";
+			id=725;
+			atlOffset=0.72242737;
+		};
+		class Item154
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={9963.6943,12.99242,2300.3875};
+				angles[]={6.2352223,0,6.1901212};
+			};
+			name="LibCurator";
+			id=726;
 			type="ModuleCurator_F";
-			atlOffset=0.37939453;
+			atlOffset=-0.17169952;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -2811,7 +2932,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="opForZeus";
+							value="LibZeus";
 						};
 					};
 				};
@@ -2875,218 +2996,269 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item145
-		{
-			dataType="Marker";
-			position[]={10090.22,8.2192975e+017,2200.2354};
-			name="respawn_west";
-			type="Empty";
-			id=715;
-			atlOffset=8.2192975e+017;
-		};
-		class Item146
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={10101.972,2477.8801,2212.5518};
-			};
-			name="HC1";
-			isPlayable=1;
-			id=716;
-			type="HeadlessClient_F";
-			atlOffset=2475.187;
-		};
-		class Item147
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={10102.21,2477.9158,2205.3818};
-			};
-			name="HC2";
-			isPlayable=1;
-			id=717;
-			type="HeadlessClient_F";
-			atlOffset=2475.2014;
-		};
-		class Item148
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={10102.257,2477.9971,2197.6963};
-			};
-			name="HC3";
-			isPlayable=1;
-			id=718;
-			type="HeadlessClient_F";
-			atlOffset=2475.2588;
-		};
-		class Item149
-		{
-			dataType="Logic";
-			class PositionInfo
-			{
-				position[]={10089.927,2479.4612,2207.1572};
-			};
-			name="gamelogic";
-			id=719;
-			type="Logic";
-			atlOffset=2475.1423;
-		};
-		class Item150
-		{
-			dataType="Marker";
-			position[]={10162.071,1.8720826,2189.376};
-			name="HELO_MAPMARKER_1";
-			text="Transport Helo";
-			type="b_air";
-			colorName="ColorWEST";
-			id=720;
-		};
-		class Item151
-		{
-			dataType="Marker";
-			position[]={10157,3.1590947e+029,2212};
-			name="base_chimera";
-			text="Staging Zone";
-			type="b_hq";
-			colorName="ColorWEST";
-			id=721;
-			atlOffset=3.1590947e+029;
-		};
-		class Item152
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={10148,1.2347839,2200};
-				angles[]={0,0,0.03757694};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				name="HELO_SPAWNMARKER";
-			};
-			id=722;
-			type="Land_HelipadCircle_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item153
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={10178,0.73281491,2212};
-				angles[]={0.15240216,0,0.012007865};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				name="base_boxspawn";
-			};
-			id=723;
-			type="Land_ClutterCutter_medium_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
-		class Item154
-		{
-			dataType="Object";
-			class PositionInfo
-			{
-				position[]={10153,0.53680176,2230};
-				angles[]={0.038379788,0,0.0095993113};
-			};
-			side="Empty";
-			flags=4;
-			class Attributes
-			{
-				skill=0.60000002;
-				name="base_chimera";
-			};
-			id=724;
-			type="Land_ClutterCutter_small_F";
-			class CustomAttributes
-			{
-				class Attribute0
-				{
-					property="ace_isMedicalFacility";
-					expression="_this setVariable [""ace_medical_isMedicalFacility"",_value,true];";
-					class Value
-					{
-						class data
-						{
-							class type
-							{
-								type[]=
-								{
-									"BOOL"
-								};
-							};
-							value=0;
-						};
-					};
-				};
-				nAttributes=1;
-			};
-		};
 		class Item155
 		{
-			dataType="Marker";
-			position[]={10163.588,8.2456493,2151.2988};
-			name="ghost_spot";
-			type="Empty";
-			id=725;
-			atlOffset=0.72242737;
+			dataType="Group";
+			side="West";
+			class Entities
+			{
+				items=1;
+				class Item0
+				{
+					dataType="Object";
+					class PositionInfo
+					{
+						position[]={9957.6943,12.805097,2307.4375};
+					};
+					side="West";
+					flags=7;
+					class Attributes
+					{
+						name="LibZeus";
+						description="Game Master";
+						isPlayable=1;
+					};
+					id=728;
+					type="B_officer_F";
+					atlOffset=-0.085049629;
+					class CustomAttributes
+					{
+						class Attribute0
+						{
+							property="acex_headless_blacklist";
+							expression="_this setVariable [""acex_headless_blacklist"",_value,true]";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"BOOL"
+										};
+									};
+									value=0;
+								};
+							};
+						};
+						class Attribute1
+						{
+							property="speaker";
+							expression="_this setspeaker _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"STRING"
+										};
+									};
+									value="Male12ENG";
+								};
+							};
+						};
+						class Attribute2
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.98000002;
+								};
+							};
+						};
+						nAttributes=3;
+					};
+				};
+			};
+			class Attributes
+			{
+			};
+			id=727;
+			atlOffset=-0.085049629;
+		};
+		class Item156
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={9948.1992,15.110268,2303.0483};
+			};
+			name="LibCuratorCosts";
+			id=729;
+			type="ModuleCuratorSetCoefs_F";
+			atlOffset=-0.17846584;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleCuratorSetCoefs_F_Place";
+					expression="_this setVariable ['Place',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleCuratorSetCoefs_F_Group";
+					expression="_this setVariable ['Group',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleCuratorSetCoefs_F_Destroy";
+					expression="_this setVariable ['Destroy',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleCuratorSetCoefs_F_Curator";
+					expression="_this setVariable ['Curator',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="LibCurator";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleCuratorSetCoefs_F_Synchronize";
+					expression="_this setVariable ['Synchronize',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleCuratorSetCoefs_F_Delete";
+					expression="_this setVariable ['Delete',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleCuratorSetCoefs_F_Edit";
+					expression="_this setVariable ['Edit',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				nAttributes=7;
+			};
+		};
+	};
+	class Connections
+	{
+		class LinkIDProvider
+		{
+			nextID=1;
+		};
+		class Links
+		{
+			items=1;
+			class Item0
+			{
+				linkID=0;
+				item0=729;
+				item1=726;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
 		};
 	};
 };

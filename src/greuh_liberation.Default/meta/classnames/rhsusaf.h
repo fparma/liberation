@@ -1,11 +1,11 @@
 // Main Objects
 <#define MAIN_FOB_TYPE|"Ins_WarfareBBarracks">                    // FOB Base Object
 <#define MAIN_FOB_BOX|"rhs_7ya37_1_single">                 // FOB Packaged Box (For Slingloading)
-<#define MAIN_TRUCK|"rhsgref_ins_gaz66_repair">                         // FOB Transport Truck
-<#define MAIN_TRUCK_RESPAWN|"rhsgref_ins_gaz66_ap2">             // Mobile Respawn Vehicle
+<#define MAIN_TRUCK|"rhsusf_M1078A1P2_B_WD_CP_fmtv_usarmy">                         // FOB Transport Truck
+<#define MAIN_TRUCK_RESPAWN|"rhsusf_M1085A1P2_B_WD_Medical_fmtv_usarmy">             // Mobile Respawn Vehicle
 <#define MAIN_TRUCK_AMMOBOX_OPFOR|"rhsusf_M1078A1P2_WD_fmtv_usarmy">     // Opfor transport truck Definition
 <#define MAIN_ARSENAL_BOX|"B_supplyCrate_F">                    // Arsenal Box Classname
-<#define MAIN_TRANSPORT_HELO|"rhsgref_ins_Mi8amt">           // Main Transport helicopter (Transporting FOB Capable)
+<#define MAIN_TRANSPORT_HELO|"RHS_UH1Y_UNARMED">           // Main Transport helicopter (Transporting FOB Capable)
 <#define MAIN_AMMOBOX_BLUFOR|"Box_NATO_AmmoVeh_F">              // Blufor Vehicle Ammobox Definition
 <#define MAIN_AMMOBOX_OPFOR|"Box_East_AmmoVeh_F">               // Opfor Vehicle Ammobox Definition
 
@@ -70,7 +70,6 @@
   ["B_UAV_06_F",8,0,5],                       //AL-6 Pelican (Cargo)
   ["RHS_MELB_MH6M",20,0,10],                    //MH-6M Little Bird
   ["RHS_MELB_AH6M",20,20,10],                   //AH-6M Pawnee
-  ["RHS_UH1Y_UNARMED",25,0,15],                   //UH-1Y (Unarmed)
   ["RHS_UH1Y_GS",25,20,15],                   //UH-1Y (Ground Suppression)
   ["RHS_AH1Z",50,50,20],                      //AH-1Z (Multi-Role)
   ["RHS_AH64D_wd",50,75,25],                    //AH-64D (Multi-Role)
