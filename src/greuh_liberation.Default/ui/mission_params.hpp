@@ -22,7 +22,7 @@ class Params {
    title = "Starting Weather:";
    values[] = {0,1,2,3,4};
    texts[] = {"Clear","Overcast","Rain","Fog","Random"};
-   default = 4;
+   default = 0;
   };
 
   class Spacer_MissionOptions {

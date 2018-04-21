@@ -11,25 +11,25 @@
 
 // Blufor Units (Not necessary arma3's blufor side, but rather the player side. )
 // TODO: Add Sharpshooter
-<#define BLUFOR_UNIT_OFFICER|"rhssaf_army_m93_oakleaf_summer_officer">                   // Officer
-<#define BLUFOR_UNIT_SQL|"rhssaf_army_m93_oakleaf_summer_sq_lead">                    // Squadleader
-<#define BLUFOR_UNIT_FTL|"rhssaf_army_m93_oakleaf_summer_ft_lead">                    // Fireteam Leader
-<#define BLUFOR_UNIT_RIFLEMAN|"rhssaf_army_m93_oakleaf_summer_rifleman_m70">              // Rifleman
-<#define BLUFOR_UNIT_GRENADIER|"rhssaf_army_m93_oakleaf_summer_gl">     
-<#define BLUFOR_UNIT_AUTORIFLEMAN|"rhssaf_army_m93_oakleaf_summer_rifleman_m21">           // Autorifleman (LMG)
-<#define BLUFOR_UNIT_MEDIC|"rhssaf_army_m93_oakleaf_summer_medic">                       // Medic
-<#define BLUFOR_UNIT_MARKSMAN|"rhssaf_army_m93_oakleaf_summer_sniper_m76">                // Marksman
-<#define BLUFOR_UNIT_ENGINEER|"rhssaf_army_m93_oakleaf_summer_engineer">                 // Engineer
-<#define BLUFOR_UNIT_LAT|"rhssaf_army_m93_oakleaf_summer_rifleman_at">                   // Light AT
-<#define BLUFOR_UNIT_HAT|"rhssaf_army_m93_oakleaf_summer_spec_at">                    // Dedicated AT
-<#define BLUFOR_UNIT_AA|"rhssaf_army_m93_oakleaf_summer_spec_aa">                     // Anti Air
-<#define BLUFOR_UNIT_MMG|"rhssaf_army_m93_oakleaf_summer_mgun_m84">                    // Medium Machine Gunner
-<#define BLUFOR_UNIT_SNIPER|"rhssaf_army_m10_para_sniper_m82a1">                     // Sniper
-<#define BLUFOR_UNIT_SHARPSHOOTER|"rhssaf_army_m10_para_spotter">                           // Sharpshooter
-<#define BLUFOR_UNIT_CREWMAN|"rhssaf_army_m93_oakleaf_summer_crew">                      // Crewman
-<#define BLUFOR_UNIT_PILOT|"rhssaf_airforce_pilot_mig29">                       // Jet Pilot
-<#define BLUFOR_UNIT_HELIPILOT|"rhssaf_airforce_pilot_transport_heli">               // Helicopter Pilot
-<#define BLUFOR_UNIT_PARATROOPER|"rhssaf_army_m10_para_rifleman_g36">            // Paratrooper
+<#define BLUFOR_UNIT_OFFICER|"rhsusf_army_ocp_officer">                   // Officer
+<#define BLUFOR_UNIT_SQL|"rhsusf_army_ocp_squadleader">                    // Squadleader
+<#define BLUFOR_UNIT_FTL|"rhsusf_army_ocp_teamleader">                    // Fireteam Leader
+<#define BLUFOR_UNIT_RIFLEMAN|"rhsusf_army_ocp_riflemanl">              // Rifleman
+<#define BLUFOR_UNIT_GRENADIER|"rhsusf_army_ocp_grenadier">     
+<#define BLUFOR_UNIT_AUTORIFLEMAN|"rhsusf_army_ocp_autorifleman">           // Autorifleman (LMG)
+<#define BLUFOR_UNIT_MEDIC|"rhsusf_army_ocp_medic">                       // Medic
+<#define BLUFOR_UNIT_MARKSMAN|"rhsusf_army_ocp_marksman">                // Marksman
+<#define BLUFOR_UNIT_ENGINEER|"rhsusf_army_ocp_engineer">                 // Engineer
+<#define BLUFOR_UNIT_LAT|"rhsusf_army_ocp_riflemanat">                   // Light AT
+<#define BLUFOR_UNIT_HAT|"rhsusf_army_ocp_javelin">                    // Dedicated AT
+<#define BLUFOR_UNIT_AA|"rhsusf_army_ocp_aa">                     // Anti Air
+<#define BLUFOR_UNIT_MMG|"rhsusf_usmc_recon_marpat_wd_machinegunner">                    // Medium Machine Gunner
+<#define BLUFOR_UNIT_SNIPER|"rhsusf_army_ocp_snipe">                     // Sniper
+<#define BLUFOR_UNIT_SHARPSHOOTER|"rhsusf_army_ocp_marksman">                           // Sharpshooter
+<#define BLUFOR_UNIT_CREWMAN|"rhsusf_army_ocp_combatcrewman">                      // Crewman
+<#define BLUFOR_UNIT_PILOT|"rhsusf_airforce_jetpilot">                       // Jet Pilot
+<#define BLUFOR_UNIT_HELIPILOT|"rhsusf_army_ocp_helipilot">               // Helicopter Pilot
+<#define BLUFOR_UNIT_PARATROOPER|"rhsusf_army_ocp_rifleman">            // Paratrooper
 
 // Blufor Buyable Vehicles
 <#define BLUFOR_LIGHTVEHICLES|
@@ -96,8 +96,8 @@
   ["RHS_MK19_TriPod_WD",5,10,0],                    //Mk19 GMG 20mm
   ["RHS_TOW_TriPod_WD",10,15,0],                    //TOW (AT)
   ["RHS_Stinger_AA_pod_WD",10,20,0],                  //Stinger (AA)
-  ["RHS_M252_WD",8,15,0],                     //Mk6 Mortar
-  ["RHS_M119_WD",10,20,0]>                    //M119A2
+  ["RHS_M252_WD",8,45,5],                     //Mk6 Mortar
+  ["RHS_M119_WD",10,80,15]>                    //M119A2
   
 
 //Specify logistics trucks ammo, repair, fuel and optionally any addition support vehicles you want to be available.
@@ -208,6 +208,13 @@
 <#define OPFOR_VEHICLES_JET|
   "RHS_Su25SM_vvsc",                          //Su-25
   "RHS_Su25SM_KH29_vvsc">
+
+
+<#define OPFOR_STATICS|
+  "RHS_ZU23_MSV",
+  "rhs_2b14_82mm_msv",
+  "rhs_Igla_AA_pod_msv",
+  "rhs_Kornet_9M133_2_msv">
   
 
 <#define OPFOR_TROOPTRANSPORT|

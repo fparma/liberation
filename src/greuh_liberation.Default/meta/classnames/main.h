@@ -191,6 +191,9 @@
 <#define OPFOR_VEHICLES_JET|
   "O_Plane_Fighter_02_F",                          //To-201 Shikra
   "O_Plane_CAS_02_dynamicLoadout_F">              //Yak-130
+
+<#define OPFOR_STATICS|
+  "">
   
 
 //Troop transports, include both air and ground troop transports

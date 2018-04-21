@@ -358,6 +358,10 @@ opfor_air = [
   <#OPFOR_VEHICLES_JET>
 ];
 
+opfor_statics = [
+  <#OPFOR_STATICS>
+];
+
 civilians = [
   <#CIVILIANS>
 ];
