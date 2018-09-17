@@ -9,13 +9,13 @@ The arsenal and classname folders inside \src\greuh_liberation.Default\meta\ def
 
 For example, the main.h file in each folder belongs to the default NATO vs CSAT preset.
 
-The arsenal folder main.h file controls the items available from within the virtual arsenal only if Limited Arsenal is enabled.
+The \arsenal\main.h file controls the items available from within the virtual arsenal only if Limited Arsenal is enabled.
 
-The classname folder main.h file controls the units available to purchase as the blufor faction, and the units spawned for the opposing faction.
+The \classname\main.h file controls the units available to purchase as the blufor faction, and the units spawned for the opposing faction.
 
-When the mission is built, these files are compiled into an arsenal and a classname sqf file located in the \src\factions\ folder. 
-These are selected are then chosen via parameter selection at the mission screen. For example, main.h becomes arsenal0.sqf and classname0.sqf.
-When the parameter for this is chosen (NATO vs CSAT), these two files are loaded.
+When the mission is built, these files are compiled into an arsenal and a classname sqf file located in the \src\factions\ folder. For example, main.h becomes arsenal0.sqf and classname0.sqf.
+These are selected via parameter at the mission screen. 
+When the parameter for this is chosen (NATO vs CSAT), these two files (arsenal0.sqf and classname0.sqf in this case) are loaded.
 
 
 ## Editing a Preset
