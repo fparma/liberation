@@ -42,7 +42,7 @@ class Params {
     title = "Faction Selection";
     values[] = {0, 1};
     texts[] = {"NATO vs CSAT (Limited Arsenal Unavailable)", "RHSUSAF vs RHSAFRF"};
-    default = 1;
+    default = 0;
   };
 
   class ArsenalLimitation {
