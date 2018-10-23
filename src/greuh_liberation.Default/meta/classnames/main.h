@@ -174,9 +174,7 @@
   "O_MBT_02_arty_F",                              //2S9 Sochor
   "O_MBT_02_cannon_F",                            //T100 Black Eagle
   "O_MBT_04_cannon_F",                        //T-140 Angara
-  "O_MBT_04_command_F",                        //T-140K Angara
-  "RHS_Mi8mt_Cargo_vvsc",                       //Mi-8MT (Cargo)
-  "RHS_Ka52_vvsc">
+  "O_MBT_04_command_F">
   
 
 //Helicopters
@@ -193,7 +191,10 @@
   "O_Plane_CAS_02_dynamicLoadout_F">              //Yak-130
 
 <#define OPFOR_STATICS|
-  "">
+  "O_static_AA_F",
+  "O_static_AT_F",
+  "O_Mortar_01_F",
+  "O_GMG_01_high_F">
   
 
 //Troop transports, include both air and ground troop transports
