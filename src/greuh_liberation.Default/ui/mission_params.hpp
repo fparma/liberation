@@ -22,7 +22,7 @@ class Params {
    title = "Starting Weather:";
    values[] = {0,1,2,3,4};
    texts[] = {"Clear","Overcast","Rain","Fog","Random"};
-   default = 4;
+   default = 0;
   };
 
   class Spacer_MissionOptions {
@@ -38,11 +38,18 @@ class Params {
     default = "";
   };
 
+  class SelectedFaction {
+    title = "Faction Selection";
+    values[] = {0, 1};
+    texts[] = {"NATO vs CSAT (Limited Arsenal Unavailable)", "RHSUSAF vs RHSAFRF"};
+    default = 0;
+  };
+
   class ArsenalLimitation {
     title = "Arsenal Limitation";
-    values[] = {1, 0};
-    texts[] = {"Yes", "No"};
-    default = 1;
+    values[] = {0, 1};
+    texts[] = {"No", "Yes"};
+    default = 0;
   };
   class Unitcap {
     title = $STR_PARAMS_UNITCAP;
@@ -138,7 +145,7 @@ class Params {
     title = $STR_PERMISSIONS_PARAM;
     values[] = {1,0};
     texts[] = { $STR_PARAMS_ENABLED, $STR_PARAMS_DISABLED };
-    default = 1;
+    default = 0;
   };
   class CleanupVehicles {
     title = $STR_CLEANUP_PARAM;

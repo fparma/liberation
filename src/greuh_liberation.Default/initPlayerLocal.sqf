@@ -1,8 +1,24 @@
 player addEventHandler ["HandleRating", {abs (_this select 1);}];
 
+["ace_arsenal_displayClosed", {
+[{
+  profileNamespace setVariable [format ['%1_fpcGear', GRLIB_save_key], getUnitLoadout player];
+  saveProfileNamespace;
+}] call CBA_fnc_execNextFrame;
+}] call CBA_fnc_addEventHandler;
+
+// Start limiting of Arsenal Assets
+selectedFactionParam = "SelectedFaction" call BIS_fnc_getParamValue;
+ARSENAL_ISFULL = true;
+if ((["ArsenalLimitation",1] call bis_fnc_getParamValue) == 1) then {
+	selectedFactionArsenal = format ["factions\arsenal%1.sqf", selectedFactionParam];
+  ARSENAL_ISFULL = false;
+  [] call compileFinal preprocessFileLineNumbers selectedFactionArsenal;
+};
+
 // Liberation ACE Actions
 [ACE_player, 1, ["ACE_SelfActions"], ['FPC_INTERACTION_ROOT','Liberation','',{},{true}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
-[ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT"], ['FPC_INTERACTION_ARSENAL','Open Arsenal','\z\ace\addons\magazinerepack\UI\repack_ca.paa',{["Open",ARSENAL_ISFULL] spawn BIS_fnc_arsenal;},{[] call FPC_fnc_arsenalCondition;}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
+[ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT"], ['FPC_INTERACTION_ARSENAL','Open Arsenal','\z\ace\addons\common\UI\repack_ca.paa',{[{[player, player, ARSENAL_ISFULL] call ace_arsenal_fnc_openBox;}] call CBA_fnc_execNextFrame;},{[] call FPC_fnc_arsenalCondition;}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 [ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT"], ['FPC_INTERACTION_REDEPLOY','Redeploy','',{[] spawn FPC_fnc_show_redeploy_dialog;},{[] call FPC_fnc_redeployCondition;}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 [ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT"], ['FPC_INTERACTION_BUILD_MENU','Build Menu','',{[] execVM "scripts\client\build\open_build_menu.sqf";},{[] call FPC_fnc_buildMenuCondition;}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 [ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT"], ['FPC_INTERACTION_DEPLOY_FOB','Build FOB','',{[] execVM "scripts\client\build\do_build_fob.sqf";},{[] call FPC_fnc_deployFobCondition;}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
@@ -25,7 +41,7 @@ player addEventHandler ["HandleRating", {abs (_this select 1);}];
 // Liberation ACE Helper Actions
 [ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT"], ['FPC_HELPERS_ROOT','Helpers','res\icon-questionmark.paa',{},{true}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 [ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT", "FPC_HELPERS_ROOT"], ['FPC_HELPERS_INITACELOGI','Reinit Logistics Actions for objects around player','',{[true] call FPC_fnc_initLogisticsInRange;},{true}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
-
+[ACE_player, 1, ["ACE_SelfActions", "FPC_INTERACTION_ROOT", "FPC_HELPERS_ROOT"], ['FPC_HELPERS_RESETLIBMENU','Reinit Liberation Menu','',{build_confirmed=0;},{true}] call ace_interact_menu_fnc_createAction] call ace_interact_menu_fnc_addActionToObject;
 // Interrogate
 _targetRoot = ["FPC_TARGET_ROOT","Liberation","",{},{true}] call ace_interact_menu_fnc_createAction;
 ["CAManBase", 0, ["ACE_MainActions"], _targetRoot, true] call ace_interact_menu_fnc_addActionToClass;

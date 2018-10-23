@@ -31,22 +31,22 @@ private _isHidden = compileFinal "
 
 deleteManagerPublic = true;               // To terminate script via debug console
 private _checkPlayerCount = true;         // dynamic sleep. Set true to have sleep automatically adjust based on # of players.
-private _checkFrequencyDefault = 180;     // sleep default
+private _checkFrequencyDefault = 120;     // sleep default
 private _checkFrequencyAccelerated = 60;  // sleep accelerated
-private _playerThreshold = 20;            // How many players before accelerated cycle kicks in?
+private _playerThreshold = 10;            // How many players before accelerated cycle kicks in?
 
-private _deadMenLimit = 50;               // Bodies. Set -1 to disable.
+private _deadMenLimit = 20;               // Bodies. Set -1 to disable.
 private _deadMenDistCheck = true;         // true to delete any bodies that are far from players.
-private _deadMenDist = 2000;              // Distance (meters) from players that bodies are not deleted if below max.
-private _deadVehiclesLimit = 20;          // Wrecks. Set -1 to disable.
+private _deadMenDist = 1000;              // Distance (meters) from players that bodies are not deleted if below max.
+private _deadVehiclesLimit = 10;          // Wrecks. Set -1 to disable.
 private _deadVehicleDistCheck = true;     // true to delete any destroyed vehicles that are far from players.
-private _deadVehicleDist = 2000;          // Distance (meters) from players that destroyed vehicles are not deleted if below max.
-private _craterLimit = 20;                // Craters. Set -1 to disable.
+private _deadVehicleDist = 1000;          // Distance (meters) from players that destroyed vehicles are not deleted if below max.
+private _craterLimit = 10;                // Craters. Set -1 to disable.
 private _craterDistCheck = true;          // true to delete any craters that are far from players.
-private _craterDist = 2000;               // Distance (meters) from players that craters are not deleted if below max.
-private _weaponHolderLimit = 50;          // Weapon Holders. Set -1 to disable.
+private _craterDist = 1000;               // Distance (meters) from players that craters are not deleted if below max.
+private _weaponHolderLimit = 25;          // Weapon Holders. Set -1 to disable.
 private _weaponHolderDistCheck = true;    // true to delete any weapon holders that are far from players.
-private _weaponHolderDist = 500;          // Distance (meters) from players that ground garbage is not deleted if below max.
+private _weaponHolderDist = 250;          // Distance (meters) from players that ground garbage is not deleted if below max.
 private _minesLimit = -1;                 // Land mines. Set -1 to disable.
 private _minesDistCheck = true;           // true to delete any mines that are far from ANY UNIT (not just players).
 private _minesDist = 3000;                // Distance (meters) from players that land mines are not deleted if below max.
@@ -178,7 +178,7 @@ while {deleteManagerPublic} do {
     private _ruins = [];
     {
       if ((_x distance [0,0,0]) > 100) then {
-        0 = _ruins pushBack _x;
+        _ruins pushBack _x;
         sleep 0.1;
       };
     } count (allMissionObjects "Ruins");

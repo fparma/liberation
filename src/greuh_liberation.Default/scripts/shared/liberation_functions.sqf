@@ -17,6 +17,7 @@ F_spawnMilitaryPostSquad = compileFinal preprocessFileLineNumbers "scripts\share
 F_findOpforSpawnPoint = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_findOpforSpawnPoint.sqf";
 F_getAdaptiveSquadComp = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_getAdaptiveSquadComp.sqf";
 F_getAdaptiveVehicle = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_getAdaptiveVehicle.sqf";
+F_getAdaptiveStatic = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_getAdaptiveStatic.sqf";
 F_secondsToTimer = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_secondsToTimer.sqf";
 F_squadRespawn = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_squadRespawn.sqf";
 F_swapInventory = compileFinal preprocessFileLineNumbers "scripts\shared\functions\F_swapInventory.sqf";

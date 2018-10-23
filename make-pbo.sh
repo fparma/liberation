@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 # Settings
-MAKE_PBO=0                # Build a PBO if true. (Requires mikeros PBO tools)
+MAKE_PBO=1                # Build a PBO if true. (Requires mikeros PBO tools)
 LINT_MISSION=0            # Lint the Mission Folder
 RENAME_MISSION_FILE=1     # Adds timestamp to the mission folder/pbo file
 RENAME_MISSION_TITLE=1    # Replaces <#DATETIME> with timestamp in mission name

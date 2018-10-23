@@ -3,7 +3,8 @@ params [
   "_classname",
   [ "_precise_position", false ],
   [ "_disable_abandon", false ],
-  [ "_random_rotate", true ]
+  [ "_random_rotate", true ],
+  [ "_static_item", false]
 ];
 
 // diag_log format [ "Spawning vehicle %1 at %2", _classname , time ];
@@ -11,11 +12,21 @@ params [
 private _newvehicle = objNull;
 private _spawnpos = zeropos;
 
+private _maxspawndistance = 100;
+private _randomspawndistance = 150;
+private _canfitclassname = 'B_Heli_Transport_01_F';
+
+if (_static_item) then {
+  _maxspawndistance = 50;
+  _randomspawndistance  = 40;
+  _canfitclassname = _classname
+};
+
 if ( _precise_position ) then {
   _spawnpos = [] + _sectorpos;
 } else {
   while { _spawnpos distance zeropos < 1000 } do {
-    _spawnpos = ( [ _sectorpos, random 150, random 360 ] call bis_fnc_relpos ) findEmptyPosition [10, 100, 'B_Heli_Transport_01_F'];
+    _spawnpos = ( [ _sectorpos, random _randomspawndistance, random 360 ] call bis_fnc_relpos ) findEmptyPosition [5, _maxspawndistance, _canfitclassname];
     if ( count _spawnpos == 0 ) then { _spawnpos = zeropos; };
   };
 };

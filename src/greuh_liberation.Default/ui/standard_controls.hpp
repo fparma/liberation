@@ -1,5 +1,4 @@
 class kndr_MapControl {
-  access = 0;
   idc = 10023;
   type = CT_MAP_MAIN;
   style = ST_PICTURE;
