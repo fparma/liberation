@@ -2,7 +2,7 @@
 //[0] NATO+RHS - NATO + RHSUSAF vs CSAT
 //[1] RHSUSAF - RHS USAF vs RHS AFRF 
 //[2] NATO vs CSAT (No Addon Content)
-<#exec true <#include classnames/natoplusrhs.h>>
+<#exec true <#include classnames/main.h>>
 
 FOB_typename = <#MAIN_FOB_TYPE>;
 FOB_box_typename = <#MAIN_FOB_BOX>;

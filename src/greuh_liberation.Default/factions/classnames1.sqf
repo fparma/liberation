@@ -1,6 +1,7 @@
 //Filename should match the number below (e.g classnames1.sqf)
-//[0] Main - Vanilla NATO vs CSAT (WIP)
+//[0] NATO+RHS - NATO + RHSUSAF vs CSAT
 //[1] RHSUSAF - RHS USAF vs RHS AFRF 
+//[2] NATO vs CSAT (No Addon Content)
 <#exec true <#include classnames/rhsusaf.h>>
 
 FOB_typename = <#MAIN_FOB_TYPE>;

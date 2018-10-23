@@ -5,6 +5,8 @@ This documents how to go about editing the units or vehicles used by the mission
 
 This mission uses several files to create the playable faction presets available for choice within the parameter menu.
 
+The core scripts are contained within the \grueh_liberation.Default\ folder, and map specific files are placed within each map folder.
+
 The arsenal and classname folders inside \src\greuh_liberation.Default\meta\ define the units and vehicles for each particular preset.
 
 For example, the main.h file in each folder belongs to the default NATO vs CSAT preset.
@@ -13,7 +15,7 @@ The \arsenal\main.h file controls the items available from within the virtual ar
 
 The \classname\main.h file controls the units available to purchase as the blufor faction, and the units spawned for the opposing faction.
 
-When the mission is built, these files are compiled into an arsenal and a classname sqf file located in the \src\factions\ folder. For example, main.h becomes arsenal0.sqf and classname0.sqf.
+When the mission is built, these files are compiled into an arsenal and a classname sqf file located in the zfactions\ folder. For example, main.h becomes arsenal0.sqf and classname0.sqf.
 These are selected via parameter at the mission screen. 
 When the parameter for this is chosen (NATO vs CSAT), these two files (arsenal0.sqf and classname0.sqf in this case) are loaded.
 
